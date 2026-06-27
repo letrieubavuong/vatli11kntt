@@ -239,7 +239,7 @@ export default function App() {
         <div className="portal-container animate-fade-in">
           <header className="portal-header">
             <GraduationCap className="portal-logo" size={48} />
-            <h1>Cổng Học Tập Vật Lí 10 KNTT</h1>
+            <h1>Cổng Học Tập Vật Lí 11 KNTT</h1>
             <p>Hệ thống bài giảng điện tử và bài tập tự luyện thông minh</p>
           </header>
 
