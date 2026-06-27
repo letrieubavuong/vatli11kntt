@@ -38,7 +38,7 @@ export default function Sidebar({
         <div className="sidebar-brand">
           <GraduationCap className="brand-icon" size={32} />
           <div>
-            <h1>Vật lí 12</h1>
+            <h1>Vật lí 11</h1>
             <span>Kết nối tri thức</span>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function Sidebar({
           >
             Thoát / Đổi vai trò
           </button>
-          <p style={{ marginTop: '0.5rem' }}>© 2026 Bài giảng Vật Lí 12</p>
+          <p style={{ marginTop: '0.5rem' }}>© 2026 Bài giảng Vật Lí 11</p>
         </div>
       </aside>
     </>

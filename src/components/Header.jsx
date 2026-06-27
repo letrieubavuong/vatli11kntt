@@ -6,7 +6,7 @@ export default function Header({ studentInfo, onLogout, onOpenLogin }) {
     <header className="main-header">
       <div className="header-left">
         <span className="header-subtitle">Bài giảng điện tử</span>
-        <h2 className="header-title">Vật lí 12 KNTT</h2>
+        <h2 className="header-title">Vật lí 11 KNTT</h2>
       </div>
 
       <div className="header-right">
