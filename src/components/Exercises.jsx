@@ -85,6 +85,42 @@ function DangSelector({ dangOrder, groupedExercises, onSelect }) {
   );
 }
 
+/* ── Helpers for checking question statuses ── */
+function isQuestionAnswered(ex, answer) {
+  if (answer === undefined || answer === null) return false;
+  if (ex.qType === 'true_false') {
+    return Object.keys(answer).length === 4;
+  }
+  if (ex.qType === 'short_answer') {
+    return typeof answer === 'string' && answer.trim().length > 0;
+  }
+  return answer !== undefined;
+}
+
+function isQuestionCorrect(ex, answer) {
+  if (answer === undefined || answer === null) return false;
+  if (ex.qType === 'true_false') {
+    for (let i = 0; i < 4; i++) {
+      const correctVal = ex.correctOption[i];
+      const userVal = answer[i];
+      if (userVal !== correctVal) return false;
+    }
+    return true;
+  }
+  if (ex.qType === 'short_answer') {
+    const normalize = (str) => {
+      if (!str) return '';
+      return str.toString()
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, '')
+        .replace(/,/g, '.');
+    };
+    return normalize(answer) === normalize(ex.correctOption);
+  }
+  return answer === ex.correctOption;
+}
+
 /* ── Component chính ── */
 export default function Exercises({ exercises, studentInfo, onOpenLogin, lessonTitle }) {
   const [activeDang, setActiveDang] = useState(null);
@@ -98,12 +134,19 @@ export default function Exercises({ exercises, studentInfo, onOpenLogin, lessonT
 
   /* Reset khi chuyển bài học */
   useEffect(() => {
-    setActiveDang(null);
     setCurrentIdx(0);
     setAnswers({});
     setIsSubmitted(false);
     setShowWarning(false);
     setSeconds(0);
+
+    const list = exercises || [];
+    const uniqueTypes = [...new Set(list.map(item => item.type || 'Bài tập tổng hợp'))];
+    if (uniqueTypes.length === 1) {
+      setActiveDang(uniqueTypes[0]);
+    } else {
+      setActiveDang(null);
+    }
   }, [exercises]);
 
   /* Đồng hồ đếm giờ */
@@ -179,16 +222,26 @@ export default function Exercises({ exercises, studentInfo, onOpenLogin, lessonT
   /* Làm bài */
   const list = groupedExercises[activeDang] || [];
   const total = list.length;
-  const answered = list.filter(ex => answers[ex.id] !== undefined).length;
+  const answered = list.filter(ex => isQuestionAnswered(ex, answers[ex.id])).length;
   const allDone = answered === total;
   const current = list[currentIdx];
 
-  const correct = list.filter(ex => answers[ex.id] === ex.correctOption).length;
+  const correct = list.filter(ex => isQuestionCorrect(ex, answers[ex.id])).length;
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
 
-  const handleAnswer = (id, idx) => {
+  const handleAnswer = (id, val) => {
     if (isSubmitted) return;
-    setAnswers(prev => ({ ...prev, [id]: idx }));
+    setAnswers(prev => ({ ...prev, [id]: val }));
+    setShowWarning(false);
+  };
+
+  const handleTFAny = (qId, statementIdx, value) => {
+    if (isSubmitted) return;
+    setAnswers(prev => {
+      const currAns = prev[qId] ? { ...prev[qId] } : {};
+      currAns[statementIdx] = value;
+      return { ...prev, [qId]: currAns };
+    });
     setShowWarning(false);
   };
 
@@ -246,16 +299,17 @@ export default function Exercises({ exercises, studentInfo, onOpenLogin, lessonT
 
   /* Trạng thái từng câu cho navigator */
   const getQStatus = (ex, idx) => {
+    const userAns = answers[ex.id];
     if (isSubmitted) {
-      return answers[ex.id] === ex.correctOption ? 'correct' : 'incorrect';
+      return isQuestionCorrect(ex, userAns) ? 'correct' : 'incorrect';
     }
-    if (answers[ex.id] !== undefined) return 'answered';
+    if (isQuestionAnswered(ex, userAns)) return 'answered';
     if (idx === currentIdx) return 'current';
     return 'unanswered';
   };
 
   const selOpt = answers[current?.id];
-  const isCurrentCorrect = selOpt === current?.correctOption;
+  const isCurrentCorrect = isQuestionCorrect(current, selOpt);
 
   return (
     <div className="az-exam-wrap">
@@ -338,6 +392,9 @@ export default function Exercises({ exercises, studentInfo, onOpenLogin, lessonT
               {/* Số câu + badge */}
               <div className="az-q-header">
                 <span className="az-q-num">Câu {currentIdx + 1} / {total}</span>
+                {current.part && (
+                  <span className="az-q-type-badge">{current.part}</span>
+                )}
                 {isSubmitted && (
                   <span className={`az-q-badge ${isCurrentCorrect ? 'badge-correct' : 'badge-incorrect'}`}>
                     {isCurrentCorrect ? <><Check size={13} /> Đúng</> : <><X size={13} /> Sai</>}
@@ -350,36 +407,117 @@ export default function Exercises({ exercises, studentInfo, onOpenLogin, lessonT
                 {renderTextWithMath(current.question)}
               </div>
 
-              {/* 4 phương án */}
-              <div className="az-options">
-                {current.options.map((opt, optIdx) => {
-                  let cls = 'az-opt';
-                  if (isSubmitted) {
-                    if (optIdx === current.correctOption) cls += ' az-opt-correct';
-                    else if (optIdx === selOpt) cls += ' az-opt-wrong';
-                    else cls += ' az-opt-disabled';
-                  } else if (selOpt === optIdx) {
-                    cls += ' az-opt-selected';
-                  }
-                  return (
-                    <button
-                      key={optIdx}
-                      className={cls}
-                      onClick={() => handleAnswer(current.id, optIdx)}
+              {/* 4 phương án hoặc trắc nghiệm Đúng/Sai hoặc Trả lời ngắn */}
+              {(!current.qType || current.qType === 'multiple_choice') && (
+                <div className="az-options">
+                  {current.options.map((opt, optIdx) => {
+                    let cls = 'az-opt';
+                    if (isSubmitted) {
+                      if (optIdx === current.correctOption) cls += ' az-opt-correct';
+                      else if (optIdx === selOpt) cls += ' az-opt-wrong';
+                      else cls += ' az-opt-disabled';
+                    } else if (selOpt === optIdx) {
+                      cls += ' az-opt-selected';
+                    }
+                    return (
+                      <button
+                        key={optIdx}
+                        className={cls}
+                        onClick={() => handleAnswer(current.id, optIdx)}
+                        disabled={isSubmitted}
+                      >
+                        <span className="az-opt-letter">{String.fromCharCode(65 + optIdx)}</span>
+                        <span className="az-opt-text">{renderTextWithMath(opt)}</span>
+                        {isSubmitted && optIdx === current.correctOption && (
+                          <Check size={16} className="az-opt-check" />
+                        )}
+                        {isSubmitted && optIdx === selOpt && optIdx !== current.correctOption && (
+                          <X size={16} className="az-opt-x" />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              {current.qType === 'true_false' && (
+                <div className="az-tf-container">
+                  {current.options.map((stmt, optIdx) => {
+                    const userVal = selOpt?.[optIdx]; // true, false or undefined
+                    const correctVal = current.correctOption[optIdx]; // true or false
+                    
+                    let btnTrueClass = "az-tf-btn az-tf-btn-true";
+                    let btnFalseClass = "az-tf-btn az-tf-btn-false";
+                    
+                    if (isSubmitted) {
+                      if (correctVal === true) {
+                        btnTrueClass += " az-tf-correct";
+                      } else {
+                        btnFalseClass += " az-tf-correct";
+                      }
+                      if (userVal !== undefined && userVal !== correctVal) {
+                        if (userVal === true) btnTrueClass += " az-tf-wrong";
+                        else btnFalseClass += " az-tf-wrong";
+                      }
+                    } else {
+                      if (userVal === true) btnTrueClass += " active";
+                      if (userVal === false) btnFalseClass += " active";
+                    }
+                    
+                    return (
+                      <div key={optIdx} className="az-tf-row">
+                        <div className="az-tf-statement-col">
+                          <span className="az-tf-statement-letter">{String.fromCharCode(97 + optIdx)})</span>
+                          <span className="az-tf-statement-text">{renderTextWithMath(stmt)}</span>
+                        </div>
+                        <div className="az-tf-actions-col">
+                          <button
+                            className={btnTrueClass}
+                            onClick={() => handleTFAny(current.id, optIdx, true)}
+                            disabled={isSubmitted}
+                          >
+                            Đúng
+                          </button>
+                          <button
+                            className={btnFalseClass}
+                            onClick={() => handleTFAny(current.id, optIdx, false)}
+                            disabled={isSubmitted}
+                          >
+                            Sai
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {current.qType === 'short_answer' && (
+                <div className="az-sa-container">
+                  <label className="az-sa-label">Nhập đáp số của bạn:</label>
+                  <div className="az-sa-input-row">
+                    <input
+                      type="text"
+                      className={`az-sa-input ${isSubmitted ? (isCurrentCorrect ? 'az-sa-correct' : 'az-sa-wrong') : ''}`}
+                      value={selOpt || ''}
+                      onChange={(e) => handleAnswer(current.id, e.target.value)}
+                      placeholder="Ví dụ: 40 hoặc 33,7"
                       disabled={isSubmitted}
-                    >
-                      <span className="az-opt-letter">{String.fromCharCode(65 + optIdx)}</span>
-                      <span className="az-opt-text">{renderTextWithMath(opt)}</span>
-                      {isSubmitted && optIdx === current.correctOption && (
-                        <Check size={16} className="az-opt-check" />
-                      )}
-                      {isSubmitted && optIdx === selOpt && optIdx !== current.correctOption && (
-                        <X size={16} className="az-opt-x" />
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
+                    />
+                    {isSubmitted && (
+                      <div className="az-sa-result-val">
+                        {isCurrentCorrect ? (
+                          <span style={{ color: '#34d399', fontWeight: 600 }}>✓ Chính xác</span>
+                        ) : (
+                          <span style={{ color: '#f87171', fontWeight: 600 }}>
+                            ✗ Sai (Đáp số đúng: <strong>{current.correctOption}</strong>)
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
 
               {/* Lời giải */}
               {isSubmitted && <ExplanationBlock text={current.explanation} />}

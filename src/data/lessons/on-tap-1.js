@@ -15,7 +15,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tTần số góc của dao động là $\\omega$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-2",
@@ -29,7 +30,8 @@ export default {
       "correctOption": 0,
       "explanation": "\n\t\t\tPhương trình dao động tổng hợp là: $x = A\\cos \\omega t\\ cm$ $\\Rightarrow$ $A = 6\\ cm$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-3",
@@ -43,7 +45,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tTrong quá trình dao động, vận tốc của vật có giá trị lớn nhất (cực đại) khi vật đi qua vị trí cân bằng theo chiều dương.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-4",
@@ -57,7 +60,8 @@ export default {
       "correctOption": 0,
       "explanation": "\n\t\t\t\n\n\t\t\t\t-  Luôn có: $\\left(\\dfrac{x}{A}\\right)^2+\\left(\\dfrac{v}{v_{\\max}}\\right)^2=1\\quad  (*)$\n\t\t\t\t-  Khi $\\left| v \\right|=0,6v_{\\max}\\quad (*) \\Rightarrow \\left(\\dfrac{x}{A}\\right)^2+\\left(\\dfrac{0,6v_{\\max}}{v_{\\max}}\\right)^2=1\\Rightarrow \\left|x\\right|=0,8A$.\n\t\t\t\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-5",
@@ -71,7 +75,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tPha dao động cho ta biết trạng thái chuyển động của vật.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-6",
@@ -85,7 +90,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\t\n\n\t\t\t\t\n__TIKZ_START__/images/tikz/tikz_on-tap-1_1.svg|\\begin{tikzpicture}\n\t\t\t\t\t\\tkzDefPoints{0/0/o, 5/0/a, 4.325/0/b, 3.525/0/c, 2.5/0/d,  -5/0/h, -4.325/0/g, -3.525/0/f, -2.5/0/e, -6/0/x', 6/0/x}\n\t\t\t\t\t\\tkzDefShiftPoint[e](-90:0.5cm){e1}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-90:0.5cm){o1}\n\t\t\t\t\t\\tkzDefShiftPoint[d](-90:0.5cm){d1}\n\t\t\t\t\t\\tkzDrawSegments[blue,->,very thick](x',x)\n\t\t\t\t\t\\tkzDrawPoints[size=5,fill=black](o,a,b,c,d,e,f,g,h)\n\t\t\t\t\t\\tkzLabelPoint[above](o){\\tiny $O$}\n\t\t\t\t\t\\tkzLabelPoint[above](a){\\tiny$A$}\n\t\t\t\t\t\\tkzLabelPoint[above](b){\\tiny$\\dfrac{A\\sqrt{3}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](c){\\tiny$\\dfrac{A\\sqrt{2}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](d){\\tiny$\\dfrac{A}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](h){\\tiny$-A$}\n\t\t\t\t\t\\tkzLabelPoint[above](g){\\tiny $-\\dfrac{A\\sqrt{3}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](f){\\tiny$-\\dfrac{A\\sqrt{2}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](e){\\tiny$-\\dfrac{A}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](x){\\tiny$x$}\n\t\t\t\t\t\\tkzDrawSegments[->,very thick,red](e1,o1 o1,d1)\n\t\t\t\t\t\\tkzLabelSegment[below](e1,o1){\\tiny$\\Delta t_1=\\dfrac{T}{12}$}\n\t\t\t\t\t\\tkzLabelSegment[below](o1,d1){\\tiny$\\Delta t_2=\\dfrac{T}{12}$}\n\t\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t\t\n\n\t\t\tTa có: $\\Delta t=\\Delta t_1+\\Delta t_2=\\dfrac{T}{6}=\\dfrac{1}{30}\\ s$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-7",
@@ -99,7 +105,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\t\n\n\t\t\t\t-  Ta thấy $[-3\\ cm;\\ 3\\ cm] = [-\\dfrac{A}{2};\\ \\dfrac{A}{2}]$.\n\t\t\t\t-  Trong nửa chu kì thì vật đi từ vị trí có li độ $\\dfrac{A}{2}$ đến $-\\dfrac{A}{2}$ sẽ ứng với góc quay được là $\\varphi = \\dfrac{\\pi}{3}\\ rad$ và hết khoảng thời gian $t_1 = \\dfrac{T}{6}$. \n\t\t\t\t-  Trong nửa chu kì còn lại vật sẽ có li độ $[-3\\ cm;\\ 3\\ cm]$ trong khoảng thời gian $t_1$ nhưng theo chiều ngược lại.\n\t\t\t\t-  Trong một chu kì, khoảng thời gian để li độ của vật trong khoảng $[-3\\ cm;\\ 3\\ cm]$ là $\\Delta t = 2t_1 = \\dfrac{T}{3} = 0,4\\ s$.\n\t\t\t\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-8",
@@ -113,7 +120,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\t\n\n\t\t\t\t-  Chu kì: $T=\\dfrac{2\\pi }{\\omega }=0,6\\ s$.\n\t\t\t\t-  Thay tốc độ $10\\pi \\ cm/s$ vào phương trình: $x^2+\\dfrac{v^2}{\\omega ^2}=A^2\\Rightarrow \\left| x\\right|=3\\sqrt{3}\\ cm$. \n\t\t\t\t-  Ta nhận thấy: $\\dfrac{2013}{4}=503$ dư 1 \n\t\t\t\t$\\Rightarrow t=503T+t_1$ nên ta chỉ cần tìm $t_1$:\\\\\n\t\t\t\t$t_1=\\dfrac{T}{12}\\Rightarrow t=503T+\\dfrac{T}{12}=301,85\\ s$. \n\t\t\n",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-9",
@@ -127,7 +135,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tThời điểm t, vật có $v < 0,\\ a > 0$, tức vật đang có li độ âm (li độ và gia tốc luôn trái dấu) và đi theo chiều âm, sau $\\dfrac{T}{2}$ trạng thái dao động ngược lại nên vật có $v > 0, a < 0$ (li độ dương).\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-10",
@@ -141,7 +150,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\t\n\n\t\t\t\t-  Trong khoảng thời gian 3 s chất điểm quay được góc: $\\Delta \\varphi = 3\\pi = 2\\pi + \\pi\\Rightarrow  \\Delta s = 4A+2A= 180\\ cm$.\n\t\t\t\t-  Tốc độ trung bình bằng: $180:3 = 60\\ cm/s$.\n\t\t\t\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-11",
@@ -155,7 +165,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tHai dao động cùng pha $\\Delta \\varphi =2k\\pi $",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-12",
@@ -169,7 +180,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tCơ năng của vật dao động điều hòa: $W = W_{\\text{đ}\\max} = \\dfrac{1}{2}mv_{\\max}^{2} = \\dfrac{1}{2}m\\omega ^2A^2$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-13",
@@ -183,7 +195,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\tTần số góc: $\\omega =\\sqrt{\\dfrac{k}{m}}=20\\ rad/s$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-14",
@@ -197,7 +210,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tTa có: $a_{\\max} = \\omega^2A = 400\\ cm/s^2 = 4\\ m/s^2$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-15",
@@ -211,7 +225,8 @@ export default {
       "correctOption": 0,
       "explanation": "",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-16",
@@ -225,7 +240,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-17",
@@ -239,7 +255,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\tVận tốc của con lắc đơn $v^2=2g\\ell\\left({\\cos \\alpha -\\cos \\alpha _m}\\right)$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-18",
@@ -253,7 +270,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tVận tốc con lắc khi qua vị trí cân bằng:  $v_{\\max}=\\omega.S_0=\\sqrt{\\dfrac{g}{\\ell}}.\\ell.\\alpha_0=0,278$ m/s.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-19",
@@ -272,7 +290,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Sai.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-1-ex-20",
@@ -291,7 +310,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-1-ex-21",
@@ -310,7 +330,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\t-  Sai\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-1-ex-22",
@@ -329,7 +350,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\t-  Sai. Tần số dao động là $f=\\dfrac{1}{2 \\pi} \\sqrt{\\dfrac{k}{m}}$.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-1-ex-23",
@@ -338,7 +360,8 @@ export default {
       "correctOption": "40",
       "explanation": "\n\t\t$40 \\ cm/s$\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-24",
@@ -347,7 +370,8 @@ export default {
       "correctOption": "33,7",
       "explanation": "\n\t\t33,7 phút\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-25",
@@ -356,7 +380,8 @@ export default {
       "correctOption": "0,75",
       "explanation": "\n\t\t0,75\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-26",
@@ -365,7 +390,8 @@ export default {
       "correctOption": "5,66",
       "explanation": "\n\t\t$5,66 \\ cm$\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-27",
@@ -374,7 +400,8 @@ export default {
       "correctOption": "43,8",
       "explanation": "43,8",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-28",
@@ -383,7 +410,8 @@ export default {
       "correctOption": "40",
       "explanation": "\n\t\t\n\n\t\t\t-  Ta có: $\\Delta \\ell_0 = 5\\ cm \\Rightarrow \\omega  = 10\\sqrt{2}\\  rad/s,\\ v_{\\max} =  30\\sqrt{2}\\ cm/s \\Rightarrow A = 3\\ cm$.\n\t\t\t-  Khi truyền tốc độ $v_0$, vật đang có $\\left|x\\right| = 1\\ cm \\Rightarrow v_0=\\omega \\sqrt{A^2-x^2}=  40\\ cm/s.$\t\n\t\t\n\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     }
   ]
 };

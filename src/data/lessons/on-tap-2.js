@@ -15,7 +15,8 @@ export default {
       "correctOption": 0,
       "explanation": "\n\t\t\tBiên độ dao động của vật là A.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-2",
@@ -29,7 +30,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tTa có: $\\omega =15\\ rad/s$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-3",
@@ -43,7 +45,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tTrong quá trình dao động, vận tốc của vật có giá trị bằng không (vật dừng lại tức thời) khi vật ở biên dương hoặc biên âm.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-4",
@@ -57,7 +60,8 @@ export default {
       "correctOption": 0,
       "explanation": "\n\t\t\t\n\n\t\t\t\t-  Chu kì: $T = \\dfrac{31,4}{100} = \\dfrac{\\pi}{10}\\ s \\Rightarrow \\omega = 20\\ rad/s$.\n\t\t\t\t-  Sử dụng phương trình độc lập thời gian, ta được phương trình:\n\t\t\t\t\n$$\n\\begin{aligned}\n\t\t\t\t\t\\dfrac{2^2}{A^2} + \\dfrac{(40\\sqrt{3})^2}{20^2.A^2}= 1\\Rightarrow A = 4\\ cm.\n\t\t\t\t\\end{aligned}\n$$\n\n\t\t\t\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-5",
@@ -71,7 +75,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tSử dụng đường tròn lượng giác ta suy ra được pha của dao động là $-\\dfrac{\\pi}{3}$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-6",
@@ -85,7 +90,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\t\n\n\t\t\t\t\n__TIKZ_START__/images/tikz/tikz_on-tap-2_1.svg|\\begin{tikzpicture}\n\t\t\t\t\t\\tkzDefPoints{0/0/o, 5/0/a, 4.325/0/b, 3.525/0/c, 2.5/0/d,  -5/0/h, -4.325/0/g, -3.525/0/f, -2.5/0/e, -6/0/x', 6/0/x}\n\t\t\t\t\t\\tkzDefShiftPoint[g](-90:0.5cm){g1}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-90:0.5cm){o1}\n\t\t\t\t\t\\tkzDefShiftPoint[b](-90:0.5cm){b1}\n\t\t\t\t\t\\tkzDrawSegments[blue,->,very thick](x',x)\n\t\t\t\t\t\\tkzDrawPoints[size=5,fill=black](o,a,b,c,d,e,f,g,h)\n\t\t\t\t\t\\tkzLabelPoint[above](o){\\tiny $O$}\n\t\t\t\t\t\\tkzLabelPoint[above](a){\\tiny$A$}\n\t\t\t\t\t\\tkzLabelPoint[above](b){\\tiny$\\dfrac{A\\sqrt{3}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](c){\\tiny$\\dfrac{A\\sqrt{2}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](d){\\tiny$\\dfrac{A}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](h){\\tiny$-A$}\n\t\t\t\t\t\\tkzLabelPoint[above](g){\\tiny $-\\dfrac{A\\sqrt{3}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](f){\\tiny$-\\dfrac{A\\sqrt{2}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](e){\\tiny$-\\dfrac{A}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](x){\\tiny$x$}\n\t\t\t\t\t\\tkzDrawSegments[->,very thick,red](g1,o1 o1,b1)\n\t\t\t\t\t\\tkzLabelSegment[below](g1,o1){\\tiny$\\dfrac{T}{6}$}\n\t\t\t\t\t\\tkzLabelSegment[below](o1,b1){\\tiny$\\dfrac{T}{6}$}\n\t\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t\t\n\n\t\t\tKhoảng thời gian ngắn nhất cần tìm là: $\\Delta t  = \\dfrac{T}{6}+\\dfrac{T}{6}=\\dfrac{T}{3}=\\dfrac{1}{12}\\ s$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-7",
@@ -99,7 +105,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\t\n\n\t\t\t\t\t-  \n\t\t\t\t\tTa có: $|x|> +3\\sqrt{2}\\ cm \\Rightarrow x> +3\\sqrt{2}\\ cm$ hoặc $x< -3\\sqrt{2}\\ cm$\n\t\t\t\t\t-  Ta biểu diễn các điểm có li độ $3\\sqrt{2}$ trên đường tròn lượng giác như hình vẽ.\n\t\t\t\t\t-  Trong một chu kì dao động, khoảng cách từ chất điểm tới vị trí cân bằng lớn hơn $3\\sqrt{2}$  khi nó đi từ vị trí $M_1$ đến $M_2$ và từ $M_3$ đến $M_0\\Rightarrow t = \\dfrac{T}{4}+\\dfrac{T}{4} = \\dfrac{T}{2} = \\dfrac{3}{2} = 1,5\\ s$.\n\t\t\t\n\n__TIKZ_START__/images/tikz/tikz_on-tap-2_2.svg|\\begin{tikzpicture}[scale=1,thick,>=stealth']\n\t\t\t\t\t\t\t\t\t\t\\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-135:2){0}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-45:2){1}\n\t\t\t\t\t\\tkzDefShiftPoint[o](45:2){2}\n\t\t\t\t\t\\tkzDefShiftPoint[o](135:2){3}\n\t\t\t\t\t\\tkzDefPointBy[projection=onto m--n](1) \\tkzGetPoint{h}\n\t\t\t\t\t\\tkzDefPointBy[projection=onto m--n](0) \\tkzGetPoint{h'}\n\t\t\t\t\t\\draw(o)circle(2cm);\n\t\t\t\t\t\\tkzDrawSegments[dashed](0,3 1,2)\n\t\t\t\t\t\\tkzDrawSegments(p,q)\n\t\t\t\t\t\\tkzDrawSegments[->](m,n)\n\t\t\t\t\t\\tkzDrawSegments[blue,->](o,1 o,2 o,0 o,3)\n\t\t\t\t\t\\tkzDrawPoints[size=3](o,1,h,0,2,3,h')\n\t\t\t\t\t\\tkzMarkAngles[size=0.7cm,arrows=->](1,o,2)\n\t\t\t\t\t\\tkzMarkAngles[size=0.7cm,arrows=->](3,o,0)\n\t\t\t\t\t\\node at (0)[below left]{$M_0$};\n\t\t\t\t\t\\node at (1)[below right]{$M_1$};\n\t\t\t\t\t\\node at (2)[above right]{$M_2$};\n\t\t\t\t\t\\node at (3)[above left]{$M_3$};\n\t\t\t\t\t\\node at (2,0)[below right]{$6$};\n\t\t\t\t\t\\node at (h')[below]{$-3\\sqrt{2}$};\n\t\t\t\t\t\\node at (h)[below]{$3\\sqrt{2}$};\n\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-8",
@@ -113,7 +120,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\t\n\n\t\t\t\t- \tDựa vào đường tròn vận tốc ta có thời gian thỏa mãn $v\\le \\dfrac{{{v}_{\\max}}}{2}$ là $\\dfrac{2T}{3}=\\dfrac{2\\pi}{3}$.\n\t\t\t\t\n\t\t\t\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-9",
@@ -127,7 +135,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\t\n\n\t\t\t\t-  \t\tTa có:\n\t\t\t\t$t = 100T \\Rightarrow S = 100.4A = 400A = 24\\ m$ (1T đi được 4A).\n\t\t\t\t\n\t\t\t\n\n\t\t\t\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-10",
@@ -141,7 +150,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\t\n\n\t\t\t\t\n\n\t\t\t\t\t-  $T = \\dfrac{2\\pi}{\\pi} = 2\\ s$.\n\t\t\t\t\t-  Ta có: $t = 3,5\\ s = 1.2 + 1,5$.\n\t\t\t\t\t-  Ta biểu diễn vị trí ban đâu của vật bằng điểm $M_0$ trên đường tròn lượng giác như hình vẽ.\n\t\t\t\t\t-  Trong khoảng thời gian 2 s, vật quay được góc $2\\pi$, tương ứng đi được quãng đường 4A và lại quay về vị trí $M_0$.\n\t\t\t\t\t-  Trong khoảng thời gian 1,5 giây tiếp theo, vật quay thêm được 1 góc $\\dfrac{3\\pi}{2}$, đến vị trí $M_1$ trên đường tròn lượng giác.\n\t\t\t\t\t-  Quãng đường chất điểm đi được trong 3,5 s là $s = 4A \\dfrac{A}{\\sqrt{2}}+2A+ \\dfrac{A}{\\sqrt{2}} = 6A+A\\sqrt{2} = 2,5.6,36\\Rightarrow  A = 3\\ cm$.\n\t\t\t\t\n\n\t\t\t\n\n__TIKZ_START__/images/tikz/tikz_on-tap-2_3.svg|\\begin{tikzpicture}[scale=1,thick,>=stealth']\n\t\t\t\t\t\t\t\t\t\t\\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}\n\t\t\t\t\t\\tkzDefShiftPoint[o](45:2){0}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-45:2){m'}\n\t\t\t\t\t\\tkzDefPointBy[projection=onto m--n](m') \\tkzGetPoint{h}\n\t\t\t\t\t\\draw(o)circle(2cm);\n\t\t\t\t\t\\tkzDrawSegments[dashed](m',0)\n\t\t\t\t\t\\tkzDrawSegments(p,q)\n\t\t\t\t\t\\tkzDrawSegments[->](m,n)\n\t\t\t\t\t\\tkzDrawSegments[blue,->](o,0 o,m')\n\t\t\t\t\t\\tkzDrawPoints[size=3](o,h,0,m')\n\t\t\t\t\t\\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')\n\t\t\t\t\t\\node at (0)[above right]{$M_0$};\n\t\t\t\t\t\\node at (m')[below right]{$M_1$};\n\t\t\t\t\t\\node at (2,0)[below right]{$A$};\n\t\t\t\t\t\\node at (h)[below]{$\\dfrac{A}{\\sqrt{2}}$};\n\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-11",
@@ -155,7 +165,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\tChu kì của dao động: $T=0,4\\ s\\Rightarrow f=2,5\\ Hz$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-12",
@@ -169,7 +180,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\t\n\n\t\t\t\t\t-  TLN: 126\n\t\t\t\t\t-  Ta có: $\\omega=20\\ \\ct{vòng/phút}=\\dfrac{2\\pi}{3}\\ rad/s$.\n\t\t\t\t\t-  $\\Delta \\varphi=\\omega .\\Delta t=0,75.\\dfrac{2\\pi}{3}=\\dfrac{\\pi}{2}$.\n\t\t\t\t\t-  Từ hình vẽ ta thấy li độ của đầu mút cánh số 2 ở thời điểm 0,75 s là: $x_2=-60\\sqrt{3}\\ cm$.\n\t\t\t\t\t-  Tốc độ khi đó: $v_2=\\dfrac{\\omega A}{2}=\\dfrac{\\dfrac{2\\pi}{3}.120}{2}\\approx 126\\ m/s$.\n\t\t\t\n\n__TIKZ_START__/images/tikz/tikz_on-tap-2_5.svg|\\begin{tikzpicture}[scale=1,thick,>=stealth']\n\t\t\t\t\t\\tkzDefPoints{0/0/o}\n\t\t\t\t\t\\draw (o) circle(2cm);\n\t\t\t\t\t\\draw[->] (-2.5,0) -- (2.5,0);\n\t\t\t\t\t\\draw[very thick,red] (0,0) -- (2,0);\n\t\t\t\t\t\\draw[very thick,red] (0,0) -- (-1,1.75);\n\t\t\t\t\t\\draw[very thick,red] (0,0) -- (-1,-1.75);\n\t\t\t\t\t\\draw[very thick,blue] (0,0) -- (0,2);\n\t\t\t\t\t\\draw[very thick,blue] (0,0) -- (-1.75,-1);\n\t\t\t\t\t\\draw[very thick,blue] (0,0) -- (1.75,-1);\n\t\t\t\t\t\\tkzDrawPoints[size=4,fill=white](o)\n\t\t\t\t\t\\node[red] at (2.25,2) {$(t=0)$};\n\t\t\t\t\t\\node[red] at (2.5,0.5) {$(1)$};\n\t\t\t\t\t\\node[red] at (-1.25,2) {$(2)$};\n\t\t\t\t\t\\node[red] at (-1.25,-2.25) {$(3)$};\n\t\t\t\t\t\\node[blue] at (0,2.25) {$(1)$};\n\t\t\t\t\t\\node[blue] at (-2.25,-1.25) {$(2)$};\n\t\t\t\t\t\\node[blue] at (2.25,-1.25) {$(3)$};\n\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-13",
@@ -183,7 +195,8 @@ export default {
       "correctOption": 3,
       "explanation": "\n\t\t\tTần số góc $\\omega $ dao động của con lắc lò xo là:\n\t\t\t$\\omega =\\sqrt{\\dfrac{k}{m}}\\Leftrightarrow 20=\\sqrt{\\dfrac{200}{m}}\\Rightarrow m=0,5\\ kg=500\\ g$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-14",
@@ -197,7 +210,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tCơ năng của con lắc là $\\dfrac{1}{2}{kA}^2$. \n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-15",
@@ -211,7 +225,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\tChu kì dao động của con lắc đơn: $T=2\\pi \\sqrt{\\dfrac{\\ell}{g}}$",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-16",
@@ -225,7 +240,8 @@ export default {
       "correctOption": 1,
       "explanation": "\n\t\t\tBiên độ dao động của vật: $A=\\dfrac{\\ell_{\\max}-\\ell_{\\min}}{2}=4\\ cm$.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-17",
@@ -239,7 +255,8 @@ export default {
       "correctOption": 2,
       "explanation": "\n\t\t\tCơ năng của con lắc đơn không tỉ lệ thuận với biên độ góc $\\Rightarrow $ C sai.\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-18",
@@ -253,7 +270,8 @@ export default {
       "correctOption": 2,
       "explanation": "Độ lớn vận tốc khi vật có li độ góc 0,04 rad\n\t\t\t\n$$\n\\begin{aligned}\n\t\t\t\t\\begin{cases}\n\t\t\t\t\tT=2\\pi \\sqrt{\\dfrac{\\ell}{g}}\\Rightarrow g=\\dfrac{4\\pi ^2\\ell}{T^2}\n\t\t\t\t\t\\\\\n\t\t\t\t\tv^2=g\\ell\\left(\\alpha_0^2-\\alpha ^2\\right)=\\dfrac{4\\pi ^2\\ell^2}{T^2}\\left(\\alpha_0^2-\\alpha ^2\\right)\\Rightarrow \\left|v\\right|=0,04\\pi \\ m/s\\\\ \n\t\t\t\t\\end{cases}\n\t\t\t\\end{aligned}\n$$\n\n\t\t",
       "qType": "multiple_choice",
-      "type": "Phần I: Trắc nghiệm 1 lựa chọn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-2-ex-19",
@@ -272,7 +290,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-2-ex-20",
@@ -291,7 +310,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-2-ex-21",
@@ -310,7 +330,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Sai.\n\t\t\t-  Sai.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-2-ex-22",
@@ -329,7 +350,8 @@ export default {
       ],
       "explanation": "\n\t\t\n\n\t\t\t-  Sai. Biên độ dao động vật là $5\\ cm$.\n\t\t\t-  Sai. Tại vị trí $t=0$ vật có li độ $x= \\dfrac{5\\sqrt{2}}{2}\\ cm$.\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
-      "type": "Phần II: Câu hỏi Đúng/Sai"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần II: Câu hỏi Đúng/Sai"
     },
     {
       "id": "on-tap-2-ex-23",
@@ -338,7 +360,8 @@ export default {
       "correctOption": "1,26",
       "explanation": "\n\t\t$1,26 \\ m/s$\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-2-ex-24",
@@ -347,7 +370,8 @@ export default {
       "correctOption": "33",
       "explanation": "\n\t\t$33 \\ s$\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-2-ex-25",
@@ -356,7 +380,8 @@ export default {
       "correctOption": "0,15",
       "explanation": "\n\t\t0,15\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-2-ex-26",
@@ -365,7 +390,8 @@ export default {
       "correctOption": "2,09",
       "explanation": "\n\t\t2,09\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-2-ex-27",
@@ -374,7 +400,8 @@ export default {
       "correctOption": "40",
       "explanation": "\n\t\t$40 \\ cm$",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-2-ex-28",
@@ -383,7 +410,8 @@ export default {
       "correctOption": "1",
       "explanation": "\n\t\t\n\n\t\t\t-  Ta có: $\\omega = \\dfrac{2\\pi}{T} = \\dfrac{2\\pi}{\\dfrac{1}{\\pi}} = 20\\ rad/s$.\n\t\t\t-  Tại vị trí cân bằng, lò xo giãn một đoạn $\\Delta \\ell_0 = \\dfrac{g}{\\omega^2} = \\dfrac{10}{20^2} = 0,025\\ m = 2,5\\ cm$.\n\t\t\t-  Mà độ nén lớn nhất của lò xo trong quá trình dao động là 2,5 cm $\\Rightarrow A = 2,5 + 2,5 = 5\\ cm\\Rightarrow v_{\\max} = \\omega.A = 20.5 = 100\\ cm/s = 1\\ m/s$.\n\t\t\n\n\t",
       "qType": "short_answer",
-      "type": "Phần III: Trả lời ngắn"
+      "type": "Đề ôn tập tổng hợp",
+      "part": "Phần III: Trả lời ngắn"
     }
   ]
 };

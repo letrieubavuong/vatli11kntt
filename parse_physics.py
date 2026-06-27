@@ -505,7 +505,8 @@ def parse_exercises_file(file_path, lesson_id):
             "correctOption": correct_option,
             "explanation": explanation_content,
             "qType": q_type,
-            "type": cat_type
+            "type": "Đề ôn tập tổng hợp",
+            "part": cat_type
         })
         
     return exercises
