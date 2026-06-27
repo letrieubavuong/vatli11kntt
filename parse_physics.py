@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import shutil
 
 # Metadata for mapping files to lessons and chapters for Grade 11
 LESSON_METADATA = {
@@ -371,7 +372,14 @@ def parse_tex_file(file_path, lesson_id):
 
 def main():
     tex_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt/TailieuTeX/Lythuyet"
-    output_js = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt/src/data/physicsData.js"
+    output_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt/src/data"
+    output_js = os.path.join(output_dir, "physicsData.js")
+    output_lessons_dir = os.path.join(output_dir, "lessons")
+    
+    # Recreate clean lessons folder
+    if os.path.exists(output_lessons_dir):
+        shutil.rmtree(output_lessons_dir)
+    os.makedirs(output_lessons_dir, exist_ok=True)
 
     files = [f for f in os.listdir(tex_dir) if f.endswith(".tex")]
     
@@ -405,6 +413,13 @@ def main():
             "exercises": [] # Empty per user instruction
         }
         
+        # Output individual lesson file for dynamic import
+        lesson_file_path = os.path.join(output_lessons_dir, f"{meta['id']}.js")
+        with open(lesson_file_path, "w", encoding="utf-8") as lf:
+            lf.write("export default ")
+            lf.write(json.dumps(lesson_data, ensure_ascii=False, indent=2))
+            lf.write(";\n")
+        
         chapter_lessons_map[meta["chapter"]].append(lesson_data)
         
     # Build final list
@@ -423,7 +438,23 @@ def main():
     with open(output_js, "w", encoding="utf-8") as out:
         out.write(js_content)
         
-    print(f"SUCCESS: Generated {output_js} with {len(files_to_process)} lessons.")
+    # Build and generate catalog file
+    catalog = []
+    for c in CHAPTERS:
+        catalog.append({
+            "id": c["id"],
+            "title": c["title"],
+            "lessons": [
+                {"id": l["id"], "title": l["title"]} for l in chapter_lessons_map[c["id"]]
+            ]
+        })
+    catalog_file_path = os.path.join(output_dir, "physicsCatalog.js")
+    with open(catalog_file_path, "w", encoding="utf-8") as cf:
+        cf.write("export const physicsCatalog = ")
+        cf.write(json.dumps(catalog, ensure_ascii=False, indent=2))
+        cf.write(";\n")
+        
+    print(f"SUCCESS: Generated {output_js}, {catalog_file_path}, and lessons in {output_lessons_dir}")
 
 if __name__ == "__main__":
     main()

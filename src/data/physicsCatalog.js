@@ -1,61 +1,31 @@
 export const physicsCatalog = [
   {
     "id": "chuong-1",
-    "title": "Chương I: Vật lí nhiệt",
+    "title": "Chương I: Dao động cơ học",
     "lessons": [
       {
         "id": "bai-1",
-        "title": "Bài 1: Mô hình động học phân tử về cấu tạo chất"
+        "title": "Bài 1: Dao động điều hoà"
       },
       {
         "id": "bai-2",
-        "title": "Bài 2: Sự chuyển thể của chất"
+        "title": "Bài 2: Vận tốc và gia tốc trong dao động điều hoà"
       },
       {
         "id": "bai-3",
-        "title": "Bài 3: Nội năng. Định luật I nhiệt động lực học"
+        "title": "Bài 3: Phương pháp đường tròn trong dao động điều hoà"
       },
       {
         "id": "bai-4",
-        "title": "Bài 4: Khái niệm nhiệt độ. Thang nhiệt độ"
+        "title": "Bài 4: Con lắc lò xo"
       },
       {
         "id": "bai-5",
-        "title": "Bài 5: Nhiệt dung riêng"
+        "title": "Bài 5: Con lắc đơn"
       },
       {
         "id": "bai-6",
-        "title": "Bài 6: Nhiệt nóng chảy riêng. Nhiệt hóa hơi riêng"
-      }
-    ]
-  },
-  {
-    "id": "chuong-2",
-    "title": "Chương II: Khí lí tưởng",
-    "lessons": [
-      {
-        "id": "bai-7",
-        "title": "Bài 7: Đặc điểm chuyển động phân tử khí. Khí lí tưởng"
-      },
-      {
-        "id": "bai-8",
-        "title": "Bài 8: Định luật Boyle"
-      },
-      {
-        "id": "bai-9",
-        "title": "Bài 9: Định luật Charles"
-      },
-      {
-        "id": "bai-10",
-        "title": "Bài 10: Phương trình trạng thái của khí lí tưởng"
-      },
-      {
-        "id": "bai-11",
-        "title": "Bài 11: Áp suất khí theo mô hình động học phân tử. Động năng phân tử"
-      },
-      {
-        "id": "bai-12",
-        "title": "Bài 12: Quá trình đẳng tích"
+        "title": "Bài 6: Các loại dao động"
       }
     ]
   }
