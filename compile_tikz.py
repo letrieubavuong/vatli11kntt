@@ -5,12 +5,15 @@ import shutil
 
 # Metadata for mapping files to lessons and chapters for Grade 11
 LESSON_METADATA = {
-    "2P1M1": {"title": "Bài 1: Dao động điều hoà", "id": "bai-1", "chapter": "chuong-1"},
-    "2P1M2": {"title": "Bài 2: Vận tốc và gia tốc trong dao động điều hoà", "id": "bai-2", "chapter": "chuong-1"},
-    "2P1M3": {"title": "Bài 3: Phương pháp đường tròn trong dao động điều hoà", "id": "bai-3", "chapter": "chuong-1"},
-    "2P1M4": {"title": "Bài 4: Con lắc lò xo", "id": "bai-4", "chapter": "chuong-1"},
-    "2P1M5": {"title": "Bài 5: Con lắc đơn", "id": "bai-5", "chapter": "chuong-1"},
-    "2P1M6": {"title": "Bài 6: Các loại dao động", "id": "bai-6", "chapter": "chuong-1"}
+    "2P1M1": {"title": "Bài 1: Dao động điều hoà", "id": "bai-1", "chapter": "chuong-1", "type": "theory"},
+    "2P1M2": {"title": "Bài 2: Vận tốc và gia tốc trong dao động điều hoà", "id": "bai-2", "chapter": "chuong-1", "type": "theory"},
+    "2P1M3": {"title": "Bài 3: Phương pháp đường tròn trong dao động điều hoà", "id": "bai-3", "chapter": "chuong-1", "type": "theory"},
+    "2P1M4": {"title": "Bài 4: Con lắc lò xo", "id": "bai-4", "chapter": "chuong-1", "type": "theory"},
+    "2P1M5": {"title": "Bài 5: Con lắc đơn", "id": "bai-5", "chapter": "chuong-1", "type": "theory"},
+    "2P1M6": {"title": "Bài 6: Các loại dao động", "id": "bai-6", "chapter": "chuong-1", "type": "theory"},
+    "2L1.1": {"title": "Ôn tập Chương I - Đề 1", "id": "on-tap-1", "chapter": "chuong-1", "type": "review"},
+    "2L1.2": {"title": "Ôn tập Chương I - Đề 2", "id": "on-tap-2", "chapter": "chuong-1", "type": "review"},
+    "2L1.3": {"title": "Ôn tập Chương I - Đề 3", "id": "on-tap-3", "chapter": "chuong-1", "type": "review"}
 }
 
 CHAPTERS = [
@@ -274,27 +277,20 @@ def process_file_tikz(file_path, lesson_id):
         tikz_counter += 1
 
 def main():
-    tex_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt/TailieuTeX/Lythuyet"
-    files = [f for f in os.listdir(tex_dir) if f.endswith(".tex")]
+    base_repo_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt"
     
-    files_to_process = []
-    for f in files:
-        base_name = os.path.splitext(f)[0]
-        if base_name in LESSON_METADATA:
-            files_to_process.append(f)
+    for base_name, meta in LESSON_METADATA.items():
+        if meta.get("type") == "review":
+            file_path = os.path.join(base_repo_dir, "TailieuTeX", "Dethi", f"{base_name}.tex")
+        else:
+            file_path = os.path.join(base_repo_dir, "TailieuTeX", "Lythuyet", f"{base_name}.tex")
             
-    def get_sort_key(filename):
-        base = os.path.splitext(filename)[0]
-        parts = re.findall(r'\d+', base)
-        return [int(x) for x in parts]
-        
-    files_to_process.sort(key=get_sort_key)
-    
-    for f in files_to_process:
-        base_name = os.path.splitext(f)[0]
-        meta = LESSON_METADATA[base_name]
-        file_path = os.path.join(tex_dir, f)
-        print(f"\nProcessing TikZ in {f}...")
+        file_path = os.path.normpath(file_path)
+        if not os.path.exists(file_path):
+            print(f"File not found: {file_path}")
+            continue
+            
+        print(f"\nProcessing TikZ in {base_name}.tex ...")
         process_file_tikz(file_path, meta["id"])
 
 if __name__ == "__main__":

@@ -5,12 +5,15 @@ import shutil
 
 # Metadata for mapping files to lessons and chapters for Grade 11
 LESSON_METADATA = {
-    "2P1M1": {"title": "Bài 1: Dao động điều hoà", "id": "bai-1", "chapter": "chuong-1"},
-    "2P1M2": {"title": "Bài 2: Vận tốc và gia tốc trong dao động điều hoà", "id": "bai-2", "chapter": "chuong-1"},
-    "2P1M3": {"title": "Bài 3: Phương pháp đường tròn trong dao động điều hoà", "id": "bai-3", "chapter": "chuong-1"},
-    "2P1M4": {"title": "Bài 4: Con lắc lò xo", "id": "bai-4", "chapter": "chuong-1"},
-    "2P1M5": {"title": "Bài 5: Con lắc đơn", "id": "bai-5", "chapter": "chuong-1"},
-    "2P1M6": {"title": "Bài 6: Các loại dao động", "id": "bai-6", "chapter": "chuong-1"}
+    "2P1M1": {"title": "Bài 1: Dao động điều hoà", "id": "bai-1", "chapter": "chuong-1", "type": "theory"},
+    "2P1M2": {"title": "Bài 2: Vận tốc và gia tốc trong dao động điều hoà", "id": "bai-2", "chapter": "chuong-1", "type": "theory"},
+    "2P1M3": {"title": "Bài 3: Phương pháp đường tròn trong dao động điều hoà", "id": "bai-3", "chapter": "chuong-1", "type": "theory"},
+    "2P1M4": {"title": "Bài 4: Con lắc lò xo", "id": "bai-4", "chapter": "chuong-1", "type": "theory"},
+    "2P1M5": {"title": "Bài 5: Con lắc đơn", "id": "bai-5", "chapter": "chuong-1", "type": "theory"},
+    "2P1M6": {"title": "Bài 6: Các loại dao động", "id": "bai-6", "chapter": "chuong-1", "type": "theory"},
+    "2L1.1": {"title": "Ôn tập Chương I - Đề 1", "id": "on-tap-1", "chapter": "chuong-1", "type": "review"},
+    "2L1.2": {"title": "Ôn tập Chương I - Đề 2", "id": "on-tap-2", "chapter": "chuong-1", "type": "review"},
+    "2L1.3": {"title": "Ôn tập Chương I - Đề 3", "id": "on-tap-3", "chapter": "chuong-1", "type": "review"}
 }
 
 CHAPTERS = [
@@ -199,22 +202,10 @@ def check_image_exists(image_name):
     # Default fallback
     return f"images/{clean_name}.png"
 
-def parse_tex_file(file_path, lesson_id):
-    with open(file_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
+def clean_latex_content(content, lesson_id):
     # Normalize missing backslashes in source typos
     content = re.sub(r'\\?immini', r'\\immini', content)
     content = re.sub(r'\\?includegraphics', r'\\includegraphics', content)
-
-    # 1. Strip comments (lines starting with %) but not inside Tikz/code
-    lines = content.split('\n')
-    cleaned_lines = []
-    for line in lines:
-        if line.strip().startswith('%') and not line.strip().startswith('%mac'):
-            continue
-        cleaned_lines.append(line)
-    content = '\n'.join(cleaned_lines)
 
     # 2. Extract Tikzpictures and replace with [TIKZ: url|code] tags
     tikz_counter = 1
@@ -312,7 +303,6 @@ def parse_tex_file(file_path, lesson_id):
     content = process_ghichu_commands(content)
     content = process_bang_environments(content)
 
-
     # Headings
     content = re.sub(r'\\subsection\*?{([\s\S]*?)}', r'## \1', content)
     content = re.sub(r'\\subsubsection\*?{([\s\S]*?)}', r'### \1', content)
@@ -330,6 +320,7 @@ def parse_tex_file(file_path, lesson_id):
     content = content.replace(r'\faEdit', '📝')
 
     # Clean environments list
+    content = content.replace('\\begin{itemchoice}', '\n').replace('\\end{itemchoice}', '\n').replace('\\end{- choice}', '\n')
     content = content.replace('\\begin{itemize}', '\n').replace('\\end{itemize}', '\n')
     content = content.replace('\\begin{enumerate}', '\n').replace('\\end{enumerate}', '\n')
     content = content.replace('\\begin{enumEX}', '\n').replace('\\end{enumEX}', '\n')
@@ -337,7 +328,9 @@ def parse_tex_file(file_path, lesson_id):
 
     # Convert \item
     content = re.sub(r'\\item\s*\[(.*?)\]', r'- **\1** ', content)
+    content = re.sub(r'\\itemch', r'- ', content)
     content = re.sub(r'\\item', r'- ', content)
+    content = content.replace('- ch', '- ')
 
     # Convert \includegraphics
     def replace_image(match):
@@ -370,9 +363,156 @@ def parse_tex_file(file_path, lesson_id):
     
     return content.strip()
 
+def parse_tex_file(file_path, lesson_id):
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Strip comments (lines starting with %) but not inside Tikz/code
+    lines = content.split('\n')
+    cleaned_lines = []
+    for line in lines:
+        if line.strip().startswith('%') and not line.strip().startswith('%mac'):
+            continue
+        cleaned_lines.append(line)
+    content = '\n'.join(cleaned_lines)
+
+    return clean_latex_content(content, lesson_id)
+
+def parse_exercises_file(file_path, lesson_id):
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Strip LaTeX comments (anything starting with % not escaped by \)
+    content = re.sub(r'(?<!\\)%.*', '', content)
+
+    # Normalize motcot, haicot, bacot, boncot to choice
+    content = content.replace(r'\motcot', r'\choice')
+    content = content.replace(r'\haicot', r'\choice')
+    content = content.replace(r'\bacot', r'\choice')
+    content = content.replace(r'\boncot', r'\choice')
+
+    # Clean the entire content first so TikZ counters match perfectly
+    cleaned_content = clean_latex_content(content, lesson_id)
+
+    # Extract cleaned ex blocks
+    ex_blocks = []
+    idx = 0
+    while True:
+        match = re.search(r'\\begin{ex}', cleaned_content[idx:])
+        if not match:
+            break
+        match_start = idx + match.start()
+        end_match = re.search(r'\\end{ex}', cleaned_content[match_start:])
+        if not end_match:
+            break
+        end_idx = match_start + end_match.end()
+        ex_blocks.append(cleaned_content[match_start:end_idx])
+        idx = end_idx
+
+    exercises = []
+    for q_idx, block in enumerate(ex_blocks):
+        # Determine question type
+        q_type = 'multiple_choice'
+        options = []
+        correct_option = 0
+        
+        # Check if shortans or choiceTF or choice
+        shortans_match = re.search(r'\\shortans(?:\[.*?\])?{(.*?)}', block)
+        choice_tf_match = re.search(r'\\choiceTF(?:\[.*?\])?', block)
+        choice_match = re.search(r'\\choice', block)
+        
+        end_q_idx = len(block) - 8 # exclude \end{ex}
+        if shortans_match:
+            q_type = 'short_answer'
+            end_q_idx = min(end_q_idx, shortans_match.start())
+        elif choice_tf_match:
+            q_type = 'true_false'
+            end_q_idx = min(end_q_idx, choice_tf_match.start())
+        elif choice_match:
+            q_type = 'multiple_choice'
+            end_q_idx = min(end_q_idx, choice_match.start())
+        else:
+            q_type = 'short_answer' # fallback
+            
+        q_text = block[:end_q_idx].strip()
+        if q_text.startswith(r'\begin{ex}'):
+            q_text = q_text[len(r'\begin{ex}'):].strip()
+        
+        if q_type == 'short_answer':
+            if shortans_match:
+                ans_val = shortans_match.group(1).strip()
+            else:
+                ans_val = ""
+            correct_option = ans_val
+        elif q_type == 'true_false':
+            start_tf = choice_tf_match.end()
+            curr = start_tf
+            correct_option = []
+            for _ in range(4):
+                while curr < len(block) and block[curr].isspace():
+                    curr += 1
+                if curr < len(block) and block[curr] == '{':
+                    stmt, next_curr = parse_braces(block, curr)
+                    is_true = False
+                    if stmt.strip().startswith(r'\True'):
+                         is_true = True
+                         stmt = stmt.replace(r'\True', '').strip()
+                    options.append(stmt)
+                    correct_option.append(is_true)
+                    curr = next_curr
+        elif q_type == 'multiple_choice':
+            if choice_match:
+                start_c = choice_match.end()
+                curr = start_c
+                for i in range(4):
+                    while curr < len(block) and block[curr].isspace():
+                        curr += 1
+                    if curr < len(block) and block[curr] == '{':
+                        opt, next_curr = parse_braces(block, curr)
+                        if opt.strip().startswith(r'\True'):
+                             correct_option = i
+                             opt = opt.replace(r'\True', '').strip()
+                        options.append(opt)
+                        curr = next_curr
+            else:
+                correct_option = 0
+                options = ["", "", "", ""]
+                    
+        # Extract explanation
+        loigiai_match = re.search(r'\\loigiai', block)
+        if loigiai_match:
+            start_lg = loigiai_match.end()
+            while start_lg < len(block) and block[start_lg].isspace():
+                start_lg += 1
+            if start_lg < len(block) and block[start_lg] == '{':
+                explanation_content, _ = parse_braces(block, start_lg)
+            else:
+                explanation_content = ""
+        else:
+            explanation_content = ""
+            
+        if q_type == 'multiple_choice':
+            cat_type = "Phần I: Trắc nghiệm 1 lựa chọn"
+        elif q_type == 'true_false':
+            cat_type = "Phần II: Câu hỏi Đúng/Sai"
+        elif q_type == 'short_answer':
+            cat_type = "Phần III: Trả lời ngắn"
+            
+        exercises.append({
+            "id": f"{lesson_id}-ex-{q_idx + 1}",
+            "question": q_text,
+            "options": options,
+            "correctOption": correct_option,
+            "explanation": explanation_content,
+            "qType": q_type,
+            "type": cat_type
+        })
+        
+    return exercises
+
 def main():
-    tex_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt/TailieuTeX/Lythuyet"
-    output_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt/src/data"
+    base_repo_dir = "C:/Users/ThayVuongNTK/Documents/GitHub/vatli11kntt"
+    output_dir = os.path.join(base_repo_dir, "src", "data")
     output_js = os.path.join(output_dir, "physicsData.js")
     output_lessons_dir = os.path.join(output_dir, "lessons")
     
@@ -380,37 +520,33 @@ def main():
     if os.path.exists(output_lessons_dir):
         shutil.rmtree(output_lessons_dir)
     os.makedirs(output_lessons_dir, exist_ok=True)
-
-    files = [f for f in os.listdir(tex_dir) if f.endswith(".tex")]
-    
-    files_to_process = []
-    for f in files:
-        base_name = os.path.splitext(f)[0]
-        if base_name in LESSON_METADATA:
-            files_to_process.append(f)
-            
-    def get_sort_key(filename):
-        base = os.path.splitext(filename)[0]
-        parts = re.findall(r'\d+', base)
-        return [int(x) for x in parts]
-        
-    files_to_process.sort(key=get_sort_key)
     
     chapter_lessons_map = {c["id"]: [] for c in CHAPTERS}
     
-    for f in files_to_process:
-        base_name = os.path.splitext(f)[0]
-        meta = LESSON_METADATA[base_name]
-        file_path = os.path.join(tex_dir, f)
-        
-        print(f"Parsing TeX: {f}...")
-        parsed_theory = parse_tex_file(file_path, meta["id"])
-        
+    for base_name, meta in LESSON_METADATA.items():
+        if meta.get("type") == "review":
+            file_path = os.path.join(base_repo_dir, "TailieuTeX", "Dethi", f"{base_name}.tex")
+        else:
+            file_path = os.path.join(base_repo_dir, "TailieuTeX", "Lythuyet", f"{base_name}.tex")
+            
+        file_path = os.path.normpath(file_path)
+        if not os.path.exists(file_path):
+            print(f"File not found: {file_path}")
+            continue
+            
+        print(f"Parsing: {base_name}.tex ...")
+        if meta.get("type") == "review":
+            parsed_theory = ""
+            parsed_exercises = parse_exercises_file(file_path, meta["id"])
+        else:
+            parsed_theory = parse_tex_file(file_path, meta["id"])
+            parsed_exercises = []
+            
         lesson_data = {
             "id": meta["id"],
             "title": meta["title"],
             "theory": parsed_theory,
-            "exercises": [] # Empty per user instruction
+            "exercises": parsed_exercises
         }
         
         # Output individual lesson file for dynamic import
@@ -430,7 +566,7 @@ def main():
             "title": c["title"],
             "lessons": chapter_lessons_map[c["id"]]
         })
-        
+    
     js_content = "export const physicsData = "
     json_str = json.dumps(final_curriculum, ensure_ascii=False, indent=2)
     js_content += json_str + ";\n"

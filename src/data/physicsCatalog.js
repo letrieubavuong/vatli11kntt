@@ -26,6 +26,18 @@ export const physicsCatalog = [
       {
         "id": "bai-6",
         "title": "Bài 6: Các loại dao động"
+      },
+      {
+        "id": "on-tap-1",
+        "title": "Ôn tập Chương I - Đề 1"
+      },
+      {
+        "id": "on-tap-2",
+        "title": "Ôn tập Chương I - Đề 2"
+      },
+      {
+        "id": "on-tap-3",
+        "title": "Ôn tập Chương I - Đề 3"
       }
     ]
   }
