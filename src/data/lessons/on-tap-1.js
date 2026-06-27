@@ -365,20 +365,20 @@ export default {
     },
     {
       "id": "on-tap-1-ex-24",
-      "question": "Một chất điểm dao động điều hòa theo phương trình $x=5 \\sin \\left(2 \\pi t+\\dfrac{\\pi}{3}\\right)\\ cm$. Thời điểm chất điểm đi qua vị trí có li độ $-2,5 \\ cm$ theo chiều dương lần thứ $2024$ là bao nhiêu phút kể từ thời điểm ban đầu (làm tròn kết quả đến chữ số hàng phần mười)?",
+      "question": "Một con lắc lò xo gồm quả cầu nhỏ có khối lượng $m = 100\\ g$ dao động điều hòa với tần số góc $\\omega = 20\\ rad/s$ và biên độ $A = 10\\ cm$. Tại vị trí vật có li độ $x = 5\\ cm$, cơ năng của con lắc bằng bao nhiêu Joule (nhập kết quả dưới dạng số thập phân)?",
       "options": [],
-      "correctOption": "33,7",
-      "explanation": "\n\t\t33,7 phút\n\t",
+      "correctOption": "0,2",
+      "explanation": "Đổi khối lượng $m = 100\\ g = 0,1\\ kg$ and biên độ $A = 10\\ cm = 0,1\\ m$.\nCơ năng của con lắc lò xo không phụ thuộc vào li độ và được tính theo công thức:\n$W = \\dfrac{1}{2} m \\omega^2 A^2 = \\dfrac{1}{2} \\cdot 0,1 \\cdot 20^2 \\cdot 0,1^2 = 0,2\\ J$.",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-25",
-      "question": "Một vật dao động điều hòa với chu kì $T$. Thời gian ngắn nhất vật đi từ vị trí gia tốc vật có giá trị cực đại đến vị trí vận tốc vật có giá trị cực tiểu là bao nhiêu chu kì?",
+      "question": "Một con lắc lò xo có độ cứng $k = 100\\ N/m$ dao động điều hòa với biên độ $A = 6\\ cm$. Tại vị trí vật có li độ $x = 3\\ cm$, động năng của con lắc là bao nhiêu Joule (nhập kết quả dưới dạng số thập phân)?",
       "options": [],
-      "correctOption": "0,75",
-      "explanation": "\n\t\t0,75\n\t",
+      "correctOption": "0,135",
+      "explanation": "Đổi biên độ $A = 6\\ cm = 0,06\\ m$ và li độ $x = 3\\ cm = 0,03\\ m$.\nCơ năng của con lắc: $W = \\dfrac{1}{2} k A^2 = \\dfrac{1}{2} \\cdot 100 \\cdot 0,06^2 = 0,18\\ J$.\nThế năng tại vị trí $x$: $W_t = \\dfrac{1}{2} k x^2 = \\dfrac{1}{2} \\cdot 100 \\cdot 0,03^2 = 0,045\\ J$.\nĐộng năng của con lắc tại vị trí đó: $W_đ = W - W_t = 0,18 - 0,045 = 0,135\\ J$.",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
