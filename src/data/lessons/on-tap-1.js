@@ -80,90 +80,90 @@ export default {
     },
     {
       "id": "on-tap-1-ex-6",
-      "question": "Một vật dao động điều hòa với biên độ A, tần số 5 Hz. Thời gian ngắn nhất để vật đi từ vị trí có li độ $x_1 = - 0,5A$ đến vị trí có li độ $x_2 = 0,5A$ là",
+     "question": "Với gốc thế năng được chọn tại vị trí cân bằng. Phát biểu nào sau đây là **sai** khi nói về cơ năng của con lắc đơn khi dao động điều hòa?",
       "options": [
-        "$1\\ s$",
-        "$\\dfrac{1}{10}\\ s$",
-        "$\\dfrac{1}{30}\\ s$",
-        "$\\dfrac{1}{20}\\ s$"
+        "Cơ năng bằng thế năng của vật ở vị trí biên",
+        "Cơ năng bằng tổng động năng và thế năng của vật khi qua vị trí bất kì",
+        "Cơ năng của con lắc đơn tỉ lệ thuận với biên độ góc",
+        "Cơ năng bằng động năng của vật khi qua vị trí cân bằng"
       ],
       "correctOption": 2,
-      "explanation": "\n\t\t\t\n\n\t\t\t\t\n__TIKZ_START__/images/tikz/tikz_on-tap-1_1.svg|\\begin{tikzpicture}\n\t\t\t\t\t\\tkzDefPoints{0/0/o, 5/0/a, 4.325/0/b, 3.525/0/c, 2.5/0/d,  -5/0/h, -4.325/0/g, -3.525/0/f, -2.5/0/e, -6/0/x', 6/0/x}\n\t\t\t\t\t\\tkzDefShiftPoint[e](-90:0.5cm){e1}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-90:0.5cm){o1}\n\t\t\t\t\t\\tkzDefShiftPoint[d](-90:0.5cm){d1}\n\t\t\t\t\t\\tkzDrawSegments[blue,->,very thick](x',x)\n\t\t\t\t\t\\tkzDrawPoints[size=5,fill=black](o,a,b,c,d,e,f,g,h)\n\t\t\t\t\t\\tkzLabelPoint[above](o){\\tiny $O$}\n\t\t\t\t\t\\tkzLabelPoint[above](a){\\tiny$A$}\n\t\t\t\t\t\\tkzLabelPoint[above](b){\\tiny$\\dfrac{A\\sqrt{3}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](c){\\tiny$\\dfrac{A\\sqrt{2}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](d){\\tiny$\\dfrac{A}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](h){\\tiny$-A$}\n\t\t\t\t\t\\tkzLabelPoint[above](g){\\tiny $-\\dfrac{A\\sqrt{3}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](f){\\tiny$-\\dfrac{A\\sqrt{2}}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](e){\\tiny$-\\dfrac{A}{2}$}\n\t\t\t\t\t\\tkzLabelPoint[above](x){\\tiny$x$}\n\t\t\t\t\t\\tkzDrawSegments[->,very thick,red](e1,o1 o1,d1)\n\t\t\t\t\t\\tkzLabelSegment[below](e1,o1){\\tiny$\\Delta t_1=\\dfrac{T}{12}$}\n\t\t\t\t\t\\tkzLabelSegment[below](o1,d1){\\tiny$\\Delta t_2=\\dfrac{T}{12}$}\n\t\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t\t\n\n\t\t\tTa có: $\\Delta t=\\Delta t_1+\\Delta t_2=\\dfrac{T}{6}=\\dfrac{1}{30}\\ s$.\n\t\t",
+      "explanation": "\n\t\t\tCơ năng của con lắc đơn không tỉ lệ thuận với biên độ góc $\\Rightarrow $ C sai.\n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-7",
-      "question": "Vật dao động điều hoà với biên độ $6\\ cm$, chu kì $1,2\\ s$. Trong một chu kì, khoảng thời gian để li độ ở trong khoảng $(- 3\\ cm;\\ 3\\ cm)$ là",
+      "question": "Một con lắc đơn có chiều dài $\\ell$ dao động điều hòa tại nơi có gia tốc trọng trường $g$. Chu kì dao động riêng của con lắc này là",
       "options": [
-        "$0,3\\ s$",
-        "$0,2\\ s$",
-        "$0,6\\ s$",
-        "$0,4\\ s$"
+        "$\\dfrac{1}{2\\pi}\\sqrt{\\dfrac{\\ell}{g}}$",
+        "$\\dfrac{1}{2\\pi}\\sqrt{\\dfrac{g}{\\ell}}$",
+        "$2\\pi \\sqrt{\\dfrac{\\ell}{g}}$",
+        "$2\\pi \\sqrt{\\dfrac{g}{\\ell}}$"
       ],
-      "correctOption": 3,
-      "explanation": "\n\t\t\t\n\n\t\t\t\t-  Ta thấy $[-3\\ cm;\\ 3\\ cm] = [-\\dfrac{A}{2};\\ \\dfrac{A}{2}]$.\n\t\t\t\t-  Trong nửa chu kì thì vật đi từ vị trí có li độ $\\dfrac{A}{2}$ đến $-\\dfrac{A}{2}$ sẽ ứng với góc quay được là $\\varphi = \\dfrac{\\pi}{3}\\ rad$ và hết khoảng thời gian $t_1 = \\dfrac{T}{6}$. \n\t\t\t\t-  Trong nửa chu kì còn lại vật sẽ có li độ $[-3\\ cm;\\ 3\\ cm]$ trong khoảng thời gian $t_1$ nhưng theo chiều ngược lại.\n\t\t\t\t-  Trong một chu kì, khoảng thời gian để li độ của vật trong khoảng $[-3\\ cm;\\ 3\\ cm]$ là $\\Delta t = 2t_1 = \\dfrac{T}{3} = 0,4\\ s$.\n\t\t\t\n\n\t\t",
+      "correctOption": 2,
+      "explanation": "\n\t\t\tChu kì dao động của con lắc đơn: $T=2\\pi \\sqrt{\\dfrac{\\ell}{g}}$",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-8",
-      "question": "Một vật dao động với phương trình $x=6\\cos\\left( \\dfrac{10\\pi t}{3} \\right)\\ cm$. Tính từ $t = 0$ thời điểm lần thứ $2013$ vật có tốc độ $10\\pi \\ cm/s$ là",
+      "question": "Một con lắc lò xo gồm vật nhỏ có khối lượng m và lò xo có độ cứng k, dao động điều hòa với phương trình $x=A\\cos \\left({\\omega t+\\varphi }\\right)$. Mốc thế năng ở vị trí cân bằng. Cơ năng của con lắc là",
       "options": [
-        "$302,35\\ s$",
-        "$301,85\\ s$",
-        "$302,05\\ s$",
-        "$302,15\\ s$"
+        "$\\dfrac{1}{2}{mA}^2$",
+        "$\\dfrac{1}{2}{kA}^2$",
+        "$\\dfrac{1}{2}{mx}^2$",
+        "$\\dfrac{1}{2}{kx}^2$"
       ],
       "correctOption": 1,
-      "explanation": "\n\t\t\t\n\n\t\t\t\t-  Chu kì: $T=\\dfrac{2\\pi }{\\omega }=0,6\\ s$.\n\t\t\t\t-  Thay tốc độ $10\\pi \\ cm/s$ vào phương trình: $x^2+\\dfrac{v^2}{\\omega ^2}=A^2\\Rightarrow \\left| x\\right|=3\\sqrt{3}\\ cm$. \n\t\t\t\t-  Ta nhận thấy: $\\dfrac{2013}{4}=503$ dư 1 \n\t\t\t\t$\\Rightarrow t=503T+t_1$ nên ta chỉ cần tìm $t_1$:\\\\\n\t\t\t\t$t_1=\\dfrac{T}{12}\\Rightarrow t=503T+\\dfrac{T}{12}=301,85\\ s$. \n\t\t\n",
+      "explanation": "\n\t\t\tCơ năng của con lắc là $\\dfrac{1}{2}{kA}^2$. \n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-9",
-      "question": "Một vật dao động điều hoà trên trục Ox, tại thời điểm t nào đó vận tốc có giá trị âm và gia tốc có giá trị dương. Tại thời điểm $t + \\dfrac{T}{2}$ thì",
+      "question": "Một con lắc lò xo gồm lò xo có độ cứng $k=200\\ N/m$, vật nhỏ khối lượng m, dao động điều hòa với tần số góc $20\\ rad/s$. Giá trị của m là",
       "options": [
-        "vận tốc và gia tốc có giá trị âm",
-        "vận tốc có giá trị dương, gia tốc có giá trị âm",
-        "vận tốc và gia tốc có giá trị dương",
-        "vận tốc có giá trị âm, gia tốc có giá trị dương"
+        "$100\\ g$",
+        "$200\\ g$",
+        "$400\\ g$",
+        "$500\\ g$"
       ],
-      "correctOption": 1,
-      "explanation": "\n\t\t\tThời điểm t, vật có $v < 0,\\ a > 0$, tức vật đang có li độ âm (li độ và gia tốc luôn trái dấu) và đi theo chiều âm, sau $\\dfrac{T}{2}$ trạng thái dao động ngược lại nên vật có $v > 0, a < 0$ (li độ dương).\n\t\t",
+      "correctOption": 3,
+      "explanation": "\n\t\t\tTần số góc $\\omega $ dao động của con lắc lò xo là:\n\t\t\t$\\omega =\\sqrt{\\dfrac{k}{m}}\\Leftrightarrow 20=\\sqrt{\\dfrac{200}{m}}\\Rightarrow m=0,5\\ kg=500\\ g$.\n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-10",
-      "question": "Cho chất điểm M đang chuyển động tròn đều trên một quỹ đạo tròn có bán kính bằng $30\\ cm$, với tốc độ góc là $\\pi\\ rad/s$. Gọi P là hình chiếu của điểm M xuống một đường thẳng đi qua tâm và nằm trong mặt phẳng quỹ đạo. Tốc độ chuyển động trung bình của điểm P trong quãng thời gian $3\\ s$ là",
+      "question": "Cho một chất điểm dao động điều hòa theo phương trình $x = A\\cos(\\pi t + \\dfrac{\\pi}{4})$, x tính bằng cm và t tính bằng s. Tính từ thời điểm ban đầu, tốc độ trung bình của vật trong $3,5\\ s$ chuyển động là $6,36\\ cm/s$. Biên độ dao động của chất điểm là",
       "options": [
-        "$20\\ cm/s$",
-        "$60\\ cm/s$",
-        "$\\dfrac{20}{3}\\ cm/s$",
-        "$40\\ cm/s$"
+        "$6\\ cm$",
+        "$3\\ cm$",
+        "$4\\ cm$",
+        "$5\\ cm$"
       ],
       "correctOption": 1,
-      "explanation": "\n\t\t\t\n\n\t\t\t\t-  Trong khoảng thời gian 3 s chất điểm quay được góc: $\\Delta \\varphi = 3\\pi = 2\\pi + \\pi\\Rightarrow  \\Delta s = 4A+2A= 180\\ cm$.\n\t\t\t\t-  Tốc độ trung bình bằng: $180:3 = 60\\ cm/s$.\n\t\t\t\n\n\t\t",
+      "explanation": "\n\t\t\t\n\n\t\t\t\t\n\n\t\t\t\t\t-  $T = \\dfrac{2\\pi}{\\pi} = 2\\ s$.\n\t\t\t\t\t-  Ta có: $t = 3,5\\ s = 1.2 + 1,5$.\n\t\t\t\t\t-  Ta biểu diễn vị trí ban đâu của vật bằng điểm $M_0$ trên đường tròn lượng giác như hình vẽ.\n\t\t\t\t\t-  Trong khoảng thời gian 2 s, vật quay được góc $2\\pi$, tương ứng đi được quãng đường 4A và lại quay về vị trí $M_0$.\n\t\t\t\t\t-  Trong khoảng thời gian 1,5 giây tiếp theo, vật quay thêm được 1 góc $\\dfrac{3\\pi}{2}$, đến vị trí $M_1$ trên đường tròn lượng giác.\n\t\t\t\t\t-  Quãng đường chất điểm đi được trong 3,5 s là $s = 4A \\dfrac{A}{\\sqrt{2}}+2A+ \\dfrac{A}{\\sqrt{2}} = 6A+A\\sqrt{2} = 2,5.6,36\\Rightarrow  A = 3\\ cm$.\n\t\t\t\t\n\n\t\t\t\n\n__TIKZ_START__/images/tikz/tikz_on-tap-2_3.svg|\\begin{tikzpicture}[scale=1,thick,>=stealth']\n\t\t\t\t\t\t\t\t\t\t\\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}\n\t\t\t\t\t\\tkzDefShiftPoint[o](45:2){0}\n\t\t\t\t\t\\tkzDefShiftPoint[o](-45:2){m'}\n\t\t\t\t\t\\tkzDefPointBy[projection=onto m--n](m') \\tkzGetPoint{h}\n\t\t\t\t\t\\draw(o)circle(2cm);\n\t\t\t\t\t\\tkzDrawSegments[dashed](m',0)\n\t\t\t\t\t\\tkzDrawSegments(p,q)\n\t\t\t\t\t\\tkzDrawSegments[->](m,n)\n\t\t\t\t\t\\tkzDrawSegments[blue,->](o,0 o,m')\n\t\t\t\t\t\\tkzDrawPoints[size=3](o,h,0,m')\n\t\t\t\t\t\\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')\n\t\t\t\t\t\\node at (0)[above right]{$M_0$};\n\t\t\t\t\t\\node at (m')[below right]{$M_1$};\n\t\t\t\t\t\\node at (2,0)[below right]{$A$};\n\t\t\t\t\t\\node at (h)[below]{$\\dfrac{A}{\\sqrt{2}}$};\n\t\t\t\\end{tikzpicture}__TIKZ_END__\n\n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-11",
-      "question": "Cho đồ thị hai dao động điều hòa như hình vẽ. Độ lệch pha của chúng là",
+      "question": "Một chất điểm dao động điều hoà với chu kì $T=\\dfrac{\\pi}{10}\\ s$ và biên độ $A = 6\\ cm$. Quãng đường vật đi được trong $10\\pi\\ s$ là",
       "options": [
-        "$\\pi$",
-        "$3\\pi$",
-        "$\\dfrac{\\pi}{2}$",
-        "$0$"
+        "$9\\ m$",
+        "$24\\ m$",
+        "$6\\ m$",
+        "$1\\ m$"
       ],
-      "correctOption": 3,
-      "explanation": "\n\t\t\tHai dao động cùng pha $\\Delta \\varphi =2k\\pi $",
+      "correctOption": 1,
+      "explanation": "\n\t\t\t\n\n\t\t\t\t-  \t\tTa có:\n\t\t\t\t$t = 100T \\Rightarrow S = 100.4A = 400A = 24\\ m$ (1T đi được 4A).\n\t\t\t\t\n\t\t\t\n\n\t\t\t\n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
@@ -245,50 +245,50 @@ export default {
     },
     {
       "id": "on-tap-1-ex-17",
-      "question": "Vận tốc của con lắc đơn có vật nặng khối lượng m, chiều dài dây treo $\\ell$, dao động với biên độ góc $\\alpha _m$ khi qua li độ góc $\\alpha $ được tính theo biểu thức nào sau đây?",
+     "question": "Trong quá trình dao động, vận tốc của vật có giá trị bằng không (vật dừng lại tức thời) khi vật ở",
       "options": [
-        "$v^2=2mg\\ell\\left({\\cos\\alpha - \\cos\\alpha _m}\\right)$",
-        "$v^2=mg\\ell\\left({\\cos\\alpha _m-\\cos\\alpha }\\right)$",
-        "$v^2=2g\\ell\\left({\\cos\\alpha -\\cos\\alpha _m}\\right)$",
-        "$v^2=mg\\ell\\left({\\cos\\alpha - \\cos\\alpha _m}\\right)$"
+        "biên dương ($x = A$)",
+        "biên âm ($x = -A$)",
+        "đi qua vị trí cân bằng theo chiều âm",
+        "biên dương hoặc biên âm"
       ],
-      "correctOption": 2,
-      "explanation": "\n\t\t\tVận tốc của con lắc đơn $v^2=2g\\ell\\left({\\cos \\alpha -\\cos \\alpha _m}\\right)$.\n\t\t",
+      "correctOption": 3,
+      "explanation": "\n\t\t\tTrong quá trình dao động, vận tốc của vật có giá trị bằng không (vật dừng lại tức thời) khi vật ở biên dương hoặc biên âm.\n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-18",
-      "question": "Một con lắc đơn có chiều dài $\\ell = 1$ m được kéo ra khỏi vị trí cân bằng một góc $\\alpha _0=5^\\circ$ so với phương thẳng đứng rồi thả nhẹ cho vật dao động. Cho $g=\\pi ^2=10\\ m/s^2$. Tốc độ của con lắc khi về đến giá trị cân bằng có giá trị là",
+       "question": "Cho một chất điểm đang dao động điều hòa với biên độ A. Biết tại thời điểm ban đầu $\\left(t = 0\\right)$ chất điểm đi qua vị trí có li độ $\\dfrac{A}{2}$ và đang chuyển động theo chiều dương của trục tọa độ. Pha ban đầu của dao động là",
       "options": [
-        "$15,8\\ m/s$",
-        "$0,278\\ m/s$",
-        "$0,028\\ m/s$",
-        "$0,087\\ m/s$"
+        "$\\dfrac{\\pi}{4}\\ rad$",
+        "$\\dfrac{\\pi}{6}\\ rad$",
+        "$\\dfrac{\\pi}{3}\\ rad$",
+        "$-\\dfrac{\\pi}{3}\\ rad$"
       ],
-      "correctOption": 1,
-      "explanation": "\n\t\t\tVận tốc con lắc khi qua vị trí cân bằng:  $v_{\\max}=\\omega.S_0=\\sqrt{\\dfrac{g}{\\ell}}.\\ell.\\alpha_0=0,278$ m/s.\n\t\t",
+      "correctOption": 3,
+      "explanation": "\n\t\t\tSử dụng đường tròn lượng giác ta suy ra được pha của dao động là $-\\dfrac{\\pi}{3}$.\n\t\t",
       "qType": "multiple_choice",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần I: Trắc nghiệm 1 lựa chọn"
     },
     {
       "id": "on-tap-1-ex-19",
-      "question": "Một vật dao động điều hòa với phương trình: $x=10 \\cos \\left(2 \\pi t-\\dfrac{\\pi}{2}\\right)\\ cm$ (t đo bằng giây).",
+      "question": "Dao động cơ học xuất hiện trong nhiều hệ thống, từ dao động của con lắc đồng hồ đến sự nhún của lò xo giảm xóc ô tô.",
       "options": [
-        "Thời gian ngắn nhất vật đi từ vị trí có li độ $-10 \\ cm$ đến vị trí có li độ $-5 \\ cm$ là $0,5 \\ s$",
-        "Thời gian ngắn nhất vật đi từ vị trí có li độ $5 \\sqrt{3} \\ cm$ đến vị trí cách vị trí cân bằng $5 \\ cm$ là $\\dfrac{1}{4} \\ s$",
-        "Thời gian ngắn nhất vật đi từ vị trí cân bằng đến vị trí có li độ $5 \\sqrt{2} \\ cm$ là $\\dfrac{1}{8}\\ s$",
-        "Thời gian ngắn nhất vật đi từ vị trí cách vị trí cân bằng $5 \\ cm$ đến vị trí có li độ $-5 \\sqrt{2} \\ cm$ là $\\dfrac{1}{24} \\ s$"
+        "Dao động cơ học là chuyển động qua lại của một vật xung quanh vị trí cân bằng",
+        "Dao động cơ của một vật luôn là dao động tuần hoàn",
+        "Dao động điều hòa là dao động trong đó li độ được mô tả bằng một định luật dạng cosin (hay sin) theo thời gian",
+        "Dao động điều hòa là trường hợp đặc biệt của dao động tuần hoàn"
       ],
       "correctOption": [
-        false,
+        true,
         false,
         true,
         true
       ],
-      "explanation": "\n\t\t\n\n\t\t\t-  Sai.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
+      "explanation": "\n\t\t\n\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần II: Câu hỏi Đúng/Sai"
@@ -315,20 +315,20 @@ export default {
     },
     {
       "id": "on-tap-1-ex-21",
-      "question": "Một chất điểm dao động điều hòa với biên độ $6 \\ cm$ và chu kì $2 \\ s$.",
+     "question": "Một con lắc lò xo dao động trên mặt phẳng nằm ngang với phương trình $x=5 \\cos \\left(5 \\pi t-\\dfrac{\\pi}{4}\\right)\\ cm$. Khi vật ở vị trí cân bằng lò xo có chiều dài là $30 \\ cm$.",
       "options": [
-        "Thời gian dài nhất để chất điểm đi được quãng đường bằng $18 \\ cm$ là $\\dfrac{4}{3} \\ s$",
-        "Thời gian ngắn nhất để chất điểm đi được quãng đường bằng $6 \\sqrt{3} \\ cm$ là $\\dfrac{2}{3} \\ s$",
-        "Thời gian dài nhất để chất điểm đi được quãng đường $6 \\ cm$ là $0,4 \\ s$",
-        "Thời gian dài nhất để chất điểm đi quãng được đường bằng $66 \\ cm$ là $\\dfrac{16}{3} \\ s$"
+        "Biên độ dao động vật là $5 \\pi\\ cm$",
+        "Tại vị trí $t=0$ vật có li độ $x=5 \\sqrt{2}\\ cm$",
+        "Tốc độ cực đại trong quá trình dao động là $v=25 \\pi\\ cm/s$",
+        "Chiều dài cực đại lò xo trong quá trình dao động là $35 \\ cm$"
       ],
       "correctOption": [
         false,
-        true,
         false,
-        false
+        true,
+        true
       ],
-      "explanation": "\n\t\t\n\n\t\t\t-  Sai.\n\t\t\t-  Đúng.\n\t\t\t-  Sai.\n\t\t\t-  Sai\n\t\t\\end{- oice}\n\t",
+      "explanation": "\n\t\t\n\n\t\t\t-  Sai. Biên độ dao động vật là $5\\ cm$.\n\t\t\t-  Sai. Tại vị trí $t=0$ vật có li độ $x= \\dfrac{5\\sqrt{2}}{2}\\ cm$.\n\t\t\t-  Đúng.\n\t\t\t-  Đúng.\n\t\t\\end{- oice}\n\t",
       "qType": "true_false",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần II: Câu hỏi Đúng/Sai"
@@ -365,50 +365,50 @@ export default {
     },
     {
       "id": "on-tap-1-ex-24",
-      "question": "Một chất điểm dao động điều hòa theo phương trình $x=5 \\sin \\left(2 \\pi t+\\dfrac{\\pi}{3}\\right)\\ cm$. Thời điểm chất điểm đi qua vị trí có li độ $-2,5 \\ cm$ theo chiều dương lần thứ $2024$ là bao nhiêu phút kể từ thời điểm ban đầu (làm tròn kết quả đến chữ số hàng phần mười)?",
+      "question": "Một con lắc lò xo gồm quả cầu nhỏ có khối lượng $m = 100\\ g$ dao động điều hòa với tần số góc $\\omega = 20\\ rad/s$ và biên độ $A = 10\\ cm$. Tại vị trí vật có li độ $x = 5\\ cm$, cơ năng của con lắc bằng bao nhiêu Joule (nhập kết quả dưới dạng số thập phân)?",
       "options": [],
-      "correctOption": "33,7",
-      "explanation": "\n\t\t33,7 phút\n\t",
+      "correctOption": "0,2",
+      "explanation": "Đổi khối lượng $m = 100\\ g = 0,1\\ kg$ and biên độ $A = 10\\ cm = 0,1\\ m$.\nCơ năng của con lắc lò xo không phụ thuộc vào li độ và được tính theo công thức:\n$W = \\dfrac{1}{2} m \\omega^2 A^2 = \\dfrac{1}{2} \\cdot 0,1 \\cdot 20^2 \\cdot 0,1^2 = 0,2\\ J$.",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-25",
-      "question": "Một vật dao động điều hòa với chu kì $T$. Thời gian ngắn nhất vật đi từ vị trí gia tốc vật có giá trị cực đại đến vị trí vận tốc vật có giá trị cực tiểu là bao nhiêu chu kì?",
+      "question": "Một con lắc lò xo có độ cứng $k = 100\\ N/m$ dao động điều hòa với biên độ $A = 6\\ cm$. Tại vị trí vật có li độ $x = 3\\ cm$, động năng của con lắc là bao nhiêu Joule (nhập kết quả dưới dạng số thập phân)?",
       "options": [],
-      "correctOption": "0,75",
-      "explanation": "\n\t\t0,75\n\t",
+      "correctOption": "0,135",
+      "explanation": "Đổi biên độ $A = 6\\ cm = 0,06\\ m$ và li độ $x = 3\\ cm = 0,03\\ m$.\nCơ năng của con lắc: $W = \\dfrac{1}{2} k A^2 = \\dfrac{1}{2} \\cdot 100 \\cdot 0,06^2 = 0,18\\ J$.\nThế năng tại vị trí $x$: $W_t = \\dfrac{1}{2} k x^2 = \\dfrac{1}{2} \\cdot 100 \\cdot 0,03^2 = 0,045\\ J$.\nĐộng năng của con lắc tại vị trí đó: $W_đ = W - W_t = 0,18 - 0,045 = 0,135\\ J$.",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-26",
-      "question": "Một chất điểm dao động điều hòa với phương trình $x=4 \\cos \\left(4 \\pi t+\\dfrac{2 \\pi}{3}\\right)\\ (cm)$ ($t$ tính bằng $s$). Quãng đường lớn nhất chất điểm đi được bằng bao nhiêu $cm$ trong khoảng thời gian $\\Delta t=\\dfrac{1}{8} \\ s$ (làm tròn kết quả đến chữ số hàng phần trăm)?",
+       "question": "Một chất điểm dao động điều hòa dọc theo trục $O x$ trên quỹ đạo dài $10 \\ cm$. Biết chất điểm thực hiện được 20 dao động toàn phần trong $5 \\ s$. Tốc độ cực đại của vật trong quá trình dao động bằng bao nhiêu $m/s$ (làm tròn kết quả đến chữ số hàng phần trăm)?",
       "options": [],
-      "correctOption": "5,66",
-      "explanation": "\n\t\t$5,66 \\ cm$\n\t",
+      "correctOption": "1,26",
+      "explanation": "\n\t\t$1,26 \\ m/s$\n\t",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-27",
-      "question": "Con lắc lò xo treo thẳng đứng, dao động điều hòa với phương trình $x=5 \\cos \\left(4 \\pi t+\\dfrac{\\pi}{3}\\right)\\ cm$. Chiều dài tự nhiên của lò xo là $40 \\ cm$. Chọn chiều dương hướng lên. Lấy $g=\\pi^2 \\ m/s^2$. Chiều dài của lò xo là bao nhiêu  centimet khi vật dao động được $\\dfrac{2T}{3}$, kể từ thời điểm $t=0$ (làm tròn kết quả đến chữ số hàng phần mười)?",
+      "question": "Con lắc lò xo treo thẳng đứng, dao động điều hòa với phương trình $x = 5 \\cos \\left(4 \\pi t + \\dfrac{\\pi}{3}\\right)\\ cm$ (chọn chiều dương hướng xuống). Chiều dài tự nhiên của lò xo là $40\\ cm$. Lấy $g = \\pi^2\\ m/s^2 = 10\\ m/s^2$. Chiều dài cực đại của lò xo trong quá trình dao động là bao nhiêu centimet?",
       "options": [],
-      "correctOption": "43,8",
-      "explanation": "43,8",
+      "correctOption": "51,2",
+      "explanation": "Tần số góc $\\omega = 4\\pi\\ rad/s$. Độ giãn của lò xo ở vị trí cân bằng: $\\Delta \\ell_0 = \\dfrac{g}{\\omega^2} = \\dfrac{10}{(4\\pi)^2} = 0,0625\\ m = 6,25\\ cm$. Chiều dài cực đại của lò xo khi vật ở vị trí thấp nhất: $\\ell_{\\max} = \\ell_0 + \\Delta \\ell_0 + A = 40 + 6,25 + 5 = 51,25\\ cm$ (làm tròn đến hàng phần mười là 51,2).",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
     },
     {
       "id": "on-tap-1-ex-28",
-      "question": "Một con lắc lò xo treo thẳng đứng tại nơi có $g = 10\\ m/s^2$. Vật đang cân bằng thì lò xo giãn $5\\ cm$. Kéo vật xuống dưới vị trí cân bằng $1\\ cm$ rồi truyền cho nó tốc độ $v_0$. Sau đó vật dao động điều hòa với tốc độ cực đại $30\\sqrt{2}\\ cm/s$. Giá trị của $v_0$ là bao nhiêu cm/s?",
+      "question": "Một con lắc lò xo treo thẳng đứng dao động điều hòa với tần số góc $\\omega = 10\\ rad/s$. Từ vị trí cân bằng, kéo vật xuống dưới một đoạn $3\\ cm$ rồi truyền cho nó một vận tốc có độ lớn $40\\ cm/s$ theo phương thẳng đứng. Biên độ dao động của con lắc là bao nhiêu centimet?",
       "options": [],
-      "correctOption": "40",
-      "explanation": "\n\t\t\n\n\t\t\t-  Ta có: $\\Delta \\ell_0 = 5\\ cm \\Rightarrow \\omega  = 10\\sqrt{2}\\  rad/s,\\ v_{\\max} =  30\\sqrt{2}\\ cm/s \\Rightarrow A = 3\\ cm$.\n\t\t\t-  Khi truyền tốc độ $v_0$, vật đang có $\\left|x\\right| = 1\\ cm \\Rightarrow v_0=\\omega \\sqrt{A^2-x^2}=  40\\ cm/s.$\t\n\t\t\n\n\t",
+      "correctOption": "5",
+      "explanation": "Tại vị trí kéo vật, li độ của vật là $x = 3\\ cm$, vận tốc truyền cho vật là $v = 40\\ cm/s$. Áp dụng công thức độc lập với thời gian: $A = \\sqrt{x^2 + \\dfrac{v^2}{\\omega^2}} = \\sqrt{3^2 + \\dfrac{40^2}{10^2}} = \\sqrt{9 + 16} = 5\\ cm$.",
       "qType": "short_answer",
       "type": "Đề ôn tập tổng hợp",
       "part": "Phần III: Trả lời ngắn"
