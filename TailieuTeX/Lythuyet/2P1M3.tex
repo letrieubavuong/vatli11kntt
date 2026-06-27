@@ -1,0 +1,156 @@
+\newghichu{Một điểm dao động điều hòa \bth{x=A\cos(\omega t+\varphi)} trên một đoạn thẳng có thể coi là hình chiếu của một điểm M chuyển động tròn đều lên một trục nằm trong mặt phẳng quỹ đạo và đi qua tâm quỹ đạo.}
+\subsubsection{Quy ước}
+\immini{\begin{itemize}
+\item Tốc độ quay của chất điểm trên đường tròn là $\omega\ (rad/s)$.
+\item Chiều quay là chiều ngược chiều kim đồng hồ.
+\item Khi M ở nửa trên đường tròn thì vật đang đi theo chiều âm.
+\item Khi M ở nửa dưới đường tròn thì vật đang đi theo chiều âm.
+\item Góc mà bán kính OM nối với vật chuyển động quét được trong khoảng thời gian $\Delta t$ trong quá trình chuyển động tròn đều bằng: $\Delta \varphi=\omega.\Delta t$
+\end{itemize}
+}{
+\begin{tikzpicture}[draw=Mapcolor, very thick,]
+
+\path
+
+(-1.5,2)coordinate(M)
+
+(2.5,0)coordinate(A)
+
+(-2.5,0)coordinate(-A);
+
+\coordinate (o) at (0,0);
+
+\draw[->] (-2.8,0)--(3,0) node (xline)[right] {\normalsize{x}};
+
+%\draw[->] (0,-2.7)--(0,3) node (yline)[above] {\normalsize{y}};
+
+\coordinate (a) at (-3.7,-3.5); \draw[dashed] (a)--(3,-3.5)node(zline){};
+
+\draw (o) circle (2.5);
+
+\foreach \x in {45} {
+
+\draw (o) --node[midway,above]{{}} (\x:2.5);
+
+\filldraw[black] (\x:2.5) circle(1.5pt);
+
+\draw[densely dashed] (\x:2.5) -- (\x:2.5 |- xline) ;
+
+}
+
+\foreach \y in {315} {
+
+%\draw (o) --node[midway,above]{\normalsize{A}} (\x:2.5);
+
+% \filldraw[black] (\x:2.5) circle(1.5pt);
+
+\draw[densely dashed] (\y:2.5) -- (\y:2.5 |- xline);
+
+\draw[densely dashed] (\y:2.5) -- (\y:2.5 |- zline) coordinate (m);
+
+\draw[snake=coil,segment length=5pt,segment amplitude=5.5pt,line before snake=5pt,line after snake=15pt] (a) -- (m);
+
+\shade[ball color=gray] (m) circle (1.4ex);
+
+\node[white] at (m){\small{m}};
+
+}
+
+\draw[->] (o)++(0:0.7) arc (0:45:0.7);
+
+\draw[->,thick] (o)++(45:0.566) arc (56.0442:116.6556:0.7);
+\draw[->] (o)++(60:2.6434) arc (59.3435:82.9694:2.7);
+
+\node[right] at (78:2.8358) {\normalsize{$\omega$}};
+\node[right] at (22.5:0.7){\normalsize{$\varphi$}};
+\draw[ultra thick] (-3.7,-3.8)--(-3.7,-3.2);
+\draw (0,0) -- (-1.5,2);
+\foreach \x/\g in {A/320,-A/145,o/90}
+\draw[fill=white](\x) circle(0.05)+(\g:0.3);
+\foreach \x/\g in {M/90}
+\draw[fill=Mapcolor](\x) circle(0.05)+(\g:0.3)node{$\x$};
+\node at (-2.875,-0.25) {$-A$};
+\node at (2.75,-0.25) {$A$};
+\node at (2,2) {$M_0$};
+\node at (0,0.75) {$\omega t$};
+\end{tikzpicture}
+}
+\subsubsection{Cách biểu diễn dao động điều hòa trên đường tròn}
+\begin{itemize}
+\item Vẽ đường tròn tâm O bán kính A.
+\item Điểm $M_0$ thể hiện trạng thái của điểm dao động của vật ở thời điểm ban đầu $t=0$. Trên đường tròn xác định điểm $M_0$ hợp với trục Ox một góc $\varphi$.
+\item Pha ban đầu: $-\pi<\varphi\leq \pi$.
+\begin{itemize}
+\item Khi $M_0$ ở nửa trên đường tròn $\varphi>0$.
+\item Khi $M_0$ ở nửa dưới đường tròn $\varphi<0$.
+\end{itemize}
+
+\item Điểm $M$ thể hiện trạng thái của điểm dao động của vật ở thời điểm t. Trên đường tròn xác định điểm M hợp với trục Ox một góc $\omega t+\varphi$.
+\end{itemize}
+\subsubsection{Pha ban đầu ở các vị trí đặc biệt}
+\begin{center}
+\begin{tikzpicture}[scale=1,draw=Mapcolor, very thick,>=stealth']\tkzInit[ymin=-8,ymax=8,xmin=-8,xmax=8]
+\tkzClip\tkzDefPoints{0/0/o, 6/0/a,-6/0/b, 0/6/c, 0/-6/d, 7/0/x',-7/0/x, 0/7/y, 0/-7/y',2/-8/o', -8/-8/o''}
+\definecolor{maum}{RGB}{13,174,244}
+\definecolor{mauh}{RGB}{253,185,6}
+\definecolor{maub}{RGB}{103,208,1}
+\tkzDrawCircle[line width=2pt,radius,color=Mapcolor](o,a)
+\tkzDefShiftPoint[o](60:6){1}
+\tkzDefShiftPoint[o](45:6){2}
+\tkzDefShiftPoint[o](30:6){3}
+\tkzDefShiftPoint[o](-30:6){4}
+\tkzDefShiftPoint[o](-45:6){5}
+\tkzDefShiftPoint[o](-60:6){6}
+\tkzDefShiftPoint[o](-120:6){7}
+\tkzDefShiftPoint[o](-135:6){8}
+\tkzDefShiftPoint[o](-150:6){9}
+\tkzDefShiftPoint[o](150:6){10}
+\tkzDefShiftPoint[o](135:6){11}
+\tkzDefShiftPoint[o](120:6){12}
+\tkzDrawSegments[line width=2pt,->,Mapcolor](x,x')
+\tkzLabelPoint[above right](1){${\dfrac{\pi}{3}}$}
+\tkzLabelPoint[above right](2){${\dfrac{\pi}{4}}$}
+\tkzLabelPoint[above right](3){$ {\dfrac{\pi}{6}}$}
+\tkzLabelPoint[below right](4){$ {-\dfrac{\pi}{6}}$}
+\tkzLabelPoint[below right](5){$ {-\dfrac{\pi}{4}}$}
+\tkzLabelPoint[below right](6){$ {-\dfrac{\pi}{3}}$}
+\tkzLabelPoint[below left](7){$ {-\dfrac{2\pi}{3}}$}
+\tkzLabelPoint[below left](8){$ {-\dfrac{3\pi}{4}}$}\tkzLabelPoint[below left](9){$ {-\dfrac{5\pi}{6}}$}\tkzLabelPoint[above left](10){$ {\dfrac{5\pi}{6}}$}\tkzLabelPoint[above left](11){$ {\dfrac{3\pi}{4}}$}\tkzLabelPoint[above left](12){$ {\dfrac{2\pi}{3}}$}
+\tkzLabelPoint[above right](a){$ {0}$}
+\tkzLabelPoint[above left](b){$ {\pi}$}
+\tkzLabelPoint[below right,yshift=-5pt](a){$ {A}$}
+\tkzLabelPoint[below left,yshift=-5pt](b){$ {-A}$}
+\tkzLabelPoint[above](c){$ {\dfrac{\pi}{2}}$}
+\tkzLabelPoint[below](d){$ {-\dfrac{\pi}{2}}$}
+\tkzDefPointBy[projection=onto x--x'](1)
+\tkzGetPoint{h1}\tkzDefPointBy[projection=onto x--x'](2) 
+\tkzGetPoint{h2}\tkzDefPointBy[projection=onto x--x'](3) 
+\tkzGetPoint{h3}\tkzDefPointBy[projection=onto x--x'](10)
+\tkzGetPoint{h10}\tkzDefPointBy[projection=onto x--x'](11)
+\tkzGetPoint{h11}\tkzDefPointBy[projection=onto x--x'](12)
+\tkzGetPoint{h12}\tkzDefPointBy[projection=onto y--y'](1) 
+\tkzGetPoint{h1'}\tkzDefPointBy[projection=onto y--y'](2) 
+\tkzGetPoint{h2'}\tkzDefPointBy[projection=onto y--y'](3) 
+\tkzGetPoint{h3'}\tkzDefPointBy[projection=onto y--y'](4) 
+\tkzGetPoint{h10'}\tkzDefPointBy[projection=onto y--y'](5)
+\tkzGetPoint{h11'}\tkzDefPointBy[projection=onto y--y'](6)
+\tkzGetPoint{h12'}\tkzDrawSegments[green!50!black](3,4  9,10  2,5  8,11  1,6  7,12  1,7 2,8 3,9 4,10 5,11 6,12)
+\draw[Mapcolor!50] (c)--(d);
+\tkzDrawPoints[size=1.5,fill=white](1,2,3,4,5,6,7,8,9,10,11,12,h1,h2,h3,h10,h11,h12,o,a,b,c,d)
+\tkzLabelPoint[below,fill=white](o){$\scriptsize {O}$}
+\draw[white](h1)++(-90:0.2)--++(-90:0.8);
+\draw[white](h2)++(-90:0.2)--++(-90:0.8);
+\draw[white](h3)++(-90:0.2)--++(-90:0.8);
+\draw[white](h10)++(-90:0.2)--++(-90:0.8);
+\draw[white](h11)++(-90:0.2)--++(-90:0.8);
+\draw[white](h12)++(-90:0.2)--++(-90:0.8);
+\tkzLabelPoint[below=4.5pt](h1){$\scriptsize {\dfrac{A}{2}}$}
+\tkzLabelPoint[below=3pt](h2){$\scriptsize {\dfrac{\sqrt{2}A}{2}}$}
+\tkzLabelPoint[below=3pt](h3){$\scriptsize {\dfrac{\sqrt{3}A}{2}}$}
+\tkzLabelPoint[below=4.5pt](h12){$\scriptsize {-\dfrac{A}{2}}$}
+\tkzLabelPoint[below=3pt](h11){$\scriptsize {-\dfrac{\sqrt{2}A}{2}}$}
+\tkzLabelPoint[below=3pt](h10){$\scriptsize {-\dfrac{\sqrt{3}A}{2}}$}
+\end{tikzpicture}
+\end{center}
+
+

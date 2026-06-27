@@ -1,0 +1,508 @@
+\TieudeT{PHONG TỎA VẬT LÍ 11 - DAO ĐỘNG VÀ SÓNG}
+\subsubsection*{PHẦN I. Thí sinh trả lời câu hỏi từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án}
+\setcounter{ex}{0}
+	\begin{ex} %[3P1B1-1][Loai1]  
+		Phát biểu nào sau đây là \textbf{sai}? Dao động cơ điều hòa là một
+		\choice
+		{chuyển động có giới hạn trong không gian}
+		{dao động cơ học}
+		{dao động tuần hoàn}
+		{\True chuyển động có quỹ đạo hình sin}
+		\loigiai{
+			\begin{itemize}
+				\item Dao động điều hòa là một chuyển động lặp đi lặp lại quanh một vị trí cân bằng, mà li độ dao động là một hàm sin của thời gian nên D sai.
+		\end{itemize}}
+		%\haidong{5}
+	\end{ex}
+	%\loai{Quãng đường đi trong một chu kì}
+	\begin{ex}%[3P1-1.2B][Loai1]  
+		Một vật dao động điều hòa đi được quãng đường $16\ cm$ trong một chu kì dao động. Biên độ dao động của vật là
+		\choice
+		{\True $4\ cm$}
+		{$8\ cm$}
+		{$16\ cm$}
+		{$2\ cm$}
+		\loigiai{
+			Quãng đường mà vật đi được trong một chu kì:
+			$S=4A=16\ cm\Rightarrow A=4\ cm.$
+		}
+		%\haidong{7}
+	\end{ex}
+	
+	\begin{ex}%[3P1B4-1][Loai1]
+		Một chất điểm dao động điều hòa trên trục Ox có phương trình $x=10\sin \left(2\pi t+\dfrac{\pi}{3}\right)$ (x tính bằng cm, t tính bằng s) thì thời điểm $t = 2,5\ s$ thì vật
+		\choice
+		{\True đi qua vị trí có li độ $x=-5\sqrt{3}$ cm và đang chuyển động theo chiều âm trục Ox}
+		{đi qua vị trí có li độ $x=-5\sqrt{3}$ cm và đang chuyển động theo chiều dương trục Ox}
+		{đi qua vị trí có li độ $x = - 5$ cm và đang chuyển động theo chiều dương trục Ox}
+		{đi qua vị trí có li độ $x = - 5$ cm và đang chuyển động theo chiều âm của trục Ox}
+		\loigiai{
+			\begin{itemize}
+				\item Đưa phương trình dao động về dạng chuẩn tắc: $x=10 \cos\left(2\pi t-\dfrac{\pi}{6}\right)$ cm. 
+				\item Pha dao động của vật tại $t = 2,5$ s là: $\phi_{2,5\ s}=2\pi .2,5-\dfrac{\pi}{6}=\dfrac{29\pi}{6}\equiv \dfrac{5\pi}{6}\Leftrightarrow  x=-\dfrac{A\sqrt{3}}{2}=-5\sqrt{3}$ cm $(-)$.
+			\end{itemize}
+		}
+		%\haidong{10}
+	\end{ex}
+	%\loai{Những thời điểm vật qua li độ cho trước}
+	
+	\begin{ex}%[3P1K8-2][Loai1] 
+		Một vật dao động điều hòa với biểu thức li độ $x = 4\cos\left(0,5\pi t - \dfrac{\pi}{3}\right)$, trong đó, $x$ tính bằng $cm$, $t$ tính bằng giây. Vào thời điểm nào sau đây vật sẽ đi qua vị trí $x = 2\sqrt{3}\ cm$ theo chiều âm của trục tọa độ?
+		\choice
+		{$\dfrac{4}{3}\ s$}
+		{\True $5\ s$}
+		{$2\ s$}
+		{$\dfrac{1}{3}\ s$}
+		\loigiai{
+			\immini{\begin{itemize}
+					\item $T = 4\ s$; $\varphi = \dfrac{\pi}{2} \Rightarrow \Delta t= \dfrac{T}{4} = 1$.
+					\item Cứ sau 1 T vật lại qua vị trí đó lần nữa.
+					\item Tổng quát: $t = \Delta t + kT = \dfrac{T}{4}+ k.T = 1 + 4k$ thử 4 đáp án vào thấy $t = 5$ s cho $k = 1$ nguyên.
+			\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+					\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=4.5]\tkzClip
+					\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+					\tkzDefShiftPoint[o](30:2){2}
+					\tkzDefShiftPoint[o](-60:2){1}
+					\tkzDefPointBy[projection=onto m--n](2) \tkzGetPoint{h}
+					\draw(o)circle(2cm);
+					\tkzDrawSegments[dashed](2,h)
+					\tkzDrawSegments(p,q)
+					\tkzDrawSegments[->](m,n)
+					\tkzDrawSegments[blue,->](o,1 o,2)
+					\tkzDrawPoints[size=3](o,1,h,2)
+					\tkzMarkAngles[size=0.7cm,arrows=->](1,o,2)
+					\tkzLabelAngle[pos=0.5](1,o,n){$\varphi$}
+					\node at (1)[below right]{$t=0$};
+					\node at (2)[above right]{$t_2:\ x=2\sqrt{3}$};
+					\node at (2,0)[below right]{$4$};
+					\node at (h)[below left]{$2\sqrt{3}$};
+		\end{tikzpicture}}}
+		%\haidong{10}
+	\end{ex}
+	%\loai{Khoảng thời gian giữa hai lần liên liếp cách vị trí cân bằng một khoảng}
+	
+	
+	%\loai{Thời gian gian ngắn nhất vật có gia tốc}
+	\begin{ex} %[3P1K9-2][Loai1] 
+		Một vật nhỏ dao động điều hòa theo phương trình $x = A\cos\left(4\pi t + \varphi\right)$ (t tính bằng s). Tính từ $t=0$, khoảng thời gian ngắn nhất để gia tốc của vật có giá trị bằng một nửa gia tốc cực đại và vật đang đi theo chiều âm là $\dfrac{1}{24}\ s$. Pha ban đầu của dao động là
+		\choice
+		{$\dfrac{\pi}{12}$}
+		{$\dfrac{\pi}{6}$}
+		{$\dfrac{\pi}{4}$}
+		{\True $\dfrac{\pi}{2}$}
+		\loigiai{
+			\immini{
+				\begin{itemize}
+					\item Ta có: $T=\dfrac{2\pi}{4\pi} = 0, 5\ s$.
+					\item $t = \dfrac{1}{24}\ s = \dfrac{T}{12} \Rightarrow \alpha = \dfrac{\pi}{6}\Rightarrow$ Từ vị trí ban đầu vật quay thêm một góc $\dfrac{\pi}{6}$ để đến vị trí có gia tốc bằng một nửa gia tốc cực đại.
+					\item Ta biểu diễn vị trí có gia tốc bằng một nửa gia tốc cực đại tại vị trí các điểm $M_1$ và $M_3$ trên đường tròn lượng giác như hình vẽ.
+					\item Suy ra, thời điểm ban đầu, gia tốc của vật có thể ở vị trí $M_0$ hoặc $M_2$ trên đường tròn lượng giác.
+					\item Suy ra, pha ban đầu của gia tốc có thể là $-\dfrac{\pi}{2}$ hoặc $\dfrac{\pi}{6}$.
+				\end{itemize}
+			}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+					\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+					\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+					\tkzDefShiftPoint[o](-90:2){0}
+					\tkzDefShiftPoint[o](-60:2){1}
+					\tkzDefShiftPoint[o](30:2){2}
+					\tkzDefShiftPoint[o](60:2){3}
+					\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+					\draw(o)circle(2cm);
+					\tkzDrawSegments[dashed](1,3)
+					\tkzDrawSegments(p,q)
+					\tkzDrawSegments[->](m,n)
+					\tkzDrawSegments[blue,->](o,0 o,1 o,2 o,3)
+					\tkzDrawPoints[size=3](o,1,h,0,2,3)
+					\tkzMarkAngles[size=0.7cm,arrows=->](0,o,1 2,o,3)
+					\node at (0)[below left]{$M_0$};
+					\node at (1)[below right]{$M_1$};
+					\node at (2)[above right]{$M_2$};
+					\node at (3)[above]{$M_3$};
+					\node at (2,0)[below right]{$a_{\max}$};
+					\node at (h)[below]{$\dfrac{a_{\max}}{2}$};
+			\end{tikzpicture}}
+			\begin{itemize}
+				\item Gia tốc và li độ của vật ngược pha nên pha ban đầu của dao động là $\dfrac{\pi}{2}$ hoặc $-\dfrac{5\pi}{6}$.
+			\end{itemize}
+		}
+		%\haidong{15}
+	\end{ex}
+	%\loai{Cho $S_{\max}$ tính $S_{\min}$}
+	
+	%\loai{Cho đồ thị li độ, tìm vận tốc và gia tốc}
+	\begin{ex}%[3P1-19.1K][Loai1]
+		\immini[thm]{Hình vẽ bên là đồ thị biểu diễn sự phụ thuộc của li độ x vào thời gian t của một vật dao động điều hòa. Tốc độ cực đại của vật là
+			\choice
+			{$5,24\ cm/s$}
+			{$1,05\ cm/s$}
+			{\True $3,14\ cm/s$}
+			{$6,28\ cm/s$}}{
+			\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+			\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth']
+				\begin{axis}[
+					axis lines=middle,
+					xmin=0,xmax=4.5,xstep=1,ymin=-2.16,ymax=2.5,ystep=0.1,
+					grid=major, %Có các tùy chọn: minor|major|both|none
+					x grid style={dashed},
+					y grid style={dashed},
+					ytick={-2,0,1,2},
+					xtick={1,2,3,4,5,6},
+					xticklabels={1,2},
+					yticklabels={$-2$,0,$+1$,$+2$},
+					xticklabel style={black,below},
+					xlabel style={above=3pt},
+					xlabel=$t(s)$,
+					ylabel style={right=3pt},
+					ylabel={$x(cm)$}
+					]
+					\addplot[line width=1.2pt,domain=0:4,samples=200,Mapcolor]{2*cos(deg(0.5*pi*x-pi/3))};
+				\end{axis}
+			\end{tikzpicture}
+		}
+		\loigiai{
+			\begin{itemize}
+				\item Từ đồ thị, ta thấy tại $t = 0$, vật đi qua vị trí $x = 1$ cm theo chiều dương.
+				\item Tại thời điểm $t = 0,5$ s, vật đi qua vị trí cân bằng theo chiều âm.
+				\item Từ hình vẽ, ta xác định được $T=4\ s \Rightarrow \omega =\dfrac{\pi}{2}$ rad/s.
+				\item Tốc độ cực đại của vật $v_{\max}=\omega A=3,14$ cm/s.
+			\end{itemize}
+		}
+		%\haidong{15}
+	\end{ex}
+	%\loai{Sự thay đổi tần số}
+	
+	\begin{ex}%[3P1B3-1][Loai1]
+		Con lắc lò xo dao động điều hòa. Khi tăng khối lượng của vật lên $9$ lần thì tần số dao động của vật
+		\choice
+		{tăng lên $9$ lần}
+		{giảm đi $9$ lần}
+		{tăng lên $3$ lần}
+		{\True giảm đi $3$ lần}
+		\loigiai{
+			Ta có: $f=\dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}} \Rightarrow$ m tăng 9 lần thì f giảm đi 3 lần.
+		}
+		%\haidong{5}
+	\end{ex}
+	
+	
+	\begin{ex} %[3P1BF-1][Loai1]  
+		Con lắc đơn (chiều dài không đổi), dao động với biên độ nhỏ có chu kì phụ thuộc vào
+		\choice
+		{khối lượng con lắc}
+		{trọng lượng con lắc}
+		{\True tỉ số giữa khối lượng và trọng lượng con lắc}
+		{khối lượng riêng của con lắc}
+		\loigiai{
+			\begin{itemize}
+				\item Công thức: $T = 2\pi \sqrt{\dfrac{\ell}{g}}$.
+				\item Mặt khác: $P = mg \Leftrightarrow g = \dfrac{P}{m} \Rightarrow T = 2\pi \sqrt{\dfrac{\ell m}{P}}$.
+				\item Do đó, chu kì phụ thuộc vào tỉ số giữa khối lượng và trọng lượng của con lắc.
+			\end{itemize}
+		}
+		%\haidong{5}
+	\end{ex}
+
+
+	\begin{ex}%[3P2B8-1][Loai1]
+		Phát biểu nào sau đây là \textbf{sai} khi nói về sóng dừng xảy ra trên sợi dây?
+		\choice
+		{Khoảng cách giữa điểm nút và điểm bụng liền kề là một phần tư bước sóng}
+		{\True Hai điểm đối xứng với nhau qua điểm nút luôn dao động cùng pha}
+		{Khoảng thời gian giữa hai lần sợi dây duỗi thẳng là nửa chu kì}
+		{Khi xảy ra sóng dừng không có sự truyền năng lượng}
+		\loigiai{
+			Hai điểm đối xứng nhau qua nút luôn dao động ngược pha}
+	\end{ex}
+	\begin{ex}%[3P2K8-2][Loai1]
+		Cho A, B, C, D, E theo thứ tự là 5 nút liên tiếp trên một sợi dây có sóng dừng. M, N, P là các điểm bất kì của dây lần lượt nằm trong khoảng AB, BC, DE thì có thể rút ra kết luận nào sau đây?
+		\choice
+		{\True N dao động cùng pha P, ngược pha với M}
+		{M dao động cùng pha N, ngược pha với P}
+		{M dao động cùng pha P, ngược pha với N}
+		{Không thể kết luận được vì không biết chính xác vị trí các điểm M, N, P}
+		\loigiai{
+			\begin{itemize}
+				\item Trong sóng dừng, tất cả các điểm thuộc cùng 1 bó dao động cùng pha nhau và ngược pha với tất cả các điểm thuộc bó kế tiếp.
+				\item Vậy M và N ngược pha nhau, N và P cùng pha nhau.
+			\end{itemize}
+		}
+	\end{ex}
+	
+	\begin{ex}%[3P2K3-1][Loai1]
+		Một dao động lan truyền trong môi trường liên tục từ điểm M đến điểm N cách M một đoạn $0,9\ m$ với vận tốc $1,2\ m/s$. Biết phương trình sóng tại N có dạng $u_N=0,02\cos2\pi t\ cm$. Biểu thức sóng tại M là
+		\choice
+		{$u_M =0,02\cos2\pi t\ cm$}
+		{\True $u_M=0,02\cos(2\pi t + \dfrac{3\pi}{2})\ cm$}
+		{$u_M=0,02\cos(2\pi t - \dfrac{3\pi}{2})\ cm$}
+		{$u_M=0,02\cos(2\pi t + \dfrac{\pi}{2})\ cm$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $\lambda = \dfrac{v}{f} = 1,2\ m$.
+				\item M nằm trước nguồn N nên biểu thức sóng tại M là:
+				$u_M = 0,02\cos(2\pi t + 2\pi \dfrac{d}{\lambda}) = 0,02\cos(2\pi t + \dfrac{3\pi}{2})\ m.$
+				\item 
+			\end{itemize}
+		}
+	\end{ex}
+	
+	\begin{ex}%[3P2B3-1][Loai1]	
+		Một sóng cơ truyền dọc theo trục Ox với phương trình $u = 5\cos(8\pi t - 0,04\pi x)$ ($u$ và $x$ tính bằng cm, $t$ tính bằng giây). Tại thời điểm $t = 3\ s$, ở điểm có $x = 25\ cm$, phần tử sóng có li độ là
+		\choice
+		{$5,0\ cm$}
+		{\True $-5,0\ cm$}
+		{$2,5\ cm$}
+		{$-2,5\ cm$}
+		\loigiai{
+			\begin{itemize}
+				\item Điểm có tọa độ $x = 25$ cm có phương trình li độ dao động là: \\$u = 5\cos(8\pi t - 0,04\pi . 25) = 5\cos(8\pi t - \pi )$ cm.
+				\item Tại $t = 3$ s, pha dao động phần tử này là\\ ${{\phi }_{3s}}=8\pi . 3-\pi =25\pi \equiv -\pi \Rightarrow u=-5\ cm$ (hoặc ấn máy tính trực tiếp).
+			\end{itemize}
+		}
+		
+	\end{ex}
+	
+	\begin{ex}%[3P2K3-1][Loai1]
+		Cho một sợi dây đàn hồi rất dài căng ngang, đầu P của sợi dây dao động theo phương thẳng đứng với phương trình $u_P=5\cos(2\pi t + \dfrac{\pi}{3})\ cm$. Tốc độ truyền sóng $v=5\ m/s$. Cho điểm M trên dây cách P một đoạn $x=7,5\ m$. Vận tốc chuyển động của phần tử môi trường tại M ở thời điểm $t=10,5\ s$ là
+		\choice
+		{$5\pi \sqrt{3}\ cm/s$}
+		{$-5\pi\ cm/s$}
+		{\True $-5\pi \sqrt{3}\ cm/s$}
+		{$5\pi\ cm/s$}
+		\loigiai{
+			\begin{itemize}
+				\item Bước sóng trên dây: $\lambda = v.T = 5\ m$.
+				\item Phương trình li độ sóng tại M: $x=5\cos(2\pi t + \dfrac{\pi}{3} - 2\pi .7,5/5)=5\cos(2\pi t - 2\dfrac{\pi}{3})$ cm.
+				\item Phương trình vận tốc chuyển động của phần tử môi trường tại M: $v=10\pi \cos(2\pi t - \dfrac{\pi}{6})$ cm/s.
+				\item Tại $t=10,5$ s thì $v = -5\pi \sqrt{3}\ cm/s$.
+			\end{itemize}
+		}
+		
+	\end{ex}
+	
+	\begin{ex}%[3P2K3-1][Loai1]	
+		Một sóng dọc truyền đi theo phương trục Ox nằm ngang với tốc độ truyền sóng $2\ m/s$. Phương trình dao động tại O là $u=\sin \left( 20\pi t-0,5\pi \right)\ mm$ . Thời điểm $t = 0,725\ s$ thì một điểm M trên đường Ox, cách O một khoảng $1,3\ m$ có trạng thái chuyển động là
+		\choice
+		{từ vị trí cực đại đi lên}
+		{\True từ vị trí cân bằng đi xuống}
+		{từ vị trí cân bằng đi lên}
+		{từ li độ cực đại đi xuống}
+		\loigiai{
+			\begin{itemize}
+				\item Phương trình dao động của O là $u=\sin \left( 20\pi t-0,5\pi \right)\ mm=\cos \left( 20\pi t-\pi \right)\ mm$. 
+				\item Bước sóng là: $\lambda =\dfrac{v}{f}=0,2\ m$
+				\item Điểm M cách O đoạn $d = 1,3$ m có phương trình dao động là:\\ ${u_{M}}=\cos \left( 20\pi t-\pi -\dfrac{2\pi d}{\lambda } \right)= \cos\left( 20\pi t-14\pi \right)=\cos 20\pi t$ cm.
+				\item Tại $t = 0,725\ s$, pha dao động của M là $\phi =20\pi . 0,725=14,5\pi \equiv 0,5\pi \Rightarrow {u_{M}}\equiv VTCB\ (-)$.
+			\end{itemize}
+		}
+	\end{ex}
+	
+	\begin{ex}%[3P2K5-2][Loai1]
+		Trong thí nghiệm giao thoa sóng trên mặt nước, hai nguồn kết hợp A, B giống nhau dao động với tần số $13\ Hz$. Tốc độ truyền sóng trên mặt nước là $26\ cm/s$. Tại điểm M cách A, B lần lượt những khoảng $AM=19\ cm$, $BM=21\ cm$ sóng có biên độ cực đại. Giữa M và đường trung trực của AB 
+		\choice
+		{còn có $3$ vân cực đại khác}
+		{còn có $2$ vân cực đại khác}
+		{còn có $1$ vân cực đại khác}
+		{\True không có vân cực đại nào}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có $\lambda = 2\ cm $.
+				\item M cách A, B các khoảng lần lượt là $AM=19$ cm, $BM=21$ cm là một vân cực đại bậc k với  $AM-BM = k\lambda \Rightarrow k = -1$. 
+				\item Hai nguồn đồng pha nên vân trung trực là vân cực đại bậc $k=0$.
+				\item Vậy giữa M và đường trung trực của AB ko có vân cực đại nào nữa.
+			\end{itemize}
+		}
+	\end{ex}
+		\begin{ex}%[3P5-3.2K][Loai12]
+		Trong thí nghiệm Young về giao thoa ánh sáng, khoảng cách giữa hai khe là $2\ mm$, khoảng cách từ hai khe đến màn là $2\ m$, ánh sáng đơn sắc dùng trong thí nghiệm có bước sóng trong khoảng từ $0,40\ \mu m$ đến $0,76\ \mu m$. Tại vị trí cách vân sáng trung tâm $1,56\ mm$ là một vân sáng. Bước sóng của ánh sáng dùng trong thí nghiệm là
+		\choice
+		{$\lambda =0,42\ \mu m$}
+		{$\lambda =0,62\ \mu m$}
+		{\True $\lambda =0,52\ \mu m$}
+		{$\lambda =0,72\ \mu m$}
+		\loigiai{\begin{itemize}
+				\item Bước sóng của bức xạ cho vân sáng tại vị trí x: $x=k.\dfrac{\lambda D}{a}\Rightarrow \lambda =\dfrac{ax}{k.D}=\dfrac{2.1,56}{k.2}=\dfrac{1,56}{k}\ \mu m$.
+				\item Cho $\lambda $ vào điều kiện bước sóng ta có: $0,4\le \dfrac{1,56}{k}\le 0,76\Rightarrow 2,05\le k\le 3,9\Rightarrow k=3$.
+				\item Bước sóng của ánh sáng dùng trong thí nghiệm là: $\lambda =\dfrac{1,56}{3}=0,52\ \mu m$.
+		\end{itemize}}
+	\end{ex}
+	\begin{ex}%[3P5-6.1K][Loai4]
+		Trong thí nghiệm Young, hai khe được chiếu bằng ánh sáng trắng có có bước sóng $0,4\ \mu m\leq\lambda \leq 0,75\ \mu m$. Bề rộng quang phổ bậc hai là $1,6\ mm$. Khi dịch chuyển màn ra xa hai khe thêm $0,5\ m$ thì bề rộng quang phổ bậc hai bây giờ là $2\ mm$. Khoảng cách giữa hai khe là
+		\choice
+		{$1,125\ mm$}
+		{$0,715\ mm$}
+		{\True $0,875\ mm$}
+		{$1,300\ mm$}
+		\loigiai{
+			Áp dụng công thức tính bề rộng quang phổ bậc k ta có
+			\begin{itemize}
+				\item Bề rộng quang phổ bậc 2 trước khi dịch chuyển
+				\begin{equation}\rm
+					\Delta x_2=\dfrac{2D}{a}\pbrace{\lambda_{\ct{đỏ}}-\lambda_{\ct{tím}}}\tag{1}.
+				\end{equation}
+				\item Bề rộng quang phổ bậc 2 sau khi dịch chuyển
+				\begin{equation}\rm
+					\Delta x'_2=\dfrac{2(D+0,5)}{a}\pbrace{\lambda_{\ct{đỏ}}-\lambda_{\ct{tím}}}\tag{2}.
+				\end{equation}
+				\item Lấy \bth{\dfrac{(1)}{(2)}\Rightarrow \dfrac{\Delta x_2}{\Delta x'_2}=\dfrac{D}{D+0,5}=\dfrac{1,6}{2}=0,8\Rightarrow D=2\ m }.
+				\item Thay \bth{D=2\ m } vào (1) hoặc (2) ta có
+				\begin{align*}
+					a=\dfrac{2D}{\Delta x_2}\pbrace{\lambda_{\ct{đỏ}}-\lambda_{\ct{tím}}}=\dfrac{2.2}{1,6}(0,75-0,4)=0,875\ mm.
+				\end{align*}
+			\end{itemize}
+		}
+	\end{ex}
+	\begin{ex}%[3P2-11.2K][Loai1]
+		Sóng âm khi truyền trong chất rắn có thể là sóng dọc hoặc sóng ngang và lan truyền với tốc độ khác nhau. Tại trung tâm phòng chống thiên tai nhận được hai tín hiệu sóng từ một vụ động đất cách nhau một khoảng thời gian 240 s. Biết tốc độ truyền sóng ngang và tốc độ truyền sóng dọc trong lòng đất có giá trị lần lượt là 5 km/s và 8 km/s. Tâm chấn động cách nơi nhận tín hiệu một khoảng 
+		\choice
+		{\True 3200 km}
+		{570 km}
+		{730 km}
+		{3500 km}
+		\loigiai{
+			\begin{itemize}
+				\item Gọi d là khoảng cách từ tâm chấn động đến nơi nhận tín hiệu, ta có:
+				$\dfrac{d}{5}-\dfrac{d}{8}=240\Rightarrow d=3200$ km.
+			\end{itemize}
+		}
+		\haidong{15}
+		
+		
+	\end{ex}
+
+\subsubsection*{PHẦN 2. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.}
+\setcounter{ex}{0}
+\begin{ex}
+Trong dao động điều hòa, chất điểm chuyển động qua lại quanh vị trí cân bằng theo quy luật hình sin, với vận tốc và gia tốc biến thiên liên tục theo thời gian và phụ thuộc vào vị trí của vật. 
+	\choiceTF[t]
+	{\True Chuyển động của vật từ vị trí biên về vị trí cân bằng là chuyển động nhanh dần}
+	{\True Khi đi từ vị trí cân bằng ra biên dương là chuyển động chậm dần}
+	{\True Khi đi từ vị trí cân bằng ra biên âm là chuyển động chậm dần}
+	{Khi vật chuyển động nhanh dần theo chiều dương thì vật có li độ dương và vận tốc âm} 
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Đúng.
+			\itemch Đúng.
+			\itemch Đúng.
+			\itemch Sai.
+		\end{itemchoice}
+	}
+	%\haidong{25}
+\end{ex}
+\begin{ex}
+	Một chất điểm dao động điều hoà với phương trình li độ $x=6 \cos \left(4 \pi t-\dfrac{\pi}{3}\right)\ cm$ (t tính bằng giây). Kể từ thời điểm $t=\dfrac{2}{3}\ s$ đến thời điểm $t=\dfrac{37}{12}\ s$, ta xét các nhận định sau.
+	\choiceTF[t]
+	{Có $4$ lần chất điểm đi qua vị trí biên dương}
+	{Có $4$ lần chất điểm qua vị trí có li độ $3\ cm$ theo chiều âm}
+	{Có $5$ lần chất điểm qua vị trí có vận tốc $12 \pi \sqrt{2}\ cm$}
+	{Có $3$ lần chất điểm qua vị trí có gia tốc $96 \pi^2 \ cm/s$}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Sai.
+			\itemch Sai.
+			\itemch Sai.
+			\itemch Sai.
+		\end{itemchoice}
+	}
+	%\haidong{25}
+\end{ex}
+\begin{ex}
+	Thực hiện giao thoa sóng trên mặt nước với hai nguồn đồng bộ.
+	\choiceTF[t]
+	{Trung điểm của đoạn thẳng nối hai nguồn là một cực tiểu giao thoa}
+	{Đường trung trực nối hai nguồn là tập hợp các cực đại giao thoa bậc một}
+	{\True Số cực đại giao thoa trên đoạn thẳng nối hai nguồn luôn là một số lẻ}
+	{Số cực tiểu giao thoa trên đoạn thẳng nối hai nguồn luôn là một số lẻ}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Sai.
+			\itemch Sai.
+			\itemch Đúng.
+			\itemch Sai.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}
+Quan sát hiện tượng giao thoa sóng trên mặt nước, ta quan sát thấy: trong vùng gặp nhau (vùng giao thoa của hai sóng) xuất hiện những điểm mà tại đó nước dao động mạnh và những điểm mà tại đó nước yên lặng (đứng yên không dao động). Hiện đó gọi là hiện tượng giao thoa sóng. Các gợn sóng có hình các đường hypebol gọi là các vân giao thoa.
+	\choiceTF[t]
+	{\True Các đường cực tiểu giao thoa luôn là các hyperbol}
+	{Ngoài các điểm trên mặt nước thuộc đường trung trực của đoạn thẳng nối hai nguồn, các đường cực đại giao thoa luôn là hyperbol}
+	{\True Các đường cực đại giao thoa cùng bậc đối xứng nhau qua đường trung trực đoạn thẳng nối hai nguồn}
+	{\True Trên các đường cực tiểu, sóng đang dao động với biên độ bé nhất}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Đúng.
+			\itemch Sai.
+			\itemch Đúng.
+			\itemch Đúng.
+		\end{itemchoice}
+	}
+\end{ex}
+\subsubsection*{PHẦN 3. Thí sinh trả lời từ câu 1 đến câu 6.}
+\setcounter{ex}{0}
+\begin{ex}
+	Người ta gây ra một dao động với tần số $20 \ Hz$ ở đầu $O$ của một sợi dây rất dài, tạo nên sóng ngang hình sin lan truyền trên dây, sau $6 \ s$ sóng truyền được quãng đường $9,3 \ m$. Sóng truyền trên dây có bước sóng bằng bao nhiêu $cm$?
+	\shortans[oly]{7,75}
+	\loigiai{
+		7,75
+	}
+\end{ex}
+\begin{ex}
+	Một sóng cơ hình sin truyền trên một sợi dây nhỏ với tốc độ truyền sóng $4 \ m/s$ và tần số sóng có giá trị từ $22 \ Hz<f<46 \ Hz$. Phần tử tại điểm M cách nguồn một đoạn $20 \ cm$ luôn dao động cùng pha với nguồn. Giá trị của f bằng bao nhiêu $Hz$?
+	\shortans[oly]{40} 
+	\loigiai{
+		Theo giả thiết phần tử tại điểm M cách nguồn một đoạn $20 \ cm$ luôn dao động cùng pha với nguồn.
+		$$
+		\begin{aligned}
+			& \Rightarrow \Delta \varphi=2 \pi \dfrac{d}{\lambda}=2 \pi \dfrac{d. f}{v}=2 k \pi \Rightarrow f=\dfrac{kv}{d} \\
+			& 22 \leq \dfrac{kv}{d} \leq 46 \Rightarrow 1,1 \leq k \leq 2,3 \Rightarrow k=2 \Rightarrow f=40 \ Hz
+		\end{aligned}
+		$$
+	}
+\end{ex}
+\begin{ex}
+	Trong thí nghiệm giao thoa sóng trên mặt nước hai nguồn kết hợp A và B dao động cùng pha với tần số $16 \ Hz$. Tại điểm M cách các nguồn A và B những khoảng $d_1=30 \ cm$ và $d_2=25,5 \ cm$, sóng có biên độ cực đại, giữa M và đường trung trực của AB có $2$ dãy cực đại khác. Tốc độ truyền sóng trên mặt nước là bao nhiêu $cm/s$?
+	\shortans[oly]{24}
+	\loigiai{
+		24
+	}
+\end{ex}
+\begin{ex}
+	Một con lắc đơn có chiều dài dây treo $\ell=50\ cm$, vật nhỏ của con lắc là một bình chứa mực có đục lỗ nhỏ ở đáy để mực nhỏ giọt đều đặn. Ngay sát phía dưới bình mực người ta kéo trượt một tấm ván trên mặt phẳng ngang với vận tốc không đổi. Khi con lắc dao động điều hòa thì hình ảnh giọt mực trên tấm ván như hình bên. Chiều dài tấm ván là $1,28\ m$. Lấy $\pi=3,14;\ g=9,8\ m/s^2$. Tốc độ của tấm ván là bao nhiêu cm/s (làm tròn kết quả đến chữ số hàng đơn vị)?\\
+	\shortans[oly]{30}
+	\begin{center}
+		\includegraphics[scale=0.15]{Images/93130}
+	\end{center}
+	%	\choice
+	%	{}
+	%	{}
+	%	{\True }
+	%	{}
+	\loigiai{
+		\begin{itemize}
+			\item TLN: \textbf{30}
+			\item $3T=\dfrac{L}{v}\Rightarrow 3.2\pi.\sqrt{\dfrac{\ell}{g}}=\dfrac{L}{v}\Rightarrow 3.2.3,14.\sqrt{\dfrac{0,5}{9,8}}=\dfrac{1,28}{v}\Rightarrow v\approx 0,3\ m/s \approx 30\ cm/s$.
+		\end{itemize}
+	}
+	\haidong{15}
+\end{ex}
+\begin{ex}
+	Một chất điểm dao động điều hoà có chu kì $2 \ s$ và biên độ $10 \ cm$. Khi chất điểm qua trị trí cách vị trí biên $5 \ cm$ thì có tốc độ là bao nhiêu $cm/s$ (làm tròn kết quả đến chữ số hàng phần mười)?
+	\shortans[oly]{27,2}
+	\loigiai{
+		$27,2 \ cm/s$
+	}
+	%\haidong{30}
+\end{ex}
+
+\begin{ex}%[3P1KC-1][Loai1]
+	Một con lắc dao động điều hòa theo phương ngang với chu kì $T$ và biên độ $10\ cm$. Biết ở thời điểm t vật có li độ $6\ cm$, ở thời điểm $t + \dfrac{T}{2}$ vật có tốc độ $80\ cm/s$. Tần số góc của dao động là bao nhiêu $rad/s$?
+	\shortans[oly]{10}
+	\loigiai{
+		\begin{itemize}
+			\item $\Delta t=\dfrac{T}{2}$: ngược pha $\Rightarrow$  $x_2=-x_1=-6$ cm.
+			\item Lại có: $x _{2}^2+\dfrac{v_2^2}{{{\omega}^2}}=A^2\Rightarrow \omega =10$ rad/s.
+		\end{itemize}
+	}
+	%\haidong{30}
+\end{ex}

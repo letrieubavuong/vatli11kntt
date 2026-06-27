@@ -1,0 +1,159 @@
+%MB9T5
+\begin{vidu}
+Nêu tên sóng điện từ trong chân không ứng với mỗi bước sóng sau?
+\begin{itemize}
+\item[a.] {$1\ km$}
+\item[b.] {$3\ cm$}
+\item[c.] {$5\ \mu m$}
+\item[d.] {$500\ nm$} 
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item[a)] $1\ km$:  Sóng vô tuyến.
+\item[b)] $3\ cm$:  Sóng vô tuyến, sóng vi ba.
+\item[c)] $5\ \mu m$:  Tia hồng ngoại.
+\item[d)] $500\ nm$:  Ánh sáng nhìn thấy.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\begin{vidu}
+Nêu loại sóng điện từ ứng với mỗi tần số sau?
+\begin{itemize}
+\item[a.] {200 kHz}
+\item[b.] {100 MHz}
+\item[c.] {$5.10^{14}\ Hz$} 
+\item[d.] {$10^{18}\ Hz$}  
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item[a)] 200 kHz: $\Rightarrow \lambda=\dfrac{c}{f}=1500\ m\Rightarrow$ Sóng vô tuyến
+\item[b)] 100 MHz: $\Rightarrow \lambda=\dfrac{c}{f}=3\ m\Rightarrow$ Sóng vô tuyến
+\item[c)] $5.10^{14}\ Hz$: $\Rightarrow \lambda=\dfrac{c}{f}=6.10^{-7}\ m \Rightarrow$ Ánh sáng nhìn thấy. 
+\item[d)] $10^{18}\ Hz$: $\Rightarrow \lambda=\dfrac{c}{f}=3.10^{-10}\ m\Rightarrow$ Tia X.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Tính bước sóng khi biết T, f}
+\begin{vidu} %[3P4-4.2Y][Loai3]
+\nguon{QG - 2020} Một sóng điện từ có tần số 120 kHz đang lan truyền trong chân không. Lấy $c = 3.10^8\ m/s$. Sóng này có bước sóng là
+\choice
+{\True 2500\ m}
+{0,8\ m}
+{1250\ m}
+{0,4\ m}
+\loigiai{
+\begin{itemize}
+\item $\lambda =\dfrac{v}{f}=\dfrac{3.10^8}{120.10^3}= 2500\ m$.
+\end{itemize}}
+\end{vidu} \haidong{20}
+\loai{Tính T, f}
+\begin{vidu} %[3P4-4.2B][Loai4]
+\nguon{QG - 2019} Một sóng điện từ lan truyền trong chân không có bước sóng 3000 m. Lấy $c=3.10^8$ m/s. Biết trong sóng điện từ, thành phần từ trường tại một điểm biến thiên điều hòa với cùng chu kì T của sóng. Giá trị của T là
+\choice
+{$4.10^{-6}$ s}
+{$2.10^{-5}$ s}
+{\True $10^{-5}$ s}
+{$3.10^{-6}$ s}
+\loigiai{
+\begin{itemize}
+\item Chu kì của sóng: $T=\dfrac{\lambda}{c}=10^{-5}\ s$.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\begin{vidu}
+Một vệ tinh thông tin (vệ tinh địa tĩnh) chuyển động trên quỹ đạo tròn ngay phía trên xích đạo của Trái Đất, quay cùng hướng và cùng chu kì tự quay của Trái Đất ở độ cao 36600 km so với đài phát trên mặt đất. Đài phát nằm trên đường thẳng nối vệ tinh và tâm Trái Đất. Coi Trái Đất là một hình cầu có bán kính $R=6400\ km$. Vệ tinh nhận sóng truyền hình từ đài phát rồi phát lại tức thời tín hiệu đó về Trái Đất. Biết sóng có bước sóng $\lambda=0,5\ m$; tốc độ truyền sóng $c=3.10^8\ m/s$. Khoảng thời gian lớn nhất mà sóng truyền hình đi từ đài phát đến một điểm nằm trên mặt Trái Đất là bao nhiêu mili giây (làm tròn kết quả đến chữ số hàng đơn vị)?
+\shortans[oly]{264}
+\loigiai{
+\immini{\begin{itemize}
+\item Khoảng cách từ vệ tinh đến điểm xa nhất trên mặt Trái Đất là $L=\sqrt{h^{2}-R^{2}}\approx 42521,05\ km$
+\item Khoảng thời gian lớn nhất mà sóng truyền hình đi từ đài phát đến một điểm trên mặt Trái Đất là:
+\begin{align*} t=\dfrac{(36600+42521,05).10^3}{3.10^8}\approx 0,264\ s.
+\end{align*}
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, -2/0/i, 6/0/v}
+\tkzDrawCircle[radius,color=blue](o,i)
+\tkzTangent[from=v](o,i) \tkzGetPoints{a}{b}
+\tkzDefPointBy[homothety=center a ratio -0.3](v)\tkzGetPoint{a'}
+\tkzDefPointBy[homothety=center b ratio -0.3](v)\tkzGetPoint{b'}
+\tkzDrawSegments[](v,i o,a o,b)
+\tkzDrawSegments[red](v,a' v,b')
+\tkzMarkRightAngle[size=0.25](o,a,v)
+\tkzMarkRightAngle[size=0.25](v,b,o)
+\tkzDrawPoints[size=3,fill=white](o,a,b,v)
+\tkzLabelPoint[above right](a){$A$}
+\tkzLabelPoint[below right](b){$B$}
+\tkzLabelPoint[below left](o){$O$}
+\tkzLabelPoint[below](v){$V$}
+\tkzLabelSegment[left](o,a){$R$}
+\tkzLabelSegment[above right](v,a){$L$}
+\tkzLabelSegment[above right](v,o){$h$}
+\end{tikzpicture}}
+}
+\end{vidu} \haidong{20}
+
+\begin{vidu}%Câu 40%E2
+Một anten parabol đặt tại điểm O trên mặt đất, phát ra một sóng truyền theo phương làm với mặt phẳng ngang một góc $45^\circ$ hướng lên cao. Sóng này phản xạ trên tầng điện li, rồi trở lại gặp mặt đất ở điểm M. Cho bán kính Trái Đất $R=6400\ km$. Tầng điện li coi như một lớp cầu ở độ cao 100 km trên mặt đất. Cho 1 phút$=3.10^{-4}\ rad$. Độ dài cung OM là
+\choice
+{\True 201,6 km}
+{206,1 km}
+{126,0 km}
+{162,1 km}
+\loigiai{
+\immini{\begin{itemize}
+\item Để tính độ dài cung AM ta tính góc $\varphi=\widehat{O{O'}M}$\\
+\item Xét $\Delta OO’A$: $ O{O'}=R;{O'}A=R+h;\beta=\widehat {O{O'}A}=135^\circ$\\
+\item Theo định lý hàm số sin:\\
+$\dfrac{O'A}{\sin{135^\circ}}=\dfrac{O{O'}}{\sin\dfrac{\alpha}{2}}\Rightarrow\sin\dfrac{\alpha}{2}=\dfrac{O{O'}}{O'A}\sin{135^\circ}=0,696$\\
+$\Rightarrow\alpha=88,25^\circ\Rightarrow\varphi=360^\circ-270^\circ-88,25^\circ$ $=1,75^\circ=1,75.60.3.10^{-4}=315.10^{-4}\ rad$\\
+\item Cung $ AM=R\varphi=315.10^{-4}.6,4.10^3=201,6\ km$
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-0.5,ymax=3.5,xmin=-5.5,xmax=6.5]\tkzClip
+
+\tkzDefPoints{0/0/o', -1.05/1.7/o, 1.05/1.7/m, 0/3/a}
+\draw (o') circle(2cm);
+\draw (o') circle(3cm);
+\node at (0,3) {};
+\node at (-1.05,1.7) {};
+\node at (1.05,1.7) {};
+\draw[dashed,thin] (0,0) -- (-1.85,3);
+\tkzDrawSegments[thick](a,m a,o a,o' o,o' o',m)
+\tkzLabelAngles[pos=.7,left](o,a,m){$\alpha$}
+\draw[<->] (-0.3,2.6) .. controls (-0.1,2.5) and (0.1,2.5) .. (0.3,2.6);
+\tkzLabelAngles[pos=.9,left](o',o,a){$\beta$}
+\draw[<->] (-0.7,1.2) .. controls (-0.5,1.5) and (-0.5,1.8) .. (-0.7,2.1);
+\tkzLabelAngles[pos=.8,left](o,o',m){$\varphi$}
+\draw[<->] (-0.3,0.5) .. controls (-0.1,0.7) and (0.1,0.7) .. (0.3,0.5);
+\tkzLabelPoint[below](o'){$O'$}
+\tkzLabelPoint[above](a){$A$}
+\tkzLabelPoint[above right](m){$M$}
+\node at (-1.5,1.8) {$O$};
+\end{tikzpicture}}
+}
+\end{vidu} \haidong{20}
+
+
+
+
+
+
+
+
+
+%macbook 
+
+\begin{vidu}%CTST
+Biết cường độ ánh sáng của Mặt Trời đo được ở Trái Đất là $1370\ W/m^2$ và khoảng cách từ Mặt Trời đến Trái Đất là $1,5.10^{11}\ m$. Công suất bức xạ ánh sáng của Mặt Trời là
+\choice
+{\True $3,87.10^{26}\ W$}
+{$2,58.10^{26}\ W$}
+{$3,87.10^{29}\ W$}
+{$2,58.10^{29}\ W$}
+\loigiai{
+\begin{itemize}
+\item Ta có: $I=\dfrac{P}{S}=\dfrac{P}{4\pi r^2}\Rightarrow P=I.4\pi.r^2=3,87.10^{26}\ W$.
+
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+

@@ -1,0 +1,63 @@
+\paragraph{Thí nghiệm Y-âng}
+\begin{note}
+Giao thoa ánh sáng là sự tổng hợp hai hay nhiều sóng ánh sáng kết hợp trong không gian trong đó xuất hiện những vạch sáng và những vạch tối xen kẽ nhau.
+\end{note}
+immini[thm]{
+\begin{itemize}
+\item Các vạch sáng gọi là vân sáng và các vạch tối gọi là vân tối.
+\item Hiệu đường đi của ánh sáng (hiệu quang trình):
+\begin{align*}
+\boder{\Delta d=d_2-d_1=\dfrac{ax}{D}}
+\end{align*}
+Trong đó
+\begin{itemize}
+\item \bs{a}{S_1S_2} là khoảng cách giữa hai khe sáng.
+\item \bth{D=OI} là khảng cách từ hai khe sáng \bth{S_1,\ S_2} đến màn quan sát.
+\item \bth{x=OM} là toạ độ điểm M đang xét.
+\end{itemize}
+\end{itemize}
+}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\draw[dashed] (-0.2,0)--(6.5,0);
+\draw[very thick] (6.5,-2)--(6.5,2);
+\draw[very thick] (0,-0.5)--(0,0.5);
+\draw[<->] (-0.15,-0.5)--(-0.15,0)node[above,rotate=90]{a}--(-0.15,0.5);
+\draw[very thick] (0,-2)--(0,-0.6); \draw[very thick] (0,0.6)--(0,2);
+\draw[directed] (0,-0.55) node[below left]{\bth{S_2}}--(6.5,1.5) node[right]{M};
+\node[below] at (2.7,0.9) {\bth{d_2}};
+\draw[directed] (0,0.55) node[above left]{\bth{S_1}}--(6.5,1.5);
+\node[above] at (2.7,0.85) {\bth{d_1}};
+\draw[<->] (0,-1.5)--(3.25,-1.5)node[above]{D}--(6.5,-1.5);
+\node[right] at (6.5,0){O};
+\end{tikzpicture}
+}
+\paragraph{Khoảng vân i}
+\begin{note}
+Là khoảng cách giữa hai vân sáng hoặc vân tối liên tiếp: \boder{i=\dfrac{\lambda D}{a}}
+\end{note}
+\paragraph{Vị trí (tọa độ) của vân sáng ($\Delta d=k\lambda)$}
+\begin{align*}
+\boder{x=k\dfrac{\lambda D}{a}=ki}\ \ct{với}\ k\in \mathbb{Z} \quad \begin{cases}
+k=0:\ \ct{vân sáng trung tâm}\\
+k=\pm 1:\ \ct{vân sáng bậc nhất}\\
+k=\pm 2:\ \ct{vân sáng bậc hai}
+\end{cases}
+\end{align*}
+
+\paragraph{Vị trí (tọa độ) của vân tối ($\Delta d=\pbrace{k+0,5}\lambda$)}
+\begin{align*}
+\boder{x=\pbrace{k+0,5}\dfrac{\lambda D}{a}=(k+0,5)i}\ \ct{với}\ k\in \mathbb{Z}\quad \begin{cases}
+k=0,\ k=-1:\ \ct{vân tối thứ nhất}\\
+k=1,\ k=-2:\ \ct{vân tối thứ hai}\\
+k=2,\ k=-3:\ \ct{vân tối thứ ba}
+\end{cases}
+\end{align*}
+\paragraph{Điều kiện giao thoa}
+Điều kiện để có giao thoa là hai nguồn sáng phải là hai nguồn kết hợp 
+\begin{align*}
+\begin{cases}
+\ct{Cùng phương}\\
+\ct{Cùng tần số (cùng bước sóng)}\\
+\ct{Độ lệch pha không đổi (thường cùng pha)}
+\end{cases}
+\end{align*}

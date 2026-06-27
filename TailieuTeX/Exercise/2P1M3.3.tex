@@ -1,0 +1,665 @@
+\setcounter{ex}{0}
+\setcounter{paragraph}{0}
+\PhanI
+  \begin{ex}
+\immini[thm]{Cho đồ thị li độ - thời gian của một dao động điều hòa như hình vẽ. Quãng đường vật đi được từ thời điểm $0,5\ s$ đến $1,5\ s$ là
+\choice[2]
+ 	{\True $2\ cm$}
+ 	{$1\ cm$}
+ 	{$4\ cm$}
+ 	{$2,5\ cm$}}{
+\begin{hinhanh}{7}
+\begin{tikzpicture}[very thick,>=stealth']
+\pgfplotsset{width=7cm,height=4.5cm,compat=1.4}
+\begin{axis}[
+axis lines=middle, xmin=0, xmax=2*pi, xstep=1,
+ymin=-4.5, ymax=5, ystep=0.1,
+grid=major,%Vẽ chế độ lưới theo trục tọa độ Oxy,
+x grid style={dashed, black},
+axis line style={very thick,Mapcolor}, % <--- dòng thêm vào
+xlabel=$t~(s)$,
+xlabel style={above},
+xtick ={1,2,3,4,5,6,7,8},
+xticklabels={},
+y grid style={dashed, black},
+extra y ticks={0},
+extra y tick label={0},
+ylabel=$x~(cm)$,
+ylabel style={above},
+ytick={-4,0, 4},
+yticklabels={$-2$,,2},]
+\addplot[line width=1.2pt, domain=0:1.7*pi, samples=400, Mapcolor]{4*cos(deg(0.5*pi*x-pi/2))};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={0,5}]
+coordinates {(1, 0)};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={1,5}]
+coordinates {(3, 0)};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={2,5}]
+coordinates {(5, 0)};
+\end{axis}
+\end{tikzpicture}
+\end{hinhanh}}
+ 	\loigiai{
+ 		Từ đồ thị, ta thấy biên độ dao động của vật là $A = 1\ cm$. Chu kì dao động là $T = 2 s$.
+ 		Tại thời điểm $t_1 = 0,5 s$, li độ của vật là $x(0,5) = 1\ cm$ (vật ở vị trí biên dương).
+ 		Tại thời điểm $t_2 = 1,5 s$, li độ của vật là $x(1,5) = -1\ cm$ (vật ở vị trí biên âm).
+ 		Khoảng thời gian $\Delta t = t_2 - t_1 = 1,5 s - 0,5 s = 1 s = \dfrac{T}{2}$.
+ 		Trong nửa chu kì, vật đi được quãng đường bằng $2A = 2 . 1 cm = 2\ cm$.
+ 	}
+ \end{ex}
+  %\loai{Tính quãng đường vật đi được trong quãng thời gian $\Delta t=nT$}
+  \begin{ex}%[3P1KD-1][Loai1] 
+  	Một chất điểm dao động điều hoà với chu kì $T=\dfrac{\pi}{10}\ s$ và biên độ $A = 6$ cm. Chọn gốc thời gian $t = 0$ lúc vật qua vị trí cân bằng. Quãng đường vật đi được trong $10\pi$ s đầu tiên là
+  	\choice
+  	{9 m}
+  	{\True 24 m}
+  	{6 m}
+  	{1 m}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Ta có:
+  			$t = 100T \Rightarrow S = 100.4A = 400A = 24\ m$ (1T đi được 4A).
+  			
+  		\end{itemize}
+  		
+  	}
+  	%\haidong{8}
+  \end{ex} \haidong{20}
+  %\loai{Tính quãng đường vật đi được trong quãng thời gian $\Delta t=(2n+1)\dfrac{T}{2}$}
+  \begin{ex}%[3P1BD-1][Loai1] 
+  	Một chất điểm dao động điều hoà với tần số góc $\omega=20\ rad/s$ và biên độ $A = 6$ cm. Chọn gốc thời gian lúc vật đi qua vị trí cân bằng. Quãng đường vật đi được trong $0,05\pi$ s đầu tiên là
+  	\choice
+  	{24 cm}
+  	{9 cm}
+  	{6 cm}
+  	{\True 12 cm}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Trong $0,05\pi = \dfrac{T}{2}$ Vật đi được quãng đường $2A = 12$ cm dù cho gốc thời gian là ở lúc nào.
+  			\item 
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{ex} \haidong{20}
+  \loai{Quãng đường vật đi được sau thời gian $\Delta t$ kể từ thời điểm ban đầu - không cần tách thời gian}
+  \begin{ex}%[3P1KD-1][Loai1]
+  	Một vật nhỏ dao động điều hòa có biên độ A, chu kì dao động T , ở thời điểm ban đầu  $t_0=0$  vật đang ở vị trí biên. Quãng đường mà vật đi được từ thời điểm ban đầu đến thời điểm $t=\dfrac{T}{3}$ là
+  	\choice
+  	{\True $\dfrac{3A}{2}$}
+  	{$\dfrac{A}{3}$}
+  	{$\dfrac{2A}{3}$}
+  	{A}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Sau $\dfrac{T}{3}$, nếu vật ở biên dương sẽ về $-\dfrac{A}{2}$, nếu vật ở biên âm sẽ tới $\dfrac{A}{2}$ $\Rightarrow$ Quãng đường đi được là $\dfrac{3A}{2}$.
+  			\item 
+  			\item 
+  		\end{itemize}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  \loai{Quãng đường vật đi được sau thời gian $\Delta t$ kể từ thời điểm ban đầu - cho phương trình dao động}
+  \begin{ex}%[3P1KD-1][Loai1] 
+  	Một vật dao động điều hoà với phương trình $x = 4\cos(\pi t+ \dfrac{\pi}{4})$ cm. Sau 4,5 s kể từ thời điểm đầu tiên vật đi được đoạn đường là
+  	\choice
+  	{34 cm}
+  	{36 cm}
+  	{\True $32 + 4\sqrt{2}$ cm}
+  	{$32 + 2\sqrt{2}$ cm}
+  	\loigiai{
+  		\begin{itemize}
+  			\item $t=0$ vật đang ở li độ $x = 2\sqrt{2}$ theo chiều âm.
+  			\item $\Delta t = 4,5 = \dfrac{T}{4}+2T.$
+  			\item $t=\dfrac{T}{4}$ vật ở li độ $x = -2\sqrt{2}$ theo chiều âm.
+  			\item Quãng đường vật đi được trong $\dfrac{T}{4}$ s đầu tiên là $S_1 = 2.2\sqrt{2} = 4\sqrt{2}\ cm$.
+  			\item Quãng đường đi được là $S = S_1 + 8A = 32 + 4\sqrt{2}\ cm$.
+  		\end{itemize}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  \loai{Cho quãng đường viết phương trình dao động}
+  \begin{ex}%[3P1KD-1][Loai1]
+  	Một chất điểm dao động điều hòa với tần số góc $\omega=20\pi\ rad/s$. Biết rằng trong quãng thời gian 0,5 s vật nhỏ đi được tổng quãng đường bằng 50 cm. Và tại thời điểm $t = 0$, vật ở biên dương. Lấy gần đúng $\pi^2 = 10$. Phương trình dao động của vật là
+  	\choice 
+  	{$x = 2,5\cos(20\pi t + \pi)$ cm}
+  	{$x = 5\cos(20\pi t)$ cm}
+  	{$x = 5\cos(20\pi t + \pi)$ cm}
+  	{\True $x = 2,5\cos(20\pi t)$ cm}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Ta có:
+  			$T = \dfrac{2\pi}{20\pi} = 0,1\ s
+  			\Rightarrow t = 0,5\ s = 5T \Rightarrow s = 5.4A = 50 \Rightarrow A = 2,5\ cm$. 
+  			\item Phương trình dao động của vật là: $x = 2,5\cos(20\pi t + \varphi)\ cm$.
+  			\item Tại $t = 0$, $x = 2,5 \Rightarrow 2,5\cos\varphi = 2,5 \Rightarrow \cos\varphi = 1 \Rightarrow \varphi = 0$.
+  			\item Phương trình dao động của vật là $x = 2,5\cos(20\pi t)$ cm.
+  		\end{itemize}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  
+  \loai{Tìm thời gian vật đi được quãng đường $s < 2A$}
+  \begin{ex}%[3P1KD-2][Loai1] 
+  	Một vật dao động điều hoà theo phương trình $x = 4\cos(8\pi t - \dfrac{2\pi}{3})$ cm. Thời gian vật đi được quãng đường $s = (2+2\sqrt{2})$ cm kể từ lúc vật bắt đầu dao động là
+  	\choice
+  	{\True $\dfrac{5}{96}$ s}
+  	{$\dfrac{1}{96}$ s}
+  	{$\dfrac{29}{96}$ s}
+  	{$\dfrac{25}{96}$ s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Ta có ban đầu vật đang ở li độ $x=-2$ cm theo chiều dương.
+  			\item Sau khi đi được quãng đường $S = 2 + 2\sqrt{2}\ cm$ vật đang ở li độ: 
+  			\begin{align*}
+  				x = \dfrac{A\sqrt{2}}{2} \Rightarrow t = \dfrac{T}{12}+ \dfrac{T}{8} = \dfrac{5T}{24} = \dfrac{5}{96}\ s.
+  			\end{align*}
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  \loai{Tìm thời gian vật đi được quãng đường $2A<s < 4A$}
+  \begin{ex}%[3P1KD-2][Loai1]
+  	Cho chất điểm đang dao động điều hòa trên trục Ox quanh vị trí cân bằng là gốc tọa độ O với phương trình li độ $x = 4\cos(2\pi t - \dfrac{\pi}{3})$ cm. Tính từ thời điểm ban đầu, thời gian để chất điểm đi được quãng đường bằng 14 cm là
+  	\choice
+  	{\True $\dfrac{11}{12}$ s}
+  	{$\dfrac{5}{6}$ s}
+  	{$\dfrac{2}{3}$ s}
+  	{$\dfrac{6}{7}$ s}
+  	\loigiai{
+  		\immini{
+  			\begin{itemize}
+  				\item 
+  				Ta có: $s = 14\ cm = 2 + 12$.
+  				\item Ban đầu chất điểm ở vị trí có li độ 2 cm ($M_0$), để đi được 14 cm thì nó phải quay đến điểm $M_1$
+  				$\Delta \varphi = \dfrac{11\pi}{6} \Rightarrow t = \dfrac{11T}{12} = \dfrac{11}{12}\ s$.
+  				
+  			\end{itemize}
+  		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](-90:2){m'}
+  				\tkzDefShiftPoint[o](-60:2){0}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](h,0)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[below right]{$M_0$};
+  				\node at (m')[below left]{$M_1$};
+  				\node at (2,0)[below right]{$4$};
+  				\node at (h)[below right]{$2$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  \begin{ex}
+  	Một chất điểm dao động điều hòa với phương trình $x = 4 \cos (4 \pi t)\ cm$. Quãng đường vật đi được trong thời gian $2,875\ s$ kể từ lúc $t = 0$ là
+  	\choice
+  	{$88\ cm$}
+  	{\True $92\ cm$}
+  	{$96\ cm$}
+  	{$100\ cm$}
+  	\loigiai{
+  		Ta có $T = \dfrac{2\pi}{\omega} = \dfrac{2\pi}{4\pi} = 0,5\ s$\\
+  		\(\Rightarrow\) Số chu kì đã dao động: \(n = \dfrac{2,875}{0,5} = 5,75\)\\
+  		\(\Rightarrow\) Quãng đường: \(S = 5. 4A + 3A = 20A + 3A = 23A = 23. 4 = 92\ cm\)
+  	}
+  \end{ex}
+  
+  %\loai{Tổng hợp}
+  \begin{ex}%[3P1GD-1][Loai1]
+  	Cho chất điểm dao động điều hòa với biên độ bằng 8 cm. Thời điểm ban đầu, $t=0$, chất điểm đi qua vị trí li độ $-4$ cm theo chiều âm. Trong 0,5 s đầu tiên chất điểm đi được quãng đường dài ($44-4\sqrt{3}$) cm. Tốc độ cực đại của chất điểm trong quá trình dao động là
+  	\choice
+  	{$8\pi$ cm/s}
+  	{$36\pi$ cm/s}
+  	{\True $40\pi$ cm/s}
+  	{$20\pi$ cm/s}
+  	\loigiai{
+  		\immini{\begin{itemize}
+  				\item 
+  				Ta biểu diễn vị trí của chất điểm tại thời điểm ban đầu bằng điểm $M_0$ trên đường tròn lượng giác như hình vẽ.
+  				\item Ta có: $s = 44-4\sqrt{3} = 32+4+8-4\sqrt{3}$.
+  				\item Trong 0,5 s, chất điểm từ vị trí $M_0$ quay đúng 1 vòng, trở lại $M_0$ sau đó quay thêm góc $\dfrac{\pi}{2}$ và đến $M_1\Rightarrow t = T+\dfrac{T}{4} = 5\dfrac{T}{4} = 0,5 \Rightarrow T = 0,4 \Rightarrow \omega = 5\pi\ rad/s\Rightarrow v_{\max} = 5\pi.8 = 40 \pi\ cm/s$.
+  		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](120:2){0}
+  				\tkzDefShiftPoint[o](210:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h'}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](m',h' 0,h)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m',h')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[above left]{$M_0$};
+  				\node at (m')[below left]{$M'$};
+  				\node at (2,0)[below right]{$8$};
+  				\node at (h)[below]{$-4$};
+  				\node at (h')[above]{$-4\sqrt{3}$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{9}
+  \end{ex} \haidong{20}
+  
+
+  
+  
+  %\loai{Tốc độ trung bình trong khoảng thời gian từ $t_1$ đến $t_2$}
+  
+  
+  \begin{ex}%[3P1KD-3][Loai1]
+  	Cho chất điểm M đang chuyển động tròn đều trên một quỹ đạo tròn có bán kính bằng 30 cm, với tốc độ góc là $\pi$ rad/s. Gọi P là hình chiếu của điểm M xuống một đường thẳng đi qua tâm và nằm trong mặt phẳng quỹ đạo. Tốc độ chuyển động trung bình của điểm P trong quãng thời gian 3 s là
+  	\choice
+  	{20 cm/s}
+  	{\True 60 cm/s}
+  	{$\dfrac{20}{3}$ cm/s}
+  	{40 cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Trong khoảng thời gian 3 s chất điểm quay được góc: $\Delta \varphi = 3\pi = 2\pi + \pi\Rightarrow  \Delta s = 4A+2A= 180$ cm.
+  			\item Tốc độ trung bình bằng: $180:3 = 60$ cm/s.
+  		\end{itemize}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  \begin{ex}%[3P1KD-3][Loai1]
+  	Cho một chất điểm dao động điều hòa theo phương trình $x = A\cos(\pi t + \dfrac{\pi}{4})$, x tính bằng cm và t tính bằng s. Tính từ thời điểm ban đầu, tốc độ trung bình của vật trong 3,5 s chuyển động là 6,36 cm/s. Biên độ dao động của chất điểm là
+  	\choice
+  	{6 cm}
+  	{\True 3 cm}
+  	{4 cm}
+  	{5 cm}
+  	\loigiai{
+  		\immini{
+  			\begin{itemize}
+  				\item $T = \dfrac{2\pi}{\pi} = 2\ s$.
+  				\item Ta có: $t = 3,5\ s = 1.2 + 1,5$.
+  				\item Ta biểu diễn vị trí ban đâu của vật bằng điểm $M_0$ trên đường tròn lượng giác như hình vẽ.
+  				\item Trong khoảng thời gian 2 s, vật quay được góc $2\pi$, tương ứng đi được quãng đường 4A và lại quay về vị trí $M_0$.
+  				\item Trong khoảng thời gian 1,5 giây tiếp theo, vật quay thêm được 1 góc $\dfrac{3\pi}{2}$, đến vị trí $M_1$ trên đường tròn lượng giác.
+  				\item Quãng đường chất điểm đi được trong 3,5 s là $s = 4A \dfrac{A}{\sqrt{2}}+2A+ \dfrac{A}{\sqrt{2}} = 6A+A\sqrt{2} = 2,5.6,36\Rightarrow  A = 3$ cm.
+  			\end{itemize}
+  		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](45:2){0}
+  				\tkzDefShiftPoint[o](-45:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](m',0)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[above right]{$M_0$};
+  				\node at (m')[below right]{$M_1$};
+  				\node at (2,0)[below right]{$A$};
+  				\node at (h)[below]{$\dfrac{A}{\sqrt{2}}$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{8}
+  \end{ex} \haidong{20}
+  %\loai{Tốc độ trung bình trong khoảng thời gian giữa hai lần liên tiếp vật qua li độ $x$}
+  
+  \begin{ex}%[3P1KD-3][Loai1] 
+  	Một chất điểm dao động điều hòa với biên độ 5 cm và tần số 2 Hz. Tốc độ trung bình giữa hai lần liên tiếp chất điểm đi qua vị trí có li độ bằng 0 là
+  	\choice
+  	{20 cm/s}
+  	{10 cm/s}
+  	{\True 40 cm/s}
+  	{30 cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Ta có: $T = \dfrac{1}{f} = 0,5\ s$.
+  			\item Giữa hai lần liên tiếp chất điểm đi qua vị trí có li độ bằng 0 thì: 
+  			\begin{align*}
+  				t = \dfrac{T}{2} = 0,25\ s,\ S = 2A = 10\ cm \Rightarrow  v_{tb} = \dfrac{S}{t} = \dfrac{10}{0,25} = 40\ cm/s.
+  			\end{align*}
+  	\end{itemize}}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  
+  
+  %\loai{Tốc độ trung bình trong khoảng thời gian vật đi từ $x_1$ đến $x_2$}
+  
+  \begin{ex}%[3P1KD-3][Loai1] 
+  	Cho dao động điều hòa với $f = 2\ Hz$ và $v_{\max} = 16\pi$ cm/s. Tìm tốc độ trung bình từ lúc chất điểm qua li độ 2 cm theo chiều âm đến lúc đi qua li độ $-2$ cm lần thứ hai.
+  	\choice
+  	{\True 32 cm/s}
+  	{16 cm/s}
+  	{24 cm/s}
+  	{18 cm/s}
+  	\loigiai{
+  		\immini{
+  			\begin{itemize}
+  				\item 
+  				Ta có: $T = \dfrac{1}{f} = 0,5$ s, $A = \dfrac{v_{\max}}{\omega} = \dfrac{16\pi}{2.2\pi} = 4\ cm$.
+  				\item Vị trí có li độ $2\ cm$ và $-2\ cm$ được biểu diễn trên đường tròn lượng giác như hình vẽ. 
+  				\item Ban đầu chất điểm qua li độ 2 cm theo chiều âm nên nó ở vị trí (3), khi nó đi qua vị trí li độ $-2$ cm lần thứ 2 thì nó ở vị trí $(2)$ nên quãng đường vật đi được là $2 + 4 + 2 = 8$ cm.
+  				\item Thời gian để vật đi từ vị trí $(3)$ tới vị trí $(2)$ là $\dfrac{T}{2} = 0,25$ s
+  				$\Rightarrow  v_{tb} = \dfrac{8}{0,25} = 32\ cm/s.$
+  			\end{itemize}
+  		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](120:2){1}
+  				\tkzDefShiftPoint[o](-120:2){2}
+  				\tkzDefShiftPoint[o](60:2){3}
+  				\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+  				\tkzDefPointBy[projection=onto m--n](3) \tkzGetPoint{h'}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](h',3 1,2)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,1 o,2 o,3)
+  				\tkzDrawPoints[size=3](o,1,h,2,3,h')
+  				\node at (1)[above left]{$(1)$};
+  				\node at (2)[below left]{$(2)$};
+  				\node at (3)[above right]{$(3)$};
+  				\node at (2,0)[below right]{$4$};
+  				\node at (h')[below]{$3$};
+  				\node at (h)[below left]{$-3$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{7}
+  \end{ex} \haidong{20}
+  %\loai{Tốc độ trung bình trong một chu kì}
+  \begin{ex}%[3P1BD-3][Loai1]
+  	Một vật dao động điều hòa có độ lớn vận tốc cực đại là 15,7 cm/s. Lấy $\pi =3,14$. Tốc độ trung bình của vật trong một chu kì dao động là
+  	\choice
+  	{20 cm/s}
+  	{\True 10 cm/s}
+  	{0 cm/s}
+  	{15 cm/s}
+  	\loigiai{
+  		Tốc độ trung bình: $v_{tb(T)}=\dfrac{4A}{T}=\dfrac{2\omega A}{\pi}=\dfrac{2v_{\max }}{\pi} = 10$ cm/s.
+  	}
+  	%\haidong{5}
+  \end{ex} \haidong{20}
+   
+  %\loai{Cho khoảng thời gian thỏa mãn tốc độ và tốc độ trung bình. Tìm các đại lượng}
+  \begin{ex}%[3P1KD-3][Loai1] 
+  	Cho một chất điểm đang dao động điều hòa với tần số bằng 1 Hz, biết trong mỗi chu kì dao động, khoảng thời gian mà tốc độ chuyển động của vật nhỏ hơn $5\pi\sqrt{2}$ cm/s là $\dfrac{1}{2}$ s. Tốc độ trung bình của chất điểm trong một chu kì là
+  	\choice
+  	{$20\pi$ cm/s}
+  	{\True 20 cm/s}
+  	{40 cm/s}
+  	{$10\pi$ cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Ta có $\dfrac{1}{2}\ s = \dfrac{T}{2} \Rightarrow $ dùng đường tròn đơn vị cho vận tốc ta dễ dàng suy ra:
+  			\begin{align*}
+  				\dfrac{v_{\max}}{\sqrt{2}} = 5\pi \sqrt{2} \Rightarrow  v_{\max} = 10\pi\ cm/s \Rightarrow  A = \dfrac{v_{\max}}{\omega} = 5\ cm.
+  			\end{align*}
+  			\item Tốc độ trung bình của chất điểm trong 1 chu kì: $v_{tb}=\dfrac{4A}{T}=20$ cm/s.
+  	\end{itemize}}
+  	%\haidong{5}
+  \end{ex} \haidong{20}
+  %\loai{Tốc độ trung bình giữa hai thời điểm có li độ và gia tốc cho trước}
+  \begin{ex}%[3P1KD-4][Loai1] 
+  	Một vật nhỏ dao động điều hòa theo một quỹ đạo thẳng dài 20 cm với tần số 0,5 Hz. Từ thời điểm vật qua vị trí có li độ 5 cm theo chiều dương đến khi gia tốc của vật đạt giá trị cực tiểu lần thứ hai, vật có tốc độ trung bình là
+  	\choice
+  	{27,0 cm/s}
+  	{26,7 cm/s}
+  	{\True 19,29 cm/s}
+  	{27,3 cm/s}
+  	\loigiai{
+  		\immini{\begin{itemize}
+  				\item 
+  				Ta có: $2A = 20 \Rightarrow  A = 10\ cm,\ T = \dfrac{1}{f} = 2\ s$.
+  				\item Ta biểu diễn vị trí có li độ 5 cm theo chiều dương bằng điểm $M_0$ trên hình vẽ.
+  				\item Gia tốc của vật có giá trị cực tiểu tại biên dương (vị trí điểm M' trên đường tròn).
+  				\item Từ hình vẽ, ta suy ra quãng đường vật đi từ thời điểm vật qua vị trí có li độ 5 cm theo chiều dương đến khi gia tốc của vật đạt giá trị cực tiểu lần thứ hai là $s = 5 + 10.4 = 45$ cm.
+  				\item Thời gian để vật qua vị trí có li độ 5 cm theo chiều dương đến khi gia tốc của vật đạt giá trị cực tiểu lần thứ hai là $\dfrac{T}{6} + T = \dfrac{7T}{6} = \dfrac{7}{3}\ s$.
+  		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](-60:2){0}
+  				\tkzDefShiftPoint[o](0:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](0,h)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[below right]{$M_0$};
+  				\node at (m')[below right]{$M'$};
+  				\node at (2,0)[above right]{$10$};
+  				\node at (h)[above]{$5$};
+  		\end{tikzpicture}}
+  		\begin{itemize}
+  			\item Tốc độ trung bình của vật là $v_{tb} = \dfrac{45}{\dfrac{7}{3}} = 19,29$ m/s.
+  		\end{itemize}
+  	}
+  	%\haidong{6}
+  \end{ex} \haidong{20}
+  
+  %\loai{Tốc độ trung bình giữa hai thời điểm có vận tốc và gia tốc cho trước}
+  \begin{ex}%[3P1KD-4][Loai1] 
+  	Một vật nhỏ dao động điều hòa trên trục Ox với biên độ 5 cm và tần số bằng 1 Hz. Trong khoảng thời gian vật có vận tốc nhỏ hơn $5\sqrt{3}\pi$ cm/s và gia tốc lớn hơn $10\pi^2\ cm/s^2$, tốc độ trung bình của vật nhỏ bằng
+  	\choice
+  	{12, 5 cm/s}
+  	{10 cm/s}
+  	{\True 15 cm/s}
+  	{20 cm/s}
+  	\loigiai{
+  		\immini{\begin{itemize}
+  				\item
+  				Ta có:
+  				$\omega = 2\pi\ rad/s,\ v_{\max} = 10\pi\ cm/s,\ a_{\max} = 20\pi ^2\ cm/s^2$.
+  				\item Sử dụng đường tròn hỗn hợp ta dễ dàng thấy, khoảng thời gian vật có vận tốc nhỏ hơn $5\sqrt{3}\pi$ cm/s và gia tốc lớn hơn $10\pi ^2\ cm/s^2$ ứng với khi vật chuyển động từ vị trí $-\dfrac{A}{2}$ theo chiều âm đến vị trí $-\dfrac{A}{2}$ theo chiều dương.
+  				\item Quãng đường vật đi được trong khoảng thời gian đó là $S = A = 5$ cm, hết thời gian $\dfrac{T}{3} = \dfrac{1}{3}$ s.
+  				\item Tốc độ trung bình $v_{tb}=\dfrac{5}{\dfrac{1}{3}}= 15$ cm/s.
+  		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-4,xmax=4]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](120:2){n1}
+  				\tkzDefShiftPoint[o](-120:2){m1}
+  				\tkzDefShiftPoint[o](-60:2){m2}
+  				\tkzDefPointBy[projection=onto p--q](m1) \tkzGetPoint{h}
+  				\tkzDefPointBy[projection=onto m--n](n1) \tkzGetPoint{h'}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](m1,m2 n1,m1)
+  				\tkzDrawSegments[->](m,n p,q n,m)
+  				\tkzDrawSegments[blue,->](o,m1 o,m2 o,n1)
+  				\tkzDrawPoints[size=3](o,m1,m2,h,h')
+  				\tkzMarkAngles[color=red,size=2cm,arrows=->,line width=1.5pt](n1,o,m1)
+  				\node at (-2,0)[above left]{$20\pi^2$};
+  				\node at (-2,0)[below left]{$a$};
+  				\node at (0,-2)[below right]{$10\pi$};
+  				\node at (0,-2)[below left]{$v$};
+  				\node at (h)[above right]{$5\sqrt{3}\pi$};
+  				\node at (h')[above]{$10\pi^2$};
+  		\end{tikzpicture}}
+  		
+  	}
+  	%\haidong{6}
+  \end{ex} \haidong{20}
+ 
+  
+  \setcounter{ex}{0}
+  \PhanII
+\begin{ex}
+  	Vật dao động điều hòa có đồ thị li độ phụ thuộc thời gian như hình vẽ.
+  	\immini{\choiceTF[t]
+  	{\True Quãng đường vật đi được sau $0,6\ s$ là $12\ cm$}
+  	{\True Tại thời điểm $t=0,2\ s$, vật đi qua vị trí cân bằng theo chiều dương}
+  	{Tại thời điểm ban đầu, vật ở vị trí biên âm}
+  	{Biên độ dao động của vật là $4\ cm$}}{
+\begin{hinhanh}{7}
+\begin{tikzpicture}[very thick,>=stealth']
+\pgfplotsset{width=7cm,height=5cm,compat=1.4}
+\begin{axis}[
+axis lines=middle, xmin=0, xmax=2*pi, xstep=1,
+ymin=-4.5, ymax=5, ystep=0.1,
+grid=major,%Vẽ chế độ lưới theo trục tọa độ Oxy,
+x grid style={dashed, black},
+axis line style={very thick,Mapcolor}, % <--- dòng thêm vào
+xlabel=$t~(s)$,
+xlabel style={above},
+xtick ={1,2,3,4,5,6,7,8},
+xticklabels={},
+y grid style={dashed, black},
+extra y ticks={0},
+extra y tick label={0},
+ylabel=$x~(cm)$,
+ylabel style={above},
+ytick={-4,-2,0,2, 4},
+yticklabels={$-2$,,,,2},]
+\addplot[line width=1.2pt, domain=0:1.7*pi, samples=400, Mapcolor]{4*cos(deg(0.5*pi*x+pi/2))};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={0,1}]
+coordinates {(1, 0)};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={0,3}]
+coordinates {(3, 0)};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={0,5}]
+coordinates {(5, 0)};
+\end{axis}
+\end{tikzpicture}\end{hinhanh}}
+  	\loigiai{
+  		\begin{itemchoice}
+  			\itemch 
+  			\itemch 
+  			\itemch 
+  			\itemch 
+  		\end{itemchoice}
+  	}
+  \end{ex}
+  	\begin{ex}
+  	Vật nhỏ dao động điều hòa theo phương trình $x=10\cos\left(2\pi t-\dfrac{2\pi}{3}\right)\ (cm)$. Với $t$ tính bằng giây.
+  	\choiceTF[t]
+  	{\True Tần số góc của dao động là $2\pi\ rad/s$}
+  	{\True Pha dao động của vật lúc $t=2\ s$ là $\dfrac{10\pi}{3}\ rad$}
+  	{Gia tốc của vật khi ở biên âm là $-40\pi^{2}\ m/s^{2}$}
+  	{\True Trong thời gian $2,5\ s$ vật đi được quãng đường là $100\ cm$}
+  	\loigiai{
+  		\begin{itemchoice}
+  			\itemch
+  			\itemch
+  			\itemch
+  			\itemch
+  		\end{itemchoice}
+  	}
+  \end{ex}
+  \begin{ex}
+  	Một chất điểm dao động điều hòa theo trục $Ox$, với $O$ trùng với vị trí cân bằng của chất điểm. Đường biểu diễn sự phụ thuộc li độ chất điểm theo thời gian $t$ cho ở hình vẽ.
+  	\immini{\choiceTF[t]
+  	{\True Khoảng thời gian ngắn nhất giữa 2 lần chất điểm đổi chiều chuyển động là $0,1\ s$}
+  	{Biên độ dao động của vật là $12\ cm$}
+  	{Tại thời điểm $t=0,1\ s$ li độ của chất điểm là $3\ cm$ và đang chuyển động theo chiều dương}
+  	{\True Quãng đường vật đi được sau khoảng thời gian $\Delta t=\dfrac{2}{15}\ s$, kể từ thời điểm ban đầu là $18\ cm$}}{
+\begin{hinhanh}{7}
+\begin{tikzpicture}[very thick,>=stealth']
+\pgfplotsset{width=7cm,height=5cm,compat=1.4}
+\begin{axis}[
+axis lines=middle, xmin=0, xmax=2.45*pi, xstep=1,
+ymin=-4.5, ymax=5, ystep=0.1,
+grid=major,%Vẽ chế độ lưới theo trục tọa độ Oxy,
+x grid style={dashed, black},
+axis line style={very thick,Mapcolor}, % <--- dòng thêm vào
+xlabel=$t~(s)$,
+xlabel style={above},
+xtick ={2/3,4/3,6/3,8/3,10/3,12/3,14/3,16/3,18/3,20/3},
+xticklabels={},
+y grid style={dashed, black},
+extra y ticks={0},
+extra y tick label={0},
+ylabel=$x~(cm)$,
+ylabel style={above},
+ytick={-4,-2,0,2, 4},
+yticklabels={$-6$,$-3$,,3,6},]
+\addplot[line width=1.2pt, domain=0:2.4*pi, samples=400, Mapcolor]{4*cos(deg(0.5*pi*x-2*pi/3))};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=1.5pt}, nodes near coords={}]
+coordinates {(20/3, -2)};
+\addplot[Mapcolor,mark=*,mark options={fill=white,mark size=0.5pt}, nodes near coords={0,2}]
+coordinates {(20/3, -4)};
+\end{axis}
+\end{tikzpicture}
+\end{hinhanh}}
+  	\loigiai{
+  		
+  	}
+  \end{ex}
+  	\begin{ex}
+  	Cho một vật dao động điều hoà với phương trình $x=9\cos\left(2\pi t-\dfrac{\pi}{6}\right)\ (cm)$, $t$ tính bằng giây.
+  	\choiceTF[t]
+  	{\True Quãng đường vật đi được trong một chu kì là $36\ cm$}
+  	{\True Phương trình vận tốc của vật là $v=18\pi\cos\left(2\pi t+\dfrac{\pi}{3}\right)\ (cm/s)$}
+  	{Gia tốc của vật tại thời điểm $t=2\ s$ là $-18\sqrt{3}\pi\ cm/s^2$}
+  	{Từ thời điểm ban đầu đến thời điểm $t=43,5\ s$, vật đi được quãng đường là $391,5\ cm$}
+  	\loigiai{
+  		\begin{itemchoice}
+  			\itemch
+  			\itemch
+  			\itemch
+  			\itemch
+  		\end{itemchoice}
+  	}
+  \end{ex}
+  
+  \setcounter{ex}{0}
+  \PhanIII
+    \begin{ex}
+    	Một vật dao động điều hòa theo phương trình $x=10 \cos (6,28 t+3,14) cm$. Quãng đường vật đi được sau 3 dao động là bao nhiêu mét?
+    	\shortans[oly]{1,2}
+    	\loigiai{
+    		Phương trình dao động là $x=10 \cos (6,28 t+\pi) cm$.
+    		Biên độ dao động của vật là $A = 10\ cm$.
+    		Trong một dao động toàn phần, vật đi được quãng đường là $4A = 4 . 10 cm = 40\ cm$.
+    		Sau 3 dao động, quãng đường vật đi được là $3 . 4A = 3 . 40 cm = 120\ cm$.
+    		Đổi sang mét: $120 cm = 1,2\ m$.
+    	}
+    \end{ex}
+    \begin{ex}
+    	Vật dao động điều hòa có phương trình vận tốc là $v=8 \pi \cos \left(2 \pi t-\dfrac{2 \pi}{3}\right)\ cm/s$. Thời gian để vật đi được quãng đường $40\ cm$ kể từ lúc bắt đầu dao động là bao nhiêu giây?
+    	\shortans[oly]{2,5}
+    	\loigiai{
+    	}
+    \end{ex}
+    \begin{ex}
+  	Một chất điểm dao động điều hòa với phương trình li độ $x=10 \cos \left(4 \pi t+\dfrac{\pi}{6}\right)$
+  	(t tính bằng giây). Quãng đường chất điểm đi được bằng bao nhiêu $m$ kể từ thời điểm $t=0$ đến thời điểm $t=\dfrac{11}{6} \ s$ (làm tròn kết quả đến chữ số hàng phần trăm)?\\
+  	\shortans[oly]{1,49}
+  	\loigiai{
+  		$1,49 \ m$
+  	}
+  	%\haidong{6}
+  \end{ex} \haidong{20}
+  \begin{ex}
+  	Một chất điểm dao động điều hòa với phương trình li độ $x=5 \cos \left(4 \pi t-\dfrac{\pi}{3}\right)$ (t tính bằng giây). Tìm thời gian để chất điểm đi được quãng đường $45 \ cm$ kể từ thời điểm $t=0$ (làm tròn kết quả đến chữ số hàng phần trăm)?\\
+  	\shortans[oly]{1,17}
+  	\loigiai{
+  		$1,17 \ s$
+  	}
+  	%\haidong{6}
+  \end{ex} \haidong{20}
+  \begin{ex}
+  	Một chất điểm dao động điều hòa với phương trình li độ $x=10 \cos \left(\pi t+\dfrac{\pi}{3}\right)$
+  	(cm) ($t$ tính bằng giây). Tìm thời gian để chất điểm đi được quãng đường $30 \ cm$ kể từ thời điểm $t=0$ (làm tròn kết quả đến chữ số hàng phần trăm)?\\
+  	\shortans[oly]{1,33}
+  	\loigiai{
+  		$1,33 \ s$
+  	}
+  	%\haidong{6}
+  \end{ex} \haidong{20}
+  \begin{ex}
+  	Một chất điểm dao động điều hòa với phương trình li độ $x=5 \cos (4 \pi t+\pi)\ cm$ (t tính bằng giây). Tìm thời gian để chất điểm đi được quãng đường $255 \ cm$ kể từ thời điểm $t=\dfrac{1}{6} \ s$ (làm tròn kết quả đến chữ số hàng phần trăm)?\\
+  	\shortans[oly]{6,42}
+  	\loigiai{
+  		$6,42 \ s$
+  	}
+  	%\haidong{6}
+  \end{ex} \haidong{20}
+  
+  
+  
+  
+  

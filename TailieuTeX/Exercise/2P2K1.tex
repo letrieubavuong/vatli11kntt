@@ -1,0 +1,98 @@
+\subsubsection*{I. ĐỊNH NGHĨA - PHÂN LOẠI}
+\paragraph{Định nghĩa}
+\textit{Sóng cơ} là dao động cơ lan truyền trong một môi trường (chất rắn, chất lỏng, chất khí).
+\paragraph{Phân loại sóng cơ}
+immini[thm]{\begin{itemize}
+\item \textbf{Sóng ngang:} có phương dao động của các phần tử vuông góc với phương truyền sóng. \\
+Sóng ngang truyền trong chất rắn và trên bề mặt chất lỏng. Ví dụ: sóng mặt nước, sóng trên dây... 
+\item \textbf{Sóng dọc:} có phương dao động của các phần tử trùng với phương truyền sóng. \\
+Sóng dọc truyền trong chất rắn, lỏng, khí. Ví dụ: sóng âm, các vụ nổ... 
+\end{itemize}
+\notebox{
+\circEX{1} Sóng cơ không truyền được trong chân không.\\
+\circEX{2} Khi sóng truyền qua, các phần tử của môi trường chỉ dao động quanh vị trí cân bằng của chúng mà không chuyển dời theo sóng, chỉ có pha dao động của chúng được truyền đi.
+}}
+{\begin{tikzpicture}[scale=1]
+\begin{scope}[shift={(0,0)}]
+\begin{axis}[
+xscale=1.2,
+yscale=0.8,
+xmin=-1,
+xmax=11,
+ymin=-2,
+ymax=2.2,
+xlabel=$x$,
+ylabel=$u$,
+xmajorticks=false,
+ymajorticks=false,
+axis y line=middle,
+axis x line=middle,
+x label style={at={(axis description cs:0.875,0.595)},anchor=east},
+y label style={at={(axis description cs:0.08,1.4)},anchor=north},
+no markers,
+every axis plot/.append style={thick}
+]
+\addplot[blue,thick,samples=400,domain=0:10.5] (\x,
+{1.3*sin(deg(x))+0.3*sin(20*deg(x))});
+\draw[latex-latex,line width=3pt,purple] (-0.5,-0.8) -- (-0.5,0.8);
+\draw[densely dashed] (1.57,1.5) -- (1.57,2);
+\draw[densely dashed] (7.85,1.5) -- (7.85,2);
+\end{axis}
+\draw[latex-latex] (1.75,4.25) -- (6,4.25) node[midway,above] {$\lambda$};
+\draw[-latex,thick] (1.07,0.75) -- (2.07,0.75) node[midway,above] {$v$};
+\node at (4,0){Sóng ngang};  
+\node at (4,-4){Sóng dọc};
+\end{scope}
+\begin{scope}[shift={(0.7,-2.5)},scale=0.8]
+\tikzset{declare function={f(\x)=sin(540*\x);}}
+\draw[thick,-latex] (-1,0) -- (9.6,0)node[below] {$x$}node[above] {$u$};
+\draw[domain=0.01:9.2,variable=\x,samples=500,blue,thick] plot
+({\x-0.8*exp(-(\x-2.5)*(\x-2.5))-0.8*exp(-(\x-7.7)*(\x-7.7))},{f(\x)});
+\draw[latex-latex] (1.3,1.5) -- (6.6,1.5) node[midway,above]{$\lambda$};
+\draw[fill=white](0,0)circle(1pt);
+\end{scope}
+\end{tikzpicture}}
+\subsubsection*{II. Đặc trưng của sóng hình sin}
+\begin{itemize}
+\item \textbf{Chu kì sóng (T) và tần số sóng (f):} là chu kì dao động và tần số dao động của một phần tử sóng (cũng là chu kì và tần số của nguồn sóng)
+\begin{align*}
+\boder{T=\dfrac{1}{f}=\dfrac{2\pi}{\omega}}
+\end{align*}
+\item \textbf{Biên độ sóng (A):} là biên độ dao động của một phần tử của môi trường có sóng truyền qua.
+\item \textbf{Tốc độ truyền sóng (v):} là tốc độ lan truyền dao động trong môi trường.
+\notebox{\begin{itemize}
+\item Với mỗi môi trường nhất định, tốc độ truyền sóng không đổi.
+\item Tốc độ truyền sóng phụ thuộc vào bản chất của môi trường truyền (tính đàn hồi và mật độ môi trường):
+\begin{align*}
+\boder{v_{\text{rắn}}>v_{\text{lỏng}}>v_{\text{khí}}}
+\end{align*}
+\end{itemize}}
+\end{itemize}
+\Binhluan{\begin{itemize}\item \textbf{Bước sóng (\bth{\lambda})}: là quãng đường mà sóng truyền đi được trong một chu kì. 
+\begin{align*}
+\boder{\lambda = v.T=\dfrac{v}{f}}\quad \text{đơn vị đo: m hoặc cm} 
+\end{align*}
+\end{itemize}
+\centerline{
+\begin{tikzpicture}[scale=0.7,thick,>=stealth',x=1.4cm]
+\draw [blue, line width = 1pt, domain=0:10, samples=500]%
+plot (\x, {-1.5*cos(\x*90+90)});
+\draw[red,dashed,line width = 1pt](0,0)--(10,0);
+\foreach \x in {5,9}
+{\draw[dashed](\x,1.5)--(\x,2);}
+\draw[dashed,<->](5,1.8)--node[midway,above]{$\lambda$: Bước sóng}(9,1.8);
+\draw[<->](3,0)--node[midway,right]{$A$}(3,-1.5);
+\draw[fill=red]  (1,1.5) circle (2 pt);
+\draw[fill=red]  (7,-1.5) circle (2 pt);
+\node at (3,-1.5)[below]{Biên độ} ;
+\node at (1,1.5)[above]{Đỉnh sóng} ;
+\node at (7,-1.5)[below]{Đáy sóng};
+\end{tikzpicture}
+}
+}
+{Bước sóng $\lambda$ cũng là khoảng cách giữa hai điểm gần nhau nhất trên phương truyền sóng dao động cùng pha.
+}
+\begin{itemize}
+\item \textbf{Năng lượng sóng:} là năng lượng dao động của phần tử khi sóng truyền qua.
+\Note{Quá trình truyền sóng cũng là quá trình truyền năng lượng}
+\end{itemize}

@@ -1,0 +1,640 @@
+\begin{vidu}%CTST
+Một sóng truyền trên một dây rất dài có phương trình: $u=10\cos(2\pi t+0,01\pi x)$. Trong đó u và x được tính bằng cm và t được đo bằng giây. Hãy xác định:
+\begin{itemize}
+\item[a)] Chu kì, tần số và biên độ sóng. 
+\item[b)] Bước sóng và tốc độ truyền sóng.
+\item[c)] Giá trị của li độ u của điểm có vị trí $x=50\ cm$ ở thời điểm $t=4\ s$. 
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item[a)] Chu kì: $T=1\ s$, tần số: $f=1\ Hz$ và biên độ sóng: $A=10\ cm$. 
+\item[b)] Bước sóng: $0,01\pi x=\dfrac{2\pi x}{\lambda}\Rightarrow\lambda=200\ cm=2\ m$ và tốc độ truyền sóng: $v=\lambda.f=2\ m/s$.
+\item[c)] Giá trị của li độ u ở thời điểm $t=4\ s$ tại vị trí $x=50\ cm$: $u=10\cos(2\pi .4+0,01\pi 50)=0$
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\begin{vidu}%[3P2-3.1B][Loai1]
+Một sóng hình sin truyền theo chiều dương của trục Ox với phương trình dao động của nguồn sóng (đặt tại O) là $u_O = 4\cos100\pi t\ cm$. Ở điểm M (theo hướng Ox) cách O một phần tư bước sóng, phần tử môi trường dao động với phương trình là
+\choice
+{$u_M = 4\cos(100\pi t + \pi)$ cm}
+{$u_M = 4\cos100\pi t$ cm}
+{\True $u_M = 4\cos(100\pi t - 0,5\pi )$ cm}
+{$u_M = 4\cos(100\pi t + 0,5\pi)$ cm}
+\loigiai{
+\begin{itemize}
+\item Sóng từ O đến M nên M chậm pha hơn so với O góc $\dfrac{2\pi d}{\lambda }=\dfrac{\pi }{2} \Rightarrow  u_M = 4\cos(100\pi t - 0,5\pi )$ cm. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\begin{vidu}%CTST
+Hai điểm gần nhất trên cùng phương truyền sóng dao động lệch pha nhau một góc $\dfrac{\pi}{2}$ cách nhau 60 cm. Biết tốc độ truyền sóng là 330 m/s. 
+\begin{itemize}
+\item[a)] Độ lệch pha giữa hai điểm trên cùng phương truyền sóng, cách nhau 360 cm tại cùng một thời điểm là ..............
+\item[b)] Độ lệch pha tại cùng một điểm trên phương truyền sóng sau một khoảng thời gian là 0,1 s  là ..............
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item[a)] Theo bài ra: $\dfrac{\lambda}{4}=60\ cm\Rightarrow \lambda=240\ cm$. \\
+$\Delta\varphi=\dfrac{2\pi d}{\lambda}=3\pi$. Vậy hai điểm cách nhau 360 cm thì dao động ngược pha với nhau.
+\item[b)] Chu kì sóng: $T=\dfrac{\lambda}{v}=\dfrac{2}{275}\ s$.\\
+Độ lệch pha của cùng một điểm sau 0,1 s: $\Delta \varphi=\dfrac{2\pi}{T}.\Delta t=27,5\pi\ rad$.
+
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\begin{vidu}%KNTT
+Một sóng hình sin được mô tả như hình.
+\begin{center} 
+\begin{tikzpicture}[scale=0.8,thick,>=stealth',transform shape]
+%Hệ trục toạ độ
+\tkzDefPoints{0/0/x', 9/0/x, 0/-1.2/y', 0/1.3/y}
+\tkzDrawSegments[->,add = 0 and .03](x',x)
+\tkzDrawSegments[->,add = 0 and .05](y',y)
+\tkzLabelPoint[above right](x){$x\ (cm)$}
+\tkzLabelPoint[above right](y){Li độ u (cm)}
+\draw  [help  lines, xstep=0.5cm,ystep=0.5cm]  (x' |- y')  grid  (x |- y);
+%Chia vạch trên các trục
+\foreach  \x  in  {2,4,...,7}
+{\draw[thin]  (\x,-0.1)  --  (\x,0.1);}
+\foreach  \y  in  {-1,1}
+{\draw[thin]  (-0.1,\y)  --  (0.1,\y);}
+%Chú thích trên các trục
+\foreach  \x  [evaluate=\x as \z using int(25*\x/2)] in  {2,4,...,9}
+{\node[below=3pt] at (\x,0){$\z$};}
+\foreach  \y  [evaluate=\y as \z using int(6*\y)] in  {-1,1}
+{\node[left=3pt] at (0,\y){$\z$};}
+\node[left] at (0,0){$O$};
+%Đồ thị
+\def\A{0.5} % Biên độ
+\def\T{4} % Chu kì
+\def\Phi{0} % Pha ban đầu
+{\draw [red, line width = 1.2pt, domain=0:8, samples=500]%
+plot (\x, {(\A)*cos(360/\T*\x+\Phi)});}
+\draw[blue,very thick,->](6,-1)--node[midway,below,black]{Phương truyền sóng}(9,-1);
+\end{tikzpicture}
+\end{center} 
+\begin{itemize}
+\item[a)] Xác định biên độ và bước sóng của sóng.
+\item[b)] Nếu chu kì của sóng là 1 s thì tần số và tốc độ truyền sóng bằng bao nhiêu?
+\item[c)] Bước sóng sẽ bằng bao nhiêu nếu tần số tăng lên 5 Hz và tốc độ truyền sóng không đổi? 
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item[a)] Biên độ $A = 3$ cm. Bước sóng: $\lambda=50\ cm$ 
+\item[b)] Tần số: $f=1\ Hz$; Tốc độ truyền sóng: $v=\lambda.f=0,5\ m/s$.
+\item[c)] Bước sóng mới: $\lambda'=\dfrac{v}{f'}=\dfrac{0,5}{5}=0,1\ m$.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+
+
+\loai{Đồng nhất phương trình sóng - Tìm biên độ}
+
+\loai{Đồng nhất phương trình sóng - Tìm tần số}
+\begin{vidu}%[3P2-3.1Y][Loai1]
+Một sóng cơ truyền dọc theo trục Ox có phương trình $u = A\cos(20\pi t - \pi x)$ cm, với t tính bằng s. Tần số của sóng này bằng
+\choice
+{15 Hz}
+{\True 10 Hz}
+{5 Hz}
+{20 Hz}
+\loigiai{
+Ta có: $u = A\cos(20\pi t - \pi x)$ cm $\Rightarrow \omega =20\pi\ rad/s=2\pi f\Rightarrow f=10\ Hz$.
+}
+\end{vidu} \haidong{20}
+\loai{Đồng nhất phương trình sóng - Tìm tốc độ cực đại}
+\begin{vidu}%[3P2-3.1Y][Loai1]
+Một sóng cơ truyền trong một môi trường dọc theo trục Ox với phương trình $u = 5\cos(6\pi t - \pi x)$ cm (x tính bằng mét, t tính bằng giây). Tốc độ cực đại các phần tử môi trường có sóng truyền qua là
+\choice
+{6 m/s}
+{$60\pi$  m/s}
+{\True $30\pi$  cm/s}
+{$30\pi$  m/s}
+\loigiai{
+\begin{itemize}
+\item Ta có:$v_{\max} = \omega A = 30\pi$  cm/s.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Đồng nhất phương trình sóng - Tìm bước sóng}
+
+
+\loai{Đồng nhất phương trình sóng - Tìm tốc độ truyền sóng}
+\begin{vidu}%[3P2-3.1B][Loai1]
+Một sóng cơ truyền trong một môi trường dọc theo trục Ox với phương trình $u=5\cos \left({6\pi t-\pi x}\right)$ (x tính bằng mét, t tính bằng giây). Tốc độ truyền sóng bằng
+\choice
+{3 m/s}
+{$\dfrac{1}{6}$ m/s}
+{\True 6 m/s}
+{$\dfrac{1}{3}$ m/s}
+\loigiai{
+\begin{itemize}
+\item \textbf{Cách 1:} Đồng nhất phương trình: $\dfrac{\omega x}{v}=\pi x\Rightarrow \dfrac{6\pi x}{v}=\pi x\Rightarrow v=6\ m/s$.
+\item \textbf{Cách 2:} $v=\dfrac{\text{hệ số của t}}{\text{hệ số của x}}=\dfrac{6\pi}{\pi}=6\ m/s.$
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Viết phương trình dao động tại một điểm - xuôi chiều truyền}
+\loai{Viết phương trình dao động tại 1 điểm - ngược chiều truyền}
+
+\loai{Li độ tại một điểm trên dây}
+\begin{vidu}%[3P2-3.1B][Loai1]
+Cho một sợi dây đàn hồi, thẳng, rất dài. Đầu O của sợi dây dao động với phương trình $u = 4\cos20\pi t$ cm (t tính bằng s). Coi biên độ sóng không đổi khi sóng truyền đi. Tốc độ truyền sóng trên dây là 0,8 m/s. Li độ của điểm M trên dây cách O một đoạn 20 cm theo phương truyền sóng tại thời điểm $t = 0,35$ s bằng
+\choice
+{$2\sqrt{2}$ cm}
+{$-2\sqrt{2}$ cm}
+{\True 4 cm}
+{$-4$ cm}
+\loigiai{
+\begin{itemize}
+\item Bước sóng:  $\lambda =\dfrac{v}{f}=8\ cm$.
+\item Điểm M cách O đoạn  $d=20\ cm$  có phương trình dao động là:\\ ${u_{M}}=4\cos \left( 20\pi t-\dfrac{2\pi d}{\lambda } \right)=4\cos \left( 20\pi t-5\pi \right)=4\cos \left( 20\pi t-\pi \right)$ cm.
+\item Tại $t = 0,35$ s, pha dao động của M là $\phi =20\pi . 0,35-\pi =6\pi \equiv 0\Rightarrow u_M=4$ cm.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Tính vận tốc tại một điểm trên dây}
+
+\loai{Tính gia tốc tại một điểm trên dây}
+
+\loai{Thay số tính khoảng cách}
+\begin{vidu}%[3P2-2.1Y][Loai1]
+Một sóng cơ có chu kì 2 s truyền với tốc độ 1 m/s. Khoảng cách giữa hai điểm gần nhau nhất trên một phương truyền mà tại đó các phần tử môi trường dao động ngược pha nhau là
+\choice
+{0,5 m}
+{\True 1,0 m}
+{2,0 m}
+{2,5 m}
+\loigiai{
+\begin{itemize}
+\item Ta  có: $d=\dfrac{\lambda }{2}$ hay $d = \dfrac{v. T}{2}=\dfrac{1. 2}{2}=1\ m$.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Tính độ lệch pha giữa hai điểm}
+\begin{vidu}%[3P2-2.1B][Loai1]
+Sóng cơ có tần số 80 Hz lan truyền trong một môi trường với vận tốc 4 m/s. Dao động của các phần tử vật chất tại hai điểm trên một phương truyền sóng cách nguồn sóng những đoạn lần lượt 31 cm và 33,5 cm lệch pha nhau
+\choice
+{$\dfrac{\pi}{2}$ rad}
+{\True $\pi$ rad}
+{$2\pi$ rad}
+{$\dfrac{\pi}{3}$ rad}
+\loigiai{
+\begin{itemize}
+\item Ta có:$\lambda = \dfrac{v}{f} = \dfrac{400}{80} = 5\ cm \Rightarrow
+\Delta \varphi = 2\pi.\dfrac{d_1-d_2}{\lambda} = \pi \ rad.$
+\item 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Dùng điều kiện kẹp - tính tần số}
+\begin{vidu}%[3P2-2.1K][Loai1]
+Một sóng ngang truyền trên sợi dây rất dài với tốc độ truyền sóng là 4 m/s và tần số sóng có giá trị từ 33 Hz đến 43 Hz. Biết hai phần tử tại hai điểm trên dây cách nhau 25 cm luôn dao động ngược pha nhau. Tần số sóng trên dây là
+\choice
+{42 Hz}
+{35 Hz}
+{\True 40 Hz}
+{37 Hz}
+\loigiai{
+\begin{itemize}
+\item Hai điểm dao động ngược pha: \\ $d=\left( k+0,5 \right)\lambda =25\ cm$ hay $\dfrac{\left( k + 0,5 \right)v}{f}=25\Rightarrow f=\dfrac{\left( k + 0,5 \right).400}{25}=16\left( k + 0,5 \right)$. 
+\item $33\ Hz\le f\le 43\ Hz \Rightarrow 33\ Hz\le 16\left( k + 0,5 \right)\le 43\ Hz\Rightarrow 1,56\le k\le 2,18\Rightarrow k=2\Rightarrow f=40\ Hz$. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Dùng điều kiện kẹp - tính tốc độ truyền sóng}
+
+
+\loai{Số điểm cùng pha với nguồn}
+\begin{vidu}%[3P2-2.2K][Loai1]
+Một nguồn O phát sóng cơ dao động theo phương trình $u_O = 2\cos(20\pi t + \dfrac{\pi}{3})$ (trong đó u tính bằng đơn vị mm, t tính bằng đơn vị s). Xét sóng truyền theo một đường thẳng từ O đến điểm M với tốc độ không đổi 1 m/s. Biết M cách O một khoảng 45 cm. Trong khoảng từ O đến M có bao nhiêu điểm dao động cùng pha với dao động tại nguồn O?
+\choice
+{\True 4}
+{3}
+{2}
+{5}
+\loigiai{
+\begin{itemize}
+\item Điểm dao động cùng pha với nguồn thì phải cách nguồn đoạn $d = k\lambda = 10k$ cm.
+\item Từ O đến M: $0<d\le 45\ cm\Rightarrow 0 10<k \le 45 \Rightarrow 0<k\le 4,5\Rightarrow k=1;2;3;4.$
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Số điểm vuông pha với nguồn}
+\begin{vidu}%[3P2-2.2K][Loai1]
+Một nguồn O phát sóng cơ dao động theo phương trình $u_0=2\cos\left(20\pi t+\dfrac{\pi}{3}\right)$(trong đó u tính bằng đơn vị mm, t tính bằng đơn vị s). Xét trên một phương truyền sóng từ O đến điểm M rồi đến điểm N với tốc độ 1 m/s. Biết $OM=10\ cm$ và $ON = 55\ cm$. Trong đoạn MN có bao nhiêu điểm dao động vuông pha với dao động tại nguồn O?
+\choice
+{10}
+{8}
+{\True 9}
+{5}
+\loigiai{
+\begin{itemize}
+\item Độ lệch pha của một điểm trên MN cách O một khoảng d là:
+$\Delta \varphi=\dfrac{\omega d}{v} =\dfrac{20\pi d}{100}=\dfrac{\pi}{5}$.
+\begin{center}
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 2/0/m, 5/0/n, 7/0/x}
+\tkzDrawSegments[->](o,x)
+\tkzDrawPoints[size=3](o,m,n)
+\node at (n)[below]{$N$};
+\node at (m)[below]{$M$};
+\node at (o)[below]{$O$};
+\node at (x)[below]{$x$};
+\end{tikzpicture}
+\end{center}
+\item Điểm này dao động vuông pha với O thì $\Delta varphi = (2k+1)\dfrac{\pi}{2}\Rightarrow d =5k+2,5\ cm$.
+\item Thay vào điều kiện $OM \le d \le ON$
+$\Rightarrow 10 \le 5k+2,5 \le 55 \Rightarrow 1,5 \le k \le 10,5$
+$\Rightarrow k= 2,...,10 \Rightarrow$ Có 9 giá trị.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\loai{Tính tốc độ truyền sóng}
+\begin{vidu}%[3P2-2.1K][Loai1]
+Một sóng ngang hình sin lan truyền trên trục Ox với biên độ không đổi và tần số bằng 5 Hz. Trên Ox có hai điểm P, Q cách nhau 4,5 m, sóng truyền theo chiều PQ. Hai phần tử môi trường tại P và Q luôn chuyển động cùng tốc độ nhưng ngược chiều nhau. Trong khoảng giữa PQ có một điểm mà phần tử môi trường tại đó dao động cùng pha với phần tử môi trường tại P. Tốc độ truyền sóng bằng
+\choice
+{8 m/s}
+{\True 15 m/s}
+{3,8 m/s}
+{4,8 m/s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $v_P = -v_Q \Rightarrow x_P = -x_Q$ hay hai phần tử P và Q dao động ngược pha với nhau
+$\Rightarrow PQ = k\lambda + \dfrac{\lambda}{2}$.
+\item Mà giữa P và Q có 1 điểm mà phần tử môi trường tại đó dao động cùng pha với phần tử môi trường tại P nên $PQ = \lambda + \dfrac{\lambda}{2} = 1,5\lambda\Rightarrow 1,5\lambda = 4,5 \Rightarrow \lambda = 3\ m\Rightarrow v_s = \lambda.f = 3.5 = 15 \ m/s$.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Tính bước sóng}
+
+%macbook 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\loai{Xác định chiều truyền sóng}
+\begin{vidu}%[3P2-4.1K][Loai1]  
+\immini[thm]{Một sóng cơ truyền trên mặt nước với tần số $f = 10$ Hz, tại một thời điểm nào đó các phần tử mặt nước có dạng như hình vẽ. Trong đó khoảng cách từ vị trí cân bằng của A đến vị trí cân bằng của D là 30 cm và điểm C đang từ vị trí cân bằng của nó đi xuống. Chiều truyền và vận tốc truyền sóng là}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+\begin{axis}[
+axis lines=middle,
+xmin=-0.5,xmax=6.5,xstep=1,ymin=-1.6,ymax=1.8,ystep=0.1,
+grid=none, %Có các tùy chọn: minor|major|both|none
+x grid style={dashed},y grid style={dashed},
+ytick={-1.5,-1,-0.5,0,0.5,1,1.5}, xtick={0.667,1.333,...,6},
+xticklabels={}, yticklabels={},
+xticklabel style={black,below},
+xlabel style={above=1pt},
+xlabel=$x(cm)$, ylabel style={left=1pt},
+ylabel={$u$}
+]
+\addplot[line width=1.2pt,domain=0:6,samples=200,red]{1.5*cos(deg(0.5*pi*x-pi/2))};
+\draw[fill=white] (axis cs: {0*0.667}, {1.5*cos(deg(0.5*pi*0*0.667-pi/2)})circle(1.2pt)node[below,fill=white,inner sep=1pt]{A};
+\draw[fill=white] (axis cs: {1}, {1.5*cos(deg(0.5*pi*1-pi/2)})circle(1.2pt)node[below]{B};
+\draw[fill=white] (axis cs: {2}, {1.5*cos(deg(0.5*pi*2-pi/2)})circle(1.2pt)node[above right]{C};
+\draw[fill=white,->] (axis cs: {2}, {1.5*cos(deg(0.5*pi*2-pi/2)})--++(-90:0.5cm)node[below]{$\vec{v}_A$};
+\draw[fill=white] (axis cs: {3}, {1.5*cos(deg(0.5*pi*3-pi/2)})circle(1.2pt)node[above]{D};
+\draw[fill=white] (axis cs: {4}, {1.5*cos(deg(0.5*pi*4-pi/2)})circle(1.2pt)node[below right]{E};
+\draw[fill=white] (axis cs: {5}, {1.5*cos(deg(0.5*pi*5-pi/2)})circle(1.2pt)node[below]{F};
+\end{axis}
+\end{tikzpicture}}
+\choice
+{\True Từ E đến A với vận tốc 4 m/s}
+{Từ A đến E với vận tốc 4 m/s}
+{Từ E đến A với vận tốc 3 m/s}
+{Từ A đến E với vận tốc 3 m/s}
+\loigiai{
+\begin{itemize}
+\item Bên phải đỉnh sóng đỉnh B, sóng tại C đi xuống $\Rightarrow$  Sóng tại E đi lên $\Rightarrow$  sóng truyền từ E đến A.
+\item Khoảng cách $AD = \dfrac{3\lambda}{4} = 30\ cm \Rightarrow  \lambda  = 40\ cm$
+$\Rightarrow  v = \lambda f = 400\ cm/s = 4\ m/s$. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Tính bước sóng}
+\begin{vidu}%[3P2-4.1K][Loai1]  
+\immini[thm]{\nguon{MH - 2017} Một sóng hình sin truyền trên một sợi dây dài. Ở thời điểm t, hình dạng của một đoạn dây 
+như hình vẽ. Các vị trí cân bằng của các phần tử trên dây cùng nằm trên trục Ox. Bước sóng của sóng này bằng
+\haicot
+{\True 48 cm}
+{18 cm}
+{36 cm}
+{24 cm}}
+{\begin{tikzpicture}[thick,>=stealth']
+\tkzDefPoints{3.5/0/n}
+\draw [red, line width = 1.2pt, domain=0:5, samples=500]%
+plot (\x, {1*cos(\x*60+90/4)});
+\draw[->](0,0)--(5.5,0);
+\draw[->](0,-1.2)--(0,1.4);
+\node[above left] at (0,1.4){$u$};
+\node[above] at (5.5,0){$x\ (cm)$};
+\node[left] at (0,0){$O$};
+\draw[fill=white] (1.12, 0) circle(1.2pt) node[below left]{$9$};
+\draw[fill=white] (4.12, 0) circle(1.2pt) node[below right]{$33$};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Dễ dàng nhận thấy khoảng cách giữa hai lần sóng qua vị trí cân bằng: 
+\begin{align*}
+\Delta x = 36 - 12 = 24\ cm = \dfrac{\lambda}{2}
+\Rightarrow  \lambda  = 48\ cm.
+\end{align*} 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Tính độ lệch pha giữa hai điểm}
+\begin{vidu}%[3P2-4.1K][Loai1]  
+\immini{\nguon{QG - 2017} Trên một sợi dây dài đang có sóng ngang hình sin truyền qua theo chiều dương của trục Ox. 
+Tại thời điểm $t_0$, một đoạn của sợi dây có hình dạng như hình bên. Hai phần tử dây tại M và Q dao động lệch pha nhau
+}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+\begin{axis}[
+axis lines=middle,
+xmin=0,xmax=6.5,xstep=1,ymin=-1.6,ymax=1.6,ystep=0.1,
+grid=major, %Có các tùy chọn: minor|major|both|none
+x grid style={dashed},y grid style={dashed},
+ytick={-1.5,-1,-0.5,0,0.5,1,1.5},xtick={0.667,1.333,...,6},
+xticklabels={},yticklabels={},
+xticklabel style={black,below},xlabel style={above=3pt},
+xlabel=$x\ (cm)$,ylabel style={left=3pt},
+ylabel={$u$}
+]
+\addplot[line width=1.2pt,domain=0:6,samples=200,red]{1.5*cos(deg(0.5*pi*x+pi/2))};
+\draw[fill=white] (axis cs: {2/3}, {1.5*cos(deg(0.5*pi*2/3+pi/2)})circle(1.5pt)node[above right]{M};
+\draw[fill=white] (axis cs: {4*0.667}, {1.5*cos(deg(0.5*pi*4*0.667+pi/2))})circle(1.5pt)node[below right]{Q};
+\end{axis}
+\draw (0,1.2) node[left]{O};
+\end{tikzpicture}}
+\choice
+{$\dfrac{\pi}{3}$}
+{\True $\pi$ }
+{$2\pi$}
+{$\dfrac{\pi}{4}$}
+\loigiai{
+\begin{itemize}
+\item Trên Ox, 6 ô $\sim  \lambda$ ; MQ $\sim$  3 ô $\Rightarrow  \Delta \varphi  = \dfrac{2\pi.MQ}{\lambda}=\dfrac{2\pi.3}{6} = \pi\ rad$. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\begin{vidu}%[3P2-4.1K][Loai1]
+Cho một sợi dây đàn hồi rất dài căng ngang. Lúc $t=0$, đầu P của sợi dây bắt đầu dao động theo phương thẳng đứng với phương trình $u_P=2\cos(\pi t - \pi )$ cm. Tốc độ sóng truyền trên dây là $v=5$ m/s. Tại thời điểm $t=2$ s, hình dạng đoạn dây PQ dài 10 m được tô bằng nét đậm nào dưới đây?
+\choice
+{\begin{tikzpicture}[scale=1,thick,>=stealth',x=0.5cm,y=0.5cm]
+\draw[->] (0,0)--(11,0)node[above]{$x\ (m)$};
+\draw[->] (0,-2.5)--(0,2.5)node[right]{$u\ (cm)$};
+\draw[dashed] (0,-2)--(10,-2)(0,2)--(10,2)(5,0)--(5,2);
+\draw [red, line width = 1.2pt, domain=0:7.5, samples=500]%
+plot (\x, {2*cos(\x*36+180)})--(10,0);
+\node at (0,0)[left]{$O$};
+\node at (0,2)[left]{$+2$};
+\node at (0,-2)[left]{$-2$};
+\node at (2.5,0)[below]{$2,5$};
+\node at (5,0)[below]{$5$};
+\node at (7.5,0)[below]{$7,5$};
+\node at (10,0)[below]{$10$};
+\draw[fill=black] (2.5,0) circle (1.2 pt);
+\draw[fill=black] (5,0) circle (1.2 pt);
+\draw[fill=black] (7.5,0) circle (1.2 pt);
+\draw[fill=black] (10,0) circle (1.2 pt);
+\draw[fill=black] (0,2) circle (1.2 pt);
+\draw[fill=black] (0,-2) circle (1.2 pt);
+\end{tikzpicture}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth',x=0.5cm,y=0.5cm]
+\draw[->] (0,0)--(11,0)node[below]{$x\ (m)$};
+\draw[->] (0,-2.5)--(0,2.5)node[right]{$u\ (cm)$};
+\draw[dashed] (0,-2)--(10,-2)(0,2)--(10,2)(5,0)--(5,-2);
+\draw [red, line width = 1.2pt, domain=0:7.5, samples=500]%
+plot (\x, {2*cos(\x*36)})--(10,0);
+\node at (0,0)[left]{$O$};
+\node at (0,2)[left]{$+2$};
+\node at (0,-2)[left]{$-2$};
+\node at (2.5,0)[above]{$2,5$};
+\node at (5,0)[above]{$5$};
+\node at (7.5,0)[above]{$7,5$};
+\node at (10,0)[above]{$10$};
+\draw[fill=black] (2.5,0) circle (1.2 pt);
+\draw[fill=black] (5,0) circle (1.2 pt);
+\draw[fill=black] (7.5,0) circle (1.2 pt);
+\draw[fill=black] (10,0) circle (1.2 pt);
+\draw[fill=black] (0,2) circle (1.2 pt);
+\draw[fill=black] (0,-2) circle (1.2 pt);
+\end{tikzpicture}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth',x=0.5cm,y=0.5cm]
+\draw[->] (0,0)--(11,0)node[below]{$x\ (m)$};
+\draw[->] (0,-2.5)--(0,2.5)node[right]{$u\ (cm)$};
+\draw[dashed] (0,-2)--(10,-2)(0,2)--(10,2)(5,0)--(5,-2)(10,0)--(10,2);
+\draw [red, line width = 1.2pt, domain=0:10, samples=500]%
+plot (\x, {2*cos(\x*36)});
+\node at (0,0)[left]{$O$};
+\node at (0,2)[left]{$+2$};
+\node at (0,-2)[left]{$-2$};
+\node at (2.5,0)[above]{$2,5$};
+\node at (5,0)[above]{$5$};
+\node at (7.5,0)[above]{$7,5$};
+\node at (10,0)[above]{$10$};
+\draw[fill=black] (2.5,0) circle (1.2 pt);
+\draw[fill=black] (5,0) circle (1.2 pt);
+\draw[fill=black] (7.5,0) circle (1.2 pt);
+\draw[fill=black] (10,0) circle (1.2 pt);
+\draw[fill=black] (0,2) circle (1.2 pt);
+\draw[fill=black] (0,-2) circle (1.2 pt);
+\end{tikzpicture}}
+{\True \begin{tikzpicture}[scale=1,thick,>=stealth',x=0.5cm,y=0.5cm]
+\draw[->] (0,0)--(11,0)node[above]{$x\ (m)$};
+\draw[->] (0,-2.5)--(0,2.5)node[right]{$u\ (cm)$};
+\draw[dashed] (0,-2)--(10,-2)(0,2)--(10,2)(5,0)--(5,2)(10,0)--(10,-2);
+\draw [red, line width = 1.2pt, domain=0:10, samples=500]%
+plot (\x, {2*cos(\x*36+180)});
+\node at (0,0)[left]{$O$};
+\node at (0,2)[left]{$+2$};
+\node at (0,-2)[left]{$-2$};
+\node at (2.5,0)[below]{$2,5$};
+\node at (5,0)[below]{$5$};
+\node at (7.5,0)[below]{$7,5$};
+\node at (10,0)[below]{$10$};
+\draw[fill=black] (2.5,0) circle (1.2 pt);
+\draw[fill=black] (5,0) circle (1.2 pt);
+\draw[fill=black] (7.5,0) circle (1.2 pt);
+\draw[fill=black] (10,0) circle (1.2 pt);
+\draw[fill=black] (0,2) circle (1.2 pt);
+\draw[fill=black] (0,-2) circle (1.2 pt);
+\end{tikzpicture}}
+\loigiai{
+\immini{\begin{itemize}
+\item Ta có: $T = \dfrac{2\pi}{\pi} = 2\ s \Rightarrow \lambda = 5.2 = 10\ m$.
+\item Phương trình sóng tại M là $u_M = 2\cos(\pi t- \pi- \dfrac{2\pi.x}{10}) \ cm$.
+$\Rightarrow u_{M(t = 2)} = 2\cos(\pi.2- \pi- \dfrac{\pi.x}{5})$ cm.\\
+$\Rightarrow v_{M(t = 2)} = 2\cos(\pi- \dfrac{\pi.x}{5})$ cm.
+\item Đồ thị mô tả hình dạng sợi dây là hình D.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth',x=0.5cm,y=0.5cm]
+\draw[->] (0,0)--(11,0)node[above]{$x\ (cm)$};
+\draw[->] (0,-2.5)--(0,2.5)node[right]{$u\ (cm)$};
+\draw[dashed] (0,-2)--(10,-2)(0,2)--(10,2)(5,0)--(5,2)(10,0)--(10,-2);
+\draw [red, line width = 1.2pt, domain=0:10, samples=500]%
+plot (\x, {2*cos(\x*36+180)});
+\node at (0,0)[left]{$O$};
+\node at (0,2)[left]{$+2$};
+\node at (0,-2)[left]{$-2$};
+\node at (2.5,0)[below]{$2,5$};
+\node at (5,0)[below]{$5$};
+\node at (7.5,0)[below]{$7,5$};
+\node at (10,0)[below]{$10$};
+\draw[fill=black] (2.5,0) circle (1.2 pt);
+\draw[fill=black] (5,0) circle (1.2 pt);
+\draw[fill=black] (7.5,0) circle (1.2 pt);
+\draw[fill=black] (10,0) circle (1.2 pt);
+\draw[fill=black] (0,2) circle (1.2 pt);
+\draw[fill=black] (0,-2) circle (1.2 pt);
+\end{tikzpicture}}
+}
+\end{vidu} \haidong{20}
+\loai{Xác định trạng thái của phần tử môi trường ở thời điểm t}
+\begin{vidu}%[3P2-4.1K][Loai1]
+\immini[thm]{Một sóng ngang lan truyền trong môi trường đàn hồi có tốc độ truyền sóng $v = 2,0$ m/s. Xét 
+hai điểm M, N trên cùng một phương truyền sóng (sóng truyền từ M đến N). Tại thời điểm $t = t_0$, hình ảnh sóng được mô tả như hình vẽ. Các vị trí cân bằng của các phần tử trên dây cùng nằm trên trục Ox. Vận tốc điểm N tại thời điểm $t = t_0$ là
+}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+\begin{axis}[
+axis lines=middle,
+xmin=0,xmax=6.5,xstep=1,ymin=-1.6,ymax=1.8,ystep=0.1,
+grid=major, %Có các tùy chọn: minor|major|both|none
+x grid style={dashed},y grid style={dashed},
+ytick={-1.5,0,1.5}, xtick={0.5,1.5,2.5,3.5,4.5,5.5,6.5},
+xticklabels={3,,23}, yticklabels={-10,0,10},
+xticklabel style={black,below},
+xlabel style={above=3pt},
+xlabel=$x\ (cm)$, ylabel style={right=1pt},
+ylabel={$u\ (cm)$}
+]
+\addplot[line width=1.2pt,domain=0:6,samples=200,red,xshift=-0.45cm]{1.5*cos(deg(0.5*pi*x))};
+\draw[fill=white] (axis cs: {0.5}, {1.5*cos(deg(0.5*pi*1)}) circle(1.2pt) node[above right]{M};
+\draw[fill=white] (axis cs: {2.5}, {1.5*cos(deg(0.5*pi*1)})circle(1.2pt)node[above left]{N};
+\end{axis}
+\end{tikzpicture}}
+\choice
+{\True $-100\pi$  cm/s}
+{$100\pi$  cm/s}
+{$‒200\pi$  cm/s}
+{$200\pi$  cm/s}
+\loigiai{
+\begin{itemize}
+\item Sóng truyền từ M đến N $\Rightarrow$  điểm N đi xuống $\Rightarrow  v < 0\quad (*)$.
+\item Bước sóng $\lambda  = 2MN = 40\ cm \Rightarrow  T = \dfrac{\lambda}{v} = 0,2\ s$.
+\item Mà tại N là vị trí cân bằng $\Rightarrow  |v_N| = A. \dfrac{2\pi}{T} = 10 .\dfrac{2\pi}{0,2} = 100\pi\  cm/s$, kết hợp $(*)\Rightarrow  v_N=-100\pi\  cm/s$. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\loai{Hình ảnh sóng lan truyền}
+
+\loai{Xác định trạng thái của phần tử môi trường ở thời điểm $t+\Delta t$}
+\begin{vidu}%[3P2-4.1G][Loai1]  
+\immini[thm]{Một sóng hình sin lan truyền trên một sợi dây đàn hồi theo chiều dương của trục Ox. Hình vẽ bên mô tả hình dạng của sợi dây tại thời điểm $t_1$. 
+Cho tốc độ truyền sóng trên dây bằng 64 cm/s. Vận tốc của điểm M tại thời điểm $t_2 = t_1 + 1,5$ s \textbf{gần nhất} với giá trị nào sau đây?
+}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+\begin{axis}[
+axis lines=middle, xmin=0,xmax=6.5,xstep=1,ymin=-1.6,ymax=1.7,ystep=0.1, grid=major, %Có các tùy chọn: minor|major|both|none
+x grid style={dashed}, y grid style={dashed},
+ytick={-1.5,1.5}, xtick={0.5,1,...,6},
+xticklabels={}, yticklabels={-6,6}, xticklabel style={black,below},
+xlabel style={above=3pt}, xlabel=$x(cm)$, 
+ylabel style={above=1pt}, ylabel={$u$}
+]
+\addplot[line width=1.2pt,domain=0:6,samples=200,red]{1.5*cos(deg(0.5*pi*x-pi/4))};
+\draw[fill=white] (axis cs: {6*0.5}, {1.5*cos(deg(0.5*pi*6*0.5-pi/4)})circle(1.2pt)node[below right]{M};
+\draw[fill=white] (axis cs: {7*0.5}, {1.5*cos(deg(0.5*pi*7*0.5-pi/4)})circle(1.2pt)node[below right]{56};
+\end{axis}
+\end{tikzpicture}}
+\choice
+{\True 26,65 cm/s}
+{$- 26,65$ cm/s}
+{32,64 cm/s}
+{$- 32,64$ cm/s}
+\loigiai{
+\immini
+{\begin{itemize}
+\item Từ đồ thị $\Rightarrow  \lambda  = 8$ ô $= 64\ cm \Rightarrow  T = \dfrac{\lambda}{v} = 1\ s$.
+\item Gọi N phần tử sóng trên đồ thị tại điểm cắt thứ 2 của đồ thị và trục Ox. M sớm pha hơn N một góc $\Delta \varphi  = \dfrac{2\pi\left(x_N-x_M\right)}{\lambda}= \dfrac{2\pi.8}{64}= \dfrac{\pi}{4}\ rad$.
+\item Mà $t_2 - t_1 = 1,5\ s = T + \dfrac{T}{2} \Rightarrow$  Hai thời điểm ngược pha
+$\Rightarrow  v_M(t_2) = - v_M(t_1) = \dfrac{A.\omega}{\sqrt{2}}=\dfrac{6.2\pi}{\sqrt{2}} \approx 26,65\ cm$.
+\end{itemize}}
+{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]
+\tkzClip
+\tkzDefPoints{-2.2/0/m, 2.5/0/n, 0/0/o, 0/2.2/p, 0/-2.2/q}
+\tkzDefShiftPoint[o](0:2){0}
+\tkzDefShiftPoint[o](135:2){1}
+\tkzDefShiftPoint[o](-45:2){2}
+\tkzDefPointBy[projection=onto p--q](1) \tkzGetPoint{v1}
+\tkzDefPointBy[projection=onto p--q](2) \tkzGetPoint{v2}
+\draw(o)circle(2cm);
+\tkzDrawSegments[->](m,n p,q)
+\tkzDrawSegments(p,q 1,2)
+\tkzDrawSegments[dashed,thin](v1,1 v2,2)
+\tkzDrawPoints[size=3](o,0,1,2,v1,v2)
+\node at (n)[below]{$u$}; \node at (q)[below]{$v$};
+\node at (0,2)[above right]{$N(t_1)$}; \node at (1)[above left]{$M(t_1)$};
+\node at (2)[below right]{$M(t_2)$};
+\node at (v1)[right]{$v_1$}; \node at (v2)[left]{$v_2$};
+\end{tikzpicture}}
+}
+\end{vidu} \haidong{20}
+\loai{Khoảng cách lớn nhất giữa hai điểm}
+\begin{vidu}%[3P2-4.1G][Loai1]
+\immini[thm]{\nguon{MH - 2017} Một sóng ngang hình sin truyền trên một sợi dây dài. Hình vẽ bên là hình dạng của một đoạn dây tại một thời điểm xác định. Trong quá trình lan truyền sóng, khoảng cách lớn nhất giữa hai phần tử M và N có giá trị  \textbf{gần nhất} với giá trị nào sau đây?}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+\begin{axis}[
+axis lines=middle,
+xmin=0,xmax=8.5,xstep=1,ymin=-1.6,ymax=1.8,ystep=0.1,
+grid=major, %Có các tùy chọn: minor|major|both|none
+x grid style={dashed},y grid style={dashed},
+ytick={-1.5,0,1.5}, xtick={0.667,1.333,...,8},
+xticklabels={,,,,,12,,,,,,24}, yticklabels={-1,0,1},
+xticklabel style={black,below},
+xlabel style={above=3pt},
+xlabel=$x\ (cm)$, ylabel style={right=1pt},
+ylabel={$u\ (cm)$}
+]
+\addplot[line width=1.2pt,domain=0:8,samples=200,red]{1.5*cos(deg(0.25*pi*x-pi/2))};
+\draw[fill=white] (axis cs: {1*0.667}, {1.5*cos(deg(0.25*pi*1*0.667-pi/2)}) circle(1.2pt) node[above]{M};
+\draw[fill=white] (axis cs: {5*0.667}, {1.5*cos(deg(0.25*pi*5*0.667-pi/2)}) circle(1.2pt) node[above]{N};
+\end{axis}
+\end{tikzpicture}}
+\choice
+{8,5 cm}
+{\True 8,2 cm}
+{8,35 cm}
+{8,05 cm}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\lambda =24\ cm,\ MN=8\ cm,\ a=1\ cm\Rightarrow \Delta \varphi =\dfrac{2\pi.8}{24}=\dfrac{2\pi}{3}\ rad$.
+\item Khoảng cách lớn nhất theo phương dao động: $\Delta u_{max}=\sqrt{1^2+1^2-2.1.1.\cos(\dfrac{2\pi}{3})}=\sqrt{3}\ cm$. 
+\item Khoảng cách lớn nhất giữa hai điểm MN $\delta= \sqrt{8^2+{\left(\sqrt{3}\right)}^2}=8,18\ cm$.
+\end{itemize}}
+\end{vidu} \haidong{20}
+

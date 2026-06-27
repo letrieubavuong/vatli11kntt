@@ -1,0 +1,470 @@
+\TieudeT{PHONG TỎA VẬT LÍ 11 - DAO ĐỘNG VÀ SÓNG}
+\subsubsection*{PHẦN I. Thí sinh trả lời câu hỏi từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án}
+\setcounter{ex}{0}
+	\begin{ex} %[3P1Y1-1][Loai1] 
+		Một vật dao động điều hoà theo phương trình $x = A\cos\left(\omega t + \varphi\right)$ ($A >0$, $\omega > 0$). Pha của dao động ở thời điểm t là
+		\choice
+		{$\omega$}
+		{$\cos\left(\omega t + \varphi\right)$}
+		{\True $\omega t + \varphi$}
+		{$\varphi$}
+		\loigiai{
+			Pha của dao động $\alpha =\omega t+\varphi $.
+		}
+		%\haidong{5}
+	\end{ex}
+	%\loai{Chiều dài quỹ đạo}
+	\begin{ex}%[3P1B1-2][Loai1]
+		Một chất điểm dao động theo phương trình $x = 6\cos\omega t\ cm$. Quỹ đạo chất điểm có độ dài bằng
+		\choice
+		{$2\ cm$}
+		{$6\ cm$}
+		{$3\ cm$}
+		{\True $12\ cm$}
+		\loigiai{Quỹ đạo chất điểm có độ dài: $L=2A=12\ cm$.
+		}
+		%\haidong{7}
+	\end{ex}
+	\begin{ex}%[3P1B2-1][Loai1]
+		Vectơ vận tốc của vật dao động điều hòa luôn
+		\choice
+		{ngược hướng chuyển động}
+		{\True cùng hướng chuyển động}
+		{hướng về vị trí cân bằng}
+		{hướng ra xa vị trí cân bằng}
+		\loigiai{
+			Vectơ vận tốc của vật dao động điều hòa luôn cùng hướng chuyển động.
+		}
+		%\haidong{5}
+	\end{ex}
+	%\loai{Dùng công thức độc lập x,v tìm $\omega$, T, f}
+	\begin{ex}%[3P1K2-2][Loai1]
+		Một vật dao động điều hoà với biên độ $4\ cm$. Khi nó có li độ là $2\ cm$ thì vận tốc là $1\ m/s$. Tần số dao động là
+		\choice 
+		{$1\ Hz$}
+		{$3\ Hz$}
+		{$1,2\ Hz$}
+		{\True $4,6\ Hz$}
+		\loigiai{
+			Áp dụng công thức độc lập với thời gian: $v^2 = \omega^2+(A^2-x^2)\Rightarrow \omega = 28,868\ rad/s \Rightarrow f = \dfrac{2\pi}{\omega} = 4,6\ Hz$.
+		}%<MyLT1>
+		%\haidong{10}
+	\end{ex}
+	%\loai{Cho pha, tìm vận tốc hoặc gia tốc}
+	\begin{ex}%[3P1B4-1][Loai1]
+		Một vật nhỏ dao động điều hòa trên trục Ox với vận tốc có giá trị cực đại là $v_{\max}$. Khi pha dao động của li độ x là  $-\dfrac{\pi}{3}$  thì vận tốc có giá trị
+		\choice
+		{$0,5v_{\max}$ và đang giảm}
+		{$0$ và đang tăng}
+		{$0,5v_{\max}$ và đang tăng}
+		{\True $\dfrac{{{v}_{\max }}\sqrt{3}}{2}$ và đang giảm}
+		\loigiai{
+			Ta có: $\phi_v=\phi_x+\dfrac{\pi}{2}=-\dfrac{\pi}{3}+\dfrac{\pi}{2}=\dfrac{\pi}{6}\Rightarrow v=\dfrac{v_{\max}\sqrt{3}}{2}\quad (-)$.
+		}
+		%\haidong{10}
+	\end{ex}
+	%\loai{Cho khoảng thời gian ngắn nhất có chiều chuyển động. Tìm các đại lượng}
+	\begin{ex} %[3P1B8-1][Loai1]  
+		Một vật dao động điều hòa với biên độ A, chu kì T. Trong một chu kì, khoảng thời gian ngắn nhất vật đi từ vị trí cân bằng theo chiều dương đến vị trí có li độ $x = \dfrac{A}{2}$ theo chiều âm là $0,05\ s$. Chu kì dao động của vật là
+		\choice
+		{\True $0,12\ s$}
+		{$0,06\ s$}
+		{$0,4\ s$}
+		{$0,2\ s$}
+		\loigiai{
+			\immini{\begin{itemize}
+					\item 
+					Khoảng thời gian ngắn nhất vật đi từ vị trí cân bằng theo chiều dương đến vị trí có li độ $x = \dfrac{A}{2}\ s$ẽ tương ứng với thời gian vật đi từ vị trí điểm $M_0$ đến điểm $M_1$ trên đường tròn lượng giác như hình vẽ.
+					\item $\Delta t = \dfrac{T}{4}+\dfrac{T}{6} = \dfrac{5T}{12} = 0,05\ s \Rightarrow T = 0,12\ s$.
+			\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+					\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+					\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+					\tkzDefShiftPoint[o](-90:2){0}
+					\tkzDefShiftPoint[o](60:2){m'}
+					\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h}
+					\draw(o)circle(2cm);
+					\tkzDrawSegments[dashed](m',h)
+					\tkzDrawSegments(p,q)
+					\tkzDrawSegments[->](m,n)
+					\tkzDrawSegments[blue,->](o,0 o,m')
+					\tkzDrawPoints[size=3](o,h,0,m')
+					\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+					\node at (0)[below left]{$M_0$};
+					\node at (m')[above right]{$M_1$};
+					\node at (2,0)[below right]{$A$};
+					\node at (h)[below]{$\dfrac{A}{2}$};
+			\end{tikzpicture}}
+		}
+		%\haidong{10}
+	\end{ex}
+	%\loai{Cho khoảng thời gian li độ lớn hơn (hoặc nhỏ hơn) b. Tìm các đại lượng khác}
+	\begin{ex}%[3P1K8-3][Loai1]
+		Một vật dao động điều hòa với chu kì T trên trục Ox. Biết trong một chu kì, khoảng thời gian vật nhỏ có li độ x thoả mãn $\left| x \right|\ge 3\ cm$ là $\dfrac{T}{2}$. Biên độ dao động của vật là
+		\choice
+		{\True $3\sqrt 2 \ cm$}
+		{$4\ cm$}
+		{$6\ cm$}
+		{$12\ cm$}
+		\loigiai{
+			\begin{itemize}
+				\item Thời gian thỏa mãn $\left| x \right| \ge 3 \Leftrightarrow \left[ \begin{array}{l}x \ge 3\\x \le - 3\end{array} \right.$ là $\dfrac{T}{2}$. 
+				\item Theo trục phân bố thời gian thì $3\ cm=\dfrac{A\sqrt{2}}{2}\Rightarrow A=3\sqrt{2}\ cm$.
+				
+			\end{itemize}
+		}
+		%\haidong{15}
+	\end{ex}
+	\begin{ex} %[3P1B9-2][Loai1] 
+		Một vật nhỏ dao động điều hòa theo phương trình $x = A\cos\left(5\pi t + \dfrac{\pi}{2}\right)$ (t tính bằng s). Tính từ $t=0$, khoảng thời gian ngắn nhất để gia tốc của vật có độ lớn bằng một nửa gia tốc cực đại là
+		\choice
+		{$\dfrac{1}{12}\ s$}
+		{$\dfrac{1}{6}\ s$}
+		{\True $\dfrac{1}{30}\ s$}
+		{$\dfrac{1}{3}\ s$}
+		\loigiai{
+			\immini{
+				\begin{itemize}
+					\item
+					Ta có: $x = A\cos\left(5\pi t+ \dfrac{\pi}{2}\right) \Rightarrow a = 25A\pi^2\cos\left(5\pi t- \dfrac{\pi}{2}\right)$.
+					\item Ta lại có: $|a| = \dfrac{a_{\max}}{2} \Rightarrow a = \pm\dfrac{a_{\max}}{2}$.
+					\item Ta biểu diễn vị trí pha ban đầu của chất điểm bằng điểm $M_0$, các vị trí để gia tốc có độ lớn bằng một nửa độ lớn gia tốc cực đại là $M_1,\ M_2,\ M_3,\ M_4$ trên đường tròn lượng giác như hình vẽ.
+					\item Thời gian ngắn nhất khi vật đi từ $M_0$ đến $M_1$
+					$\Rightarrow \Delta \varphi = \dfrac{\pi}{6}$\\
+					$\Rightarrow \Delta t = \dfrac{T}{12} = \dfrac{\dfrac{2\pi}{5\pi}}{12} = \dfrac{1}{30}\ s$.
+				\end{itemize}
+			}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+					\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+					\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+					\tkzDefShiftPoint[o](-90:2){0}
+					\tkzDefShiftPoint[o](-120:2){4}
+					\tkzDefShiftPoint[o](-60:2){1}
+					\tkzDefShiftPoint[o](60:2){2}
+					\tkzDefShiftPoint[o](120:2){3}
+					\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+					\tkzDefPointBy[projection=onto m--n](3) \tkzGetPoint{h'}
+					\draw(o)circle(2cm);
+					\tkzDrawSegments[dashed](1,2 4,3)
+					\tkzDrawSegments(p,q)
+					\tkzDrawSegments[->](m,n)
+					\tkzDrawSegments[blue,->](o,0 o,1 o,2 o,4 o,3)
+					\tkzDrawPoints[size=3](o,0,1,h,4,2,3,h')
+					\tkzMarkAngles[size=0.5cm,arrows=->](0,o,1)
+					\node at (0)[below left]{$M_0$};
+					\node at (1)[below right]{$M_1$};
+					\node at (2)[above right]{$M_2$};
+					\node at (3)[above left]{$M_3$};
+					\node at (4)[below left]{$M_4$};
+					\node at (2,0)[below right]{$a_{\max}$};
+					\node at (h')[below]{$-\dfrac{a_{\max}}{2}$};
+					\node at (h)[below]{$\dfrac{a_{\max}}{2}$};
+			\end{tikzpicture}}
+		}	
+		%\haidong{15}
+	\end{ex}
+	\loai{Quãng đường vật đi được sau thời gian $\Delta t$ kể từ thời điểm ban đầu - cho phương trình dao động}
+	\begin{ex}%[3P1KD-1][Loai1] 
+		Một vật dao động điều hoà với phương trình $x = 4\cos(\pi t+ \dfrac{\pi}{4})\ cm$. Sau $4,5\ s$ kể từ thời điểm đầu tiên vật đi được đoạn đường là
+		\choice
+		{$34\ cm$}
+		{$36\ cm$}
+		{\True $32 + 4\sqrt{2}\ cm$}
+		{$32 + 2\sqrt{2}\ cm$}
+		\loigiai{
+			\begin{itemize}
+				\item $t=0$ vật đang ở li độ $x = 2\sqrt{2}$ theo chiều âm.
+				\item $\Delta t = 4,5 = \dfrac{T}{4}+2T.$
+				\item $t=\dfrac{T}{4}$ vật ở li độ $x = -2\sqrt{2}$ theo chiều âm.
+				\item Quãng đường vật đi được trong $\dfrac{T}{4}$ s đầu tiên là $S_1 = 2.2\sqrt{2} = 4\sqrt{2}\ cm$.
+				\item Quãng đường đi được là $S = S_1 + 8A = 32 + 4\sqrt{2}\ cm$.
+			\end{itemize}
+		}
+		%\haidong{15}
+	\end{ex}
+	%\loai{Quãng đường lớn nhất không tách thời gian}
+	\begin{ex}%[3P1KE-1][Loai1]
+		Một vật dao động điều hoà với phương trình $x = A\cos(4\pi t +\dfrac{\pi}{3})\ cm$. Quãng đường lớn nhất mà vật đi được trong khoảng thời gian  $\dfrac{1}{6}\ s$ là $4\sqrt{3}\ cm$. Biên độ dao động A là
+		\choice
+		{$4\sqrt{3}\ cm$}
+		{$3\sqrt{3}\ cm$}
+		{\True $4\ cm$}
+		{$2\sqrt{3}\ cm$}
+		\loigiai{
+			Ta có: $T = 0,5\ s;\ \Delta t=\dfrac{1}{6}\ s=\dfrac{T}{3}\Rightarrow S_{\max}=2A\sin \dfrac{\pi}{3}=A\sqrt{3}=4\sqrt{3}\ cm \Rightarrow A = 4\ cm$.
+		}
+		%\haidong{15}
+	\end{ex}
+	%\loai{Cơ năng}
+	\begin{ex} %[3P1Y5-1][Loai1] 
+		Một con lắc lò xo đang dao động điều hòa, đại lượng nào sau đây của con lắc được bảo toàn?
+		\choice
+		{Cơ năng và thế năng}
+		{Động năng và thế năng}
+		{\True Cơ năng}
+		{Động năng}
+		\loigiai{
+			Cơ năng của con lắc được bảo toàn.
+		}
+		%\haidong{5}
+	\end{ex}
+	%\loai{Cho đồ thị li độ, viết phương trình li độ}
+	\begin{ex}%[3P1-19.1K][Loai1]
+		\immini[thm]{Cho một chất điểm dao động điều hòa, sự phụ thuộc của li độ vào thời gian được biểu diễn trên đồ thị như hình vẽ. Phương trình li độ của chất điểm là
+			\choice
+			{$x=3\cos(4\pi t - \dfrac{\pi}{3})\ cm$}
+			{$x=3\cos(2\pi t + \dfrac{\pi}{3})\ cm$}
+			{\True $x=3\cos(2\pi t - \dfrac{\pi}{3})\ cm$}
+			{$x=3\cos(4\pi t + \dfrac{\pi}{6})\ cm$}}{\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth']
+				\draw[->] (0,0)--(6.5,0)node[below]{$t\ (s)$};
+				\draw[->] (0,-2.3)--(0,2.3)node[right]{$x\ (cm)$};
+				\draw[dashed] (0,1.5)--(5.66,1.5)--(5.66,0)(0,-1.5)--(5.66,-1.5)--(5.66,0)(0.66,1.5)--(0.66,0);
+				\draw [Mapcolor, line width = 1.2pt, domain=0:5.666, samples=500]%
+				plot (\x, {1.5*cos(\x*90-60)});
+				\node at (0,0)[left]{$O$};
+				\node at (0,1.5)[left]{$3$};
+				\node at (0,0.75)[left]{$1,5$};
+				\node at (0,-1.5)[left]{$-3$};
+				\node at (0.666,0)[below]{$\dfrac{1}{6}$};
+		\end{tikzpicture}}
+		\loigiai{
+			\begin{itemize}
+				\item Từ đồ thị ta thấy: $A=3\ cm;\  \dfrac{T}{6}=\dfrac{1}{6}\ s \Rightarrow T=1\ s$.
+				\item Tại $ t = 0 $ thì vật đang đi qua vị trí $x=\dfrac{A}{2}$ theo chiều dương
+				$\Rightarrow$ Phương trình li độ của vật: $x=3\cos\left(2\pi t - \dfrac{\pi}{3}\right)\ cm$.
+			\end{itemize}
+		}
+		%\haidong{14}
+	\end{ex}
+	\begin{ex} %[3P1Y3-1][Loai1]  
+		Tần số dao động của con lắc lò xo được tính theo biểu thức nào sau đây?
+		\choice
+		{$f=\sqrt{\dfrac{m}{k}}$}
+		{$f=\sqrt{\dfrac{k}{m}}$}
+		{$f=\dfrac{1}{2\pi}\sqrt{\dfrac{m}{k}}$}
+		{\True $f=\dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}}$}
+		\loigiai{
+			Tần số của dao động $f=\dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}}$.
+		}
+		%\haidong{5}
+	\end{ex}
+	\begin{ex} %[3P1-3.2B][Loai1]  
+		Một con lắc lò xo dao động điều hoà với biên độ $A = 8\ cm$, chu kì $T = 0,5\ s$. Cho biết khối lượng quả nặng là $0,4\ kg$. Độ cứng của lò xo bằng
+		\choice
+		{\True $k = 6,4\pi^2\ N/m$}
+		{$k = \dfrac{0,025}{\pi^2}\ N/m$}
+		{$k = 6400\pi^2\ N/m$}
+		{$k = 128\pi^2\ N/m$}
+		\loigiai{
+			Từ công thức: $T = 2\pi\sqrt{\dfrac{m}{k}}\Rightarrow k = \dfrac{4\pi^2m}{T^2} = 6,4\pi^2\ N/m$.
+		}	
+		%\haidong{10}
+	\end{ex}
+	
+	%\loai{Dao động nhỏ con lắc đơn}
+	\begin{ex} %[3P1YF-1][Loai1]  
+		Dao động của con lắc đơn được xem là dao động điều hoà khi
+		\choice
+		{\True không có ma sát và dao động với biên độ nhỏ}
+		{biên độ dao động nhỏ}
+		{chu kì dao động không đổi}
+		{không có ma sát}
+		\loigiai{
+			Dao động của con lắc đơn được xem là dao động điều hòa khi không có ma sát và biên độ dao động là nhỏ.
+		}	
+		%\haidong{5}
+	\end{ex}
+	%\loai{Tìm chiều dài tự nhiên của lò xo}
+	\begin{ex}%[3P1K6-2][Loai1]%Bài 15 dạng 1
+		Con lắc lò xo treo thẳng đứng dao động với phương trình $x=8\sin \left( 20t+\dfrac{\pi}{2} \right)\ cm.$ Lấy $g = 10\ m/s^2$. Biết chiều dài lớn nhất của lò xo là $92,5\ cm$. Chiều dài tự nhiên của lò xo là
+		\choice
+		{\True $82\ cm$}
+		{$84,5\ cm$}
+		{$55\ cm$}
+		{$61\ cm$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $ \Delta \ell_0=\dfrac{g}{\omega^2}=  2,5\ cm$.
+				\item Bài cho: $\ell_{\max} = \ell_0 + \Delta \ell_0  + A = 92,5\ cm \Rightarrow \ell_0 = 82\ cm$.	
+			\end{itemize}
+		}
+		%\haidong{10}
+	\end{ex}
+	\begin{ex} %[3P1-16.1B][Loai1]  
+		Thế năng của con lắc đơn dao động điều hoà
+		\choice
+		{\True bằng với năng lượng dao động khi vật nặng ở biên}
+		{cực đại khi vật qua vị trí cân bằng}
+		{luôn không đổi vì quỹ đạo của vật được coi là thẳng}
+		{không phụ thuộc góc lệch của dây treo}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $W_t = mg\ell(1-\cos\alpha)= \dfrac{mg\ell\alpha^2}{2}$, với $\alpha$ là góc lệch nhỏ
+				\item Thế năng của con lắc đơn dao động điều hòa phụ thuộc vào góc lệch của dây treo nên D, C sai.
+			\end{itemize}
+		}
+		%\haidong{8}
+	\end{ex}
+	\begin{ex}%[3P1-16.3K][Loai1] 
+		Vật treo của con lắc đơn dao động điều hòa theo cung tròn $\widearc{MN}$ quanh vị trí cân bằng O. Gọi P và Q lần lượt là trung điểm của $\widearc{MO}$ và $\widearc{MP}$. Biết vật có tốc độ cực đại 8 m/s. Tốc độ của vật khi đi qua Q là
+		\choice
+		{$6\ m/s$}
+		{\True $5,29\ m/s$}
+		{$3,46\ m/s$}
+		{$8\ m/s$}
+		\loigiai{Áp dụng công thức độc lập thời gian, ta có
+			\begin{align*}
+				1=\left(\dfrac{s}{S_0}\right)^2+\left(\dfrac{v}{\omega S_0}\right)^2\xrightarrow{|x_Q|=\frac{3S_0}{4}}\left|v\right|=\omega S_0.\sqrt{1-\dfrac{9}{16}}\approx 5,29\ m/s.
+		\end{align*}}
+		%\haidong{15}
+	\end{ex}
+	
+
+\subsubsection*{PHẦN 2. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.}
+\setcounter{ex}{0}
+\begin{ex}
+	Cho một chất điểm dao động điều hòa với phương trình $x=A\cos(\omega t + \varphi)$.
+	\choiceTF[t]
+	{Ở vị trí cân bằng, chất điểm có vận tốc cực đại}
+	{\True Ở vị trí cân bằng, chất điểm có gia tốc bằng không}
+	{\True Ở vị trí biên, chất điểm có vận tốc bằng không}
+	{Ở cả hai vị trí biên, chất điểm có gia tốc cực đại}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Sai.
+			\itemch Đúng.
+			\itemch Đúng.
+			\itemch Sai.
+		\end{\itemchoice}
+	}
+	%\haidong{25}
+\end{ex}
+\begin{ex}
+	Một chất điểm dao động điều hòa theo phương trình $x=3 \cos \left(5 \pi t-\dfrac{\pi}{3}\right)$ ($x$ tính bằng $cm$, $t$ tính bằng $s$).
+	\choiceTF[t]
+	{Chu kì dao động của chất điểm là $0,2 \ s$}
+	{Từ vị trí cân bằng ra biên chất điểm chuyển động chậm dần đều}
+	{Trong giây đầu tiên kể từ lúc $t=0$, chất điểm qua vị trí có li độ $x=+1 \ cm$ là $4$ lần}
+	{\True Kể từ thời điểm $t=1 \ s$ tới thời điểm $t=2,25 \ s$, chất điểm qua vị trí $x=2 \ cm$ theo chiều âm $3$ lần} \loigiai{
+		\begin{itemchoice}
+			\itemch Sai.
+			\itemch Sai.
+			\itemch Sai.
+			\itemch Đúng.
+		\end{\itemchoice}
+	}
+	%\haidong{25}
+\end{ex}
+\begin{ex}
+	Cho một chất điểm dao động điều hòa với phương trình $x=A\cos(\omega t + \varphi)$.
+	\choiceTF[t]
+	{Động năng của vật tăng và thế năng giảm khi vật đi từ vị trí cân bằng đến vị trí biên}
+	{Động năng giảm, thế năng tăng khi vật đi từ vị trí biên đến vị trí cân bằng}
+	{\True Cứ mỗi chu kì dao động của vật, có bốn thời điểm thế năng bằng động năng}
+	{Động năng bằng thế năng khi vật ở vị trí có li độ $x=\pm \dfrac{A}{2}$}
+	
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Sai.
+			\itemch Sai
+			\itemch Đúng.
+			\itemch Sai.
+		\end{\itemchoice}
+	}
+	%\haidong{25}
+\end{ex}
+\begin{ex}
+	Một vật có khối lượng $m=100 \ g$ được treo vào lò xo đặt thẳng đứng có độ cứng $k=40 \ N/m$. Khi vật đang ở vị trí cân bằng người ta truyền cho vật một vận tốc $v=80 \ cm/s$ hướng xuống dưới. Lấy $g=10 \ m/s^2$. Chọn chiều dương hướng xuống.
+	\choiceTF[t]
+	{\True Tần số góc dao động là $\omega=20\ rad/s$}
+	{\True Chiều dài quỹ đạo là $8 \ cm$}
+	{Độ lớn lực đàn hồi cực đại là $1,6 \ N$}
+	{Phương trình dao động là $x=8 \cos \left(20 t-\dfrac{\pi}{2}\right)\ cm$}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Đúng. Tần số góc dao động là $\omega=\sqrt{\dfrac{k}{m}}=20\ rad/s$.
+			\itemch Đúng. Chiều dài quỹ đạo là $L=2 \ A=2 \dfrac{v_{\max}}{\omega}=8 \ cm$
+			\itemch Sai. Độ lớn lực đàn hồi cực đại là $F_{dh}=k\left(\Delta \ell_0+A\right)=k\left(\dfrac{g}{\omega^2}+A\right)=2,6 \ N$.
+			\itemch Sai. Phương trình dao động là $x=4 \cos \left(20 t-\dfrac{\pi}{2}\right)\ cm$.
+		\end{\itemchoice}
+	}
+	%\haidong{25}
+\end{ex}
+\subsubsection*{PHẦN 3. Thí sinh trả lời từ câu 1 đến câu 6.}
+\setcounter{ex}{0}
+\begin{ex}
+	Một vật dao động điều hoà với gia tốc cực đại bằng $86,4 \ m/s^2$, vận tốc cực đại bằng $2,16 \ m/s$. Quỹ đạo chuyển động của vật là một đoạn thẳng dài bao nhiêu $cm$?
+	\shortans[oly]{10,8}
+	\loigiai{
+		$10,8 \ cm$
+	}
+	%\haidong{33}
+\end{ex}
+\begin{ex}
+	Một vật dao động điều hòa với chu kì $T$ với tốc độ cực đại là $v_{\max}$. Thời gian ngắn nhất vật đi từ điểm mà tốc độ của vật bằng $\dfrac{v_{\max}}{2}$ đến điểm mà tốc độ của vật bằng $\dfrac{\sqrt{2}}{2}v_{\max}$ là bao nhiêu chu kì (làm tròn kết quả đến chữ số hàng phần trăm)?
+	\shortans[oly]{0,04}
+	\loigiai{
+		0,04
+	}
+	%\haidong{30}
+\end{ex}
+\begin{ex}
+	Một vật dao động trên trục $O x$ với phương trình $x=4 \cos \left(2 \pi t-\dfrac{\pi}{6}\right)\ cm$. Khoảng thời gian ngắn nhất để vật đi từ vị trí có li độ $2 \ cm$ đến vị trí có gia tốc $-8 \pi^2 \sqrt{2}\ cm/s^2$ là bao nhiêu giây (làm tròn kết quả đến chữ số hàng phần trăm)?
+	\shortans[oly]{0,04}
+	\loigiai{
+		0,04
+	}
+	%\haidong{30}
+\end{ex}
+\begin{ex}
+	Một vật nhỏ khối lượng $100 \ g$ dao động theo phương trình $x=8 \cos 10 t\ cm$. Động năng cực đại của vật bằng bao nhiêu $mJ$?
+	\shortans[oly]{32}
+	\loigiai{
+		32
+	}
+	%\haidong{30}
+\end{ex}
+\begin{ex}
+	Một chất điểm dao động điều hoà trên $O x$ với quỹ đạo dài $16 \ cm$. Tại thời điểm $t_0$, vận tốc và gia tốc của chất điểm lần lượt là $40 \ cm/s$ và $4 \sqrt{3} \ m/s^2$. Tần số góc của chất điểm là bao nhiêu rad/s?
+	\shortans[oly]{10}
+	\loigiai{
+		$10\ rad/s$
+	}
+	%\haidong{30}
+\end{ex}
+\begin{ex}%[3P1KD-3][Loai1] 
+	Cho dao động điều hòa với $f = 2\ Hz$ và $v_{\max} = 16\pi\ cm/s$. Tốc độ trung bình là bao nhiêu  cm/s từ lúc chất điểm qua li độ $2\ cm$ theo chiều âm đến lúc đi qua li độ $-2\ cm$ lần thứ hai?
+	\shortans[oly]{32}
+	
+	\loigiai{
+		\immini{
+			\begin{itemize}
+				\item 
+				Ta có: $T = \dfrac{1}{f} = 0,5$ s, $A = \dfrac{v_{\max}}{\omega} = \dfrac{16\pi}{2.2\pi} = 4\ cm$.
+				\item Vị trí có li độ $2\ cm$ và $-2\ cm$ được biểu diễn trên đường tròn lượng giác như hình vẽ. 
+				\item Ban đầu chất điểm qua li độ 2 cm theo chiều âm nên nó ở vị trí (3), khi nó đi qua vị trí li độ $-2\ cm$ lần thứ 2 thì nó ở vị trí $(2)$ nên quãng đường vật đi được là $2 + 4 + 2 = 8\ cm$.
+				\item Thời gian để vật đi từ vị trí $(3)$ tới vị trí $(2)$ là $\dfrac{T}{2} = 0,25$ s
+				$\Rightarrow  v_{tb} = \dfrac{8}{0,25} = 32\ cm/s.$
+			\end{itemize}
+		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+				\tkzDefShiftPoint[o](120:2){1}
+				\tkzDefShiftPoint[o](-120:2){2}
+				\tkzDefShiftPoint[o](60:2){3}
+				\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+				\tkzDefPointBy[projection=onto m--n](3) \tkzGetPoint{h'}
+				\draw(o)circle(2cm);
+				\tkzDrawSegments[dashed](h',3 1,2)
+				\tkzDrawSegments(p,q)
+				\tkzDrawSegments[->](m,n)
+				\tkzDrawSegments[blue,->](o,1 o,2 o,3)
+				\tkzDrawPoints[size=3](o,1,h,2,3,h')
+				\node at (1)[above left]{$(1)$};
+				\node at (2)[below left]{$(2)$};
+				\node at (3)[above right]{$(3)$};
+				\node at (2,0)[below right]{$4$};
+				\node at (h')[below]{$3$};
+				\node at (h)[below left]{$-3$};
+		\end{tikzpicture}}
+	}
+	%\haidong{30}
+\end{ex}

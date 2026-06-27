@@ -1,0 +1,58 @@
+\paragraph{Ánh sáng trắng} 
+\newghichu{Ánh sáng trắng là ánh sáng tập hợp của vô số ánh sáng (bức xạ) khác nhau trong đó có vùng nhìn thấy có màu biến thiên từ đỏ đến tím}
+\paragraph{Đặc điểm về giao thoa ánh sáng trắng}
+\begin{itemize}
+\item Tại O là vân sáng trắng, hai bên là dải màu cầu vồng (tím trong, đỏ ngoài).
+\item Bề rộng quang phổ là khoảng cách từ vân sáng đỏ đến vân sáng tím cùng bậc và cùng phía với vân trung tâm.
+\begin{align*}
+\boder{\Delta x_k=k(i_{\ct{đỏ}}-i_{\ct{tím}})=k\dfrac{\pbrace{\lambda_{\ct{đỏ}}-\lambda_{\ct{tím}}}D}{a}}
+\end{align*}
+\item Ánh sáng trắng gồm các bức xạ có bức xạ \bth{0,38\microm\leq \lambda\leq 0,76\microm}.
+\end{itemize}
+\paragraph{Phương pháp giải một số bài tập về ánh sáng trắng}
+\begin{itemize}
+\item Khi thay đổi cấu trúc hệ Y-âng (thay đổi các tham số a và D) thì bề rộng quang phổ các bậc cũng thay đổi.
+\item Ta có bề rộng quang phổ bậc k trước và sau khi thay đổi a và D: 
+\begin{align*}
+\begin{cases}
+\Delta x'_k=k.\dfrac{D\pm \Delta D}{a\pm \Delta a}\left(\lambda_\text{đỏ}-\lambda_\text{tím}\right)\\ \\
+\Delta x_k=k.\dfrac{D}{a}\left(\lambda_\text{đỏ}-\lambda_\text{tím}\right)
+\end{cases}
+\end{align*}
+\end{itemize}
+\vspace*{.4\baselineskip}
+\begin{itemize}
+\item Trên hình vẽ là mô hình về vùng phủ nhau giữa các quang phổ của ánh sáng trắng với bước sóng \boder{0,38\ \mu m \leq \lambda \leq 0,76\ \mu m}
+\begin{center}
+\begin{tikzpicture}[scale=1,thick,>=stealth']
+\node [fill=white,draw, thick, shape=rectangle, minimum width=0.05cm, minimum height=1cm, anchor=center] at (0,0) {};
+\node [fill=red!40,draw, thick, shape=rectangle, minimum width=1.52cm, minimum height=1cm, anchor=center] at (2.28,0) {};
+\node [fill=orange!40,draw, thick, shape=rectangle, minimum width=3.04cm, minimum height=1cm, anchor=center] at (4.56,-0.3) {};
+\node [fill=gray!40,draw, thick, shape=rectangle, minimum width=4.56cm, minimum height=1cm, anchor=center] at (6.84,-0.6) {};
+\node [fill=gray!40,draw, thick, shape=rectangle, minimum width=4.56cm, minimum height=1cm, anchor=center] at (6.84,-0.6) {};
+\node at (0,0.8){$AST$};
+\node at (2.28,0.8){\text{Phổ bậc 1}};
+\node at (4.56,0.5){\text{Phổ bậc 2}};
+\node at (7.5,0.2){\text{Phổ bậc 3}};
+\node at (1.52,-0.9){$T_1$};
+\node at (3.04,-1.2){$T_2\equiv \text{Đ}_1$};
+\node at (4.56,-1.5){$T_3$};
+\node at (6.08,-1.5){$\text{Đ}_2$};
+\node at (9.12,-1.5){$\text{Đ}_3$};
+\end{tikzpicture}
+\end{center}
+\end{itemize} 
+\Binhluan{\begin{itemize}
+\item Dựa vào mô hình ta có thể tìm:
+\begin{itemize}
+\item Bề rộng vùng phủ nhau giữa các bậc quang phổ.\\
+\textit{Ví dụ: Vùng phủ nhau giữa quang phổ bậc 2 và quang phổ bậc 3 như hình trên là:} 
+\begin{align*}
+\Delta x_{23}=x_{\text{Đ}2}-x_{T3}
+\end{align*}
+\item Vị trí vân sáng đầu tiên có hai vạch màu đơn sắc trùng nhau.\\
+\textit{Ví dụ: Như hình trên vị trí đó chính là: $x_{T2}=x_{\text{Đ1}}$}
+\end{itemize} 
+\end{itemize}
+}
+{Nếu ánh sáng trắng đề bài cho có bước sóng nằm trong khoảng khác thì hình ảnh giao thoa và kết quả sẽ phù hợp với từng mô hình quang phổ cụ thể}

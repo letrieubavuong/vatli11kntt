@@ -1,0 +1,773 @@
+
+%\loai{Khoảng thời gian ngắn nhất từ li độ $x_1$ đến li độ $x_2$ vị trí đẹp}
+\begin{vidu}
+Một vật dao động điều hòa với phương trình $x=5\cos(4\pi t+\dfrac{\pi}{6})\ cm$.
+\begin{itemize}
+\item [1.] Xác định thời gian ngắn nhất vật đi từ li độ $5\ cm$ tới li độ $-2,5\ cm$.
+\item [2.] Tìm thời điểm đầu tiên vật có li độ 2,5 cm.
+\item [3.] Xác định thời điểm đầu tiên vật qua li độ $-2,5\ cm$ theo chiều dương.
+\item [4.] Tìm thời điểm vật qua li độ $-2,5\sqrt{3}\ cm$ lần thứ 2023.
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item [a)] Thời gian ngắn nhất vật đi từ li độ $5\ cm$ tới li độ $-2,5\ cm$: $\Delta t=\dfrac{T}{4}+\dfrac{T}{12}=\dfrac{1}{6}\ s$. 
+\item [b)] Thời điểm đầu tiên vật có li độ 2,5 cm: $t=\dfrac{T}{12}=\dfrac{1}{24}\ s$.
+\item [c)] Thời điểm đầu tiên vật qua li độ $-2,5\ cm$ theo chiều dương: $t=\dfrac{T}{6}+\dfrac{T}{4}+\dfrac{T}{6}=\dfrac{7}{24}\ s$.
+\item [d)] Thời điểm vật qua li độ $-2,5\sqrt{3}\ cm$ lần thứ 2023: $t=\dfrac{T}{3}+\dfrac{2022T}{2}=\dfrac{1517}{3} \ s$.
+\end{itemize}
+}
+%\haidong{16}
+\end{vidu} %\dotlineEX{13}
+%\loai{Khoảng thời gian ngắn nhất từ li độ $x_1$ đến li độ $x_2$ tính cả chiều chuyển động}
+\begin{vidu} %[3P1-8.1B][Loai1] 
+(MH - 2017) Một vật dao động với phương trình $x = 6\cos(4\pi t + \dfrac{\pi}{6})\ cm$ (t tính bằng s). Khoảng thời gian ngắn nhất để vật đi từ vị trí có li độ $3\ cm$ theo chiều dương đến vị trí có li độ $-3\sqrt{3}\  cm$ là
+\choice
+{\True $\dfrac{7}{24}\ s$}
+{$\dfrac{1}{4}\ s$}
+{$\dfrac{5}{24}\ s$}
+{$\dfrac{1}{8}\ s$}
+\loigiai{
+\begin{itemize}
+\item Phương trình dao động: $x = 6\cos(4\pi t + \dfrac{\pi}{6})\ cm$.
+\item Ban đầu vật có li độ $3\ cm$ và đi theo chiều dương thì pha dao động $\varphi_1=-\dfrac{\pi}{3}\ rad$.
+\item Để thời gian ngắn nhất thì vật đi qua li độ $-3\sqrt{3}$ theo chiều âm nên pha dao dộng là: $\varphi_2=\dfrac{5\pi}{6}\ rad$.
+\item Thời gian ngắn nhất là: $t=\dfrac{\varphi_2-\varphi_1}{\omega}=\dfrac{7}{24}\ s$.
+\end{itemize}
+}
+%\haidong{4}
+\end{vidu} %\dotlineEX{5}
+%\loai{Cho khoảng thời gian ngắn nhất có chiều chuyển động. Tìm các đại lượng}
+\begin{vidu}%[3P1-8.1K][Loai1]
+Một chất điểm dao động với quỹ đạo 10 cm. Thời gian ngắn nhất vật đi từ vị trí $-2,5\ cm$ theo chiều âm đến điểm có li độ cực đại là 2,5 s. Số dao động toàn phần mà vật thực hiện được trong 2 phút là
+\choice
+{30}
+{50}
+{20}
+{\True 32}
+\loigiai{
+\begin{itemize}
+\item Biên độ $A = 5\ cm$.
+\item Thấy: $\Delta t = \dfrac{T}{6}+\dfrac{T}{2} = 2,5\ s \Rightarrow T = 3,75\ s$.
+\item Vậy 2 phút $= 120\ s$, số dao động toàn phần vật thực hiện là: $N=\dfrac{120}{3,75}=32$.
+\end{itemize}
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{7}
+
+%\loai{Thời điểm đầu tiên vật qua li độ cho trước tính cả chiều chuyển động}
+\begin{vidu}%[3P1-8.2K][Loai1]
+Một vật dao động điều hòa với biểu thức li độ $x = 4\cos\left(0,5\pi t - \dfrac{\pi}{3}\right)$ cm. Vật sẽ đi qua vị trí $x = 2\sqrt{3}$ cm theo chiều âm lần đầu tiên vào thời điểm
+\choice
+{$t = \dfrac{4}{3}$ s}
+{\True $t = 1\ s$}
+{$t = 2\ s$}
+{$t=\dfrac{1}{3}$ s}
+\loigiai{
+\immini{\begin{itemize}
+\item Ta có: $T = 4$ s. Ta biểu diễn vị trí điểm có li độ $2\sqrt{3}\ cm$ theo chiều âm trên đường tròn lượng giác như hình vẽ.
+\item Từ hình vẽ ta thấy: $\Delta \varphi = \dfrac{\pi}{2} \Rightarrow \Delta t = \dfrac{T}{4} = 1\ s$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](30:2){1}
+\tkzDefShiftPoint[o](-60:2){0}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,h)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,0)
+\tkzDrawPoints[size=3](o,1,h,0)
+\tkzMarkAngles[size=0.7cm,arrows=->](0,o,1)
+\node at (0)[below right]{$M_0$};
+\node at (1)[above right]{$M_1$};
+\node at (2,0)[below right]{$4$};
+\node at (h)[below left]{$2\sqrt{3}$};
+\end{tikzpicture}}}
+%\haidong{5}
+\end{vidu} %\dotlineEX{7}
+
+%\loai{Thời điểm thứ n vật qua li độ cho trước}
+\begin{vidu} %[3P1-8.2K][Loai1] 
+\nguon{QG - 2017} Một vật dao động điều hòa theo phương trình $x=5\cos \left(5\pi t-\dfrac{\pi}{3}\right)$ cm (t tính bằng s). Kể từ $t=0$, thời điểm vật qua vị trí có li độ $x=-2,5\ cm$ lần thứ 2017 là
+\choice
+{401,6 s}
+{403,5 s}
+{\True 403,4 s}
+{401,3 s}
+\loigiai{
+\begin{itemize}
+\item Trong mỗi chu kì vật có 2 lần đi qua vị trí $x=-2,5\ cm$. Do vậy cần 1008T để đi qua vị trí này 2016 lần.
+\item Tổng thời gian để vật đi được 2017 lần qua vị trí này là
+$t=1008T+t{\varphi}=403,4\ s$.
+
+\end{itemize}
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{6}
+%\loai{Viết phương trình dao động}
+\begin{vidu} %[3P1-8.2K][Loai1]  
+Một vật dao động điều hòa trên trục Ox, gốc tọa độ O tại vị trí cân bằng. Khoảng thời gian giữa hai lần liên tiếp vật qua vị trí cân bằng là $0,5\ s$. Quãng đường vật đi được trong $2\ s$ là $32\ cm$. Tại thời điểm $t=1,5\ s$ vật qua vị trí có li độ $x=2\sqrt{3}$ cm theo chiều dương. Phương trình dao động của vật là
+\choice
+{$x=8\cos \left({\pi t+\dfrac{\pi }{6}}\right)\ cm$}
+{\True $x=4\cos \left({2\pi t+\dfrac{{5\pi }}{6}}\right)\ cm$}
+{$x=8\cos \left({\pi t-\dfrac{\pi }{3}}\right)\ cm$}
+{$x=4\cos \left({2\pi t-\dfrac{\pi }{6}}\right)\ cm$}
+\loigiai{
+\begin{itemize}
+\item Phương trình có dạng:  $x=A\cos \left({\omega t+\varphi }\right)$.
+\item Thời gian giữa hai lần liên tiếp vật qua vị trí cân bằng là nửa chu kì nên
+$T=2.0,5=1\ s\Rightarrow \omega =2\pi\ rad/s$.
+\item Quãng đường đi được trong 2 s (2 chu kì) là: $S=2.4A=32\Rightarrow A=4\ cm$.
+\item Tại thời điểm $t=1,5\ s$ vật qua vị trí có li độ $x=2\sqrt{3}$ cm theo chiều dương\\
+$\Rightarrow \begin{cases} 2\sqrt{3}=4\cos \left({3\pi +\varphi }\right) \\
+-2\pi .4\sin \left({3\pi +\varphi }\right)>0 
+\end{cases}\Rightarrow \begin{cases}\cos \varphi =-\dfrac{{\sqrt{3}}}{2} \\
+\sin \varphi >0 
+\end{cases}$
+\item Suy ra, có thể lấy $\varphi =\dfrac{{5\pi }}{6}$.
+\end{itemize}
+}
+%\haidong{6}
+\end{vidu} %\dotlineEX{22}
+\begin{vidu}
+Một vật dao động điều hòa với phương trình $x=10\cos(5\pi t-\dfrac{\pi}{6})\ cm$.
+\begin{itemize}
+\item [1.] Xác định thời điểm đầu tiên vật cách vị trí cân bằng 5 cm.
+\item [2.] Trong một chu kì, tìm khoảng thời gian vật cách vị trí cân bằng nhỏ hơn 5 cm.
+\item [3.] Trong một chu kì, tìm khoảng thời gian li độ nhỏ hơn 5 cm.
+\item [4.] Trong một chu kì, tìm khoảng thời gian vật cách vị trí biên nhỏ hơn 5 cm.
+\item [5.] Tìm thời điểm vật cách vị trí cân bằng $5\sqrt{2}\ cm$ lần thứ 2023.
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item [a)] Thời điểm đầu tiên vật cách vị trí cân bằng 5 cm: $t=\dfrac{T}{12}+\dfrac{T}{6}=0,1\ s$.
+\item [b)] Trong một chu kì, khoảng thời gian vật cách vị trí cân bằng nhỏ hơn 5 cm: $\Delta t=4.\dfrac{T}{12}=\dfrac{2}{15}\ s$. 
+\item [c)] Trong một chu kì, khoảng thời gian li độ nhỏ hơn 5 cm: $\Delta t=T-2.\dfrac{T}{6}=\dfrac{4}{15}\ s$.
+\item [d)] Trong một chu kì, khoảng thời gian vật cách vị trí biên nhỏ hơn 5 cm: $\Delta t=4.\dfrac{T}{6}=\dfrac{4}{15}\ s$.
+\item [e)] Thời điểm vật cách vị trí cân bằng $5\sqrt{2}\ cm$ lần thứ 2023: $\Delta t=T.\left(\dfrac{1}{12}+\dfrac{1}{8}+\dfrac{2022}{4}\right)\approx 202,3\ s$.
+
+\end{itemize}
+}
+%\haidong{18}
+\end{vidu} %\dotlineEX{25}
+
+%\loai{Khoảng thời gian vật cách vị trí cân bằng nhỏ hơn b trong một chu kì}
+\begin{vidu} %[3P1-8.3B][Loai1]  
+Cho một chất điểm dao động điều hòa với chu kì 3 s và biên độ 2 cm. Trong một chu kì, khoảng thời gian để khoảng cách từ vật tới vị trí cân bằng bé hơn $\sqrt{3}\ cm$ là
+\choice
+{$\dfrac{4}{3}$ s}
+{$\dfrac{2}{3}$ s}
+{\True 2 s}
+{1 s}
+\loigiai{
+\immini{\begin{itemize}
+\item 
+Ta có: $|x|< \sqrt{3}\ cm \Rightarrow -\sqrt{3}\ cm< x< \sqrt{3}\ cm$.
+\item Ta biểu diễn vị trí các điểm có khoảng cách tới vị trí cân bằng bằng $\sqrt{3}\ cm$ trên đường tròn lượng giác như hình vẽ.
+\item Trong một chu kì, vật sẽ có khoảng cách tới vị trí cân bằng bé hơn $\sqrt{3}\ cm$ khi nó đi từ $M_1$ đến $M_2$ và từ $M_3$ đến $M_0\Rightarrow \Delta \varphi = \dfrac{4\pi}{3} \Rightarrow \Delta t = \dfrac{2T}{3} = 2\ s$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-150:2){0}
+\tkzDefShiftPoint[o](-30:2){1}
+\tkzDefShiftPoint[o](30:2){2}
+\tkzDefShiftPoint[o](150:2){3}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](0,3 1,2)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,0 o,3)
+\tkzDrawPoints[size=3](o,1,h,0,2,3,h')
+\tkzMarkAngles[size=0.7cm,arrows=->](2,o,3)
+\tkzMarkAngles[size=0.7cm,arrows=->](0,o,1)
+\node at (0)[below left]{$M_3$};
+\node at (1)[below right]{$M_0$};
+\node at (2)[above right]{$M_1$};
+\node at (3)[above left]{$M_2$};
+\node at (2,0)[above right]{$2$};
+\node at (h')[below]{$-\sqrt{3}$};
+\node at (h)[below]{$\sqrt{3}$};
+\end{tikzpicture}}
+}
+%\haidong{8}
+\end{vidu} %\dotlineEX{6}
+%\loai{Khoảng thời gian li độ lớn hơn (hoặc nhỏ hơn) b trong một chu kì}
+\begin{vidu}%[3P1-8.3K][Loai1]
+Một chất điểm đang dao động điều hòa trên trục Ox quanh vị trí cân bằng là gốc tọa độ O, với chu kì bằng 3 s. Tốc độ cực đại của chất điểm trong quá trình dao động là $\dfrac{8\pi}{3}\ cm/s$. Trong một chu kì, tổng thời gian mà chất điểm có li độ nhỏ hơn 2 cm là
+\choice
+{0,5 s}
+{1 s}
+{3 s}
+{\True 2 s}
+\loigiai{
+\immini{\begin{itemize}
+\item 
+Chất điểm có li độ nhỏ hơn 2 cm khi nó đi từ $M_1$ qua biên âm, tới vị trí $M_0\Rightarrow \Delta \varphi = \dfrac{4\pi}{3} \Rightarrow t = 2\dfrac{T}{3} = 2\ s$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](60:2){0}
+\tkzDefShiftPoint[o](-60:2){m'}
+\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](m',0)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,0 o,m')
+\tkzDrawPoints[size=3](o,h,0,m')
+\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+\node at (m')[below right]{$M_0$};
+\node at (0)[above right]{$M_1$};
+\node at (2,0)[below right]{$4$};
+\node at (h)[below right]{$2$};
+\end{tikzpicture}}
+}
+%\haidong{7}
+\end{vidu} %\dotlineEX{6}
+%\loai{Cho khoảng thời gian khoảng cách lớn hơn (hoặc nhỏ hơn) b. Tìm các đại lượng khác}
+\begin{vidu} %[3P1-8.3K][Loai1]  
+Cho một chất điểm đang dao động điều hòa với chu kì bằng 2 s. Trong một chu kì dao động, tổng thời gian mà khoảng cách từ chất điểm tới vị trí cân bằng lớn hơn $2\sqrt{3}$ cm là $\dfrac{2}{3}$ s. Biên độ dao động của chất điểm là
+\choice
+{6 cm}
+{3 cm}
+{2 cm}
+{\True 4 cm}
+\loigiai{
+\immini{\begin{itemize}
+\item 
+Ta có: $t = \dfrac{2}{3}\ s = \dfrac{T}{3} \Rightarrow \Delta \varphi = \dfrac{2\pi}{3}$.
+\item Ta có: $\left|x\right|> +2\sqrt{3}\ cm \Rightarrow x> +2\sqrt{3}\ cm$ hoặc $x< -2\sqrt{3}\ cm$.
+\item Ta biểu diễn các điểm có li độ $\pm 2\sqrt{3}$ cm trên đường tròn lượng giác như hình vẽ.
+\item Khoảng cách từ chất điểm tới vị trí cân bằng lớn hơn $2\sqrt{3}$ cm khi nó đi từ vị trí $M_0$ qua biên dương, tới vị trí $M_1$ và từ vị trí $M_2$ qua biên âm, đến vị trí $M_3\Rightarrow A\dfrac{\sqrt{3}}{2} = 2\sqrt{3} \Rightarrow A = 4\ cm$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-150:2){0}
+\tkzDefShiftPoint[o](-30:2){1}
+\tkzDefShiftPoint[o](30:2){2}
+\tkzDefShiftPoint[o](150:2){3}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](0,3 1,2)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,0 o,3)
+\tkzDrawPoints[size=3](o,1,h,0,2,3,h')
+\tkzMarkAngles[size=0.7cm,arrows=->](1,o,2)
+\tkzMarkAngles[size=0.7cm,arrows=->](3,o,0)
+\node at (0)[below left]{$M_3$};
+\node at (1)[below right]{$M_0$};
+\node at (2)[above right]{$M_1$};
+\node at (3)[above left]{$M_2$};
+\node at (2,0)[above right]{$A$};
+\node at (h')[below]{$-2\sqrt{3}$};
+\node at (h)[below]{$2\sqrt{3}$};
+\end{tikzpicture}}
+}
+%\haidong{8}
+\end{vidu} %\dotlineEX{6}
+%\loai{Cho khoảng thời gian li độ lớn hơn (hoặc nhỏ hơn) b. Tìm các đại lượng khác}
+\begin{vidu}%[3P1-8.3K][Loai1]
+Một chất điểm đang dao động điều hòa trên trục Ox quanh vị trí cân bằng là gốc tọa độ O, với chu kì bằng 3 s. Biết rằng trong mỗi chu kì, tổng thời gian mà chất điểm có li độ lớn hơn $3\sqrt{3}$ cm là 0,5 s. Tốc độ cực đại của chất điểm trong quá trình dao động là
+\choice
+{$\dfrac{8\pi}{3}\ cm/s$}
+{$8\pi\ cm/s$}
+{\True $4\pi\ cm/s$}
+{$16\pi\ cm/s$}
+\loigiai{
+\immini{\begin{itemize}
+\item 
+Ta có: $t = 0,5\ s = \dfrac{T}{6} \Rightarrow \Delta \varphi = \dfrac{\pi}{3}$.
+\item Ta biểu diễn các điểm có li độ $-\sqrt{3}$ cm trên đường tròn lượng giác như hình vẽ.
+\item Chất điểm có li độ lớn hơn $3\sqrt{3}$ cm khi nó đi từ vị trí $M_0$ qua biên dương, tới vị trí $M_1\Rightarrow A\dfrac{\sqrt{3}}{2} = 3\sqrt{3} \Rightarrow A = 6\ cm$
+$v_{\max} = 6.\dfrac{2\pi}{3} = 4\pi\ cm/s$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-150:2){0}
+\tkzDefShiftPoint[o](-30:2){1}
+\tkzDefShiftPoint[o](30:2){2}
+\tkzDefShiftPoint[o](150:2){3}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,2)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2)
+\tkzDrawPoints[size=3](o,1,h,2)
+\tkzMarkAngles[size=0.7cm,arrows=->](1,o,2)
+\node at (1)[below right]{$M_0$};
+\node at (2)[above right]{$M_1$};
+\node at (2,0)[above right]{$A$};
+\node at (h)[below]{$3\sqrt{3}$};
+\end{tikzpicture}}
+}
+%\haidong{9}
+\end{vidu} %\dotlineEX{6}
+%\loai{Thời điểm thứ n vật cách vị trí cân bằng một khoảng}
+
+%\loai{Khoảng thời gian giữa hai lần liên liếp cách vị trí cân bằng một khoảng}
+
+%\loai{Số lần vật qua li độ cho trước}
+\begin{vidu}%[3P1-11.1K][Loai1] 
+Cho một chất điểm dao động điều hòa theo phương trình $x = 6\cos(4\pi t + \dfrac{\pi}{6})$, với t tính bằng giây và x tính bằng cm. Trong quãng thời gian 0,75 s tính từ thời điểm ban đầu vật đi qua vị trí $x = 3$ cm bao nhiêu lần?
+\choice
+{\True 3 lần}
+{5 lần}
+{2 lần}
+{4 lần}
+\loigiai{
+\immini{\begin{itemize}
+\item  Ta có: $T = 0,5$ s. Thời điểm ban đầu vật ở $M_0$. Ta biểu diễn vị trí các điểm có li độ $3\ cm$ bằng các điểm $M_1,\ M_2$ như hình vẽ. 
+\item Ta lại có: $0,75\ s = 1.0,5 + \dfrac{1}{2}.0,5 = T+ \dfrac{1}{2}T$. 
+\item Mỗi 1 chu kì T, chất điểm đi qua vị trí có li độ $3\ cm$ hai lần. 
+\item Xét khoảng thời gian $\dfrac{1}{2}T$ chất điểm quay được 1 góc $\Delta \varphi = \dfrac{1}{2}T. \dfrac{2\pi}{T} = \pi$, tức là đến vị trí M' trên đường tròn $ \Rightarrow$ vật đi qua vị trí có li độ $3\ cm$ 1 lần. 
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](30:2){0}
+\tkzDefShiftPoint[o](60:2){1}
+\tkzDefShiftPoint[o](-60:2){2}
+\tkzDefShiftPoint[o](-150:2){m'}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,2)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,0 o,m')
+\tkzDrawPoints[size=3](o,1,h,0,2,m')
+\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+\node at (0)[above right]{$M_0$};
+\node at (1)[above]{$M_1$};
+\node at (2)[below right]{$M_2$};
+\node at (m')[below left]{$M'$};
+\node at (2,0)[below right]{$6$};
+\node at (h)[below right]{$3$};
+\end{tikzpicture}}
+\begin{itemize}
+\item Vậy trong quãng thời gian 0,75 s tính từ thời điểm ban đầu vật đi qua vị trí li độ bằng 3 cm tổng cộng $2 + 1 = 3$ lần. 
+\end{itemize}
+}
+%\haidong{6}
+\end{vidu} %\dotlineEX{6}
+%\loai{Tính số lần vật qua li độ cho trước}
+\begin{comment}%[3P1-11.1K][Loai1]
+Cho một chất điểm dao động điều hòa với biên độ bằng 4 cm và tần số bằng 2 Hz. Thời điểm ban đầu chất điểm đi qua vị trí có li độ bằng $-2$ cm theo chiều âm. Hỏi sau 1,375 s chuyển động, chất điểm đi qua vị trí li độ bằng 3,5 cm bao nhiêu lần?
+\choice
+{4 lần}
+{5 lần}
+{\True 6 lần}
+{7 lần}
+\loigiai{
+\immini{\begin{itemize}
+\item 
+Ta có: $T = 0,5$ s. Ta biểu diễn vị trí các điểm có li độ $3,5\ cm$ bằng các điểm $M_1,\ M_2$ như hình vẽ. 
+\item Ta lại có: $1,375\ s = 2.0,5 + \dfrac{3}{4}.0,5 = 2T+ \dfrac{3}{4}T$.
+\item Mỗi 1 chu kì T, chất điểm đi qua vị trí có li độ $3,5\ cm$ 2 lần $\Rightarrow $ trong khoảng thời gian 2T, chất điểm có 4 lần đi qua vị trí li độ $3,5\ cm$. 
+\item Xét khoảng thời gian $\dfrac{3}{4}T$ chất điểm quay được 1 góc $\Delta \varphi = \dfrac{3}{4}T. \dfrac{2\pi}{T} = \dfrac{3\pi}{2}$, tức là đến vị trí M' trên đường tròn $ \Rightarrow$ trong khoảng thời gian này vật đi qua vị trí có li độ $3,5\ cm$ 2 lần. 
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](125:2){0}
+\tkzDefShiftPoint[o](-28:2){1}
+\tkzDefShiftPoint[o](28:2){2}
+\tkzDefShiftPoint[o](35:2){m'}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,2)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,0 o,m')
+\tkzDrawPoints[size=3](o,1,h,0,2,m')
+\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+\node at (0)[above left]{$M_0$};
+\node at (1)[below right]{$M_1$};
+\node at (2)[right]{$M_2$};
+\node at (m')[above right]{$M'$};
+\node at (2,0)[below right]{$4$};
+\node at (h)[below left]{$3,5$};
+\end{tikzpicture}}
+\begin{itemize}
+\item Vậy trong quãng thời gian 1,375 s tính từ thời điểm ban đầu vật đi qua vị trí li độ bằng 3,5 cm tổng cộng $4 + 2 = 6$ lần.
+\end{itemize}
+}
+%\haidong{5}
+\end{comment} %\dotlineEX{5}
+%\loai{Số lần vật cách vị trí cân bằng một khoảng}
+
+
+
+
+%\loai{Cho biểu thức x. Tìm thời điểm đạt vận tốc lần thứ n}
+\begin{vidu}%[3P1K9-1][Loai1] 
+Một chất điểm dao động điều hòa theo phương trình $x = 4\cos\left(\pi t + \dfrac{\pi}{3}\right)$, với x tính bằng cm và t tính bằng giây. Thời điểm vận tốc của chất điểm đạt giá trị $2\pi\ cm/s$ lần thứ 5 là
+\choice
+{\True $\dfrac{29}{6}$ s}
+{$\dfrac{29}{12}$ s}
+{$\dfrac{9}{6}$ s}
+{$\dfrac{9}{2}$ s}
+\loigiai{
+\immini{
+\begin{itemize}
+\item Do vận tốc sớm pha hơn li độ góc $\dfrac{\pi}{2}$ nên pha ban đầu của vận tốc ở vị trí $M_{0v}$ trên đường tròn lượng giác như hình vẽ.
+\item Ta biểu diễn vị trí các điểm có vận tốc $2\pi\ cm/s$ tại các điểm $M_1, M_2$ trên đường tròn.
+\item Từ đường tròn dễ thấy, 1 chu kì có 2 lần chất điểm có vận tốc $2\pi\ cm/s$.
+\item Ta tách $5 = 2.2 + 1 \Rightarrow t = 2T + \Delta t$.
+\item Sau 2 chu kì, điểm $M_{0v}$ quay được 2 vòng và trở về đúng vị trí ban đầu tại $M_{0v}$.
+\end{itemize}
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=4]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](60:2){0x}
+\tkzDefShiftPoint[o](150:2){0v}
+\tkzDefShiftPoint[o](-60:2){1}
+\tkzDefPointBy[projection=onto m--n](0x) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](0v) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](0x,1 0v,h')
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,0x o,0v)
+\tkzDrawPoints[size=3](o,1,h,0x,0v,h')
+\tkzMarkRightAngles(0x,o,0v)
+\tkzMarkAngles[size=0.7cm,arrows=->](0v,o,1)
+\node at (0x)[above right]{$M_{0x}\equiv M_2$};
+\node at (0v)[above left]{$M_{0v}$};
+\node at (1)[below right]{$M_1$};
+\node at (2.5,0)[above right]{$4\ cm$};
+\node at (2.5,0)[below right]{$4\pi\ cm/s$};
+\node at (h)[below right]{$2\pi$};
+\end{tikzpicture}}
+\begin{itemize}
+\item Để chất điểm đạt vận tốc $2\pi\ cm/s$ lần thứ 5 thì vật cần quay đến vị trí $M_1$\\ $\Rightarrow \Delta \varphi = \dfrac{5\pi}{6} \Rightarrow \Delta t = \dfrac{5T}{12}\Rightarrow t = 2T + \dfrac{5T}{12} = \dfrac{29T}{12} = \dfrac{29}{6}\ s$.
+\end{itemize}
+}%<MyLT1>
+%\haidong{9}
+\end{vidu} %\dotlineEX{6}
+
+%\loai{Thời điểm vật đạt tốc độ cho trước lần thứ n}
+\begin{vidu}%[3P1-9.1K][Loai1]
+Một chất điểm dao động điều hòa theo phương trình $x=10\cos \left( \pi t+\dfrac{\pi}{3} \right)$ (x tính bằng cm; t tính bằng s). Kể từ lúc $t = 0$, lần thứ 20 chất điểm có tốc độ $5\pi$ cm/s ở thời điểm
+\choice
+{\True 9,83 s}
+{18,5 s}
+{19,5 s}
+{19,66 s}
+\loigiai{
+\begin{itemize}
+\item Dịch lại bài trên trục Ox: khi vật có tốc độ: $|v| = 5\pi\ cm/s = \dfrac{v_{\max}}{2} \Leftrightarrow x = \pm \dfrac{A\sqrt{3}}{2}$.
+\item Thấy một chu kì dao động, vật qua $x=\pm \dfrac{A\sqrt{3}}{2}$ 4 lần $\Rightarrow$ Tách: $20 = 16 + 4$.
+\item Sau 4T, vật qua $x=\pm \dfrac{A\sqrt{3}}{2}$ 16 lần và quay lại trạng thái tại $t = 0:\ x =\dfrac{A}{2}\ (-)$ , vật thực hiện 4 lần nữa theo trục phân bố thời gian mất: $\dfrac{11T}{12}$ .
+\item Vậy thời điểm cần tìm là: $t’ = t + 4T + \dfrac{11T}{12}= 9,833$ s.
+\end{itemize}
+}
+%\haidong{9}
+\end{vidu} %\dotlineEX{6}
+
+%\loai{Thời gian vận tốc thỏa mãn khoảng cho trước trong một chu kì}
+\begin{vidu} %[3P1-9.1B][Loai1] 
+Cho một chất điểm dao động điều hòa với biên độ bằng 5 cm, chu kì bằng 2 s. Trong mỗi chu kì, quãng thời gian mà vận tốc chuyển động của vật lớn hơn $2,5\pi\ cm/s$ là
+\choice
+{$\dfrac{4}{3}$ s}
+{$\dfrac{1}{3}$ s}
+{\True $\dfrac{2}{3}$ s}
+{$\dfrac{1}{4}$ s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $v_{\max} = 5\pi\ cm/s$.
+\item Dùng đường tròn cho vận tốc ta có, trong một chu kì, khoảng thời gian vận tốc chuyển động của vật lớn hơn $2,5\pi\ cm/s$ là $t = \dfrac{T}{3} = \dfrac{2}{3}\ s$.
+
+\end{itemize}
+}
+%\haidong{7}
+\end{vidu} %\dotlineEX{6}
+%\loai{Thời gian tốc độ thỏa mãn giá trị cho trước trong một chu kì}
+\begin{vidu} %[3P1-9.1K][Loai1] 
+Cho một chất điểm dao động điều hòa với biên độ bằng 4 cm, chu kì bằng 0,5 s. Trong mỗi chu kì, quãng thời gian mà tốc độ chuyển động của vật nhỏ hơn $8\pi\sqrt{3}$ cm/s là
+\choice
+{$\dfrac{3}{4}$ s}
+{\True $\dfrac{1}{3}$ s}
+{$\dfrac{1}{6}$ s}
+{$\dfrac{1}{4}$ s}
+\loigiai{
+\immini{\begin{itemize}
+\item Ta có: $\omega = \dfrac{2\pi}{0, 5} = 4\pi\ rad/s \Rightarrow v_{\max} = 4\pi. 4 = 16\pi$ cm/s.
+\item $|v|< 8\pi\sqrt{3}$ cm/s $\Rightarrow -8\pi\sqrt{3}\ cm/s<v<8\pi\sqrt{3}$ cm/s.
+\item Trong 1 chu kì, vật chuyển động với tốc độ nhỏ hơn $8\pi\sqrt{3}$ cm/s khi nó đi từ điểm $M_1$ đến $M_3$ và từ điểm $M_4$ đến $M_0$ trên đường tròn lượng giác như hình vẽ.\\
+\\
+$\Rightarrow \Delta \varphi = \dfrac{2\pi}{3}+\dfrac{2\pi}{3} = \dfrac{4\pi}{3}\Rightarrow t = \dfrac{\Delta \varphi}{\omega} = \dfrac{1}{3}\ s$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-150:2){1}
+\tkzDefShiftPoint[o](-30:2){2}
+\tkzDefShiftPoint[o](30:2){3}
+\tkzDefShiftPoint[o](150:2){4}
+\tkzDefPointBy[projection=onto m--n](2) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,4 2,3)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,4 o,3)
+\tkzDrawPoints[size=3](o,1,h,4,2,3,h')
+\tkzMarkAngles[size=0.7cm,arrows=->](3,o,4 1,o,2)
+\node at (1)[below left]{$M_1$};
+\node at (2)[below right]{$M_2$};
+\node at (3)[above right]{$M_3$};
+\node at (4)[above left]{$M_4$};
+\node at (2.5,0)[below right]{$v$};
+\node at (2,0)[above right]{$16\pi$};
+\node at (h')[below]{$-8\pi\sqrt{3}$};
+\node at (h)[below]{$8\pi\sqrt{3}$};
+\end{tikzpicture}}}
+
+%\haidong{8}
+\end{vidu} %\dotlineEX{11}
+%\loai{Cho thời gian thỏa mãn tốc độ cho trước. Tìm các đại lượng khác}
+\begin{vidu} %[3P1-9.1K][Loai1] 
+Cho một chất điểm dao động điều hòa với chu kì $T = 3$ s. Trong một chu kì, quãng thời gian mà tốc độ chuyển động của chất điểm nhỏ hơn 20 cm/s là 2 s. Biên độ dao động của chất điểm là
+\choice
+{\True 11,0 cm}
+{19,1 cm}
+{6,4 cm}
+{13,5 cm}
+\loigiai{
+\immini{\begin{itemize}
+\item
+Ta có: $ \omega = \dfrac{2\pi}{3}\ rad/s\Rightarrow 2\ s = \dfrac{2T}{3} \Rightarrow \alpha = \dfrac{4\pi}{3}$.
+\item $|v| <20\ cm/s \Rightarrow -20\ cm/s < v < 20\ cm/s
+\Rightarrow$ Vận tốc của vật có giá trị trong khoảng từ $-20$ cm/s đến $20$ cm/s khi vật đi từ $M_1$ đến $M_2$ và $M_3$ đến $M_4$ như hình vẽ.
+\\
+$\Rightarrow \widehat{M_1OM_2} = \widehat{M_3OM_4} = \dfrac{2\pi}{3}\Rightarrow 20 = \cos\dfrac{\pi}{6}.{v_{\max}} \Rightarrow v_{\max} = \dfrac{40}{\sqrt{3}}\quad (1)\Rightarrow A = \dfrac{\dfrac{40}{\sqrt{3}}}{\dfrac{2\pi}{3}}=11\ cm$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-150:2){1}
+\tkzDefShiftPoint[o](-30:2){2}
+\tkzDefShiftPoint[o](30:2){3}
+\tkzDefShiftPoint[o](150:2){4}
+\tkzDefPointBy[projection=onto m--n](2) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,4 2,3)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,4 o,3)
+\tkzDrawPoints[size=3](o,1,h,4,2,3,h')
+\tkzMarkAngles[size=0.7cm,arrows=->](1,o,2 3,o,4)
+\node at (1)[below left]{$M_1$};
+\node at (2)[below right]{$M_2$};
+\node at (3)[above right]{$M_3$};
+\node at (4)[above left]{$M_4$};
+\node at (2,0)[above right]{$v_{max}$};
+\node at (h')[below right]{$-20$};
+\node at (h)[below left]{$20$};
+\end{tikzpicture}}}
+
+%\haidong{7}
+\end{vidu} %\dotlineEX{11}
+
+
+
+\begin{comment}%[3P1-9.1K][Loai1] 
+Cho một chất điểm dao động điều hòa với phương trình $x = 3\cos\left(4\pi t + \dfrac{\pi}{3}\right)$ cm. 
+\begin{listEX}
+\item  Xác định thời điểm đầu tiên vật đạt vận tốc $12\pi\ cm/s$.
+\item  Tìm thời điểm đầu tiên vật đạt tốc độ $6\pi\ cm/s$.
+\item  Tìm thời điểm thứ 2023 vật đạt tốc độ $6\pi\ cm/s$.
+\item  Trong một chu kì, tìm khoảng thời gian tốc độ nhỏ hơn $6\pi\sqrt{2}\ cm/s$.
+\item  Tìm số lần vật có vận tốc $6\pi\ cm/s$ trong 2,875 s.
+\end{listEX}
+\loigiai{
+\begin{itemize}
+\item Phương trình vận tốc: $v=12\pi\cos(4\pi t+\dfrac{5\pi}{6})\ cm$
+\item [a)] Thời điểm đầu tiên vật đạt vận tốc $12\pi\ cm/s$: $t=\dfrac{T}{2}+\dfrac{T}{12}=\dfrac{7}{24}\ s$.
+\item [b)] Thời điểm đầu tiên vật đạt tốc độ $6\pi\ cm/s$: $t=\dfrac{T}{12}+\dfrac{T}{6}=0,125\ s$.
+\item [c)] Thời điểm thứ 2023 vật đạt tốc độ $6\pi\ cm/s$: $t=T.\left(\dfrac{1}{12}+\dfrac{1}{6}+\dfrac{2022}{4}\right)=252,875\ s$.
+\item [d)] Trong một chu kì, tìm khoảng thời gian tốc độ nhỏ hơn $6\pi\sqrt{2}\ cm/s$: $\Delta t=4.\dfrac{T}{8}=0,25\ s$.
+\item [e)] Số lần vật có vận tốc $6\pi\ cm/s$ trong 2,875 s: $2,875\ s=5T+\dfrac{3T}{4}\sim 5.2\ \ct{lần}\ + 2\ \ct{lần}=12\ \ct{lần}$.
+\end{itemize}}
+%\haidong{15}
+\end{comment} %\dotlineEX{24}
+
+\begin{vidu}%[3P1-9.1K][Loai1] 
+Cho một chất điểm dao động điều hòa với phương trình $x = 4\cos\left(\pi t + \dfrac{\pi}{3}\right)$ cm. 
+\begin{itemize}
+\item [1.] Xác định thời điểm đầu tiên vật đạt gia tốc $4\pi^2\ cm/s$.
+\item [2.] Tìm thời điểm đầu tiên gia tốc của vật có độ lớn $2\pi^2\sqrt{3}\ cm/s$.
+\item [3.] Trong một chu kì, tìm khoảng thời gian gia tốc lớn hơn $2\pi^2\sqrt{2}\ cm/s$.
+\item [4.] Trong một chu kì, tìm khoảng thời gian gia tốc có độ lớn nhỏ hơn $2\pi^2\sqrt{3}\ cm/s$.
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item Phương trình gia tốc: $a=4\pi^2\cos(\pi t-\dfrac{2\pi}{3})\ cm/s^2$.
+\item [a)] Thời điểm đầu tiên vật đạt gia tốc $4\pi^2\ cm/s$: $\Delta t=\dfrac{T}{12}+\dfrac{T}{4}=\dfrac{2}{3}\ s$.
+\item [b)] Thời điểm đầu tiên gia tốc của vật có độ lớn $2\pi^2\sqrt{3}\ cm/s$: $t=\dfrac{T}{12}+\dfrac{T}{6}=0,5\ s$
+\item [c)] Trong một chu kì, khoảng thời gian gia tốc lớn hơn $2\pi^2\sqrt{2}\ cm/s$: $\Delta t=2.\dfrac{T}{8}=0,5\ s$.
+\item [d)] Trong một chu kì, khoảng thời gian gia tốc có độ lớn nhỏ hơn $2\pi^2\sqrt{3}\ cm/s$: $\Delta t=4.\dfrac{T}{6}=\dfrac{4}{3}\ s$
+
+\end{itemize}}
+%\haidong{13}
+\end{vidu} %\dotlineEX{24}
+%\loai{Thời gian gian ngắn nhất vật có gia tốc}
+\begin{comment} %[3P1-9.2B][Loai1] 
+Một vật nhỏ dao động điều hòa theo phương trình $x = A\cos5\pi t$ (t tính bằng s). Tính từ $t=0$, khoảng thời gian ngắn nhất để gia tốc của vật có giá trị bằng một nửa gia tốc cực đại là
+\choice
+{$\dfrac{1}{15}$ s}
+{$\dfrac{1}{3}$ s}
+{$\dfrac{1}{6}$ s}
+{\True $\dfrac{2}{15}$ s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $T=\dfrac{2}{5}\ s;\ a=-\omega ^2x$
+\item Gia tốc của vật đạt giá trị cực đại tại vị trí biên âm, vị trí gia tốc của vật có giá trị bằng một nửa gia tốc cực đại là vị trí $x = -\dfrac{A}{2}$.
+\item Tại $t = 0$ vật đang ở biên dương $\Rightarrow$ Thời gian ngắn nhất từ $t = 0$ đến khi gia tốc của vật có giá trị bằng một nửa gia tốc cực đại là $t = \dfrac{T}{3} = \dfrac{2}{15}$ s.
+
+\end{itemize}
+}
+%\haidong{6}
+\end{vidu} %\dotlineEX{6}
+
+%\loai{Thời điểm thứ n liên quan gia tốc}
+\begin{vidu}%[3P1-9.2K][Loai1]
+Một vật dao động điều hòa theo phương trình $x = 3\cos(5\pi t - 0,5\pi)$ cm, t tính bằng giây. Lấy $\pi ^2 = 10$. Kể thời điểm ban đầu $t = 0$, thời điểm gia tốc của vật có giá trị bằng 3,75 $m/s^2$ lần thứ 98 là
+\choice
+{19,4 s}
+{\True 19,5 s}
+{19,2 s}
+{19,8 s}
+\loigiai{
+\begin{itemize}
+\item Dịch lại trạng thái: vật có gia tốc $a = -\omega^2x = 3,75 m/s^2 \Leftrightarrow x=-1,5\ cm=-\dfrac{A}{2}$.
+\begin{center}
+\begin{tikzpicture}
+\tkzDefPoints{0/0/o, 5/0/a, 4.325/0/b, 3.525/0/c, 2.5/0/d,  -5/0/h, -4.325/0/g, -3.525/0/f, -2.5/0/e, -6/0/x', 6/0/x}
+\tkzDefShiftPoint[a](-90:0.5cm){a1}
+\tkzDefShiftPoint[a](-90:1cm){a2}
+\tkzDefShiftPoint[o](-90:0.5cm){o1}
+\tkzDefShiftPoint[h](-90:1cm){h2}
+\tkzDefShiftPoint[h](-90:1.5cm){h3}
+\tkzDefShiftPoint[e](-90:1.5cm){e3}
+\tkzDrawSegments[blue,->,very thick](x',x)
+\tkzDrawPoints[size=5,fill=black](o,a,b,c,d,e,f,g,h)
+\tkzLabelPoint[above](o){\tiny $O$}
+\tkzLabelPoint[above](a){\tiny$A$}
+\tkzLabelPoint[above](b){\tiny$\dfrac{A\sqrt{3}}{2}$}
+\tkzLabelPoint[above](c){\tiny$\dfrac{A\sqrt{2}}{2}$}
+\tkzLabelPoint[above](d){\tiny$\dfrac{A}{2}$}
+\tkzLabelPoint[above](h){\tiny$-A$}
+\tkzLabelPoint[above](g){\tiny $-\dfrac{A\sqrt{3}}{2}$}
+\tkzLabelPoint[above](f){\tiny$-\dfrac{A\sqrt{2}}{2}$}
+\tkzLabelPoint[above](e){\tiny$-\dfrac{A}{2}$}
+\tkzLabelPoint[above](x){\tiny$x$}
+\tkzDrawSegments[->,very thick,red](o1,a1 a2,h2 h3,e3)
+\tkzDrawSegments[very thick,red](a1,a2 h2,h3)
+\end{tikzpicture}
+\end{center}
+\item Thấy một chu kì dao động, vật qua $x=-\dfrac{A}{2}$ 2 lần $\Rightarrow$ tách: $98 = 96 + 2$.
+\item Sau 48T, vật qua $x=-\dfrac{A}{2}$ 96 lần và quay lại trạng thái tại $t = 0:\  x =0\ (+)$ , vật thực hiện 2 lần nữa gian mất: $\dfrac{T}{4}+\dfrac{T}{2}+\dfrac{T}{6}$ .
+\item Vậy thời điểm cần tìm là: $t’ = t + 48T + \dfrac{T}{4}+\dfrac{T}{2}+\dfrac{T}{6}= 19,5$ s.
+\end{itemize}
+}
+%\haidong{8}
+\end{vidu} %\dotlineEX{6}
+%\loai{Khoảng thời gian trong một chu kì thỏa mãn hệ thức gia tốc}
+\begin{vidu}%[3P1-9.2K][Loai1]
+Một vật nhỏ dao động điều hòa với chu kì T và biên độ $5\sqrt{2}$ cm. Biết trong một chu kì, khoảng thời gian để vật nhỏ của con lắc có độ lớn gia tốc không vượt quá 200 $cm/s^2$ là $\dfrac{T}{2}$. Lấy $\pi^2 = 10$. Tần số dao động của vật là
+\choice
+{3 Hz}
+{\True 1 Hz}
+{4 Hz}
+{2 Hz}
+\loigiai{
+\immini{\begin{itemize}
+\item Ta có: $\left|a\right| \le 200\ cm/s^2 \Rightarrow -200\ cm/s^2 \le a \le 200\ cm/s^2$.
+\item Ta lại có $t=\dfrac{T}{2} \Rightarrow \alpha = \pi \Rightarrow$ Trong mỗi chu kì dao động, để vật nhỏ của con lắc có độ lớn gia tốc không vượt quá 200 $cm/s^2$ là từ $M_1$ đến $M_2$ và $M_3$ đến $M_4$ trên đường tròn lượng giác.
+\\
+$\Rightarrow \widehat{M_1OM_2} = \widehat{M_3OM_4} = \dfrac{\pi}{2}\Rightarrow 200 = a_{\max}\dfrac{\sqrt{2}}{2} \Rightarrow a_{\max} = 200\sqrt{2}$\\
+$ \Rightarrow \omega^2 = \dfrac{200\sqrt{2}}{5\sqrt{2}} = 40 \Rightarrow \omega = 2\pi \Rightarrow f = 1\ Hz$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-135:2){1}
+\tkzDefShiftPoint[o](-45:2){2}
+\tkzDefShiftPoint[o](45:2){3}
+\tkzDefShiftPoint[o](135:2){4}
+\tkzDefPointBy[projection=onto m--n](2) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,4 2,3)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2 o,4 o,3)
+\tkzDrawPoints[size=3](o,1,h,4,2,3,h')
+\tkzMarkAngles[size=0.7cm,arrows=->](1,o,2 3,o,4)
+\node at (1)[below left]{$M_1$};
+\node at (2)[below right]{$M_2$};
+\node at (3)[above right]{$M_3$};
+\node at (4)[above left]{$M_4$};
+\node at (2,0)[above right]{$a_{\max}$};
+\node at (2.5,0)[below right]{$a$};
+\node at (h')[below]{$-200$};
+\node at (h)[below]{$200$};
+\end{tikzpicture}}}
+
+%\haidong{12}
+\end{vidu} %\dotlineEX{6}
+%\loai{Khoảng thời gian theo cả gia tốc kết hợp vận tốc hoặc li độ}
+\begin{vidu} %[3P1-9.2K][Loai1] 
+\nguon{QG - 2016} Một chất điểm dao động điều hòa có vận tốc cực đại 60 cm/s và gia tốc cực đại là $2\pi\ m/s^2$. Thời điểm ban đầu ($t = 0$), chất điểm có vận tốc 30 cm/s và đang chuyển động chậm dần. Chất điểm có gia tốc bằng $\pi\ m/s^2$ lần đầu tiên ở thời điểm
+\choice
+{0,35 s}
+{0,15 s}
+{0,10 s}
+{\True 0,25 s}
+\loigiai{
+\immini{\begin{itemize}
+\item $v_{\max}=\omega A=0,60\ m/s;\ a_{\max}=\omega^2A=2\pi\ m/s^2\Rightarrow \omega =\dfrac{a_{\max}}{v_{\max}}=\dfrac{2\pi}{0,6}=\dfrac{10\pi}{3}\ rad/s;\ T=\dfrac{2\pi}{\omega}=0,6\ s $.
+\item Khi $t = 0,\ v_0=30\ cm/s=+\dfrac{v_{\max}}{2}\Rightarrow x_0=\sqrt{A^2-\dfrac{v_0^2}{\omega^2}}=\sqrt{A^2-\dfrac{\left(\dfrac{\omega A}{2}\right)^2}{\omega^2}}=\pm A\dfrac{\sqrt{3}}{2}$.
+\item Khi đó, thế năng của vật đang tăng và vật chuyển động theo chiều dương nên $x_0=+A\dfrac{\sqrt{3}}{2}$.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](120:2){2}
+\tkzDefShiftPoint[o](-30:2){1}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h1}
+\tkzDefPointBy[projection=onto m--n](2) \tkzGetPoint{h2}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,h1 2,h2)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,1 o,2)
+\tkzDrawPoints[size=3](o,1,h1,2,h2)
+\tkzMarkAngles[opacity=0.3,fill=blue,size=0.3cm,arrows=->](1,o,2)
+\tkzMarkAngles[color=red,size=2cm,arrows=->,line width=1.5pt](1,o,2)
+\tkzLabelAngle[pos=0.5](1,o,p){$\alpha$}
+\node at (2)[above left]{$M_2$};
+\node at (1)[below right]{$M_1$};
+\node at (2,0)[below right]{$A$};
+\node at (2.5,0)[above right]{$x$};
+\node at (h1)[above left,xshift=5pt]{$\dfrac{A\sqrt{3}}{2}$};
+\node at (h2)[below]{$-\dfrac{A}{2}$};
+\end{tikzpicture}}
+\begin{itemize}
+\item Khi vật có gia tốc bằng $\pi\ m/s^2=\dfrac{a_{\max}}{2}$ thì li độ của vật là x:
+$\dfrac{x}{A}=-\dfrac{a}{a_{\max}}=-\dfrac{1}{2}\Rightarrow x=-\dfrac{A}{2} $.
+\item Chất điểm có gia tốc bằng $\pi\ m/s^2$ lần đầu tiên ở thời điểm:\\
+$t=\dfrac{\alpha}{2\pi}T=\dfrac{\dfrac{\pi}{6}+\dfrac{\pi}{2}+\dfrac{\pi}{6}}{2\pi}T=\dfrac{5}{12}T=\dfrac{5}{12}.0,6=0,25\ s$.
+\end{itemize}
+}
+%\haidong{11}
+\end{comment} %\dotlineEX{7}
+
+
+
+
+
+

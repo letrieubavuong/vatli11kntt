@@ -1,0 +1,191 @@
+%macbook 
+\loai{Ví dụ mẫu}
+\begin{vidu}
+Ở mặt thoáng của một chất lỏng có hai nguồn kết hợp A và B dao động đều hòa cùng pha với nhau và theo phương thẳng đứng. Biết tốc độ truyền sóng không đổi trong quá trình lan truyền, bước sóng do mỗi nguồn trên phát ra bằng 12 cm. 
+\item[1.] Khoảng cách ngắn nhất giữa hai điểm dao động với biên độ cực đại nằm trên đoạn thẳng AB là ......................
+\item[2.] Điểm M nằm trên mặt nước với $AM = 58\ cm$, $BM = 10\ cm$ nằm trên vân giao thoa ... ............. 
+\item[3.] Điểm N nằm trên mặt nước với $AN = 79,5\ cm$, $BN = 25,5\ cm$ nằm trên vân giao thoa ... ............. 
+\item[4.] Tại điểm M cách A, B lần lượt những khoảng $AM=100$ cm, $BM=58$ cm. Giữa M và đường trung trực của AB còn có ................ vân cực đại.
+\loigiai{
+\begin{itemize}
+\item[1.] Khoảng cách ngắn nhất giữa hai điểm dao động với biên độ cực đại nằm trên đoạn thẳng AB là: $\dfrac{\lambda}{2} = 6$ cm.
+\item[2.] Điểm M có: $\dfrac{\left| MA-MB\right|}{\lambda }=4 \Rightarrow$ M thuộc dãy cực đại bậc 4.
+\item[3.] Điểm N có: $\dfrac{\left| NA-NB\right|}{\lambda }= 4,5\Rightarrow$ N thuộc dãy cực tiểu thứ 5 tính từ đường trung trực đi ra.
+\item[4.] Ta có: $k=\dfrac{100-58}{12}=3,5 \Rightarrow$ giữa M và đường trung trực của AB còn có 3 vân giao thoa cực đại.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\loai{M là cực đại, cho số cực đại giữa M và đường trung trực}
+\begin{vidu}%[3P2-5.2K][Loai1]  
+Trong một thí nghiệm về giao thoa sóng trên mặt nước, hai nguồn kết hợp A, B dao động cùng pha, cùng tần số $f=32$ Hz. Tại một điểm M trên mặt nước cách các nguồn A, B những khoảng $d_1=28$ cm, $d_2=23,5$ cm, sóng có biên độ cực đại. Giữa M và đường trung trực AB có 1 dãy cực đại khác. Tốc độ truyền sóng trên mặt nước là
+\choice
+{34 cm/s}
+{24 cm/s}
+{\True 72 cm/s}
+{48 cm/s}
+\loigiai{
+\immini{\begin{itemize}
+\item Vì $d_1>d_2$ nên M nằm về phía B.
+%\item Hai nguồn kết hợp cùng pha, đường trung trực là cực đại giữa ứng với hiệu đường đi $d_1-d_2=0$, cực đại thứ nhất $d_1-d_2=\lambda$, cực đại thứ hai  
+$d_1-d_2=2\lambda$ chính là cực đại qua M nên: $28-23,5=2\lambda\Rightarrow \lambda =2,25\ cm\Rightarrow v=\lambda f=72\ cm/s$.
+\end{itemize}}{\begin{tikzpicture}[scale=1]
+\node[below] at (0,-4){Hai nguồn cùng pha};
+\draw[fill=black](1.32,1.5)circle(1pt)node[below right]{$M$};
+\begin{scope}[shift={(0,0)}]
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2/0/s1, 2/0/s2}
+\tkzDrawPoints[size=3,fill=black](s1,s2)
+\draw[dashed,blue] plot[domain=-2:2] ({1*cosh(\x)-0.75},{4.5*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({-1*cosh(\x)+0.75},{4.5*sinh(\x)});
+\draw[red] plot[domain=-2:2] ({1*cosh(\x)-0.5},{3*sinh(\x)});
+\draw[red] plot[domain=-2:2] ({-1*cosh(\x)+0.5},{3*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({1*cosh(\x)-0.25},{2.2*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({-1*cosh(\x)+0.25},{2.2*sinh(\x)});
+\draw[red] plot[domain=-2:2] ({1*cosh(\x)},{1.75*sinh(\x)});
+\draw[red] plot[domain=-2:2] ({-1*cosh(\x)},{1.75*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({1*cosh(\x)+0.25},{1.35*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({-1*cosh(\x)-0.25},{1.35*sinh(\x)});
+\draw[red] plot[domain=-2:2] ({1*cosh(\x)+0.5},{1.01*sinh(\x)});
+\draw[red] plot[domain=-2:2] ({-1*cosh(\x)-0.5},{1.01*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({1*cosh(\x)+0.75},{0.69*sinh(\x)});
+\draw[dashed,blue] plot[domain=-2:2] ({-1*cosh(\x)-0.75},{0.69*sinh(\x)});
+\draw[red](0,3)--(0,-3);
+\draw[blue](s1)--(s2);
+\tkzLabelPoint[left](s1){$A$}
+\tkzLabelPoint[right](s2){$B$}
+\end{scope}
+\end{tikzpicture}}
+}
+\end{vidu} \haidong{20}
+\loai{Biết khoảng cách giữa hai cực đại hoặc cực tiểu, tìm bước sóng và tốc độ truyền sóng}
+\begin{vidu}%[3P2-5.2B][Loai1]  
+Trong một thí nghiệm tạo vân giao thoa trên sóng nước, người ta dùng hai nguồn kết hợp dao động đồng pha có tần số 50 Hz và đo được khoảng cách giữa hai vân cực tiểu liên tiếp nằm trên đường nối liền hai tâm dao động là 2 mm. Tìm bước sóng và tốc độ truyền sóng.
+\choice
+{\True 4 mm; 200 mm/s}
+{2 mm; 100 mm/s}
+{3 mm; 600 mm/s}
+{2,5 mm; 125 mm/s}
+\loigiai{
+\begin{itemize}
+\item Khoảng cách hai cực tiểu liên tiếp là nửa bước sóng: 
+$\dfrac{\lambda}{2}=2\ mm\Rightarrow \lambda =4\ mm;\  v=\lambda f=200\ mm/s$. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Xác định 1 điểm thuộc cực đại hay cực tiểu}
+\begin{vidu}%[3P2-5.2K][Loai1]
+Trong một thí nghiệm về giao thoa sóng nước, hai nguồn sóng kết hợp được đặt tại A và B dao động theo phương trình $u_A = u_B = a\cos30\pi t$ (a không đổi, t tính bằng s). Tốc độ truyền sóng trong nước là 60 cm/s. Hai điểm P, Q nằm trên mặt nước có hiệu khoảng cách đến hai nguồn là $PA-PB=6$ cm, $QA-QB=12$ cm. Kết luận về dao động của P, Q là
+\choice
+{\True P có biên độ cực tiểu, Q có biên độ cực đại}
+{P, Q có biên độ cực đại}
+{P có biên độ cực đại, Q có biên độ cực tiểu}
+{P, Q có biên độ cực tiểu}
+\loigiai{
+\begin{itemize}
+\item Điểm P có: $\dfrac{\left| PA-PB \right|}{\lambda }=1,5=2-0,5 \Rightarrow$  P thuộc dãy cực tiểu số 2 tính từ đường trung trực AB đi ra.
+\item Điểm Q có: $\dfrac{\left| QA-QB \right|}{\lambda }=3 \Rightarrow$  Q thuộc dãy cực đại số 3 tính từ đường trung trực AB đi ra. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Cho số cực đại hoặc cực tiểu trên đoạn hai nguồn, tìm các đại lượng}
+\begin{vidu}%[3P2-5.2K][Loai1]  
+Trong một môi trường vật chất đàn hồi có hai nguồn kết hợp A và B cách nhau 3,6 cm, cùng tần số 50 Hz. Khi đó tại vùng giữa hai nguồn người ta quan sát thấy xuất hiện 5 dãy dao động cực đại và cắt đoạn AB thành 6 đoạn mà một trong hai đoạn gần các nguồn chỉ dài bằng một phần tư của mỗi đoạn còn lại. Tốc độ truyền sóng trong môi trường đó là
+\choice
+{0,36 m/s}
+{2 m/s}
+{2,5 m/s}
+{\True 0,8 m/s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $S_1S_2=3,6\ cm=\dfrac{1}{4}\dfrac{\lambda}{2}+\left(5-1\right).\dfrac{\lambda}{2}+\dfrac{1}{4}\dfrac{\lambda}{2}\Rightarrow \lambda =1,6\ cm=0,016\ m\Rightarrow v=\lambda f=0,8\ m/s.$
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Xác định 1 điểm thuộc cực tiểu thứ mấy}
+\begin{vidu}%[3P2-5.2K][Loai1]  
+Trên mặt nước hai nguồn sóng kết hợp A và B dao động điều hoà theo phương vuông góc với mặt nước với phương trình: $u_1=u_2=a\cos \left(10\pi t\right)$. Biết tốc độ truyền sóng 20 cm/s; biên độ sóng không đổi khi truyền đi. Một điểm N trên mặt nước có hiệu khoảng cách đến hai nguồn A và B thoả mãn $AN-BN=10\ cm$. Điểm N nằm trên đường đứng yên
+\choice
+{thứ 3 kể từ trung trực của AB và về phía A}
+{thứ 2 kể từ trung trực của AB và về phía A}
+{\True thứ 3 kể từ trung trực của AB và về phía B}
+{thứ 2 kể từ trung trực của AB và về phía B}
+\loigiai{
+\begin{itemize}
+\item Bước sóng $\lambda =v\dfrac{2\pi}{\omega}=4\ cm$.
+\item $\dfrac{AN-BN}{\lambda}=2,5\Rightarrow$ cực tiểu thứ 3 kể từ cực đại giữa (đường trung trực $\equiv$ trùng với cực đại giữa).
+\item Do $AN>BN$ nên cực tiểu này gần phía B.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\loai{M là cực đại, cho số cực tiểu giữa M và đường trung trực}
+\begin{vidu}%[3P2-5.2K][Loai1]
+Trong thí nghiệm giao thoa sóng nước, hai nguồn kết hợp và đồng bộ A, B dao động với tần số 15 Hz. Người ta thấy điểm M dao động cực đại và giữa M với đường trung trực của AB có một đường không dao động. Hiệu khoảng cách từ M đến A, B là 2 cm. Vận tốc truyền sóng trên mặt nước bằng
+\choice
+{15 cm/s}
+{5 cm/s}
+{\True 30 cm/s}
+{26 cm/s}
+\loigiai{
+\begin{itemize}
+\item M dao động cực đại và giữa M với đường trung trực của AB có một đường không dao động.
+\item M thuộc vân cực đại bậc 1 từ vân trung tâm
+$\Rightarrow$ $d_2-d_1 = 2 = 1.\lambda  = \dfrac{v}{f} $ $\Rightarrow v=2.15=30$ m/s. 
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Thay đổi tần số của nguồn}
+\begin{vidu}%[3P2-5.2B][Loai1]  
+Hai nguồn dao động kết hợp $S_1$, $S_2$ gây ra hiện tượng giao thoa sóng trên mặt thoáng chất lỏng. Nếu tăng tần số dao động của hai nguồn $S_1$ và $S_2$ lên 2 lần thì khoảng cách giữa hai điểm liên tiếp trên $S_1S_2$ có biên độ dao động cực tiểu sẽ thay đổi như thế nào?
+\choice
+{Tăng lên 2 lần}
+{Không thay đổi}
+{Tăng lên 4 lần}
+{\True Giảm đi 2 lần}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\lambda = \dfrac{v}{f}$.
+\item Khi tăng f lên 2 lần thì $\lambda$ giảm 2 lần.
+\item Mà khoảng cách giữa hai điểm liên tiếp trên $S_1S_2$ có biên độ dao động cực tiểu là $\dfrac{\lambda}{2}\Rightarrow$ giảm 2 lần.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+\loai{Hai vân cùng loại}
+\begin{vidu}%[3P2-5.2K][Loai1] 
+Hai nguồn kết hợp A, B dao động theo phương vuông góc với mặt nước với phương trình $u=A\cos(200\pi t)$ mm. Xét về một phía đường trung trực của AB ta thấy vân thứ k đi qua điểm M có $MA-MB=12$ mm và vân thứ $k+3$ đi qua điểm N có $NA - NB=36$ mm. Tốc độ truyền sóng là
+\choice
+{4 m/s}
+{0,4 m/s}
+{\True 0,8 m/s}
+{8 m/s}
+\loigiai{
+\begin{itemize}
+\item $MA-MB = k.\lambda$ hay $12 = m.\lambda \quad (1)$.
+\item $NA-NB = (k + 3).\lambda$ hay $36 = (k +3).\lambda \quad (2)$.
+\item Lấy $(2) - (1)$ vế theo vế $\Rightarrow 3\lambda = 24 \Rightarrow \lambda = 8\ mm = 0,008\ m\Rightarrow v = \lambda.f = 0,008.100 = 0,8\ m/s$.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\loai{Biện luận tìm các giá trị}
+\begin{vidu}%[3P2-5.2K][Loai1]
+Trong một thí nghiệm về giao thoa sóng nước, hai nguồn sóng kết hợp được đặt tại A và B dao động theo phương trình $u_A = u_B = a\cos100\pi t$ (a không đổi, t tính bằng s). Trên đoạn thẳng AB, hai điểm có phần tử nước dao động với biên độ cực đại cách nhau là 9 cm. Tốc độ truyền sóng v có giá trị thoả mãn $1,5\ m/s < v < 2,25\ m/s$. Tốc độ truyền sóng là
+\choice
+{2,20 m/s}
+{1,75 m/s}
+{2,00 m/s}
+{\True 1,80 m/s}
+\loigiai{
+\begin{itemize}
+\item Hai điểm dao động với biên độ cực đại trên đoạn nối hai nguồn cách nhau 
+\begin{align*}
+d=k\dfrac{\lambda }{2} \Rightarrow  0,09\ m=k\dfrac{v}{2f}\Rightarrow v=\dfrac{9}{k}\ m/s.
+\end{align*}
+\item Mà $1,50<v=\dfrac{9}{k}<2,25\Rightarrow 4<k<6\Rightarrow k=5\Rightarrow v=1,8$ m/s.
+\end{itemize}
+}
+\end{vidu} \haidong{20}
+
+\loai{Loại khác}
+

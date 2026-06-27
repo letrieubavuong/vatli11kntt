@@ -1,0 +1,86 @@
+\begin{dang}{QUÃNG ĐƯỜNG LỚN NHẤT (NHỎ NHẤT)}
+\setcounter{paragraph}{0}
+\paragraph{Bài toán tổng quát}
+\begin{itemize}
+\item Trong dao động điều hòa, càng gần VTCB thì tốc độ càng lớn, càng gần vị trí biên thì tốc độ càng bé. 
+\item Trong cùng một khoảng thời gian nhất định, muốn đi được quãng đường lớn nhất thì cho vật đi xung quanh vị trí cân bằng và muốn đi được quãng đường bé nhất thì cho vật đi xung quanh vị trí biên.
+\item Với một quãng đường cho trước, muốn thời gian đi nhỏ nhất thì cho vật đi xung quanh vị trí cân bằng và muốn thời gian đi lớn nhất thì cho vật đi xung quanh vị trí biên.
+\end{itemize}
+\paragraph{Quãng đường lớn nhất, nhỏ nhất trong thời gian $\Delta t<\dfrac{T}{2}$}
+\begin{center}
+\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth']
+\tkzInit[ymin=-3.5,ymax=2.5,xmin=-3,xmax=10]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](140:2){2}
+\tkzDefShiftPoint[o](40:2){1}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h1}
+\tkzDefPointBy[projection=onto m--n](2) \tkzGetPoint{h2}
+\tkzDefShiftPoint[h1](-90:3){h1'}
+\tkzDefShiftPoint[o](-90:3){o'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,h1' o,o' 2,h2)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[Mapcolor!60,->](o,1 o,2)
+\tkzDrawSegments[line width=2pt,red](h1,h2)
+\tkzMarkAngles[size=0.5cm,arrows=->](1,o,2)
+\tkzMarkAngles[line width=2pt,color=Mapcolor,size=2cm,arrows=->](1,o,2)
+\tkzLabelAngle[pos=0.85](1,o,2){$\Delta \varphi$}\tkzDrawPoints[size=1](o,1,2,h1,h2)
+\draw[<->] (o')--node[midway,above]{$Asin\dfrac{\Delta \varphi}{2}$}(h1');
+\begin{scope}[/pgf/decoration/raise=3pt]
+\draw [decorate,decoration={brace,mirror,amplitude=5pt},xshift=0pt,yshift=-4pt]
+(o) -- (h1) node [black,midway,yshift=-25pt] 
+{$\dfrac{S_{max}}{2}$};
+\end{scope}
+\tkzLabelPoint[below](n){$x$}
+\begin{scope}[shift={(6,0)}]
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-40:2){2}
+\tkzDefShiftPoint[o](40:2){1}
+\tkzDefShiftPoint[o](0:2){n1}
+\tkzDefPointBy[projection=onto m--n](1) \tkzGetPoint{h1}
+\tkzDefShiftPoint[h1](-90:3){h1'}
+\tkzDefShiftPoint[o](-90:3){o'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](1,h1' o,o')
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[Mapcolor!60,->](o,1 o,2)
+\tkzDrawSegments[line width=2pt,red](h1,n1)
+\tkzMarkAngles[size=0.5cm,arrows=-stealth](2,o,1)
+\tkzMarkAngles[line width=2pt,color=Mapcolor,size=2cm,arrows=->](2,o,1)
+\tkzLabelAngle[pos=0.95](n1,o,1){$\Delta \varphi$}\tkzDrawPoints[size=1](o,1,2,h1,n1)
+\draw[<->] (o')--node[midway,above]{$Acos\dfrac{\Delta \varphi}{2}$}(h1');
+\begin{scope}[/pgf/decoration/raise=3pt]
+\draw [decorate,decoration={brace,mirror,amplitude=2pt},xshift=0pt,yshift=-4pt]
+(h1) -- (n1);
+\draw[->](1.77,-0.2) to [bend right =40](2.5,-1)node [right] 
+{$\dfrac{S_{min}}{2}$};
+\end{scope}
+\tkzLabelPoint[below](n){$x$}
+\end{scope}
+
+\end{tikzpicture}
+\end{center}
+\begin{itemize}
+\item Tìm góc quay của bán kính: $\Delta \alpha =\omega \Delta t$.
+\item Quãng đường $S_{\max}$ khi vật đi quanh vị trí cân bằng.
+%	\begin{align*}
+%		\boder{S_{\max }=2A\sin \dfrac{\Delta \varphi }{2}}\end{align*}
+\item  Quãng đường $S_{\max}$ khi vật đi quanh vị trí biên.
+%	\begin{align*}\boder{S_{\min }=2A\left( 1-\cos \dfrac{\Delta \varphi }{2} \right)}\end{align*}
+%	\item \textbf{Lời khuyên:} 
+%	Ta nên chia đôi khoảng thời gian và dùng trục phân bố thời gian để suy luận $S_{\max};\ S_{\min}$ khi cho các thời gian "đẹp". 
+\end{itemize}
+\paragraph{Quãng đường lớn nhất, nhỏ nhất trong thời gian $\Delta t>\dfrac{T}{2}$}
+\begin{itemize}
+\item Tách thời gian $\Delta t$ đang xét thành: $\Delta t=n\dfrac{T}{2}+\Delta t'\quad (n\in \mathbb{N^*},\ \Delta t'<\dfrac{T}{2})$.
+\item Vì quãng đường đi được trong khoảng thời gian $n\dfrac{T}{2}$ luôn luôn là n.2A nên quãng đường lớn nhất hay nhỏ nhất là do $\Delta t'$ quyết định.
+%	\item Quãng đường lớn nhất vật đi được: $S_{\max}=n2A+2A\sin \left(\dfrac{\omega \Delta t'}{2}\right)$.
+%	\item Quãng đường nhỏ nhất vật đi được: $S_{\min}=n2A+2A\left(1-\cos \left(\dfrac{\omega \Delta t'}{2}\right)\right)$. 
+\end{itemize}
+\paragraph{Thời gian lớn nhất (nhỏ nhất) vật đi được quãng đường cho trước}
+\begin{itemize}
+%\item Đây là bài toán ngược với cách làm hoàn toàn tương tự.
+\item Thời gian lớn nhất ứng với công thức quãng đường cực tiểu (vật đi chậm nhất).
+\item Thời gian ngắn nhất ứng với công thức quãng đường cực đại (vật đi nhanh nhất).
+\end{itemize}
+ \end{dang} 

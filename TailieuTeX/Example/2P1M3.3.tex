@@ -1,0 +1,467 @@
+  \begin{vidu}
+  	Một chất điểm dao động điều hòa với phương trình $x = 6\cos\left(2\pi t - \dfrac{\pi}{3}\right)$ (cm, s). 	
+  	\begin{itemize}
+  		\item[1.] Tính quãng đường vật đi được trong $5$ giây kể từ thời điểm ban đầu.
+  		\item[2.] Tính quãng đường vật đi được trong $2,5$ giây kể từ thời điểm $t = 0$.
+  		\item[3.] Tính quãng đường vật đi được trong $\dfrac{7}{12}$ giây kể từ thời điểm ban đầu.
+  		\item[4.] Tính quãng đường vật đi được từ thời điểm $t_1 = 1,25\ s$ đến $t_2 = 4,5\ s$.
+  		\item[5.] Tính tốc độ trung bình của vật trong $1,25$ giây đầu tiên.
+  	\end{itemize}
+  	\loigiai{
+  		\begin{itemize}
+  			\item[a)] 120 cm
+  			\item[b)] 60 cm
+  			\item[c)] $7+3\sqrt{3}$ cm
+  			\item[d)] $75+3\sqrt{3}$ cm
+  			\item[e)] $22,24$ cm/s
+  		\end{itemize}		
+  	}
+  \end{vidu}
+  %\dotlineEX{24}
+  %\loai{Tính quãng đường vật đi được trong quãng thời gian $\Delta t=(2n+1)\dfrac{T}{2}$}
+  \begin{vidu}%[3P1-13.1K][Loai1]  
+  	Một chất điểm dao động điều hòa theo phương trình $x=4\sin \left({\pi t+\dfrac{\pi }{6}}\right)$ cm, t tính bằng s. Quãng đường chất điểm đi được sau 7 giây kể từ $t=0$ là
+  	\choice
+  	{\True 56 cm}
+  	{48 cm}
+  	{58 cm}
+  	{54 cm}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Chu kì dao động của vật $T=\dfrac{2\pi}{\omega}=2$ s.
+  			\item Ta có $\Delta t=3,5T\Rightarrow $ quãng đường vật đi được là $S=3.4A+2A=56\ cm.$
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{9}
+  \end{vidu} %\dotlineEX{6}
+  %\loai{Quãng đường vật đi được sau thời gian $\Delta t$ kể từ thời điểm ban đầu -  tách thời gian}
+  \begin{vidu}%[3P1-13.1K][Loai1]
+  	Cho một chất điểm dao động điều hòa với tần số bằng 4 Hz và biên độ bằng 4 cm. Thời điểm ban đầu $t=0$ chất điểm đi qua vị trí li độ 2 cm theo chiều âm. Quãng đường đi sau 0,6875 s chuyển động của chất điểm là
+  	\choice
+  	{$46+2\sqrt{3}$ cm}
+  	{$46-2\sqrt{3}$ cm}
+  	{\True $42+2\sqrt{3}$ cm}
+  	{$42 - 2\sqrt{3}$ cm}
+  	\loigiai{
+  		\immini{
+  			\begin{itemize}
+  				\item 
+  				Biểu diễn vị trí ban đầu của vật bằng điểm $M_0$ trên đường tròn lượng giác như hình vẽ.
+  				\item Ta có: $T = \dfrac{1}{f} = 0,25\ s \Rightarrow \omega = \dfrac{2\pi}{0,25} = 8\pi$ rad/s.
+  				\item Ta lại có: $t = 0,6875\ s = 2.0,25 + 0,1875 = 2T + 0,1875$.
+  				\item Sau 2T, chất điểm quay được 2 vòng và lại trở về đúng vị trí $M_0$ trên đường tròn $\Rightarrow S_1 = 2.4.4 = 32\ cm$.
+  				\item Trong khoảng thời gian 0,1875 s tiếp theo, chất điểm quay được 1 góc $\Delta \varphi = \dfrac{3\pi}{2}$ và đến vị trí điểm $M_1$ trên đường tròn lượng giác.\\
+  				$\Rightarrow S_2 = 2+8+2\sqrt{3} = 10+2\sqrt{3}\ cm$.
+  			\end{itemize}
+  		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](60:2){0}
+  				\tkzDefShiftPoint[o](-30:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h'}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](m',h' 0,h)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m',h')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[above right]{$M_0$};
+  				\node at (m')[below right]{$M_1$};
+  				\node at (2,0)[below right]{$4$};
+  				\node at (h)[below]{$2$};
+  				\node at (h')[above]{$2\sqrt{3}$};
+  		\end{tikzpicture}}
+  		\begin{itemize}
+  			\item Vậy quãng đường chất điểm đi được sau 0,6875 s chuyển động là: 
+  			\begin{align*}
+  				S = S_1+ S_2 = 32+10+2\sqrt{3} = 42+2\sqrt{3}\ cm.
+  			\end{align*}
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{vidu} %\dotlineEX{6}
+  %\loai{Tìm thời gian vật đi được quãng đường $S < 2A$}
+  \begin{vidu}%[3P1-13.2K][Loai1] 
+  	Vật dao động điều hòa theo phương trình: $x = \cos(\pi t - \dfrac{2\pi}{3})$ dm. Thời gian vật đi được quãng đường $S = 5$ cm kể từ thời điểm ban đầu ($t = 0$) là
+  	\choice
+  	{ $\dfrac{1}{9}$ s}
+  	{$\dfrac{1}{3}$ s}
+  	{\True $\dfrac{1}{6}$ s}
+  	{$\dfrac{7}{3}$ s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item $x = 10\cos(\pi+t-\dfrac{2\pi}{3})\ cm$.
+  			\item Lúc đầu vật ở li độ $x = -\dfrac{A}{2}$ và đang đi theo chiều dương.
+  			\item Vật đi được quãng đường $s = \dfrac{A}{2}\Rightarrow t = \dfrac{T}{12} = \dfrac{T}{12} = \dfrac{1}{6}\ s$.
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{6}
+  \end{vidu} %\dotlineEX{6}
+  %\loai{Tìm thời gian vật đi được quãng đường $2A<S < 4A$}
+  \begin{vidu}%[3P1-13.2K][Loai1] 
+  	Một chất điểm dao động điều hòa với chu kì 3 s trên một quỹ đạo dài 4 cm. Biết thời điểm ban đầu vật ở vị trí cân bằng theo chiều dương, thời gian để chất điểm đi được 5 cm kể từ thời điểm ban đầu là
+  	\choice
+  	{$\dfrac{15}{12}$ s}
+  	{2 s}
+  	{\True $\dfrac{7}{4}$ s}
+  	{$\dfrac{18}{12}$ s}
+  	\loigiai{
+  		\immini{\begin{itemize}
+  				\item 
+  				Con lắc lò xo dao động điều hòa trên quỹ đạo dài 4 cm nên biên độ của nó là 2 cm.
+  				\item Ta có $5 = 2.2 + 1 = 2A + 1\Rightarrow t = \dfrac{T}{2} + \Delta t$.
+  				\item Ta tìm khoảng thời gian $\Delta t$ để con lắc đi được quãng đường 1 cm.
+  				\item Ta biểu diễn vị trí ban đầu $M_0$ trên đường tròn lượng giác như hình vẽ.
+  				\item Để đi được quãng đường 1 cm thì vật quay từ $M_0$ đến M' $\Rightarrow \Delta \varphi = \dfrac{\pi}{6} \Rightarrow \Delta t = \dfrac{T}{12}$.
+  				\item Thời gian con lắc đi được 5 cm từ vị trí cân bằng là $t = \dfrac{T}{2} + \dfrac{T}{12} = \dfrac{7T}{12} = \dfrac{7}{4}\ s$.
+  		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](-90:2){0}
+  				\tkzDefShiftPoint[o](-60:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](m',h)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[below left]{$M_0$};
+  				\node at (m')[below right]{$M'$};
+  				\node at (2,0)[above right]{$2$};
+  				\node at (h)[above left]{$1$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{8}
+  \end{vidu} %\dotlineEX{5}
+  %\loai{Quãng đường vật đi được từ thời điểm $t_1$ đến $t_2$}
+  \begin{vidu}%[3P1-13.1K][Loai1] 
+  	Một chất điểm dao động điều hòa với phương trình $x=4\sqrt{2}\cos \left({5\pi t-\dfrac{{3\pi }}{4}}\right)$ (x tính bằng cm; t tính bằng s). Quãng đường chất điểm đi từ thời điểm $t_1=0,1$ s đến thời điểm $t_2=6$ s là
+  	\choice
+  	{84,4 cm}
+  	{333,8 cm}
+  	{\True 331,4 cm}
+  	{336,1 cm}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Tại $t=0$ ta có $x=4\sqrt{2}\cos \left({5\pi t-\dfrac{{3\pi }}{4}}\right)=-4$ cm; và đang chuyển động theo chiều dương $v>0$.
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{vidu} %\dotlineEX{5}
+  %\loai{Cho quãng đường tính vận tốc}
+  \begin{comment}%[3P1-13.1G][Loai1]
+  	Chất điểm dao động điều hoà có chu kì $\dfrac{\pi}{10}\ s$. Chọn gốc thời gian $t = 0$ khi vật nhỏ qua vị trí cân bằng theo chiều dương. Trong khoảng thời gian $\dfrac{\pi}{20}$  s đầu tiên kể từ $t = 0$, vật đi được quãng đường 4 cm. Vận tốc của vật tại thời điểm $\dfrac{\pi}{15}$  s là
+  	\choice
+  	{$v = 20\sqrt{3}$ cm/s}
+  	{$v = -20\sqrt{3}$ cm/s}
+  	{$v = 40$ cm/s}
+  	{\True $v = - 20$ cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Kể từ $t = 0$: $x= O\ (+)$, sau $\dfrac{\pi}{20}s=\dfrac{T}{2}$ vật đi được $2A = 4$ cm $\Rightarrow A = 2$ cm.
+  			\item Sau $\dfrac{\pi}{15}s=\dfrac{2T}{3}=\dfrac{T}{4}+\dfrac{T}{4}+\dfrac{T}{6}$, vật thực hiện diễn biến dao động như sau:
+  			\begin{center}
+  				\begin{tikzpicture}
+  					\tkzDefPoints{0/0/o, 5/0/a, 4.325/0/b, 3.525/0/c, 2.5/0/d,  -5/0/h, -4.325/0/g, -3.525/0/f, -2.5/0/e, -6/0/x', 6/0/x}
+  					\tkzDefShiftPoint[a](-90:0.5cm){a1}
+  					\tkzDefShiftPoint[a](-90:1.2cm){a2}
+  					\tkzDefShiftPoint[o](-90:0.5cm){o1}
+  					\tkzDefShiftPoint[g](-90:1.2cm){g2}
+  					\tkzDrawSegments[blue,->,very thick](x',x)
+  					\tkzDrawPoints[size=5,fill=black](o,a,b,c,d,e,f,g,h)
+  					\tkzLabelPoint[above](o){\tiny $O$}
+  					\tkzLabelPoint[above](a){\tiny$A$}
+  					\tkzLabelPoint[above](b){\tiny$\dfrac{A\sqrt{3}}{2}$}
+  					\tkzLabelPoint[above](c){\tiny$\dfrac{A\sqrt{2}}{2}$}
+  					\tkzLabelPoint[above](d){\tiny$\dfrac{A}{2}$}
+  					\tkzLabelPoint[above](h){\tiny$-A$}
+  					\tkzLabelPoint[above](g){\tiny $-\dfrac{A\sqrt{3}}{2}$}
+  					\tkzLabelPoint[above](f){\tiny$-\dfrac{A\sqrt{2}}{2}$}
+  					\tkzLabelPoint[above](e){\tiny$-\dfrac{A}{2}$}
+  					\tkzLabelPoint[above](x){\tiny$x$}
+  					\tkzDrawSegments[->,very thick,red](o1,a1 a2,g2)
+  					\tkzDrawSegments[very thick,red](a1,a2)
+  				\end{tikzpicture}
+  			\end{center}
+  			\item Vậy tại thời điểm $\dfrac{\pi}{15}$ s, vật có $x =-\dfrac{A\sqrt{3}}{2}(-) \Rightarrow v=-\dfrac{{{v}_{\max }}}{2}=-20$ cm/s.
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{comment}%\dotlineEX{5}
+  %\loai{Tìm quãng đường vật đi được trong giây thứ n}
+  \begin{vidu}%[3P1-13.1K][Loai1]
+  	Cho một chất điểm dao động điều hòa với phương trình li độ $x = 8\cos(\dfrac{\pi}{2}t)$ cm. Quãng đường chất điểm đi được trong giây thứ 105 là 
+  	\choice
+  	{$4\sqrt{2}$ cm}
+  	{$8\sqrt{2}$ cm}
+  	{\True 8 cm}
+  	{$8\sqrt{3}$ cm}
+  	\loigiai{
+  		\immini{\begin{itemize}
+  				\item 
+  				Ta biểu diễn vị trí pha ban đầu của vật tại vị trí điểm $M_0$ trên đường tròn lượng giác như hình vẽ.
+  				\item Ta có: $T = \dfrac{2\pi}{\dfrac{\pi}{2}} = 4+s\Rightarrow t = 105\ s = 104+1 = 26.4+1$.
+  				\item Sau 26T, chất điểm quay được 26 vòng và quay về đúng vị trí $M_0 \Rightarrow$ Sau 104 s đầu tiên, vật ở vị trí $M_0$
+  				$\Rightarrow$ 1s tiếp theo $= \dfrac{T}{4}$, vật quay thêm góc $\dfrac{\pi}{2}$ đến vị trí $M_1 \Rightarrow$ Quãng đường chất điểm đi được trong giây thứ 105 là $s = 8$ s.
+  		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](0:2){0}
+  				\tkzDefShiftPoint[o](90:2){m'}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[above right]{$M_0$};
+  				\node at (m')[above right]{$M'$};
+  				\node at (2,0)[below right]{$8$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{7}
+  \end{vidu} %\dotlineEX{5}
+  
+  %\loai{Bài toán tổng hợp}
+  \begin{comment} %[3P1-13.2G][Loai1] 
+  	\nguon{QG - 2018} Một vật dao động điều hòa quanh vị trí cân bằng O. Tại thời điểm $t_1$, vật đi qua vị trí cân bằng. Trong khoảng thời gian từ thời điểm $t_1$ đến thời điểm $t_2 = t_1 + \dfrac{1}{6}\ s$, vật không đổi chiều chuyển động và tốc độ của vật giảm còn một nửa. Trong khoảng thời gian từ thời điểm $t_2$ đến thời điểm $t_3 = t_2 + \dfrac{1}{6}\ s$, vật đi được quãng đường 6 cm. Tốc độ cực đại của vật trong quá trình dao động là
+  	\choice
+  	{37,7 m/s}
+  	{0,38 m/s}
+  	{\True 1,41 m/s}
+  	{224 m/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Thời gian tốc độ giảm 1 nửa: $\dfrac{1}{6}=\dfrac{T}{6}\Rightarrow T=1\ s\Rightarrow \omega =2\pi\ rad/s;\  v=\dfrac{1}{2}v_{\max}\Rightarrow x=\pm \dfrac{A\sqrt{3}}{2}$.
+  			\item vẽ vòng tròn lượng giác ta xác định được quãng đường đi từ $t_2$ đến $t_3$: 
+  			\begin{align*}
+  				S= A-\dfrac{A\sqrt{3}}{2}=3\ cm\Rightarrow A=12+6\sqrt{3}\ cm\Rightarrow v_{\max}=\left(12+6\sqrt{3}\right)2\pi =140,695\ cm/s.
+  			\end{align*}
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{vidu} %\dotlineEX{9}
+  
+  %\loai{Tốc độ trung bình trong khoảng thời gian từ $t_1$ đến $t_2$}
+  \begin{vidu}%[3P1-13.3K][Loai1] 
+  	Cho một chất điểm dao động điều hòa theo phương trình $x = 6\cos(0,5\pi t + \dfrac{\pi}{6})$, x tính bằng cm và t tính bằng s. Tính từ thời điểm ban đầu, tốc độ trung bình của vật trong 7 s chuyển động là
+  	\choice
+  	{5,36 cm/s}
+  	{3,93 cm/s}
+  	{5,14 cm/s}
+  	{\True 6,31 cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item $T = \dfrac{2\pi}{0,5\pi} = 4\ s$.
+  			\item Ta có: $t = 7\ s = 1.4 + 3\Rightarrow \alpha = 1.2\pi+ \dfrac{3\pi}{2}$.
+  			\item Tại thời điểm $t = 0$, vật ở vị trí $M_0$, sau 1 chu kì, chất điểm quay được đúng 1 vòng đến vị trí $M_0$.
+  		\end{itemize}
+  		\immini{
+  			\begin{itemize}
+  				\item Trong khoảng thời gian $\Delta t = 3\ s$ tiếp, chất điểm quay được góc $\dfrac{3\pi}{2}$ đến vị trí M'.
+  				$\Rightarrow$ quãng đường đi được trong khoảng thời gian $\Delta t$ là $s = 3\sqrt{3}+2.6+3 = 15+3\sqrt{3}$.\\ 
+  				$\Rightarrow$ Quãng đường chất điểm đi được trong 7 s là $4.6+15+3\sqrt{3} = 39+3\sqrt{3}$ cm.\\
+  				$\Rightarrow$ Vận tốc trung bình trong 7s là $\dfrac{39+3\sqrt{3}}{7} = 6,31$ cm/s.
+  				
+  			\end{itemize}
+  		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](30:2){0}
+  				\tkzDefShiftPoint[o](-60:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h'}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](m',h' 0,h)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m',h')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[above right]{$M_0$};
+  				\node at (m')[below right]{$M'$};
+  				\node at (2,0)[below right]{$6$};
+  				\node at (h')[below]{$3$};
+  				\node at (h)[below]{$3\sqrt{3}$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{6}
+  \end{comment} %\dotlineEX{4}
+  
+  %\loai{Tốc độ trung bình trong khoảng thời gian vật đi từ $x_1$ đến $x_2$}
+  \begin{vidu}%[3P1-13.3K][Loai1] 
+  	Một chất điểm dao động trên trục Ox quanh vị trí cân bằng chính là gốc tọa độ O. Quỹ đạo của vật là đoạn thẳng dài 4 cm. Quãng thời gian ngắn nhất để vật đi từ li độ $x_1 = 1$ cm đến $x_2 = 2$ cm là 0,5 s. Tốc độ trung bình của vật trong một chu kì dao động là
+  	\choice
+  	{2 cm/s}
+  	{4 cm/s}
+  	{$\dfrac{4}{3}$ cm/s}
+  	{\True $\dfrac{8}{3}$ cm/s}
+  	\loigiai{
+  		\immini{
+  			Quãng thời gian ngắn nhất để vật đi từ li độ $x_1 = 1$ cm đến $x_2 = 2$ cm ứng với vật đi từ $M_0$ đến $M_1\Rightarrow \dfrac{T}{6} = 0,5 \Rightarrow t = 3\ s\Rightarrow v_{tb} = \dfrac{4.2}{3} = \dfrac{8}{3}\ m/s$.
+  		}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](-60:2){0}
+  				\tkzDefShiftPoint[o](0:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](h,0)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[below right]{$M_0$};
+  				\node at (m')[above right]{$M_1$};
+  				\node at (2,0)[below right]{$2$};
+  				\node at (h)[below right]{$1$};
+  		\end{tikzpicture}}
+  	}
+  	%\haidong{5}
+  \end{vidu} %\dotlineEX{11}
+  %\loai{Tốc độ trung bình trong khoảng thời gian vật đi được quãng đường s}
+  \begin{vidu}%[3P1-13.3K][Loai1]
+  	Một chất điểm dao động với phương trình  $x=10\cos \left( 2\pi t-\dfrac{2\pi}{3} \right)$ cm  (t tính bằng s). Tốc độ trung bình của chất điểm khi nó đi được quãng đường 70 cm đầu tiên (kể từ $t = 0$) là
+  	\choice
+  	{50 cm/s}
+  	{40 cm/s}
+  	{35 cm/s}
+  	{\True 42 cm/s}
+  	\loigiai{
+  		
+  	}
+  	%\haidong{4}
+  \end{vidu} %\dotlineEX{11}  
+  %\loai{Cho khoảng thời gian thỏa mãn tốc độ và tốc độ trung bình. Tìm các đại lượng}
+  \begin{vidu}%[3P1-13.3K][Loai1]
+  	Một vật nhỏ dao động điều hòa. Khoảng thời gian giữa hai lần liên tiếp vật có tốc độ bằng không là 1 s, đồng thời tốc độ trung bình trong khoảng thời gian này là 10 cm/s. Khi qua vị trí cân bằng, tốc độ của vật nhỏ là
+  	\choice
+  	{\True 15,7 cm/s}
+  	{31,4 cm/s}
+  	{20 cm/s}
+  	{10 cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Vật có tốc độ bằng 0 tại 2 biên $\Rightarrow $ hai lần liên tiếp vật có tốc độ bằng 0 khi vật đi từ biên này sang biên kia
+  			$\Rightarrow $ quãng đường vật đi là $S = 2A$, thời gian đi là $\Delta t=\dfrac{T}{2}=1\ s\Rightarrow   T=2\ s$.
+  			\item Mà $v_{tb}=\dfrac{S}{\Delta t}\Rightarrow   S= 10\ cm = 2A \Rightarrow  A = 5$ cm.
+  			\item Vậy khi qua vị trí cân bằng, tốc độ vật nhỏ là $v_{\max}=\omega A = 15,7$ cm.
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{6}
+  \end{vidu} %\dotlineEX{11}
+  %\loai{Tốc độ trung bình giữa hai thời điểm có li độ và gia tốc cho trước}
+  \begin{comment}%[3P1-13.4K][Loai1] 
+  	Một vật nhỏ dao động điều hòa theo một quỹ đạo thẳng dài 20 cm với chu kì 1 s. Từ thời điểm vật qua vị trí có li độ $5\sqrt{3}$ cm theo chiều dương đến khi gia tốc của vật đạt giá trị cực tiểu lần thứ hai, vật có tốc độ trung bình xấp xỉ bằng
+  	\choice
+  	{58,7 cm/s}
+  	{\True 38,2 cm/s}
+  	{31,3 cm/s}
+  	{41,3 cm/s}
+  	\loigiai{
+  		\immini{\begin{itemize}
+  				\item 
+  				Ta có: $2A = 20 \Rightarrow  A = 10\ cm,\ T = 1$ s.
+  				\item Ta biểu diễn vị trí có li độ $5\sqrt{3}$ cm theo chiều dương bằng điểm $M_0$ trên hình vẽ. 
+  				\item Gia tốc của vật có giá trị cực tiểu tại biên dương (vị trí điểm M' trên đường tròn).
+  				\item Từ hình vẽ, ta suy ra quãng đường vật đi từ thời điểm vật qua vị trí có li độ $5\sqrt{3}$ cm theo chiều dương đến khi gia tốc của vật đạt giá trị cực tiểu lần thứ hai là $s = 10 - 5\sqrt{3}\ cm + 10.4 = 50 - 5\sqrt{3}\ cm$.
+  		\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+  				\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+  				\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+  				\tkzDefShiftPoint[o](-30:2){0}
+  				\tkzDefShiftPoint[o](0:2){m'}
+  				\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+  				\draw(o)circle(2cm);
+  				\tkzDrawSegments[dashed](0,h)
+  				\tkzDrawSegments(p,q)
+  				\tkzDrawSegments[->](m,n)
+  				\tkzDrawSegments[blue,->](o,0 o,m')
+  				\tkzDrawPoints[size=3](o,h,0,m')
+  				\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+  				\node at (0)[below right]{$M_0$};
+  				\node at (m')[below right]{$M'$};
+  				\node at (2,0)[above right]{$10$};
+  				\node at (h)[above left]{$5\sqrt{3}$};
+  		\end{tikzpicture}}
+  		\begin{itemize}
+  			\item Thời gian để vật qua vị trí có li độ $5\sqrt{3}$ cm theo chiều dương đến khi gia tốc của vật đạt giá trị cực tiểu lần thứ hai là $\dfrac{T}{12} + T = 13\dfrac{T}{12} = \dfrac{13}{12}$ s $\Rightarrow $ tốc độ trung bình của vật là $v_{tb} = \dfrac{50-5\sqrt{3}}{\dfrac{13}{12}} = 38,2$ cm/s.
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{vidu} %\dotlineEX{12}
+  %\loai{Tốc độ trung bình giữa hai thời điểm có vận tốc và gia tốc cho trước}
+  \begin{vidu}%[3P1-13.4K][Loai1]
+  	Một vật nhỏ dao động điều hòa theo một quỹ đạo thẳng dài 10 cm với chu kì 2 s. Cho $\pi ^2 = 10$. Từ thời điểm vật qua vị trí có gia tốc $-25\ cm/s^2$ theo chiều âm đến khi vận tốc của vật đạt giá trị cực đại lần thứ 5, vật có tốc độ trung bình là
+  	\choice
+  	{12,33 cm/s}
+  	{12,73 cm/s}
+  	{\True 10,09 cm/s}
+  	{11,32 cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Vật theo chiều âm và có $a=-\omega^2x=-25c\ m/s^2\Leftrightarrow x=\dfrac{A}{2}\ (-)$.
+  			\item Vận tốc đạt giá trị cực đại $\Leftrightarrow x = 0\ (+)$.
+  			\item Một chu kì, vật qua $x = 0\ (+)$ 1 lần. Tách $5 = 4 + 1$.
+  			\item Sau 4T, vật đi được 16A và qua $x = 0\ (+)$ 4 lần và trở lại trạng thái $x=\dfrac{A}{2}\ (-)$. Vật đi thêm 1 lần nữa mất $\dfrac{T}{3}+\dfrac{T}{4}$ và đi được thêm 2,5A.
+  			\begin{center}
+  				\begin{tikzpicture}
+  					\tkzDefPoints{0/0/o, 5/0/a, 4.325/0/b, 3.525/0/c, 2.5/0/d,  -5/0/h, -4.325/0/g, -3.525/0/f, -2.5/0/e, -6/0/x', 6/0/x}
+  					\tkzDefShiftPoint[d](-90:0.5cm){d1}
+  					\tkzDefShiftPoint[h](-90:1cm){h2}
+  					\tkzDefShiftPoint[h](-90:0.5cm){h1}
+  					\tkzDefShiftPoint[o](-90:1cm){o2}
+  					\tkzDrawSegments[blue,->,very thick](x',x)
+  					\tkzDrawPoints[size=5,fill=black](o,a,b,c,d,e,f,g,h)
+  					\tkzLabelPoint[above](o){\tiny $O$}
+  					\tkzLabelPoint[above](a){\tiny$A$}
+  					\tkzLabelPoint[above](b){\tiny$\dfrac{A\sqrt{3}}{2}$}
+  					\tkzLabelPoint[above](c){\tiny$\dfrac{A\sqrt{2}}{2}$}
+  					\tkzLabelPoint[above](d){\tiny$\dfrac{A}{2}$}
+  					\tkzLabelPoint[above](h){\tiny$-A$}
+  					\tkzLabelPoint[above](g){\tiny $-\dfrac{A\sqrt{3}}{2}$}
+  					\tkzLabelPoint[above](f){\tiny$-\dfrac{A\sqrt{2}}{2}$}
+  					\tkzLabelPoint[above](e){\tiny$-\dfrac{A}{2}$}
+  					\tkzLabelPoint[above](x){\tiny$x$}
+  					\tkzDrawSegments[->,very thick,red](d1,h1 h2,o2)
+  					\tkzDrawSegments[very thick,red](h1,h2)
+  				\end{tikzpicture}
+  			\end{center}
+  			\item Vậy tốc độ trung bình vật trong quá trình này là: $v_{tb}=\dfrac{S}{\Delta t}=\dfrac{16A+2,5A}{4T+\dfrac{T}{3}+\dfrac{T}{4}}=10,09$ cm/s.
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{comment} %\dotlineEX{11}
+  
+  %\loai{Tốc độ trung bình từ thời điểm ban đầu tới thời điểm $W_{\text{đ}}=nW_t$}
+  \begin{comment}%[3P1-11.2K][Loai1]%Bài 13
+  	Một vật dao động điều hoà với phương trình vận tốc $ v=10\pi \cos  \left( \pi t+\dfrac{\pi}{3} \right) $  cm/s. Tốc độ trung bình của vật trên quãng đường từ thời điểm ban đầu tới thời điểm vật có động năng bằng 3 lần thế năng lần thứ 3 là
+  	\choice
+  	{13,33 cm/s}
+  	{\True 17,56 cm/s}
+  	{15 cm/s}
+  	{20 cm/s}
+  	\loigiai{
+  		\begin{itemize}
+  			\item Trạng thái: $W_{\text{đ}}=3{W_t}\Leftrightarrow x=\pm \dfrac{A}{2}.$ 
+  			\item Tại $t = 0:\ \varphi _v = \dfrac{\pi}{3} \Rightarrow  {\varphi _x} = - \dfrac{\pi}{6} \Rightarrow  x = \dfrac{A\sqrt 3}{2} \oplus.$
+  			\item Vậy: $ {{v}_{tb}}=\dfrac{2,5A+A-\dfrac{A\sqrt{3}}{2}}{\dfrac{T}{12}+\dfrac{T}{2}+\dfrac{T}{6}}=  17,56\ cm/s$.
+  			
+  		\end{itemize}
+  	}
+  	%\haidong{8}
+  \end{comment} %\dotlineEX{13}
+  
+  
+  
+  
+  

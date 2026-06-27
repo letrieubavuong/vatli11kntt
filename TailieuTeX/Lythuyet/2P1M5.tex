@@ -1,0 +1,138 @@
+\immini{
+\setcounter{paragraph}{0}
+\subsubsection{Cấu tạo con lắc đơn}
+Con lắc đơn gồm sợi dây không dãn có chiều dài $\ell$, khối lượng sợi dây không đáng kể và vật nặng khối lượng m treo vào đầu dưới sợi dây.
+\subsubsection{Dao động của con lắc đơn}
+\begin{itemize}
+\item Khi bỏ qua lực cản, dao động của con lắc đơn là dao động tuần hoàn.
+\end{itemize}}{\begin{tikzpicture}[draw=Mapcolor, very thick,>=stealth']
+\tkzInit[ymin=-3.5,ymax=0.5,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{0/0/i}
+\tkzDefShiftPoint[i](-90:3){o}
+\tkzDefShiftPoint[i](-130:3){a}
+\tkzDefShiftPoint[i](-60:3){b}
+\tkzDefShiftPoint[i](-50:3){c}
+\tkzDefShiftPoint[i](-140:3){x}
+\tkzDefShiftPoint[i](-40:3){x'}
+\tkzDefPointBy[projection=onto i--o](b) \tkzGetPoint{h}
+\draw[Mapcolor](-0.5,0)--(0.5,0);
+\fill[pattern=north east lines] (-0.5,0)--(0.5,0)--++(90:0.15)--++(180:1)--cycle;
+\tkzDrawArc[color=Mapcolor!50,arrows=->](i,x)(x')
+\tkzDrawArc[color=Mapcolor](i,o)(b)
+\tkzLabelAngle[pos=2.9](o,i,b){$s$}
+\tkzDrawPoints[size=2](a,b,c,o,i)
+\tkzMarkAngles[size=0.4cm](o,i,b)
+\tkzLabelAngle[pos=0.7](o,i,b){$\alpha$}
+\tkzMarkAngles[size=0.5cm](a,i,o)
+\tkzLabelAngle[pos=0.8](a,i,o){$\alpha_{0}$}
+\tkzDrawSegments[dashed,Mapcolor](i,o i,a i,c)
+\tkzDrawSegments[very thick,Mapcolor](i,b)
+\shade[ball color=Mapcolor] (b) circle (1.1ex);
+\tkzLabelPoint[below](o){$O$}
+\tkzLabelPoint[below left](a){$-S_0$}
+\tkzLabelPoint[below right](c){$S_0$}
+\tkzLabelPoint[below =3pt](b){$M$}
+\tkzLabelPoint[right](x'){$s$}
+\path (i)--node[midway,above left]{$\ell$}(a);
+\end{tikzpicture}}
+\begin{itemize}
+\item Khi bỏ qua lực cản và dao động với góc nhỏ, dao động của con lắc đơn được coi là dao động điều hòa.
+\end{itemize}
+\subsubsection{Tần số góc, chu kì, tần số dao động điều hòa của con lắc đơn}
+\begin{bang}[tabularx={X|X|X}]{}
+Chu kì&Tần số&Tần số góc\\\hline
+\[T=2\pi\sqrt{\dfrac{\ell}{g}}\]&\[f=\dfrac{1}{2\pi}\sqrt{\dfrac{g}{\ell}}\]&\[\omega=\sqrt{\dfrac{g}{\ell}}\]\\\hline
+\end{bang}
+\begin{note}
+Tần số góc, chu kì và tần số con lắc đơn dao động điều hòa không phụ thuộc khối lượng của vật.
+\end{note}
+\subsubsection{Phương trình li độ dài}
+\begin{align*}
+\boder{s=S_0\cos(\omega t+\varphi)}\quad \ct{với: }\begin{cases}
+s:\ct{ là li độ dài (m)}\\
+S_0:\ct{ là biên độ dài (m)}\end{cases}
+\end{align*}
+\subsubsection{Phương trình li độ góc}
+\begin{align*}
+\boder{\alpha=\alpha_0\cos(\omega t+\varphi)}\quad \ct{với: }\begin{cases}\alpha=\dfrac{s}{\ell}:\ct{ là li độ góc (rad)}\\
+\alpha_0=\dfrac{S_0}{\ell}:\ct{ là biên độ góc (rad)}\end{cases}
+\end{align*}
+\subsubsection{Năng lượng dao động của con lắc đơn}
+\begin{itemize}
+\item Động năng: $\boder{W_{\text{đ}}=\dfrac{1}{2}mv^2}\quad \Rightarrow\begin{cases}W_{\text{đmax}}=\dfrac{1}{2}mv_{\max}^2\ \ct{khi vật ở vị trí cân bằng}\\
+W_{\text{đmin}}=0\ \ct{khi vật ở biên}\end{cases}
+$
+\item Thế năng: $\boder{W_t=mg\ell(1-\cos\alpha)}\ \Rightarrow \begin{cases}W_{\text{tmax}}=mg\ell(1-\cos\alpha_0)\ \ct{khi vật ở biên}\\
+W_{\text{tmin}}=0\ \ct{khi vật ở vị trí cân bằng}\end{cases}$
+\item Cơ năng
+\begin{align*}\boder{W=W_{\text{đ}}+W_t=\dfrac{1}{2}mv^2+mg\ell(1-\cos\alpha)=mg\ell\left(1-\cos\alpha_0\right)=\dfrac{mv_{\max}^2}{2}=\ct{hằng số}}\end{align*}
+\end{itemize}
+\textbf{Khi con lắc đơn dao động điều hòa:}
+\begin{align*}
+\ct{Thế năng: } \boder{W_t=\dfrac{1}{2}mg\ell\alpha^2} \quad  \ct{Cơ năng: } \boder{W=W_{\text{tmax}}=\dfrac{1}{2}mg\ell\alpha_0^2}
+\end{align*}
+\begin{note}
+Khi con lắc đơn dao động điều hòa thì các bài toán năng lượng tương tự con lắc lò xo dao động điều hòa.
+\end{note}
+\subsubsection{Vận tốc vật nặng của con lắc đơn}
+\Textbox{0.6}{
+\begin{align*} \ct{Ta có: }W=\dfrac{1}{2}mv^2+mg\ell(1-\cos\alpha)=mg\ell\left(1-\cos\alpha_0\right)\end{align*}
+\begin{align*}
+\Rightarrow 
+\boder{v=\pm \sqrt{2g\ell\left(\cos \alpha -\cos \alpha_0\right)}}\Rightarrow v_{\max}=\sqrt{2g\ell\left(1-\cos \alpha_0\right)}
+\end{align*}
+\begin{note}
+Mốc thế năng của con lắc đơn được quy ước chọn tại vị trí cân bằng của con lắc.
+\end{note}
+}
+\Textbox{0.4}{\begin{tikzpicture}[draw=Mapcolor, very thick,>=stealth']
+\tkzDefPoints{0/0/i}
+\tkzDefShiftPoint[i](-90:3){o}
+\tkzDefShiftPoint[i](-130:3){a}
+\tkzDefShiftPoint[i](-60:3){b}
+\tkzDefShiftPoint[i](-50:3){c}
+\tkzDefShiftPoint[i](-140:3){x}
+\tkzDefShiftPoint[i](-40:3){x'}
+\tkzDefPointBy[projection=onto i--o](b) \tkzGetPoint{h}
+\draw[Mapcolor](-0.5,0)--(0.5,0);
+\fill[pattern=north east lines] (-0.5,0)--(0.5,0)--++(90:0.15)--++(180:1)--cycle;
+\tkzDrawArc[color=Mapcolor,arrows=->](i,x)(x')
+\tkzDrawArc[color=Mapcolor!50](i,o)(b)
+\tkzLabelAngle[pos=2.9](o,i,b){$s$}
+\tkzDrawPoints[size=2](a,b,c,o,i)
+\tkzMarkRightAngles(b,h,i)
+\tkzMarkAngles[size=0.4cm](o,i,b)
+\tkzLabelAngle[pos=0.7](o,i,b){$\alpha$}
+\tkzMarkAngles[size=0.5cm](a,i,o)
+\tkzLabelAngle[pos=0.8](a,i,o){$\alpha_{0}$}
+\draw[->,very thick](b) --++(-90:1.7)coordinate(p);
+\tkzDefPointBy[projection=onto i--b](p) \tkzGetPoint{pn}
+\tkzDefPointBy[translation=from pn to p](b) \tkzGetPoint{pt}
+\tkzDefPointBy[symmetry=center b](pn)\tkzGetPoint{r}
+\tkzDrawSegments[dashed,Mapcolor](i,o i,a i,c b,h)
+\tkzDrawSegments[Mapcolor](i,b)
+\tkzDrawSegments[->,very thick,Mapcolor](b,pn b,pt b,r)
+\tkzMarkAngles[size=0.4cm](p,b,pn)
+\tkzLabelAngle[pos=0.7](p,b,pn){$\alpha$}
+\tkzLabelPoint[below left=-4pt](pt){\footnotesize $\vec{P}_t$}
+\tkzLabelPoint[below right=-4pt](pn){\footnotesize $\vec{P}_n$}
+\tkzLabelPoint[below](p){\footnotesize $\vec{P}$}
+\tkzLabelPoint[left](r){\footnotesize $\vec{T}$}
+\shade[ball color=Mapcolor] (b) circle (1.1ex);
+\tkzLabelPoint[below](o){$O$}
+\tkzLabelPoint[below left](a){$A$}
+\tkzLabelPoint[right=7pt](b){$B$}
+\path (h)--node[midway,left]{$h$}(o);
+\path (i)--node[midway,above left]{$\ell$}(a);
+\end{tikzpicture}}
+\subsubsection{Công thức độc lập với thời gian}
+\begin{itemize}
+\item Công thức độc lập với thời gian dưới dạng li độ và biên độ dài:
+\begin{align*}
+\boder{\left(\dfrac{s}{S_0}\right)^2+\left(\dfrac{v}{v_{\max}}\right)^2=1\Leftrightarrow S_0^2=s^2+\dfrac{v^2}{\omega^2}}
+\end{align*}
+\item Công thức độc lập với thời gian dưới dạng li độ và biên độ góc:
+\begin{align*}
+\boder{\alpha_0^2=\alpha^2+\dfrac{v^2}{(\ell\omega)^2}}
+\end{align*}
+\end{itemize}

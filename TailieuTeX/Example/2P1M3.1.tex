@@ -1,0 +1,290 @@
+
+\begin{vidu}
+Một vật chuyển động tròn đều với vận tốc góc là $\pi$ (rad/s). Hình chiếu của vật trên một đường kính dao động điều hòa với tần số góc, chu kì và tần số bằng bao nhiêu?
+\choice
+{\True $\pi\ rad / s ;\ 2 \ s ;\ 0,5 \ Hz$}
+{$2 \pi\ rad / s ;\ 0,5 \ s ;\ 2 \ Hz$}
+{$2 \pi\ rad / s ;\ 1 \ s ;\ 1 \ Hz$}
+{$\pi / 2\ rad / s ;\ 4 \ s ;\ 0,25 \ Hz$}
+\loigiai{
+Vận tốc góc $\omega=\pi rad / s$
+=> Tần số góc của dao động điều hòa tương ứng là $\omega=\pi(rad / s)$
+$$
+\begin{aligned}
+& \Rightarrow \text { Chu kì } T=\frac{2 \pi}{\omega}=\frac{2 \pi}{\pi}=2(\ s) \\
+& \text { Tần số: } f=\frac{1}{T}=\frac{1}{2}=0,5(\ Hz)
+\end{aligned}
+$$}
+\end{vidu}
+%\dotlineEX{2}
+\begin{vidu}
+Một vật dao động điều hoà trên trục Ox. Tại thời điểm ban đầu, vật đi qua vị trí cân bằng theo chiều âm. Pha ban đầu của dao động là
+\choice
+{$0\ rad$}
+{\True $\dfrac{\pi}{2}\ rad$}
+{$\dfrac{-\pi}{2}\ rad$}
+{$\pi\ rad$}
+\loigiai{
+Áp dụng vòng tròn lượng giác}
+\end{vidu}
+%\dotlineEX{2}
+\begin{vidu}
+Một vật dao động điều hoà với gốc thời gian được chọn là lúc vật qua biên dương. Pha ban đầu của dao động là
+\choice
+{\True $0\ rad$}
+{$\dfrac{\pi}{2}\ rad$}
+{$-\dfrac{5\pi}{6}\ rad$}
+{$-\pi\ rad$}
+\loigiai{
+Áp dụng vòng tròn lượng giác}
+\end{vidu}
+%\dotlineEX{2}
+\begin{vidu}
+Một vật dao động điều hoà với phương trình $x=6cos(\omega t+\varphi)\ cm$. Chọn gốc thời gian lúc vật đi qua vị trí có li độ $x=3\ cm$ theo chiều âm. Pha ban đầu của dao động là
+\choice
+{$0\ rad$}
+{$-\dfrac{\pi}{4}\ rad$}
+{$-\dfrac{5\pi}{6}\ rad$}
+{\True $\dfrac{\pi}{3}\ rad$}
+\loigiai{
+Áp dụng vòng tròn lượng giác}
+\end{vidu}
+%\dotlineEX{2}
+\begin{vidu}
+Một vật dao động điều hoà trên đoạn thẳng dài 8 cm. Chọn gốc thời gian lúc vật đi qua vị trí có li độ $x=-2\ cm$ theo chiều dương. Pha ban đầu của dao động là
+\choice
+{$0\ rad$}
+{\True $\dfrac{4\pi}{3}\ rad$}
+{$-\dfrac{5\pi}{6}\ rad$}
+{$\dfrac{2\pi}{3}\ rad$}
+\loigiai{
+Áp dụng vòng tròn lượng giác}
+\end{vidu}
+%\dotlineEX{2}
+\begin{vidu}
+\immini[thm]{Đồ thị li độ theo thời gian $x_1,\ x_2$ của hai chất điểm dao động điều hoà được mô tả như hình vẽ
+\begin{itemize}
+\item[a)] Xác định độ lệch pha của hai dao động.
+\item[b)] Viết phương trình dao động của $x_1,\ x_2$. 
+\end{itemize}}{\begin{tikzpicture}[draw=Mapcolor,scale=1.1,thick,>=stealth',transform shape]
+%Hệ trục toạ độ
+\tkzDefPoints{0/0/x', 9/0/x, 0/-2/y', 0/2/y}
+\tkzDrawSegments[->,add = 0 and .03](x',x)
+\tkzDrawSegments[->,add = 0.05 and .05](y',y)
+\tkzLabelPoint[above](x){Thời gian (s)}
+\tkzLabelPoint[above right](y){Li độ (cm)}
+\draw  [help  lines, xstep=0.2cm,ystep=0.2cm]  (x' |- y')  grid  (x |- y);
+%Chia vạch trên các trục
+\foreach  \x  in  {1.2,2.4,...,9}
+{\draw[thin]  (\x,-0.1)  --  (\x,0.1);}
+\foreach  \y  in  {-1,1}
+{\draw[thin]  (-0.1,\y)  --  (0.1,\y);}
+%Chú thích trên các trục
+\pgfkeys{/pgf/number format/use comma}
+\foreach \x[evaluate=\x as \text using \x*0.2/1.2] in {1.2,2.4,...,9}{
+\node[below=3pt] at (\x,0){\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\text}};}
+\foreach \y[evaluate=\y as \text using \y*10] in {-2,-1,1,2}{
+\node[left=3pt] at (0,\y){\pgfmathprintnumber[fixed,fixed zerofill,precision=0]{\text}};}
+\node[left] at (0,0){$O$};
+%Đồ thị
+\def\A{1} % Biên độ
+\def\T{4.8} % Chu kì
+\def\Phi{180} % Pha ban đầu
+{\draw [Mapcolor, line width = 1.2pt, domain=0:8, samples=500]%
+plot (\x, {(\A)*cos(360/\T*\x+\Phi)})node[above right,black]{$x_2$};}
+\def\A{2} % Biên độ
+\def\T{4.8} % Chu kì
+\def\Phi{-90} % Pha ban đầu
+{\draw [Mapcolor, dashed, line width = 1.2pt, domain=0:8, samples=500]%
+plot (\x, {(\A)*cos(360/\T*\x+\Phi)})node[right,black]{$x_1$};}
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item[a)] Hai dao động vuông pha.
+\item[b)] $x_1=20\cos(2,5\pi-\dfrac{\pi}{2})\ cm$ và $x_2=10\cos(2,5\pi t+\pi)\ cm$. 
+
+\end{itemize}
+}
+%\haidong{12}
+\end{vidu} \haidong{20}
+%\dotlineEX{6}
+\begin{vidu}
+\immini[thm]{Hình bên mô tả sự biến thiên vận tốc theo thời gian của một vật dao động điều hoà.
+\begin{itemize}
+\item[a)] Viết phương trình vận tốc theo thời gian.
+\item[b)] Viết phương trình li độ và gia tốc theo thời gian.
+\end{itemize}}{\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth',transform shape]
+%Hệ trục toạ độ
+\tkzDefPoints{0/0/x', 9/0/x, 0/-2.4/y', 0/2.4/y}
+\tkzDrawSegments[->,add = 0 and .03](x',x)
+\tkzDrawSegments[->,add = 0.05 and .05](y',y)
+\tkzLabelPoint[above](x){Thời gian (s)}
+\tkzLabelPoint[above right](y){Vận tốc (m/s)}
+\draw  [help  lines, xstep=0.2cm,ystep=0.2cm]  (x' |- y')  grid  (x |- y);
+%Chia vạch trên các trục
+\foreach  \x  in  {1.2,2.4,...,9}
+{\draw[thin]  (\x,-0.1)  --  (\x,0.1);}
+\foreach  \y  in  {-2.4,-1.6,-0.8,0.8,1.6,2.4}
+{\draw[thin]  (-0.1,\y)  --  (0.1,\y);}
+%Chú thích trên các trục
+\pgfkeys{/pgf/number format/use comma}
+\foreach \x[evaluate=\x as \text using \x*0.1/1.2] in {1.2,2.4,...,9}{
+\node[below=3pt] at (\x,0){\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\text}};}
+\foreach \y[evaluate=\y as \text using \y/8] in {-2.4,-1.6,-0.8,0.8,1.6,2.4}{
+\node[left=3pt] at (0,\y){\pgfmathprintnumber[fixed,fixed zerofill,precision=2]{\text}};}
+\node[left] at (0,0){$O$};
+%Đồ thị
+\def\A{2.4} % Biên độ
+\def\T{4.8} % Chu kì
+\def\Phi{0} % Pha ban đầu
+{\draw [Mapcolor, line width = 1.2pt, domain=0:8, samples=500]%
+plot (\x, {(\A)*cos(360/\T*\x+\Phi)});}
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item[a)] Phương trình vận tốc theo thời gian: $v=30\cos(5\pi t)\ cm/s$.
+\item[b)] Phương trình li độ: $x=\dfrac{6}{\pi}\cos(5\pi t-\dfrac{\pi}{2})\ cm$ \\
+Phương trình gia tốc: $a=150\pi\cos(5\pi t+\dfrac{\pi}{2})\ cm/s^2$.
+
+\end{itemize}
+}
+%\haidong{12}
+\end{vidu} \haidong{20}
+%\dotlineEX{6}
+\begin{vidu}
+\immini[thm]{
+Hình bên mô tả sự biến thiên gia tốc theo thời gian của một vật dao động điều hoà. Lấy $\pi^2=10$.
+\begin{itemize}
+\item[a)] Viết phương trình gia tốc theo thời gian.
+\item[b)] Viết phương trình li độ và vận tốc theo thời gian.
+\end{itemize}
+}{\begin{tikzpicture}[draw=Mapcolor,scale=.9,thick,>=stealth',transform shape]
+%Hệ trục toạ độ
+\tkzDefPoints{0/0/x', 9/0/x, 0/-1.5/y', 0/1.5/y}
+\tkzDrawSegments[->,add = 0 and .03](x',x)
+\tkzDrawSegments[->,add = 0.05 and .05](y',y)
+\tkzLabelPoint[above](x){t (s)}
+\tkzLabelPoint[above right](y){Gia tốc ($m/s^2$)}
+\draw  [help  lines, xstep=0.15cm,ystep=0.15cm]  (x' |- y')  grid  (x |- y);
+%Chia vạch trên các trục
+\foreach  \x  in  {1.2,2.4,...,9}
+{\draw[thin]  (\x,-0.1)  --  (\x,0.1);}
+\foreach  \y  in  {-1.2,-0.6,0.6,1.2}
+{\draw[thin]  (-0.1,\y)  --  (0.1,\y);}
+%Chú thích trên các trục
+\pgfkeys{/pgf/number format/use comma}
+\foreach \x[evaluate=\x as \text using \x*0.1/1.2] in {1.2,2.4,...,9}{
+\node[below=3pt] at (\x,0){\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\text}};}
+\foreach \y[evaluate=\y as \text using \y*25/6] in {-1.2,-0.6,0.6,1.2}{
+\node[left=3pt] at (0,\y){\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\text}};}
+\node[left] at (0,0){$O$};
+%Đồ thị
+\def\A{1.2} % Biên độ
+\def\T{4.8} % Chu kì
+\def\Phi{90} % Pha ban đầu
+{\draw [Mapcolor, line width = 1.2pt, domain=0:8, samples=500]%
+plot (\x, {(\A)*cos(360/\T*\x+\Phi)});}
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item $a=5\cos(5\pi t+\dfrac{\pi}{2})\ m/s^2$.
+\item $x=2\cos(5\pi t - \dfrac{\pi}{2})\ cm$; $v=10\pi\cos(5\pi t)\ cm/s$.
+
+\end{itemize}
+}
+%\haidong{6}
+\end{vidu} 
+%\dotlineEX{5}
+%\loai{Thời điểm ban đầu vật qua vị trí cân bằng}
+\begin{vidu}%[3P1-4.2K][Loai1]
+Một vật dao động điều hòa dọc theo trục Ox. Vận tốc cực đại của vật là $v_{\max} = 8{\pi}$  cm/s và gia tốc cực đại $a_{\max} = 16{\pi ^2}\ cm/s^2$. Tại thời điểm $t = 0$, vật qua vị trí cân bằng theo chiều âm. Phương trình dao động của vật là
+\choice
+{$x=4\cos \left( 2\pi t-\dfrac{2\pi}{3} \right)\ cm$}
+{\True $x=4\cos \left( 2\pi t+\dfrac{\pi}{2} \right)\ cm$}
+{$x=4\cos \left( 2\pi t-\dfrac{\pi}{3} \right)\ cm$}
+{$x=4\cos \left( 2\pi t+\dfrac{\pi}{3} \right)\ cm$}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\begin{cases}
+v_{\max} = 8\pi  \ cm/s = \omega A\\ 
+a_{\max} = 16\pi ^2 = \omega^2
+\end{cases}\Rightarrow \omega  = 2\pi  \Rightarrow A = 4$ cm.
+\item Tại $t = 0$: $x = 0\ (-)\Rightarrow\varphi=\dfrac{\pi}{2}$. 
+\end{itemize}
+}
+%\haidong{6}
+\end{vidu} 
+%\dotlineEX{4}
+%\loai{Biết li độ và vận tốc tại thời điểm $t=0$. Viết phương trình} 
+\begin{vidu}%[3P1-4.2K][Loai1]
+Một chất điểm dao động điều hòa trên trục Ox. Trong thời gian 31,4 s chất điểm thực hiện được 100 dao động toàn phần. Gốc thời gian là lúc chất điểm đi qua vị trí có li độ 2 cm theo chiều âm với tốc độ là $40\sqrt{3}$ cm/s. Lấy $\pi = 3,14$. Phương trình dao động của chất điểm là
+\choice 
+{$x = 6\cos\left(20t - \dfrac{\pi}{6}\right)$ cm}
+{\True $x = 4\cos\left(20t + \dfrac{\pi}{3}\right)$ cm}
+{$x = 4\cos\left(20t - \dfrac{\pi}{3}\right)$ cm}
+{$x = 6\cos\left(20t + \dfrac{\pi}{6}\right)$ cm}
+\loigiai{
+\begin{itemize}
+\item Ta có: $T = \dfrac{31,4}{100} = \dfrac{\pi}{10}\ s \Rightarrow \omega = 20\ rad/s$.
+\item Sử dụng phương trình độc lập thời gian, ta được phương trình:
+\begin{align*}
+\dfrac{2^2}{A^2} + \dfrac{(40\sqrt{3})^2}{20^2.A^2} = 1 \Rightarrow A = 4\ cm.
+\end{align*}
+\item Tại $t = 0$: $2 = 4\cos\varphi \Rightarrow \cos\varphi = \dfrac{1}{2} \Rightarrow \varphi = \dfrac{\pi}{3}$ rad (Do vật chuyển động theo chiều âm)
+$\Rightarrow x = 4\cos\left(20t+ \dfrac{\pi}{3}\right)$.
+\end{itemize}
+}
+%\haidong{10}
+\end{vidu} 
+%\dotlineEX{2}
+%\loai{Biết gia tốc và vận tốc tại thời điểm $t=0$. Viết phương trình x} 
+\begin{vidu}%[3P1-4.2B][Loai1]%Bài 10. Các đại lượng dao động x, v, p, a, F và mối quan hệ (P3)
+Một chất điểm dao động điều hòa trên trục Ox với chu kì $T = 2$ s. Lấy $\pi^2=10$. Tại thời điểm $t = 0$ vật có gia tốc $a = - 0,1$ $m/s^2$, vận tốc $v=-\pi \sqrt{3}$ cm/s. Phương trình dao động của chất điểm là
+\choice
+{\True $x=2 \cos\left(\pi t+\dfrac{\pi}{3}\right)\ cm$}
+{$x=2\cos \left(\pi t-\dfrac{2\pi}{3}\right)\ cm$}
+{$x=2 \cos\left(\pi t+\dfrac{\pi}{6}\right)\ cm$}
+{$x=2 \cos\left(\pi t-\dfrac{5\pi}{6}\right)\ cm$}
+\loigiai{
+\begin{itemize}
+\item Ta  có: $\omega=\dfrac{2\pi}{T}=\pi\ rad/s$.
+\item Li độ ban đầu: $x_0=-\dfrac{a_0}{\omega^2}=1\ cm$.
+\item Biên độ: $A=\sqrt{x_0^2+\dfrac{v_0^2}{\omega^2}}=2\ cm$.
+\item Tại thời điểm $t = 0$ s, $x_0= 1\ cm=\dfrac{A}{2}$ và $v_0<0$ nên $\varphi=\dfrac{\pi}{3}\ rad$.
+\end{itemize}
+}
+%\haidong{9}
+\end{vidu} 
+%\dotlineEX{5}
+
+%\loai{Viết phương trình vận tốc}
+\begin{vidu}%[3P1-4.2G][Loai1]
+Một chất điểm dao động điều hòa với chu kì bằng 2 s. Gốc tọa độ ở vị trí cân bằng. Tại thời điểm ban đầu ($t = 0$), chất điểm có vận tốc bằng $2\pi \sqrt{3}$ cm/s và gia tốc bằng 2$\pi^2$ $cm/s^2$. Phương trình vận tốc của chất điểm là
+\choice 
+{$v = 2\pi\cos\left(\pi t\right)$ cm/s}
+{$v = 2\pi\cos\left(\pi t + \dfrac{\pi}{3}\right)$ cm/s}
+{\True $v = 4\pi\cos\left(\pi t - \dfrac{\pi}{6}\right)$ cm/s}
+{$v = 4\pi\cos\left(\pi t - \dfrac{2\pi}{3}\right)$ cm/s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\omega = \dfrac{2\pi}{2} = \pi\ rad/s \Rightarrow x = A\cos\left(\pi t+ \varphi\right)\ cm\Rightarrow v = -\pi.A\sin\left(\pi t+ \varphi\right)\  cm/s\Rightarrow a = -\pi^2.A\cos\left(\pi t+ \varphi\right)\ cm/s$.
+\item Tại $t = 0$:
+$\begin{cases}
+2\pi \sqrt{3} = -\pi.A.\sin\varphi\quad (1)\\
+2\pi^2 = -\pi^2.A.\cos\varphi\quad (2)
+\end{cases}$
+\item Lấy $(1)$ chia $(2)$ theo vế, ta được:
+$\tan\varphi = \sqrt{3}\Rightarrow \varphi = \dfrac{\pi}{3}$ hoặc $\varphi = \dfrac{4\pi}{3}$.
+\item Mà tại $t = 0$, $v > 0$ nên $\varphi = \dfrac{4\pi}{3}$.
+\item Thay giá trị trên vào $(1)$, tính được 
+\begin{align*}
+A = 4\ cm
+\Rightarrow x = 4\cos\left(\pi t+\dfrac{4\pi}{3}\right)\  cm 
+\Rightarrow v = 4\pi\cos\left(\pi t+\dfrac{4\pi}{3} + \dfrac{\pi}{2}\right)\ cm/s
+\Rightarrow v = 4\pi\cos\left(\pi t- \dfrac{\pi}{6}\right)\ cm/s.
+\end{align*}
+\end{itemize}
+}
+%\haidong{12}
+\end{vidu} 
+%\dotlineEX{5}

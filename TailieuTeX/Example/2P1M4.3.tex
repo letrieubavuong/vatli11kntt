@@ -1,0 +1,498 @@
+\begin{vidu}
+Một vật có khối lượng $m=1\ kg$, thực hiện dao động điều hòa theo phương trình $x=10\cos\left({4\pi t+\dfrac{\pi}{3}}\right)$ cm với t tính bằng giây. Lấy $\pi^2=10$.
+\begin{itemize}
+\item [1.] Tính cơ năng của dao động.
+\item [2.] Xác định động năng của vật tại li độ 2 cm.
+\item [3.] Tìm thế năng của vật khi vận tốc đạt $20\pi\ cm/s$.
+\item [4.] Viết biểu thức thế năng và biểu thức động năng của vật.
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item[a)] Cơ năng của dao động: $W=\dfrac{1}{2}m\omega^2A^2=0,8\ J$.
+\item [b)] Xác định động năng của vật tại li độ 2 cm: $W_{\ct{đ}}=W-W_t=\dfrac{1}{2}m\omega^2.\left(A^2-x^2\right)=0,768\ J$.
+\item [c)] Tìm thế năng của vật khi vận tốc đạt $20\pi\ cm/s$: $W_t=W-W_{\ct{đ}}=\dfrac{1}{2}m\omega^2 A^2-\dfrac{1}{2}mv^2=0,6\ J$.
+\item [d)] Biểu thức thế năng: $W_t=0,4+0,4.\cos(8\pi t+\dfrac{2\pi}{3})\ J$.\\ 
+Biểu thức động năng: $W_{\ct{đ}}=0,4-0,4.\cos(8\pi t+\dfrac{2\pi}{3})\ J$.
+\end{itemize}
+}	
+%\haidong{13}
+\end{vidu} %\dotlineEX{8}
+\begin{vidu}
+\immini[thm]{
+Một con lắc lò xo có vật nặng khối lượng 0,4 kg, dao động điều hoà. Đồ thị vận tốc v theo thời gian t như hình. Tính:
+\begin{itemize}
+\item[a)] Vận tốc cực đại của vật.
+\item[b)] Động năng cực đại của vật.
+\item[c)] Thế năng cực đại của con lắc.
+\item[d)] Độ cứng k của lò xo.
+\end{itemize}
+}{\begin{tikzpicture}[draw=Mapcolor,scale=.8,thick,>=stealth',transform shape]
+%Hệ trục toạ độ
+\tkzDefPoints{0/0/x', 4.5/0/x, 0/-1.5/y', 0/1.5/y}
+\tkzDrawSegments[->,add = 0 and .03](x',x)
+\tkzDrawSegments[->,add = 0.05 and .05](y',y)
+\tkzLabelPoint[above](x){$t\ (s)$}
+\tkzLabelPoint[above right](y){$v\ (cm/s)$}
+\draw  [help  lines, xstep=0.4cm,ystep=0.4cm]  (x' |- y')  grid  (x |- y);
+
+\node[left] at (0,0){$O$};
+%Đồ thị
+\def\A{1.2} % Biên độ
+\def\T{4.8} % Chu kì
+\def\Phi{0} % Pha ban đầu
+{\draw [Mapcolor, line width = 1.2pt, domain=0:4.2, samples=500]%
+plot (\x, {(\A)*cos(360/\T*\x+\Phi)});}
+%Chia vạch trên các trục
+\foreach  \x  in  {0.8,1.6,...,4}
+{\draw[thin]  (\x,-0.1)  --  (\x,0.1);}
+\foreach  \y  in  {-1.2,-0.8,-0.4,0.4,0.8,1.2}
+{\draw[thin]  (-0.1,\y)  --  (0.1,\y);}
+%Chú thích trên các trục
+\pgfkeys{/pgf/number format/use comma}
+\foreach \x[evaluate=\x as \text using \x*0.3/1.2] in {0.8,1.6,...,4}{
+\node[below=3pt] at (\x,0){\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\text}};}
+\foreach \y[evaluate=\y as \text using \y/4] in {-1.2,-0.8,-0.4,0.4,0.8,1.2}{
+\node[left=3pt] at (0,\y){\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\text}};}
+\end{tikzpicture}
+}
+\loigiai{
+\begin{itemize}
+\item Chu kì dao động: $T=4.0,3=1,2\ s$.\\
+\item Tần số góc: $\omega=\dfrac{2\pi}{T}=\dfrac{5\pi}{3}\ rad/s$.\\
+\item[a)] Vận tốc cực đại của vật là: $v_{\max}=0,3\ cm/s=3.10^{-3}\ m/s$.
+\item[b)] Động năng cực đại của vật là: $W_{\text{đ}}=\dfrac{1}{2}mv_{\max}^2=\dfrac{1}{2}.0,4.(3.10^{-3})^2=1,8.10^{-6}\ J$
+\item[c)] Thế năng cực đại của con lắc chính là cơ năng và là động năng cực đại và bằng $1,8.10^{-6}\ J$
+\item[d)] Độ cứng k của lò xo là: 
+$k=m\omega^2=0,4.\left(\dfrac{5\pi}{3}\right)^2\approx 11\ N/m$.
+
+\end{itemize}
+}	
+%\haidong{12}
+\end{vidu} %\dotlineEX{5}
+%\loai{Tính cơ năng khi biết chu kì}
+\begin{vidu}%[3P1-5.2K][Loai1]	
+Một vật nặng 500 g dao động điều hòa trên quỹ đạo dài 20 cm và trong khoảng thời gian 3 phút vật thực hiện 540 dao động. Cho $\pi^2 = 10$. Cơ năng của vật là
+\choice
+{2025 J}
+{\True 0,9 J}
+{900 J}
+{1,025 J}
+\loigiai{
+\begin{itemize}
+\item Chu kì dao động của vật: $T=\dfrac{1}{3}$ s.
+\item Tần số góc của vật: $\omega = \dfrac{2\pi}{T} = 6\pi\ rad/s$.
+\item Cơ năng của vật: $W = m\omega^2.\dfrac{A^2}{2} = 0,9\ J$.
+\end{itemize}
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{5}
+
+%\loai{Tính thế năng, động năng tại li độ cho trước}
+\begin{vidu} %[3P1-5.2G][Loai1] 
+\nguon{QG - 2017} Một con lắc lò xo gồm vật nhỏ và con lắc có độ cứng 20\ N/m dao động điều hòa với chu kì 2 s. Khi pha dao động là $\dfrac{\pi}{2}$ thì vận tốc của vật là $-20\sqrt{3}$\ cm/s. Lấy $\pi^2=10$. Khi vật đi qua vị trí có li độ $3\pi\ cm$ thì động năng của con lắc là
+\choice
+{\True 0,03\ J}
+{0,36\ J}
+{0,72\ J}
+{0,18\ J}
+\loigiai{
+\begin{itemize}
+\item Trong dao động điều hòa thì vận tốc và li độ vuông pha với nhau. 
+\item Khi dao động có pha là $\dfrac{\pi}{2}$ thì vận tốc có pha là $\pi $. 
+\item Vậy $v=-\omega A=-20\sqrt{3}\Rightarrow A=\dfrac{20\sqrt{3}}{\pi}\ cm=\dfrac{2.{\pi}^2\sqrt{3}}{\pi}\ cm=2\sqrt{3}\pi\ cm$.
+\item Động năng của con lắc tại vị trí $x=3\pi\ cm$:  $$W_{\text{đ}}=W-W_t=\dfrac{1}{2}k\left(A^2-x^2\right)=\dfrac{1}{2}20\left[{{\left(2\sqrt{3}\pi\right)}^2-{\left(3\pi\right)}^2}\right].10^{-4}=0,03\ J.$$
+\end{itemize}
+}
+%\haidong{7}
+\end{vidu} %\dotlineEX{5}
+
+%\loai{Sự thay đổi của cơ năng theo biên độ}
+\begin{vidu} %[3P1-5.2B][Loai1]  
+Kích thích cho một con lắc lò xo dao động điều hòa với biên độ A thì cơ năng của nó bằng $36\ mJ$. Khi kích thích cho con lắc lò xo đó dao động điều hòa với biên độ bằng 1,5A thì cơ năng của nó bằng
+\choice
+{$54\ mJ$}
+{$16\ mJ$}
+{\True $81\ mJ$}
+{$24\ mJ$}
+\loigiai{
+\begin{itemize}
+\item 		Ta có: $W\sim A^2\xrightarrow{{A'=1,5A}}{W}'=1,5^2W=81$ mJ.
+\end{itemize}
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{5}
+
+%\loai{Liên hệ năng lượng ở các vị trí khác nhau}
+\begin{vidu} %[3P1-5.2B][Loai1] 
+\nguon{QG - 2018} Một vật nhỏ dao động điều hòa dọc theo trục Ox. Khi vật cách vị trí cân bằng một đoạn 2 cm thì động năng của vật là $0,48\ J$. Khi vật cách vị trí cân bằng một đoạn 6 cm thì động năng của vật là $0,32\ J$. Biên độ dao động của vật bằng
+\choice
+{8 cm}
+{14 cm}
+{\True 10 cm}
+{12 cm}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\dfrac{1}{2}k.0,02^2+0,48=\dfrac{1}{2}k.0,06^2+0,32
+\Rightarrow k=100\ N/m\Rightarrow A=0,1\ m$.
+
+\end{itemize}
+}
+%\haidong{7}
+\end{vidu} %\dotlineEX{5}
+
+%\loai{Biểu thức thế năng}
+\begin{vidu}%[3P1-5.2G][Loai1]
+Một con lắc gồm lò xo có độ cứng bằng 30 N/m gắn với một vật nhỏ, đang dao động điều hòa theo phương trình $x = 5\cos(3\pi t + \dfrac{\pi}{3})$ cm. Thế năng của chất điểm biến thiên theo phương trình nào sau đây?
+\choice
+{$W_t = 37,5\cos(6\pi t + \dfrac{2\pi}{3}) + 37,5$ mJ}
+{$W_t = -18.75\cos(6\pi t + \dfrac{2\pi}{3}) + 18,75$ mJ}
+{$W_t = - 37,5\cos(6\pi t + \dfrac{2\pi}{3}) + 37,5$ mJ}
+{\True $W_t = 18,75\cos(6\pi t + \dfrac{2\pi}{3}) + 18,75$ mJ}
+\loigiai{
+\begin{itemize}
+\item Ta có: $W=\dfrac{kA^2}{2} = \dfrac{30.0,05^2}{2} = 0,0375\ J=37,5\ mJ $.
+\item Mà: $W_t = \dfrac{W}{2}.\cos(6\pi t + \dfrac{2\pi}{3}) + \dfrac{W}{2}\Rightarrow W_t = 18,75\cos(6\pi t + \dfrac{2\pi}{3}) + 18,75\ mJ$.
+\end{itemize}
+}
+%\haidong{10}
+\end{vidu} %\dotlineEX{8}
+%\loai{Tổng hợp}
+\begin{vidu} %[3P1-5.2K][Loai1]   
+Một chất điểm dao động điều hòa không ma sát dọc theo trục Ox. Biết rằng trong quá trình khảo sát chất điểm chưa đổi chiều chuyển động. Khi vừa rời khỏi vị trí cân bằng một đoạn s thì động năng của chất điểm là 13,95 mJ. Đi tiếp một đoạn s nữa thì động năng của chất điểm chỉ còn 12,60 mJ. Nếu chất điểm đi thêm một đoạn s nữa thì động năng của nó khi đó là
+\choice
+{$11,25\ mJ$}
+{$6,68\ mJ$}
+{\True $10,35\ mJ$}
+{$8,95\ mJ$}
+\loigiai{
+\begin{itemize}
+\item Theo giả thiết: $W_{\text{đ1}}=W-\dfrac{1}{2}{k}.s^2=13,95.10^{-3}\ J$ (W là cơ năng của chất điểm).
+\item $W_{\text{đ2}}=W-\dfrac{1}{2}{k}(2x)^2=12,60.10^{-3}\left(2\right)$ (đi thêm một đoạn s thì li độ là 2s).
+\item Cần tìm $W_{\text{đ3}}=W-\dfrac{1}{2}{k}.(3s)^2\left(3\right)$.
+\item Lấy $(1) - (2)$ vế với vế, ta được: $\dfrac{1}{2}{k}.2.s^2=1,35.10^{-3}\Rightarrow \dfrac{1}{2}{ks}^2=0,45.10^{-3}\left(4\right)$.
+\item Lấy $(2) - (3)$ vế với vế, ta được: $\dfrac{1}{2}{k}.8.s^2=13,95.10^{-3}-W_{\text{đ3}}$.
+\item Thay vào (4) ta được: $8.0,45.10^{-3}=13,95.10^{-3}-W_{\text{đ3}}\Rightarrow W_{\text{đ3}}=10,35.10^{-3}J=10,35\ mJ$.
+
+\end{itemize}
+}
+%\haidong{16}
+\end{vidu} %\dotlineEX{10}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{vidu}
+Một con lắc lò xo gồm lò xo có độ cứng $k=100\ N/m$, vật nặng có khối lượng $m=200\ g$, dao động điều hoà với biên độ $A=5\ cm$.
+\begin{itemize}
+\item[1.] Xác định li độ của vật tại thời điểm động năng của vật bằng 3 lần thế năng của con lắc. 
+\item[2.] Xác định tốc độ của vật khi thế năng bằng động năng.
+\item[3.] Thế năng chiếm bao nhiêu phần trăm cơ năng khi $x=2,5\ cm$.
+\item[4.] Xác định tỉ số giữa động năng và thế năng khi khi $v=\dfrac{v_{\max}}{2}$.
+\end{itemize}
+\loigiai{
+\begin{itemize}
+\item $\omega=\sqrt{\dfrac{k}{m}}=10\sqrt 5\ rad/s$.
+\item[a)] Li độ của vật tại thời điểm động năng của vật bằng 3 lần thế năng của con lắc: $x=\pm 2\ cm$. 
+\item[b)] Tốc độ của vật khi thế năng bằng động năng: $|v|=\dfrac{\omega A}{\sqrt 2}=25\sqrt{10}\ cm/s$
+\item[c)] Thế năng chiếm bao nhiêu phần trăm cơ năng khi $x=2,5\ cm$: $\delta = \dfrac{W_t}{W}.100\%=\dfrac{x^2}{A^2}.100\%=25\%$
+\item[d)] Tỉ số giữa động năng và thế năng khi $v=\dfrac{v_{\max}}{2}$: $\delta =\dfrac{W_{\ct{đ}}}{W_t}=\dfrac{W_{\ct{đ}}}{W-W_{\ct{đ}}}=\dfrac{1}{\dfrac{W}{W_{\ct{đ}}}-1}=\dfrac{1}{\left(\dfrac{v_{\max}}{v}\right)^2-1}=\dfrac{1}{2^2-1}=\dfrac{1}{3}$
+
+\end{itemize}
+}	
+%\haidong{15}
+\end{vidu} %\dotlineEX{8}
+%\loai{Cho li độ, tìm tỉ số động năng và thế năng}
+\begin{vidu} %[3P1-5.3B][Loai1] 	
+Một vật nhỏ khối lượng 100 g đang dao động điều hòa với tần số là 5 Hz và cơ năng toàn phần bằng 0,18 J (mốc thế năng tại vị trí cân bằng). Lấy $\pi^2 = 10$. Tại li độ $3\sqrt{2}$ cm, tỉ số động năng và thế năng là
+\choice
+{\True 1}
+{4}
+{3}
+{2}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\omega = 2\pi.f = 10\pi \ rad/s\Rightarrow W_t=\dfrac{m\omega^2x^2}{2} = \dfrac{0,1.(10\pi)^2.(0,03\sqrt{2})^2}{2} = 0,09\ J$.
+\item $W_{\text{đ}} = 0,18-0,09 = 0,09\ J\Rightarrow \dfrac{W_{\text{đ}}}{W_t} = \dfrac{0,09}{0,09} = 1$.
+\end{itemize}
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{6}
+%\loai{Tỉ số cơ năng với động năng hoặc thế năng}
+\begin{vidu}%[3P1-5.3K][Loai1]
+Ở một thời điểm, li độ của một vật dao động điều hòa bằng 60\% của biên độ dao động thì tỉ số của cơ năng và thế năng của vật là
+\choice
+{$\dfrac{9}{25}$}
+{$\dfrac{3}{4}$}
+{\True $\dfrac{25}{9}$}
+{$\dfrac{16}{9}$}
+\loigiai{
+Ta có: $x=60\%A=\dfrac{3A}{5}=\dfrac{A}{\sqrt{\dfrac{16}{9}+1}}\Rightarrow n=\dfrac{16}{9}\Rightarrow W_{\text{đ}}=\dfrac{16}{9}{W_t}\Rightarrow W=\dfrac{25}{9}{W_t}$.
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{6}
+%\loai{Từ liên hệ giữa năng lượng tìm liên hệ giữa x và v}
+\begin{vidu}%[3P1-5.3K][Loai1]
+Một vật dao động điều hòa trên trục Ox. Mối liên hệ giữa li độ x, tốc độ v và tần số góc $\omega$  của vật dao động khi thế năng và động năng của hệ bằng nhau là
+\choice
+{$\omega  = |x|v$}
+{$|x| = v\omega$}
+{\True $v = \omega |x|$}
+{$ \omega =\dfrac{2\left| x \right|}{v}$}
+\loigiai{
+Ta có: $W_{\text{đ}}=W_t\Rightarrow \left| x \right|=\dfrac{A\sqrt{2}}{2}\Rightarrow v=\dfrac{\omega A\sqrt{2}}{2}=\omega \left| x \right|$.
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{5}
+%\loai{Từ liên hệ năng lượng tìm các đại lượng khác x và v}
+\begin{vidu} %[3P1-5.3B][Loai1]  
+\nguon{ĐH - 2009} Một con lắc lò xo gồm lò xo nhẹ và vật nhỏ dao động điều hòa theo phương ngang với tần số góc $10\ rad/s$. Biết rằng khi động năng và thế năng (mốc ở vị trí cân bằng của vật) bằng nhau thì vận tốc của vật có độ lớn bằng $0,6\ m/s$. Biên độ dao động của con lắc là
+\choice
+{6 cm}
+{\True $6\sqrt{2}$ cm}
+{12 cm}
+{$12\sqrt{2}$ cm}
+\loigiai{ Biên độ dao động của con lắc
+\begin{align*}
+W_{\text{đ}}=W_t=\dfrac{{W}}{2}\Rightarrow \dfrac{mv^2}{2}=\dfrac{m\omega ^2A^2}{2.2}\Rightarrow A=0,06\sqrt{2}\ m=6\sqrt{2}\ cm.
+\end{align*}}
+%\haidong{5}
+\end{vidu} %\dotlineEX{6}
+%\loai{Thời điểm đầu tiên liên quan động năng - thế năng}
+\begin{vidu}%[3P1-9.2K][Loai1] 
+Một con lắc lò xo dao động điều hòa với tần số góc $\omega = 5\pi$ rad/s và pha ban đầu $\varphi = -\dfrac{\pi}{3}$ rad. Sau một thời gian ngắn nhất nào dưới đây (tính từ khi con lắc bắt đầu dao động) động năng dao động bằng thế năng dao động?
+\choice
+{$\dfrac{4}{60}$ s}
+{\True $\dfrac{1}{60}$ s}
+{$\dfrac{14}{60}$ s}
+{$\dfrac{16}{60}$ s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $T = \dfrac{2\pi}{\omega} = 0,4\ s;\  \dfrac{W_t}{W_\text{đ}} = 1 \Rightarrow |x| = \dfrac{A}{\sqrt{2}}$.
+\item Thời gian từ thời điểm ban đầu đến lần gần nhất động năng dao động bằng thế năng dao động là: $t = \dfrac{T}{24} = \dfrac{1}{60}\ s$ (dùng đường tròn).
+\end{itemize}
+}
+%\haidong{4}
+\end{vidu} %\dotlineEX{6}
+%\loai{Khoảng thời gian trong một chu kì thoả mãn hệ thức năng lượng}
+\begin{vidu}%[3P1-9.2K][Loai1]
+Một con lắc lò xo dao động với chu kì T. Khoảng thời gian trong một chu kì mà động năng lớn hơn 3 lần thế năng là
+\choice
+{\True $\dfrac{T}{3}$}
+{$\dfrac{T}{6}$}
+{$\dfrac{T}{12}$}
+{$\dfrac{T}{4}$}
+\loigiai{
+\begin{itemize}
+\item 		$W_{\text{đ}} = 3W_t \Leftrightarrow  x=\pm \dfrac{A}{2}. $ Trong một chu kì:
+$W_{\text{đ}} > 3W_t$ khi gần vị trí cân bằng $\Rightarrow  \Delta t=\dfrac{T}{3}$.
+
+\end{itemize}
+
+}
+%\haidong{6}
+\end{vidu} %\dotlineEX{6}
+%\loai{Thời điểm $W_{\ct{đ}}=nW_t$ lần thứ n}
+\begin{vidu}%[3P1-9.2K][Loai1]
+Một con lắc dao động điều hòa theo phương trình $ x=A\cos  \left( \dfrac{5\pi}{6}t+\dfrac{\pi}{6} \right) $ ($A > 0$). Kể từ $t = 0$, thời điểm động năng và thế năng của con lắc bằng nhau lần thứ 19 là
+\choice
+{\True 10,9 s}
+{21,7 s}
+{11,5 s}
+{22,6 s}
+\loigiai{
+\begin{itemize}
+\item Trạng thái: $W_{\text{đ}}={W_t}\leftrightarrow x=\pm \dfrac{A\sqrt{2}}{2}$.
+\item Mỗi chu kì, vật qua 4 lần; tách: $19 = 4. 4 + 3 \Rightarrow$ sau 4T, vật qua 16 lần và quay lại trạng thái Tại $t = 0$: $ x=\dfrac{A\sqrt{3}}{2}$.
+\item Vậy: $ t=4T+\dfrac{T}{6}+\dfrac{T}{4}+\dfrac{T}{8}=10,9$ s.	
+
+\end{itemize}
+}
+%\haidong{7}
+\end{vidu} %\dotlineEX{5}
+
+%\loai{Khoảng thời gian lặp lại liên quan đến năng lượng}
+
+
+
+
+%\loai{Khoảng thời gian liên quan năng lượng}
+\begin{vidu}%[3P1-9.2K][Loai1]	
+Một vật nhỏ đang dao động điều hoà khi qua vị trí cân bằng vật có tốc độ $20\pi$ cm/s, khi qua vị trí biên gia tốc của vật có độ lớn $2\pi^2\  m/s^2$. Khoảng thời gian ngắn nhất mà vật đi từ vị trí có động năng bằng thế năng đến vị trí động năng bằng ba lần thế năng là
+\choice
+{$\dfrac{1}{30}$ s}
+{\True $\dfrac{1}{120}$ s}
+{$\dfrac{1}{60}$ s}
+{0,025 s}
+\loigiai{
+\immini[thm]{\begin{itemize}
+\item Ta có: $\omega = \dfrac{a_{\max}}{v_{\max}} = \dfrac{2\pi^2}{0,2\pi} = 10\pi\  rad/s\Rightarrow T = \dfrac{2\pi}{10\pi} = 0,2\ s$.
+\item Ta lại có: $W_\text{đ} = W_t \Rightarrow W_t = \dfrac{W}{2} \Rightarrow x = \pm \dfrac{A}{\sqrt{2}}$. Ta biểu diễn vị trí các điểm có động năng bằng thế năng tại các điểm $N_1,\ N_2,\ N_3,\ N_4$ trên đường tròn lượng giác như hình vẽ.
+\item Khi $W_\text{đ} = 3W_t \Rightarrow W_t = \dfrac{W}{4} \Rightarrow x = \pm \dfrac{A}{2} $. Ta biểu diễn vị trí các điểm có động năng bằng ba lần thế năng tại các điểm $M_1,\ M_2,\ M_3,\ M_4$ trên đường tròn lượng giác như trên hình.
+\end{itemize}}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](-120:2){m1}
+\tkzDefShiftPoint[o](-60:2){m2}
+\tkzDefShiftPoint[o](60:2){m3}
+\tkzDefShiftPoint[o](120:2){m4}
+\tkzDefShiftPoint[o](-135:2){n1}
+\tkzDefShiftPoint[o](-45:2){n2}
+\tkzDefShiftPoint[o](45:2){n3}
+\tkzDefShiftPoint[o](135:2){n4}
+\tkzDefPointBy[projection=onto m--n](m2) \tkzGetPoint{h}
+\tkzDefPointBy[projection=onto m--n](m1) \tkzGetPoint{h'}
+\tkzDefPointBy[projection=onto m--n](n2) \tkzGetPoint{k}
+\tkzDefPointBy[projection=onto m--n](n1) \tkzGetPoint{k'}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](m1,m4 m2,m3 n1,n4 n2,n3)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,m1 o,m2 o,m4 o,m3)
+\tkzDrawSegments[red,->](o,n1 o,n2 o,n4 o,n3)
+\tkzDrawPoints[size=3](o,m1,h,m4,m2,m3,h',n1,k,n4,n2,n3,k')
+\tkzMarkAngles[size=0.9cm,arrows=->](n1,o,m1 n3,o,m3)
+\node at (m1)[below left]{$M_1$};
+\node at (m2)[below right]{$M_2$};
+\node at (m3)[above right]{$M_3$};
+\node at (m4)[above left]{$M_4$};
+\node at (n1)[below left]{$N_1$};
+\node at (n2)[below right]{$N_2$};
+\node at (n3)[above right]{$N_3$};
+\node at (n4)[above left]{$N_4$};
+\node at (2,0)[above right]{$A$};
+\node at (h)[below]{$\dfrac{A}{2}$};
+\node at (k')[below]{$-\dfrac{A}{\sqrt{2}}$};
+\end{tikzpicture}}
+\begin{itemize}
+\item Khoảng thời gian ngắn nhất mà vật đi từ vị trí có động năng bằng thế năng đến vị trí động năng bằng ba lần thế năng ứng với vật đi từ $N_1$ đến $ M_1$ hoặc từ $N_3$ đến $ M_3$
+$\Rightarrow \Delta \varphi = \dfrac{\pi}{3}- \dfrac{\pi}{4} = \dfrac{\pi}{12} \Rightarrow \Delta t = \dfrac{T}{24} = \dfrac{1}{120}\ s$.
+\end{itemize}
+}
+%\haidong{5}
+\end{vidu} %\dotlineEX{5}
+%\loai{Trạng thái năng lượng sau trước một khoảng thời gian}
+
+
+%\loai{Đồ thị năng lượng hình sin}
+\begin{vidu}%[3P1-9.2K][Loai1] 
+Một vật có khối lượng 400 g dao động điều hòa có đồ thị động năng như hình vẽ. Tại thời điểm $t = 0$ vật đang chuyển động theo chiều dương. Lấy $\pi^2=10$. Phương trình dao động của vật là\\
+\Textbox{0.5}{
+\motcot
+{$x=10\cos \left( \pi t+\dfrac{\pi }{6} \right)\ cm$} 
+{$x=5\cos \left( 2\pi t+\dfrac{\pi }{3} \right)\ cm$}
+{$x=10\cos \left( \pi t-\dfrac{\pi }{3} \right)\ cm$} 
+{\True $x=5\cos \left( 2\pi t-\dfrac{\pi }{3} \right)\ cm$}
+}
+\pgfplotsset{width=8cm,height=4.5cm,compat=1.4}
+\Picbox{0.5}{
+\begin{axis}[
+axis lines=middle,
+xmin=0,xmax=3.5,xstep=1,ymin=-0.16,ymax=2.5,ystep=0.1,
+grid=major, %Có các tùy chọn: minor|major|both|none
+x grid style={dashed},
+y grid style={dashed},
+ytick={0,1.5,2},
+xtick={0.67},
+xticklabels={$\dfrac{1}{6}$},
+yticklabels={$0$,$15$,$20$},
+xticklabel style={black,below},
+xlabel style={above=3pt},
+xlabel=$t\ (s)$,
+ylabel style={right=3pt},
+ylabel={$W_{\text{đ}}\ (mJ)$}
+]
+\addplot[line width=1.2pt,domain=0:3,samples=200,Mapcolor]{2*(sin(deg(0.5*pi*x-pi/3)))^2};
+\end{axis}
+}
+\loigiai{
+\begin{itemize}
+\item Từ đồ thị nhận thấy: $W = W_{\text{đ}max} = 20.10^{-3}\ J$.
+\item Thời gian ngắn nhất từ $W_{\text{đ}}=15\ mJ=\dfrac{3W_{\text{đ}\max}}{4}$ ( thế năng lúc này $W_t=\dfrac{W_{t\max}}{4}$ ) đến $W_{\text{đ}} = 0$ ( thế năng lúc này $W_t = W_{t\max}$) chính là thời gian ngắn nhất từ $x=\pm \dfrac{A}{2}$ đến $x = \pm A$ và bằng $\dfrac{T}{6}=\dfrac{1}{6}\ s$.
+\item Suy ra: 
+$T = 1 s$ và $\omega =\dfrac{2\pi}{T}=2 \pi \ rad/s. \Rightarrow A=\sqrt{\dfrac{2W}{m\omega^2}}=\sqrt{\dfrac{2.20.10^{-3}}{0,4.(2\pi)^2}}=0,05\ m=5\ cm.$ 
+\item Lúc $t = 0$, $x=\dfrac{A}{2}$ và đang chuyển động theo chiều dương và động năng giảm nên phương trình dao động có dạng: $x=5\cos \left(2\pi t-\dfrac{\pi}{3} \right)\ cm$.
+\end{itemize}
+}
+%\haidong{15}
+\end{vidu} %\dotlineEX{4}
+%\loai{Đồ thị liên hệ thế năng và động năng}
+\begin{vidu} %[3P1-20.1K][Loai1]
+\immini[thm]{Đồ thị biểu diễn mối quan hệ giữa động năng $W_{\text{đ}}$ và thế năng $W_t$ của một vật dao động điều hòa như hình vẽ. Ở thời điểm t nào đó, trạng thái năng lượng của dao động có vị trí M trên đồ thị, lúc này vật đang có li độ dao động x = 2 cm. Biết chu kì biến thiên của động năng theo thời gian là $T_{\text{đ}} = 0,5\ s$. Khi vật có trạng thái năng lượng ở vị trí N trên đồ thị thì vật dao động có tốc độ là
+\choice
+{$16\pi$ cm/s}
+{$8\pi$ cm/s}
+{\True $4\pi$ cm/s}
+{$2\pi$ cm/s}}{\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth']
+\tkzDefPoints{0/0/o, 3.6/0/x, 0/3.5/i, 0/3/a, 3/0/b}
+\tkzDrawSegments[->](o,x o,i)
+\tkzDrawSegments[Mapcolor,very thick](a,b)
+\node at (a)[left]{$W_0$};
+\node at (b)[below]{$W_0$};
+\node at (x)[above]{$W_t$};
+\node at (i)[right]{$W_{\text{đ}}$};
+\node at (o)[below left]{$O$};
+\draw[dashed,Mapcolor](0,2)node[left,black]{$3W_0/4$}--(1,2)--(1,0);
+\draw[dashed,Mapcolor](0,1)node[left,black]{$W_0/4$}--(2,1)--(2,0);
+\draw[fill=white] (1,2)circle(1pt)node[above right,black]{$M$};
+\draw[fill=white] (2,1)circle(1pt)node[above right,black]{$N$};
+\end{tikzpicture}
+}
+\loigiai{
+\begin{itemize}
+\item Chu kì dao động của vật $T = 2T_{\text{đ}} = 1\ s \Rightarrow \omega = 2\pi\ rad/s$.
+\item Tại M: $W_{\text{đ}} = \dfrac{3W_0}{4} \Rightarrow W_t = \dfrac{W_0}{4} \Rightarrow x_M = \pm \dfrac{A}{2} \Rightarrow A = 4\ cm$.
+\item Tại N thì $W_{\text{đ}} = \dfrac{W_0}{4} \Rightarrow W_t = \dfrac{3W_0}{4} \Rightarrow x_M = \pm \dfrac{A\sqrt{3}}{2} \Rightarrow |v| = \dfrac{A.\omega}{2} = 4\pi cm/s$.
+\end{itemize}
+}
+%\haidong{8}
+\end{vidu} %\dotlineEX{5}
+\begin{vidu}
+\immini[thm]{
+Một con lắc lò xo có độ cứng $k=100\ N/m$ dao động điều hoà. Gọi $W_t,\ W_{\ct{đ}}$ lần lượt là thế năng của lò xo và động năng của vật, $W_0$ là cơ năng của con lắc lò xo. Đồ thị biểu diễn sự phụ thuộc của thế năng $W_t$ và động năng $W_{\ct{đ}}$ của con lắc vào li độ x như hình vẽ. Tính $W_0$.
+\choice
+{0,46 J}
+{0,32 J}
+{\True 0,64 J}
+{0,23 J}
+}{\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth',transform shape]
+%Hệ trục toạ độ
+\tkzDefPoints{-2/0/x', 2/0/x, 0/0/y', 0/3/y}
+\tkzDrawSegments[->,add = 0 and .1](x',x)
+\tkzDrawSegments[->,add = 0.05 and .2](y',y)
+\tkzLabelPoint[above right](x){$x\ (cm)$}
+\tkzLabelPoint[above=15pt](y){$W\ (J)$}
+\draw  [help  lines, xstep=1cm,ystep=1cm]  (x' |- y')  grid  (x |- y);
+%Đồ thị
+\draw [Mapcolor, line width = 1.2pt, domain=-2:2, samples=500]%
+plot (\x, {3*\x*\x/4});
+\draw [Mapcolor,dashed, line width = 1.2pt, domain=-2:2, samples=500]%
+plot (\x, {3-3*\x*\x/4});
+\draw[dashed](0,1.5)node[left]{$\dfrac{W_0}{2}$}--(1.42,1.5)--(1.42,0)node[below]{$8$};
+\node[below] at (0,0){$O$};
+\node[below] at (2,0){$A$};
+\node[below] at (-2,0){$-A$};
+\node[above left] at (0,3){$W_0$};
+\node[below] at (1,3){$W_{\text{đ}}$};
+\node[below] at (-1.6,3){$W_t$};
+\end{tikzpicture}}
+\loigiai{
+\begin{itemize}
+\item Khi $x=\pm 8\ cm=\pm 0,08\ m$ thì $W_{\ct{đ}}=W_t$.
+\item Mặt khác vì $W_0=W_t+W_{\ct{đ}}$ nên khi $W_{\ct{đ}}=W_t$ ta có: $W_0=2W_t=2.\dfrac{1}{2}kx^2=0,64\ J$
+
+\end{itemize}
+}	
+%\haidong{5}
+\end{vidu} %\dotlineEX{5}

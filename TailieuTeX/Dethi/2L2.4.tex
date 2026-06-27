@@ -1,0 +1,440 @@
+\TieudeT{PHONG TỎA VẬT LÍ 11 - DAO ĐỘNG VÀ SÓNG}
+\subsubsection*{PHẦN I. Thí sinh trả lời câu hỏi từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án}
+\setcounter{ex}{0}
+	\begin{ex}
+		Tần số dao động điều hòa là
+		\choice
+		{\True số dao động toàn phần vật thực hiện được trong $1\ s$}
+		{số dao động toàn phần vật thực hiện được trong một chu kì}
+		{khoảng thời gian ngắn nhất để vật trở lại vị trí ban đầu}
+		{khoảng thời gian vật thực hiện hết một dao động toàn phần}
+		%\haidong{5}
+	\end{ex}
+	%\loai{Pha của dao động}
+	\begin{ex}%[3P1Y1-2]
+		Một chất điểm dao động theo phương trình $x = 10\cos2\pi t\ cm$ có pha tại thời điểm t là
+		\choice
+		{\True $2\pi t$}
+		{$0$}
+		{$2\pi$}
+		{$\pi$}
+		\loigiai{
+			Phương trình dao động tổng hợp là: $x = A\cos \left(\omega t + \varphi\right)$ cm $\Rightarrow$ pha tại thời điểm t là $2\pi t$.
+		}
+		%\haidong{5}
+	\end{ex}
+	\begin{ex}%[3P1Y2-1][Loai1]
+		Trong quá trình dao động, gia tốc của vật có giá trị cực đại ($\omega^2A$) khi vật
+		\choice
+		{đi qua vị trí cân bằng}
+		{ở biên (dương hoặc âm)}
+		{\True ở biên âm ($x = - A$)}
+		{ở biên dương ($x = A$)}
+		\loigiai{
+			Trong quá trình dao động, gia tốc của vật có giá trị cực đại ($\omega^2A$) khi vật ở biên âm ($x = - A$).
+		}
+		%\haidong{5}
+	\end{ex}
+	%\loai{Công thức độc lập giữa a và x}
+	\begin{ex} %[3P1B2-2][Loai1]  
+		Cho một chất điểm dao động điều hòa với tần số 2 Hz. Tốc độ cực đại trong quá trình dao động bằng $16\pi\ cm/s$. Khi ngang qua vị trí có li độ $2\ cm$, gia tốc chuyển động của chất điểm có độ lớn bằng
+		\choice
+		{$8\pi^2\ cm/s^2$}
+		{$64\pi^2\ cm/s^2$}
+		{$8\pi^2\sqrt{3}\ cm/s^2$}
+		{\True $32\pi^2\ cm/s^2$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $f = 2\ Hz \Rightarrow \omega = 4\pi$ rad/s.
+				\item Do x và a ngược pha nên $a = -\left(4\pi\right)^2.2 = -32\pi^2\ cm/s^2$.
+				\item Vậy gia tốc chuyển động của chất điểm có độ lớn bằng $32\pi^2\ cm/s^2.$
+			\end{itemize}
+		}
+		
+		%\haidong{10}
+	\end{ex}
+	%\loai{Cho trạng thái của x, tìm trạng thái của v}
+	\begin{ex}%[3P1KD-2][Loai1]
+		Cho chất điểm đang dao động điều hòa trên trục $Ox$ quanh vị trí cân bằng là gốc tọa độ O với phương trình li độ $x = 4\cos(2\pi t - \dfrac{\pi}{3})\ cm$. Tính từ thời điểm ban đầu, thời gian để chất điểm đi được quãng đường bằng $14\ cm$ là
+		\choice
+		{\True $\dfrac{11}{12}\ s$}
+		{$\dfrac{5}{6}\ s$}
+		{$\dfrac{2}{3}\ s$}
+		{$\dfrac{6}{7}\ s$}
+		\loigiai{
+			\immini{
+				\begin{itemize}
+					\item 
+					Ta có: $s = 14\ cm = 2 + 12$.
+					\item Ban đầu chất điểm ở vị trí có li độ 2 cm ($M_0$), để đi được 14 cm thì nó phải quay đến điểm $M_1$
+					$\Delta \varphi = \dfrac{11\pi}{6} \Rightarrow t = \dfrac{11T}{12} = \dfrac{11}{12}\ s$.
+					
+				\end{itemize}
+			}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+					\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+					\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+					\tkzDefShiftPoint[o](-90:2){m'}
+					\tkzDefShiftPoint[o](-60:2){0}
+					\tkzDefPointBy[projection=onto m--n](0) \tkzGetPoint{h}
+					\draw(o)circle(2cm);
+					\tkzDrawSegments[dashed](h,0)
+					\tkzDrawSegments(p,q)
+					\tkzDrawSegments[->](m,n)
+					\tkzDrawSegments[blue,->](o,0 o,m')
+					\tkzDrawPoints[size=3](o,h,0,m')
+					\tkzMarkAngles[size=0.7cm,arrows=->](0,o,m')
+					\node at (0)[below right]{$M_0$};
+					\node at (m')[below left]{$M_1$};
+					\node at (2,0)[below right]{$4$};
+					\node at (h)[below right]{$2$};
+			\end{tikzpicture}}
+		}
+		%\haidong{15}
+	\end{ex}
+	\begin{ex} %[3P1B3-1][Loai1]  
+		Khi treo vào con lắc lò xo có độ cứng $k_1$ một vật có khối lượng m thì vật dao động với chu kì $T_1$. Khi treo vật này vào lò xo có độ cứng $k_2$ thì vật dao động với chu kì $T_2 = 2T_1$ thì
+		\choice
+		{$k_1 = k_2$}
+		{\True $k_1 = 4k_2$}
+		{$k_2 = 2k_1$}
+		{$k_2 = 4k_1$}
+		\loigiai{
+			Ta có: $T=2\pi\sqrt{\dfrac{m}{k}} \Rightarrow k_1=4k_2$.
+		}	
+		%\haidong{5}
+	\end{ex}
+	%\loai{Thời gian ngắn nhất để vật đi quãng đường $S<2A$}
+	\begin{ex}%[3P1KE-2][Loai1] 
+		Một vật dao động điều hòa với biên độ $A$ và chu kì $T$. Thời gian ngắn nhất để vật đi được quãng đường có độ dài $A\sqrt{2}$ là
+		\choice
+		{$\dfrac{T}{8}$}
+		{\True $\dfrac{T}{4}$}
+		{$\dfrac{T}{6}$}
+		{$\dfrac{T}{12}$}
+		\loigiai{
+			\begin{itemize}
+				\item Thời gian ngắn nhất để vật đi được quãng đường có độ dài là $A\sqrt2$ là thời gian để vật đi ở 2 bên vị trí cân bằng 1 khoảng bằng $ \dfrac{A}{\sqrt{2}}$.
+				\item Từ O đến $\dfrac{A}{\sqrt{2}}$ vật đi hết thời gian là $\dfrac{T}{8}$. 
+				\item Do đó, thời gian ngắn nhất là $2.\dfrac{T}{8} = \dfrac{T}{4}$.
+		\end{itemize}}
+		%\haidong{15}
+	\end{ex}
+	%\loai{Đồ thị vận tốc}
+	\begin{ex}%[3P1-19.1K][Loai1] 
+		\immini[thm]{
+			Vận tốc của một vật dao động điều hòa phụ thuộc vào thời gian theo đồ thị như hình vẽ. Mốc thời gian được chọn là lúc chất điểm
+			\choice
+			{qua vị trí cân bằng theo chiều âm}
+			{qua vị trí cân bằng theo chiều dương}
+			{ở biên âm}
+			{\True ở biên dương}
+		}{
+			\pgfplotsset{width=7.5cm,height=4cm,compat=1.4}
+			\begin{tikzpicture}[draw=Mapcolor,scale=1,thick,>=stealth']
+				\begin{axis}[
+					axis lines=middle,
+					xmin=0,xmax=6.5,xstep=1,ymin=-2.16,ymax=2.5,ystep=0.1,
+					grid=major, %Có các tùy chọn: minor|major|both|none
+					x grid style={dashed},
+					y grid style={dashed},
+					ytick={-2,0,2},
+					xtick={1,2,3,4,5,6},
+					xticklabels={ },
+					yticklabels={},
+					xticklabel style={black,below},
+					xlabel style={above=3pt},
+					xlabel=$t(s)$,
+					ylabel style={right=3pt},
+					ylabel={$v$}
+					]
+					\addplot[line width=1.2pt,domain=0:6,samples=200,Mapcolor]{2*cos(deg(0.5*pi*x+pi/2))};
+				\end{axis}
+		\end{tikzpicture}}
+		\loigiai{
+			Gốc thời gian được chọn là lúc vận tốc của vật bằng 0 và chuyển động theo chiều âm nên vật đang ở biên dương}
+		%\haidong{14}
+	\end{ex}
+	
+	%\loai{Khoảng thời gian trong một chu kì thỏa mãn gia tốc và vân tốc}
+	\begin{ex} %[3P4B3-1][Loai1] 
+		Phát biểu nào sau đây \textbf{sai}? Sóng điện từ và sóng cơ
+		\choice
+		{đều tuân theo quy luật giao thoa}
+		{đều mang năng lượng}
+		{đều tuân theo quy luật phản xạ}
+		{\True đều truyền được trong chân không}
+		%	\loigiai{
+			%		Sóng cơ không truyền được trong chân không}
+	\end{ex}
+	\begin{ex}%[3P2B3-1][Loai1] 
+		Một sóng cơ học đang lan truyền trên trục Ox với phương trình $u(x, t)=3\cos(3\pi t - 0,5\pi x)$, trong đó t tính bằng giây (s) và x tính bằng mét (m). Độ lệch pha của dao động giữa hai điểm M ($x=4\ m$) và N ($x=9\ m$) bằng
+		\choice
+		{$\dfrac{2\pi}{5}$}
+		{\True $\dfrac{\pi}{2}$}
+		{$\dfrac{\pi}{3}$}
+		{$\dfrac{\pi}{4}$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $\dfrac{2\pi}{\lambda} = 0,5\pi$; $x_M = 4\ m, x_N = 9\ m \Rightarrow \Delta x = 5\ m$
+				\\ $\Rightarrow \Delta \varphi = \dfrac{2\pi.\Delta x}{\lambda} = 0,5\pi.5 = \dfrac{5\pi}{2} = 2\pi + \dfrac{\pi}{2}$.
+				\item Độ lệch pha của dao động giữa hai điểm M và N là $\dfrac{\pi}{2}$.
+			\end{itemize}
+		}
+	\end{ex}
+	\loai{Quãng đường truyền sóng}
+	\begin{ex}%[3P2B3-1][Loai1] 
+		Một nguồn phát sóng dao động theo phương trình $u=u_0\cos10\pi t\ cm$ với t tính bằng giây, bước sóng là $\lambda$. Trong khoảng thời gian $2\ s$, sóng này truyền đi được quãng đường bằng
+		\choice
+		{$15\lambda$}
+		{$5\lambda$}
+		{\True $10\lambda$}
+		{$20\lambda$}
+		\loigiai{
+			\begin{itemize}
+				\item $T = \dfrac{2\pi}{\omega} = \dfrac{2\pi}{10\pi} = 0,2$ s $\Rightarrow t = 2\ s = 10T$.
+				\item Trong 1T sóng truyền được quãng đường $\lambda$.
+				\item 10T sóng truyền được quãng đường $S=10\lambda$.
+			\end{itemize}
+		}
+	\end{ex}
+	\loai{Tốc độ dao động - tốc độ truyền sóng}
+	\begin{ex}%[3P2Y3-1][Loai1]
+		Một sóng cơ truyền trong một môi trường dọc theo trục Ox với phương trình $u=A\cos \left( 2\pi ft-\dfrac{2\pi x}{\lambda } \right)\ cm$. Tốc độ dao động cực đại của các phần tử môi trường lớn gấp $4$ lần tốc độ truyền sóng khi
+		\choice
+		{$8\lambda = \pi A$}
+		{\True $2\lambda = \pi A$}
+		{$6\lambda = \pi A$}
+		{$4\lambda = \pi A$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $\begin{cases} v_{\max} = \omega A = 2\pi fA \\ 
+					v = \lambda f
+				\end{cases}\Rightarrow
+				v_{\max} = 4v \Rightarrow 2\lambda = \pi A$.
+				\item 
+			\end{itemize}
+		}
+	\end{ex}
+	\begin{ex}%[3P2B6-1][Loai1]
+		Tại hai điểm A và B hai nguồn sóng kết hợp cách nhau $10\ cm$ trên mặt nước dao động cùng pha với nhau. Tần số dao động là $40\ Hz$. Tốc độ truyền sóng trên mặt nước là $80\ cm/s$. Số điểm dao động với biên độ cực tiểu trên đoạn AB là
+		\choice
+		{$9$}
+		{$11$}
+		{\True $10$}
+		{$12$}
+		\loigiai{
+			\begin{itemize}
+				%\item Ta có: $\lambda = \dfrac{v}{f} = \dfrac{80}{40} = 2\ cm $.
+				\item Các điểm dao động với biên độ cực tiểu thỏa mãn:
+				\begin{align*}
+					-AB < (k + 0,5)\lambda < AB\ \ct{hay}\ -10 < (k + 0,5).2 < 10 \Rightarrow -5,5 < k < 4,5.
+				\end{align*}
+				%\item Vậy có 10 giá trị của k hay có 10 điểm dao động với biên độ cực tiểu trên đoạn AB.
+			\end{itemize}
+		}
+	\end{ex}
+	\loai{Tìm số cực đại, cực tiểu trên đoạn thẳng có 1 đầu thuộc đường trung trực}
+	\begin{ex}%[3P2K6-1][Loai1]
+		Trong một thí nghiệm về giao thoa sóng trên mặt nước, hai nguồn kết hợp A và B dao động với cùng tần số $f=50\ Hz$, cùng biên độ và cùng pha ban đầu. Tại một điểm M cách hai nguồn sóng đó những khoảng lần lượt là $d_1=42\ cm$ và $d_2=50\ cm$, sóng có biên độ cực đại. Biết vận tốc truyền sóng trên mặt nước là $80\  cm/s$. Số đường cực đại giao thoa nằm trong khoảng M và đường trung trực của hai nguồn (không tính đường qua M) là
+		\choice
+		{$3$ đường}
+		{$2$ đường}
+		{\True $4$ đường}
+		{$5$ đường}
+		\loigiai{
+			\begin{itemize}
+				\item Bước sóng: $\lambda = \dfrac{v}{f} = 1,6\ cm $.
+				\item Dễ thấy $d_1-d_2 = -8 = -5.\lambda \Rightarrow$ M là cực đại bậc 5.
+				\item Trong khoảng giữa M và đường trung trực của hai nguồn có 4 đường cực đại nữa.
+				\item 
+				\item 
+			\end{itemize}
+		}
+	\end{ex}
+\begin{ex}
+	Khi động đất xảy ra thường tạo ra ba loại sóng: sóng bề mặt (\textbf{L}) là sóng truyền chậm nhất và yếu nhất, sóng biến dạng (\textbf{S}) là sóng ngang và mang phần lớn năng lượng, sóng áp suất (\textbf{P}) là sóng dọc và truyền nhanh nhất. Tốc độ của sóng (\textbf{P}) khoảng 7 km/s và của sóng (\textbf{S}) khoảng 4 km/s. Con người thường không cảm nhận được sóng (\textbf{P}) nhưng một số động vật có thể cảm nhận được chúng. Nếu một con chó bắt đầu sủa 30 giây trước khi trận động đất xảy ra tại đó thì tâm của trận động đất cách đó khoảng bao xa?
+	\choice
+	{50 km}
+	{\True 280 km}
+	{320 km}
+	{350 km}
+	\loigiai{
+		\begin{itemize}
+			\item Ta có: $30\ s=t_S-t_P=\dfrac{L}{v_S}-\dfrac{L}{v_P}=L.\left(\dfrac{1}{v_S}-\dfrac{1}{v_P}\right)=L.\left(\dfrac{1}{4}-\dfrac{1}{7}\right)\Rightarrow L=280\ km$.
+		\end{itemize}
+	}	
+	\haidong{15}
+	
+	
+\end{ex}
+	\begin{ex}%[3P5B3-2][Loai3]
+		Thực hiện thí nghiệm Young về giao thoa với ánh sáng đơn sắc có bước sóng $0,4\ \mu m $, khoảng cách giữa hai khe là $0,5\ mm$, khoảng cách từ mặt phẳng chứa hai khe đến màn là $1\ m$. Trên màn quan sát, vân sáng bậc $4$ cách vân sáng trung tâm là
+		\choice
+		{\True $3,2\ mm$}
+		{$4,8\ mm$}
+		{$1,6\ mm$}
+		{$2,4\ mm$}
+		\loigiai{Vân sáng bậc 4 cách vân sáng trung tâm: $x=ki=4i=4\dfrac{\lambda D}{a}=4\dfrac{0,4. 1}{0,5}=3,2\ mm $}
+	\end{ex}
+	\begin{ex}%[3P5B3-2][Loai3]
+		Trong thí nghiệm giao thoa Young khoảng cách hai khe là $5\ mm$, khoảng cách giữa mặt phẳng chứa hai khe và màn ảnh là $2\ m$. Giao thoa với ánh sáng đơn sắc màu vàng có bước sóng $0,58\ \mu m$. Vị trí vân sáng bậc $3$ trên màn ảnh là
+		\choice
+		{\True $ \pm 0,696\ mm$}
+		{$ \pm  0,812\ mm$}
+		{$0,696\ mm$}
+		{$0,812\ mm$}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $x=\pm 3\dfrac{\lambda D}{a}=\pm 0,696\ mm $
+				\item 
+			\end{itemize}
+		}
+	\end{ex}
+	\begin{ex}%[3P5B3-2][Loai4]
+		Trong thí nghiệm giao thoa ánh sáng với hai khe Young cách nhau $0,5\ mm$, màn quan sát đặt song song với mặt phẳng chứa hai khe và cách hai khe một đoạn $1\ m$. Tại vị trí M trên màn, cách vân sáng trung tâm một đoạn $4,4\ mm$ là vân tối thứ $6$. Bước sóng $\lambda $ của ánh sáng đơn sắc trong thí nghiệm là
+		\choice
+		{\True $0,4\ \mu m $}
+		{$0,6\ \mu m $}
+		{$0,5\ \mu m $}
+		{$0,44\ \mu m $}
+		\loigiai{
+			\begin{itemize}
+				\item Ta có: $i=\dfrac{OM}{k}=\dfrac{4,4}{5,5}=0,8\ mm\Rightarrow \lambda =\dfrac{ia}{D}=\dfrac{0,8. 0,5}{1}=0,4\ \mu m $ (vân tối nên k bán nguyên).
+				\item 
+			\end{itemize}
+		}
+	\end{ex}
+
+\subsubsection*{PHẦN 2. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.}
+\setcounter{ex}{0}
+\begin{ex}
+	Trên một sợi dây đàn hồi với hai đầu cố định đang có sóng dừng với bước sóng $2 ~cm$.\\
+	\choiceTF[t]
+	{\True Chiều dài sợi dây có thể nhận giá trị $9 ~cm$}
+	{Khoảng cách ngắn nhất giữa một nút và một bụng là $1 ~cm$}
+	{Giả sử sợi dây có chiều dài $\ell$. Trên dây đang có sóng dừng với $n$ bụng sóng, tốc độ truyền sóng trên dây là v. Khoảng thời gian giữa hai lần liên tiếp sợi dây duỗi thẳng là $\dfrac{\ell}{2 nv}$}
+	{Khi sợi dây duỗi thẳng thì tỉ số giữa chiều dài sợi dây và bước sóng bằng $n+0,5\ (n=1; 2; 3; \ldots)$}
+	
+	\loigiai{
+		\begin{itemchoice}
+			\itemch  Đúng. Vì $\ell=k \dfrac{\lambda}{2}=k \dfrac{2}{2}=k~cm, k=1,2,3, \ldots$.
+			\itemch  Sai. Vì khoảng cách ngắn nhất giữa một nút và một bụng là $\dfrac{\lambda}{4}=\dfrac{2}{4}=0,5 ~cm$
+			\itemch  Sai. Vì khoảng thời gian liên tiếp hai lần dây duỗi thẳng là nửa chu kì. \\Ta có: $\ell=k \dfrac{\lambda}{2} \Rightarrow \ell=k \dfrac{vT}{2} \Rightarrow \dfrac{T}{2}=\dfrac{\ell}{kv}=\dfrac{\ell}{nv}$
+			\itemch  Sai. Ta có: $\ell=k \dfrac{\lambda}{2} \Rightarrow \dfrac{\ell}{\lambda}=\dfrac{k}{2}=\dfrac{n}{2}=0,5 n$
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}
+	Trong thí nghiệm giao thoa Young về giao thoa ánh sáng có bước sóng $\lambda=0,6~\mu m$, khoảng cách từ màn tới hai khe là $2 ~m$, khoảng cách giữa hai khe là $a=1 ~mm$.
+	\choiceTF[t]
+		{\True Tại vị trí trung tâm của trường giao thoa là vân sáng bậc 0}
+		{Khoảng vân giao thoa là $i=1,2~cm$}
+		{Vị trí cách vân trung tâm $x=2,4~mm$ là vân sáng bậc 3}
+		{\True Vị trí cách vân trung tâm $x=3~mm$ là vân tối bậc 3}
+	\loigiai{
+			\begin{itemchoice}
+			\itemch Đúng.
+			\itemch Sai.
+			\itemch Sai.
+			\itemch Đúng.
+	\end{itemchoice}
+	}
+\end{ex}
+\begin{ex}
+Trong thí nghiệm giao thoa ánh sáng với hai khe Young, khoảng vân giao thoa phụ thuộc vào bước sóng ánh sáng, khoảng cách giữa hai khe và khoảng cách từ hai khe đến màn quan sát. Khi thay đổi một trong các yếu tố này, mô hình vân sáng – vân tối trên màn cũng thay đổi. 
+	\choiceTF[t]
+	{\True Khi thay đổi ánh sáng trong thí nghiệm thì khoảng vân cũng thay đổi}
+	{\True Khi tăng khoảng cách từ màn đến hai khe thì khoảng vân tăng}
+	{Khi giảm khoảng cách giữa hai khe thì khoảng vân giảm}
+	{Khi tăng bước sóng của ánh sáng thì khoảng vân giảm}
+	\loigiai{
+		\begin{itemchoice}
+			\itemch Đúng.
+			\itemch Đúng.
+			\itemch Sai.
+			\itemch Sai.
+		\end{itemchoice}
+	}
+\end{ex}
+
+\begin{ex}
+	Một vật dao động điều hòa với phương trình: $x=10 \cos \left(2 \pi t-\dfrac{\pi}{2}\right)\ cm$ (t đo bằng giây).
+	\choiceTF[t]
+		{Thời gian ngắn nhất vật đi từ vị trí có li độ $-10 \ cm$ đến vị trí có li độ $-5 \ cm$ là $0,5 \ s$}
+		{Thời gian ngắn nhất vật đi từ vị trí có li độ $5 \sqrt{3} \ cm$ đến vị trí cách vị trí cân bằng $5 \ cm$ là $\dfrac{1}{4} \ s$}
+		{\True Thời gian ngắn nhất vật đi từ vị trí cân bằng đến vị trí có li độ $5 \sqrt{2} \ cm$ là $\dfrac{1}{8}\ s$}
+		{\True Thời gian ngắn nhất vật đi từ vị trí cách vị trí cân bằng $5 \ cm$ đến vị trí có li độ $-5 \sqrt{2} \ cm$ là $\dfrac{1}{24} \ s$}
+	
+	\loigiai{
+		\begin{itemchoice}
+		\itemch 
+		\itemch 
+		\itemch 
+		\itemch 
+	\end{itemchoice}
+	}
+	\haidong{8}\end{ex}
+\subsubsection*{PHẦN 3. Thí sinh trả lời từ câu 1 đến câu 6.}
+\setcounter{ex}{0}
+
+\begin{ex}
+	Con lắc lò xo treo thẳng đứng dao động với phương trình $x=8 \sin \left(20 t+\dfrac{\pi}{2}\right)\ cm$. Lấy $g=10 \ m/s^2$. Biết chiều dài lớn nhất của lò xo là $92,5 \ cm$. Chiều dài tự nhiên của lò xo là bao nhiêu centimet?
+	\shortans[oly]{82}
+	\loigiai{
+		82
+	}
+	%\haidong{30}
+\end{ex}
+\begin{ex}%[3P1KD-1][Loai1]
+	Một vật dao động điều hòa với biên độ $A$ trên trục $Ox$. Xét quá trình vật đi từ vị trí cân bằng ra biên, khi vật rời khỏi vị trí cân bằng đoạn $s$ thì tốc độ của vật là $A\sqrt{8}\ m/s$, vật đi thêm đoạn $s$ nữa thì tốc độ giảm còn $A\sqrt{5}\ m/s$, vật đi thêm đoạn s nữa thì tốc độ của vật là bao nhiêu $m/s$? Biết $3S \leq A$.
+	\shortans[oly]{0}
+	\loigiai{
+		\begin{itemize}
+			\item Sử dụng công thức độc lập thời gian x và v cho các vị trí ta có: 
+			\begin{align*}
+				\begin{cases}
+					S^2 + \dfrac{8A^2}{\omega^2} = A^2\\ 
+					4S^2 + \dfrac{5A^2}{\omega^2} = A^2 
+				\end{cases} 
+				\Rightarrow 	\begin{cases}A = 3S\\ \omega =3\end{cases} \end{align*}
+			\item Khi vật đi thêm đoạn S nữa: $9S^2 + \dfrac{v^2}{\omega^2} = A^2  \Rightarrow v = 0\quad  \ct{(vật tới biên sau khi đi 3S)}$.
+			
+		\end{itemize}	
+	}
+	%\haidong{29}
+\end{ex}
+
+
+\begin{ex}%[3P1-12.2K][Loai1]
+	Một chất điểm dao động điều hoà theo phương ngang. Biết ở thời điểm t vật có tốc độ $40\ cm/s$, sau đó ba phần tư chu kì thì gia tốc của vật có độ lớn $1,6\pi\ m/s^2$. Tần số dao động của vật bằng bao nhiêu Hz?\\
+	\shortans[oly]{2}
+	\loigiai{
+		\begin{itemize}
+			\item 		Ta có: $\Delta t=\dfrac{3T}{4}$: vuông pha $\Rightarrow\left| a_2 \right|=\omega \left|v_1\right|\Rightarrow \omega =4\pi \Rightarrow f = 2\ Hz$.	
+		\end{itemize}
+		
+	}
+	%\haidong{30}
+\end{ex}
+\begin{ex}
+	Trong một thí nghiệm giao thoa sóng trên mặt nước hai nguồn kết hợp A và B dao động cùng pha với tần số $13 \ Hz$. Tại điểm M cách các nguồn A và B những khoảng $d_1=19 \ cm$ và $d_2=21 \ cm$, sóng có biên độ cực đại, giữa M và đường trung trực của AB không có cực đại nào khác. Tốc độ truyền sóng trên mặt nước là bao nhiêu cm/s?
+	\shortans[oly]{26}
+	\loigiai{
+		26
+	}
+\end{ex}
+\begin{ex}
+	Trong thí nghiệm giao thoa sóng trên mặt nước hai nguồn kết hợp A và B dao động cùng pha với tần số $16 \ Hz$. Tại điểm M cách các nguồn A và B những khoảng $d_1=30 \ cm$ và $d_2=25,5 \ cm$, sóng có biên độ cực đại, giữa M và đường trung trực của AB có $2$ dãy cực đại khác. Tốc độ truyền sóng trên mặt nước là bao nhiêu cm/s?
+	\shortans[oly]{24}
+	\loigiai{
+		24
+	}
+\end{ex}
+\begin{ex}
+	Ở mặt nước, tại hai điểm A và B cách nhau $100 \ mm$ có hai nguồn kết hợp dao động cùng pha theo phương thẳng đứng. Trên đoạn AB, hai phần tử nước dao động với biên độ cực đại cách nhau một đọan ngắn nhất là $8 \ mm$. C là một điểm trên mặt nước sao cho AC vuông góc với BC. Độ dài đoạn BC bằng $80 \ mm$. Có bao nhiêu vân giao thoa cực tiểu nằm giữa C và đường trung trực của AB?
+	\shortans[oly]{1}
+	\loigiai{
+		1
+	}
+\end{ex}

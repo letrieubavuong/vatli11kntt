@@ -1,0 +1,59 @@
+%\setcounter{paragraph}{0}
+\subsubsection{Cấu tạo và dao động của con lắc lò xo}
+\immini{
+\begin{itemize}
+\item Con lắc lò xo gồm vật nặng khối lượng m được gắn vào đầu lò xo có độ cứng k, khối lượng lò xo không đáng kể.
+\item Khi bỏ qua mọi lực cản và lò xo trong giới hạn đàn hồi thì dao động của con lắc lò xo là dao động điều hoà.
+\end{itemize}
+}{\begin{tikzpicture}
+\def\H{1}    % wall height
+\def\T{0.3}  % wall thickness
+\def\W{2.6}  % ground length
+\def\D{0.25} % ground depth
+\def\h{0.6}  % mass height
+\def\w{0.7}  % mass width
+\def\x{1.6}  % mass x position
+\draw[line width=0.8,blue!7!black!80,snake=coil,segment amplitude=5,segment length=5,line cap=round]
+(0,\h/2) --++ (\x,0);
+\draw[preaction={fill,top color=black!10,bottom color=black!5,shading angle=20},
+fill,pattern=north east lines,draw=none,minimum width=0.3,minimum height=0.6]
+(0,0) |-++ (-\T,\H) |-++ (\T+\W,-\H-\D) -- (\W,0) -- cycle;
+\draw (0,\H) -- (0,0) -- (\W,0);
+\draw[line width=0.6,red!30!black,fill=red!40!black!10,rounded corners=1,
+top color=red!40!black!20,bottom color=red!40!black!10,shading angle=20] (\x,0) rectangle++ (\w,\h) node[midway] {$m$};
+\end{tikzpicture}}
+\subsubsection{Tần số góc - Chu kì - Tần số}
+\begin{bang}[tabularx={X|X|X}]{}
+Chu kì&Tần số&Tần số góc\\\hline
+\[T=2\pi\sqrt{\dfrac{m}{k}}\]&\[f=\dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}}\]&\[\omega=\sqrt{\dfrac{k}{m}}\]\\\hline
+\end{bang}
+\Note{
+\begin{itemize}
+\item[-] $\omega$, T, f chỉ phụ thuộc cấu tạo (hay đặc tính) của con lắc lò xo mà không phụ thuộc các yếu tố bên ngoài.
+\item[-] Khi con lắc lò xo dao động điều hoà thì ta áp dụng được tất cả các công thức của chất điểm dao động điều hoà cho con lắc lò xo.
+\end{itemize}
+ }
+ \subsubsection{Động năng}
+ \begin{align*}\boder{W_{\ct{đ}}=\dfrac{1}{2}mv^2}=\dfrac{1}{2}m\omega^2A^2\sin[2](\omega t+\varphi)=\dfrac{m\omega^2 A^2}{4}\left[1-\cos \left(2\omega t+2\varphi\right)\right]\end{align*}
+ \begin{itemize}
+ 	\item Động năng cực đại: $\boder{W_{\text{đ}\max}=\dfrac{1}{2}m\omega^2A^2}$ khi vật qua vị trí cân bằng.
+ 	\item Động năng cực tiểu: $W_{\text{đ}\min}=0$ khi vật ở vị trí biên.
+ \end{itemize}
+ \subsubsection{Thế năng}
+ \Center{\boder{W_t=\dfrac{1}{2}kx^2}=\dfrac{1}{2}kA^2\cos[2](\omega t+\varphi)=\dfrac{k A^2}{4}\left[1+\cos \left(2\omega t+2\varphi\right)\right]}
+ \begin{itemize}
+ 	\item Thế năng cực đại: $\boder{W_{tmax}=\dfrac{1}{2}kA^2}$ khi vật ở vị trí biên.
+ 	\item Thế năng cực tiểu: $W_{tmin}=0$; khi vật qua vị trí cân bằng.
+ \end{itemize}
+ \subsubsection{Cơ năng}
+ \begin{align*}
+ 	\boder{W=W_{\text{đ}} + W_t=\dfrac{1}{2}kA^2=\ct{hằng số}=W_{\text{đ}max}=W_{tmax}}
+ \end{align*}
+ \begin{note}
+ 	\begin{itemize}
+ 		\item Cơ năng của con lắc lò xo tỉ lệ với bình phương biên độ dao động
+ 		\item Với một lò xo cố định, cơ năng  \textbf{không} phụ thuộc vào khối lượng của vật và được bảo toàn nếu bỏ qua mọi lực cản.
+ 		\item Khi dao động điều hòa có tần số góc \bth{\omega}, tần số f, chu kì T thì động năng, thế năng biến thiên tuần hoàn với tần số góc \bth{2\omega}, tần số 2f, chu kì $\dfrac{T}{2}$.
+ 		\item Động năng và thế năng biến thiên tuần hoàn cùng biên độ nhưng ngược pha nhau.
+ 	\end{itemize}
+ \end{note}

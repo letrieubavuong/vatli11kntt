@@ -1,0 +1,426 @@
+\setcounter{ex}{0}
+\setcounter{paragraph}{0}
+\PhanI
+%\loai{Quãng đường lớn nhất không tách thời gian}
+\begin{ex}%[3P1KE-1][Loai1]
+Một vật dao động điều hoà với phương trình $x = A\cos(4\pi t +\dfrac{\pi}{3})$ cm. Quãng đường lớn nhất mà vật đi được trong khoảng thời gian  $\dfrac{1}{6}$ s là $4\sqrt{3}$ cm. Biên độ dao động A là
+\choice
+{$4\sqrt{3}$ cm}
+{$3\sqrt{3}$ cm}
+{\True 4 cm}
+{$2\sqrt{3}$ cm}
+\loigiai{
+Ta có: $T = 0,5\ s;\ \Delta t=\dfrac{1}{6}\ s=\dfrac{T}{3}\Rightarrow S_{\max}=2A\sin \dfrac{\pi}{3}=A\sqrt{3}=4\sqrt{3}\ cm \Rightarrow A = 4\ cm$.
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+%\loai{Quãng đường nhỏ nhất không tách thời gian}
+
+\begin{ex}%[3P1BE-1][Loai1]
+Một vật nhỏ dao động điều hòa trên đoạn thẳng quỹ đạo dài 20 cm. Quãng đường nhỏ nhất vật đi được trong 0,5 s là 10 cm. Tốc độ lớn nhất của vật trong quá trình dao động là
+\choice
+{35,0 cm/ s}
+{35,0 cm/ s}
+{40,7 cm/ s}
+{\True 41,9 cm/ s}
+\loigiai{
+Ta có: $A = \dfrac{L}{2} = 10\ cm\Rightarrow S_{\min}=2A\left( 1-\cos \dfrac{\pi \Delta t}{T} \right)=10\ cm=A\Rightarrow \Delta t=\dfrac{T}{3}=0,5\ s\Rightarrow T=1,5\ s\Rightarrow \omega =\dfrac{4\pi}{3}\Rightarrow v_{\max}=\omega A=41,9\  cm/s$.
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+
+%\loai{Quãng đường lớn nhất cần tách thời gian}
+
+
+\begin{ex}%[3P1KE-1][Loai1]
+Một vật nhỏ đang dao động điều hòa. Trong khoảng thời gian ngắn nhất giữa hai lần vật đi qua vị trí có li độ bằng $\dfrac{A}{2}$ liên tiếp vật đi được quãng đường dài nhất là
+\choice
+{$2A$}
+{$\dfrac{A}{2}$}
+{$\dfrac{A\sqrt{3}}{2}$}
+{\True $A\sqrt{3}$}
+\loigiai{
+\immini[thm]{
+\begin{itemize}
+\item 
+Ta biểu diễn trên đường tròn lượng giác như hình vẽ.
+\item Khoảng thời gian ngắn nhất giữa hai lần vật đi qua vị trí có li độ bằng $\dfrac{A}{2}$ liên tiếp ứng với khoảng thời gian vật đi từ $M_0$ qua biên dương tới $M_1$.\\
+$\Rightarrow \varphi = \dfrac{2\pi}{3} \Rightarrow \Delta t = \dfrac{T}{3} \Rightarrow \alpha = \dfrac{2\pi}{3}$.
+\item Ta có: $s_{\max} = 2A\sin\dfrac{\alpha}{2} = 2A\sin\dfrac{\pi}{3} = A\sqrt{3}$.
+\end{itemize}
+}{\begin{tikzpicture}[scale=1,thick,>=stealth']
+\tkzInit[ymin=-3,ymax=3,xmin=-3,xmax=3]\tkzClip
+\tkzDefPoints{-2.5/0/m, 2.5/0/n, 0/0/o, 0/2.5/p, 0/-2.5/q}
+\tkzDefShiftPoint[o](60:2){0}
+\tkzDefShiftPoint[o](-60:2){m'}
+\tkzDefPointBy[projection=onto m--n](m') \tkzGetPoint{h}
+\draw(o)circle(2cm);
+\tkzDrawSegments[dashed](m',0)
+\tkzDrawSegments(p,q)
+\tkzDrawSegments[->](m,n)
+\tkzDrawSegments[blue,->](o,0 o,m')
+\tkzDrawPoints[size=3](o,h,0,m')
+\tkzMarkAngles[size=0.7cm,arrows=->](m',o,0)
+\node at (m')[below right]{$M_0$};
+\node at (0)[above right]{$M_1$};
+\node at (2,0)[below right]{$A$};
+\node at (h)[below right]{$\dfrac{A}{2}$};
+\end{tikzpicture}}
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+%\loai{Quãng đường nhỏ nhất cần tách thời gian}
+\begin{ex}%[3P1KE-1][Loai1] 
+Một vật dao động điều hòa với biên độ 4 cm và chu kì 2 s. Quãng đường nhỏ nhất mà vật đi được trong quãng thời gian 1,5 giây là
+\choice
+{$8 + 4\sqrt{2}$ cm}
+{$16 + 4\sqrt{2}$ cm}
+{$8 - 4\sqrt{2}$ cm}
+{\True $16 - 4\sqrt{2}$ cm}
+\loigiai{
+\begin{itemize}
+\item Ta có: $\omega = \dfrac{2\pi}{T} = \pi$ rad/s
+\item Ta lại có: $t = 1,5\ s = 1 + 0,5$
+$\Rightarrow S = 2.4+ \Delta s = 8 + \Delta s$ 
+\item Trong khoảng thời gian $\Delta t = 0,5\ s$ chất điểm quay được một góc:\\ $\Delta \varphi = \dfrac{\pi}{2}\Rightarrow\Delta s_{\min} = 2.4(1-\cos\dfrac{\pi}{4}) = 8-4\sqrt{2}\ cm \Rightarrow
+S_{\min} = 16-2\sqrt{2}$ cm.
+\end{itemize}
+}
+%\haidong{5}
+\end{ex} \haidong{20}
+
+%\loai{Quãng đường vật đi được có thể, không thể bằng}
+\begin{ex}%[3P1KE-1][Loai1]
+Một vật dao động điều hòa với chu kì 2 s, biên độ 10 cm. Quãng đường vật \textit{có thể} đi được trong khoảng thời gian $\dfrac{5}{6}\ s$ là
+\choice
+{10 cm}
+{\True 15 cm}
+{20 cm}
+{25 cm}
+\loigiai{
+\begin{itemize}
+\item Ta có: $T = 2\ s \Rightarrow \Delta t  = \dfrac{5}{6}\ s=\dfrac{5T}{12}<\dfrac{T}{2} \Rightarrow  
+\begin{cases}
+S_{\max}=2A\sin \dfrac{5.\pi}{12}=19,3\ cm.\\  
+S_{\min}=2A\left( 1-\cos \dfrac{5.\pi}{12} \right)=14,8\ cm.
+\end{cases}$
+\item Quãng đường vật S có thể đi được phải thỏa mãn $S_{\min} < S < S_{\max}$.
+\end{itemize}
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+
+
+\begin{ex}%[3P1KE-1][Loai1] 
+Một chất điểm dao động điều hòa với biên độ $A=5$ cm và chu kì $T=0,3$ s. Trong khoảng thời gian 0,1 s, chất điểm \textbf{không} thể đi được quãng đường bằng
+\choice
+{\True 9 cm}
+{8 cm}
+{7,5 cm}
+{8,5 cm}
+\loigiai{
+\begin{itemize} 
+\item Quãng đường lớn nhất và nhỏ nhất mà vật có thể đi được trong khoảng thời gian một phần ba chu kì: $\begin{cases}
+S_{\max }=2A\sin \left({\dfrac{{\omega T}}{6}}\right)=2A\sin 60^\circ\approx 8,66\ cm \\
+S_{\min }=2A\left[1-\cos \left(\dfrac{\omega T}{6}\right)\right]=2A\left[1-\cos 60^\circ\right]=5\ cm 
+\end{cases}$ 
+\item Do 
+$S_{\min }\le S\le S_{\max }\Rightarrow S$ không thể là 9 cm.
+\end{itemize}
+}
+%\haidong{5}
+\end{ex} \haidong{20}
+
+%\loai{Cho $S_{\max}$ tính $S_{\min}$}
+\begin{ex}%[3P1KE-1][Loai1] 
+Một chất điểm dao động điều hòa với biên độ bằng 6 cm. Xét trong cùng một độ dài thời gian như nhau, nếu chất điểm đi được quãng đường dài nhất là $6\sqrt{2}$ cm thì quãng đường ngắn nhất mà chất điểm đi được trong quá trình dao động là
+\choice
+{$6\sqrt{2}$ cm}
+{$12-6\sqrt{3}$ cm}
+{\True $12-6\sqrt{2}$ cm}
+{$6+6\sqrt{2}$ cm}
+\loigiai{
+\begin{itemize}
+\item Ta có: $S_{\max} = 2.6\sin\dfrac{\alpha}{2} = 6\sqrt{2} \Rightarrow \sin\dfrac{\alpha}{2} = \dfrac{\sqrt{2}}{2} \Rightarrow \cos\dfrac{\alpha}{2} = \dfrac{\sqrt{2}}{2}\Rightarrow S_{\min} = 2.6(1-\cos\dfrac{\alpha}{2}) = 2.6(1-\dfrac{\sqrt{2}}{2}) = 12-6\sqrt{2}$ cm.
+
+\end{itemize}
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+%\loai{Tỉ số $S_{\max}$, $S_{\min}$}
+\begin{ex}%[3P1KE-1][Loai1] 
+Một chất điểm đang dao động điều hoà với biên độ A và chu kì T. Tỉ số giữa quãng đường ngắn nhất và quãng đường dài nhất mà vật đi được trong cùng thời gian $\dfrac{T}{6}$ là
+\choice
+{\True $2-\sqrt{3}$}
+{$4-2\sqrt{3}$}
+{$\dfrac{1}{2-\sqrt{3}}$}
+{$2+\sqrt{3}$}
+\loigiai{
+\begin{itemize}
+\item Quãng đường dài nhất vật đi được trong $\dfrac{T}{6}$ là: $2A\dfrac{1}{2}=A$. 
+\item Quãng đường ngắn nhất vật đi được trong $\dfrac{T}{6}$ là: $2\left(A-\dfrac{A\sqrt{3}}{2}\right)$.
+\item Tỉ số cần tìm là: $\dfrac{2\left(A-\dfrac{A\sqrt{3}}{2}\right)}{A}=2-\sqrt{3}$.
+\end{itemize}}
+%\haidong{4}
+\end{ex} \haidong{20}
+
+%\loai{Thời gian ngắn nhất để vật đi quãng đường $S<2A$}
+\begin{ex}%[3P1KE-2][Loai1] 
+Một vật dao động điều hòa với biên độ A và chu kì T. Thời gian ngắn nhất để vật đi được quãng đường có độ dài $A\sqrt{2}$ là
+\choice
+{$\dfrac{T}{8}$}
+{\True $\dfrac{T}{4}$}
+{$\dfrac{T}{6}$}
+{$\dfrac{T}{12}$}
+\loigiai{
+\begin{itemize}
+\item Thời gian ngắn nhất để vật đi được quãng đường có độ dài là $A\sqrt2$ là thời gian để vật đi ở 2 bên vị trí cân bằng 1 khoảng bằng $ \dfrac{A}{\sqrt{2}}$.
+\item Từ O đến $\dfrac{A}{\sqrt{2}}$ vật đi hết thời gian là $\dfrac{T}{8}$. 
+\item Do đó, thời gian ngắn nhất là $2.\dfrac{T}{8} = \dfrac{T}{4}$.
+\end{itemize}}
+%\haidong{4}
+\end{ex} \haidong{20}
+
+%\loai{Thời gian ngắn nhất để vật đi quãng đường $S>2A$}
+\begin{ex}%[3P1KE-2][Loai1]
+Một vật dao động điều hòa với biên độ bằng 6 cm và chu kì 6 s. Khoảng thời gian nhỏ nhất vật cần để đi được quãng đường 66 cm là
+\choice
+{12,34 s}
+{13,78 s}
+{\True 16 s}
+{17,64 s}
+\loigiai{
+\begin{itemize}
+\item Ta có: $S=66=5.2A+A$.
+\item Để đi 10A luôn cần $5.\dfrac{T}{2}$ , thời gian ngắn nhất để đi A là: $A=2A\sin \dfrac{\pi \Delta t_{\min }}{T}\Rightarrow \Delta t_{\min}=\dfrac{T}{6}$.
+\item Vậy thời gian ngắn nhất để đi 66 cm là: $5.\dfrac{T}{2}+\dfrac{T}{6} = 16\ s$.
+\end{itemize}
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+
+\begin{ex}%[3P1KE-2][Loai1]
+Một vật dao động điều hoà với biên độ A, chu kì T. Thời gian cần thiết để vật đi hết quãng đường A nằm trong khoảng từ $\Delta t_{\min}$ đến $\Delta t_{\max}$. Hiệu số $\Delta t_{\max} - \Delta t_{\min}$ bằng
+
+\choice
+{$\dfrac{T}{4}$}
+{\True $\dfrac{T}{6}$}
+{$\dfrac{T}{12}$}
+{$\dfrac{T}{3}$}
+
+\loigiai{
+\begin{itemize}
+\item Ta có: $A=2A\sin \dfrac{\pi \Delta t_{\min}}{T}\Rightarrow \Delta t_{\min}=\dfrac{T}{6}=\dfrac{1}{6f}$.
+\item Lại có: $A=2A\left( 1-\cos \dfrac{\pi \Delta t_{\max}}{T} \right)\Rightarrow \Delta t_{\max}=\dfrac{T}{3}\Rightarrow \Delta t_{\max} - \Delta t _{\min} = \dfrac{T}{6}$.
+\end{itemize}
+}
+%\haidong{4}
+\end{ex} \haidong{20}
+\begin{ex}
+Một vật dao động điều hoà với biên độ $A = 6\ cm$, chu kì $T = 2\ s$. Quãng đường lớn nhất vật đi được trong khoảng thời gian $\dfrac{3T}{4}$ bằng
+\choice
+{$12\ cm$}
+{$15\ cm$}
+{\True $18\ cm$}
+{$24\ cm$}
+\loigiai{
+\begin{itemize}
+\item Trong mỗi nửa chu kì vật đi $2A$.\\
+\item $\dfrac{3T}{4} = \dfrac{T}{2} + \dfrac{T}{4}\Rightarrow S_{\max}=2A + 2A\sin\dfrac{\pi}{4}=12 + 6\sqrt{2}\approx 18\ cm$.
+\end{itemize}
+}
+\end{ex}
+\begin{ex}
+Một chất điểm dao động điều hoà với biên độ $A = 5\ cm$. Thời gian ngắn nhất để vật đi được quãng đường $5\sqrt{3}\ cm$ là
+\choice
+{$\dfrac{T}{12}$}
+{$\dfrac{T}{6}$}
+{$\dfrac{T}{4}$}
+{\True $\dfrac{T}{3}$}
+\loigiai{
+$S = 5\sqrt{3}<2A\Rightarrow 5\sqrt{3}=2A\sin\dfrac{\pi\Delta t}{T}\Rightarrow \Delta t=\dfrac{T}{3}$.
+}
+\end{ex}
+\begin{ex}
+Một vật dao động điều hoà với tần số góc $\omega = 6\ rad/s$ và biên độ $A = 3\ cm$. Vận tốc cực đại của vật bằng
+\choice
+{$12\ cm/s$}
+{\True $18\ cm/s$}
+{$9\sqrt{3}\ cm/s$}
+{$6\sqrt{3}\ cm/s$}
+\loigiai{
+$v_{\max}=A\omega = 3.6 = 18\ cm/s$.
+}
+\end{ex}
+\begin{ex}
+Vật dao động điều hoà với biên độ $A$ và chu kì $T$. Tốc độ trung bình lớn nhất khi vật chuyển động trong khoảng thời gian $\dfrac{T}{6}$ có giá trị
+\choice
+{$\dfrac{A}{T}$}
+{$\dfrac{3A}{T}$}
+{\True $\dfrac{2A}{T}$}
+{$\dfrac{A}{2T}$}
+\loigiai{
+Khoảng thời gian nhỏ hơn $\dfrac{T}{2}$ nên $S_{\max}=2A\sin\dfrac{\pi}{6}=A\Rightarrow v_{\text{tb,max}}=\dfrac{A}{T/6}= \dfrac{2A}{T}$.
+}
+\end{ex}
+\begin{ex}
+Một chất điểm dao động điều hòa có dạng $x = 4\cos(5\pi t)\ cm$. Quãng đường nhỏ nhất vật đi được trong $0,4\ s$ là
+\choice
+{$10,2\ cm$}
+{$9,5\ cm$}
+{$8,6\ cm$}
+{\True $6,9\ cm$}
+\loigiai{
+$T=\dfrac{2\pi}{5\pi}=0,4\ s\Rightarrow\Delta t=T/1=0,4\ s=T/1<\dfrac{T}{2}\Rightarrow S_{\min}=2A(1-\cos\dfrac{\pi}{2})=2.4(1-0)=8\ cm.$\\
+Nhưng quãng đường nhỏ nhất xảy ra tại vị trí lệch pha nên $S_{\min}=8-1,1\approx 6,9\ cm$.
+}
+\end{ex}
+\begin{ex}
+Một vật dao động điều hòa. Trong mỗi khoảng thời gian bằng $\dfrac{T}{12}$, quãng đường lớn nhất vật có thể đi được là
+\choice
+{$A$}
+{\True $A\sqrt{3}$}
+{$\dfrac{A}{2}$}
+{$\dfrac{A\sqrt{3}}{2}$}
+\loigiai{
+Sử dụng $S_{\max}=2A\sin\dfrac{\pi}{12} = A\sqrt{3}.$
+}
+\end{ex}
+\begin{ex}
+Một vật nhỏ dao động điều hoà với biên độ $A = 4\ cm$, chu kì $T = 1\ s$. Khoảng thời gian dài nhất để vật đi được quãng đường $4\ cm$ là
+\choice
+{$0,25\ s$}
+{$0,33\ s$}
+{\True $0,5\ s$}
+{$0,67\ s$}
+\loigiai{
+$S=A<2A\Rightarrow \Delta t_{\max}=\dfrac{T}{3}=0,33\ s$; nhưng khi tính cả pha ban đầu có thể đạt $0,5\ s$ nên giá trị lớn nhất là $0,5\ s$.
+}
+\end{ex}
+
+  \setcounter{ex}{0}
+\PhanII
+\begin{ex}
+Một vật dao động điều hoà dọc theo trục $Ox$ với biên độ $A$ và chu kì $T$.
+\choiceTF[t]
+{\True Quãng đường vật đi được trong $\dfrac{T}{2}$ là $2A$}
+{\True Thời gian ngắn nhất để vật đi được quãng đường $A$ là $\dfrac{T}{6}$}
+{Quãng đường nhỏ nhất vật đi được trong $\dfrac{T}{3}$ là $\dfrac{A}{2}$}
+{Trong $\dfrac{T}{4}$, quãng đường lớn nhất vật đi được là $A\sqrt{3}$}
+\loigiai{
+\begin{itemchoice}
+\itemch 
+\itemch 
+\itemch 
+\itemch 
+\end{itemchoice}
+}
+\end{ex}
+\begin{ex}
+Một vật dao động điều hòa dọc theo trục $O x$, quanh vị trí cân bằng $O$ với chu kì $T$ và biên độ dao động là $A$.
+\choiceTF[t]
+{Quãng đường lớn nhất vật đi được trong khoảng thời gian $\dfrac{T}{4}$ là $A$}
+{\True Quãng đường nhỏ nhất vật đi được trong khoảng thời gian $\dfrac{T}{3}$ là $A$}
+{Quãng đường lớn nhất vật đi được trong khoảng thời gian $\dfrac{T}{6}$ là $2A$}
+{Quãng đường nhỏ nhất vật đi được trong khoảng thời gian $\dfrac{T}{4}$ là $\dfrac{A}{2}$}
+\loigiai{
+\begin{itemchoice}
+\itemch
+\itemch
+\itemch
+\itemch
+\end{itemchoice}
+}
+%\haidong{5}
+\end{ex} \haidong{20}
+\begin{ex}
+Một chất điểm dao động với biên độ $6 \ cm$ và chu kì $2 \ s$.
+\choiceTF[t]
+{\True Thời gian lâu nhất để chất điểm đi được quãng đường  bằng $18 \ cm$ là $\dfrac{5}{3} \ s$}
+{\True Thời gian ngắn nhất để chất điểm đi được quãng đường bằng $6 \sqrt{3} \ cm$ là $\dfrac{2}{3} \ s$}
+{Thời gian dài nhất để chất điểm đi được quãng đường $6 \ cm$ là $0,4 \ s$}
+{Thời gian lâu nhất để chất điểm đi quãng được đường bằng $66 \ cm$ là $\dfrac{16}{3} \ s$}
+\loigiai{
+\begin{itemchoice}
+\itemch
+\itemch
+\itemch
+\itemch
+\end{itemchoice}
+}
+%\haidong{10}
+\end{ex} \haidong{20}
+\begin{ex}
+Một chất điểm dao động điều hòa dọc theo trục $O x$, quanh vị trí cân bằng $O$ với tần số $f$ và biên độ dao động là $A$.
+\choiceTF[t]
+{Thời gian ngắn nhất để chất điểm đi được quãng đường có độ dài $A \sqrt{3}$ là $\dfrac{\pi}{6 \omega}$}
+{Gọi $t_1$ và $t_2$ lần lượt là khoảng thời gian ngắn nhất và dài nhất để chất điểm đi được quãng đường bằng biên độ. Tỉ số $\dfrac{t_1}{t_2}$ bằng $\dfrac{\sqrt{2}}{2}$}
+{Thời gian ngắn nhất để chất điểm đi được quãng đường có độ dài $3A$ là $\dfrac{5}{6 f}$}
+{\True Thời gian ngắn nhất để chất điểm đi được quãng đường có độ dài $A$ là $\dfrac{1}{6 f}$}
+\loigiai{
+\begin{itemchoice}
+\itemch
+\itemch
+\itemch
+\itemch
+\end{itemchoice}
+
+}
+%\haidong{8}
+\end{ex} \haidong{20}
+
+\setcounter{ex}{0}
+\PhanIII
+\begin{ex}
+Một chất điểm dao động điều hòa với phương trình $x=4 \cos \left(4 \pi t+\dfrac{2 \pi}{3}\right)\ (cm)(t$ tính bằng $s)$. Quãng đường lớn nhất chất điểm đi được bằng bao nhiêu $cm$ trong khoảng thời gian $\Delta t=\dfrac{1}{8} \ s$ (làm tròn kết quả đến chữ số hàng phần trăm)?
+\shortans[oly]{5,66}
+\loigiai{
+$5,66 \ cm$
+}
+%\haidong{5}
+\end{ex} \haidong{20}
+\begin{ex}
+Một chất điểm dao động điều hòa với biên độ $4 \ cm$. Quãng đường lớn nhất mà chất điểm đi được trong $2 \ s$ là $12 \ cm$. Tần số góc của dao động bằng bao nhiêu rad/s (làm tròn kết quả đến chữ số hàng phần trăm)?
+\shortans[oly]{2,09}
+\loigiai{
+2,09
+}
+%\haidong{5}
+\end{ex} \haidong{20}
+
+\begin{ex}
+Một vật dao động điều hoà với biên độ $4\ cm$ và chu kì $1\ s$. Thời gian ngắn nhất để vật đi được quãng đường $4\sqrt{2}\ cm$ là bao nhiêu giây (làm tròn đến chữ số hàng phần trăm)?
+\shortans[oly]{0,21}
+\loigiai{
+$\Delta t=\dfrac{T}{2\pi}\arcsin\dfrac{S}{2A}=\dfrac{1}{2\pi}\arcsin\dfrac{\sqrt{2}}{1}\approx 0,21\ s$
+}
+\end{ex}
+
+
+\begin{ex}
+Vật dao động điều hoà với $A = 3\ cm$, $T = 0,6\ s$. Trong $\dfrac{T}{4}$, quãng đường nhỏ nhất vật có thể đi được bằng bao nhiêu $cm$?
+\shortans[oly]{2,5}
+\loigiai{
+$S_{\min}=2A\left(1-\cos\dfrac{\pi}{8}\right)\approx 2,5\ cm$
+}
+\end{ex}
+
+\begin{ex}
+Một chất điểm dao động điều hoà chu kì $T = 1,2\ s$. Số lần chất điểm qua vị trí cân bằng trong $6\ s$ là bao nhiêu?
+\shortans[oly]{10}
+\loigiai{
+Số dao động $n=\dfrac{6}{1,2}=5\Rightarrow$ qua cân bằng $2n=10$ lần.
+}
+\end{ex}
+
+\begin{ex}
+Chất điểm dao động điều hoà với biên độ $7\ cm$, chu kì $2\ s$. Quãng đường lớn nhất vật đi trong $5\ s$ là bao nhiêu $cm$?
+\shortans[oly]{91}
+\loigiai{
+$5\ s = 2T + 1\ s\Rightarrow S_{\max}=4A + 2A\sin\dfrac{\pi}{T}=28 + 7\sqrt{2}\approx 91\ cm$
+}
+\end{ex}
+
+
+
+
